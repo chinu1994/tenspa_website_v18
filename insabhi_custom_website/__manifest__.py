@@ -1,0 +1,99 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+#    SLTECH ERP SOLUTION
+#    Copyright (C) 2020-Today(www.slecherpsolution.com).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+##############################################################################
+
+{
+    'name': 'Insabhi Custom Website',
+    'author': "SL TECH ERP SOLUTION",
+    'website': "https://www.sltecherpsolution.com",
+    'version': '1.0.0',
+    'depends': ["base", "web", "website", "crm", "product"],
+    'data': [
+        'view/homepage.xml',
+        'view/aboutus.xml',
+        'view/header_footer.xml',
+        'view/contactus.xml',
+        'view/careers.xml',
+        'view/tenStore.xml',
+        # 'view/giftvoucher.xml',
+        'view/serviceSelecting.xml',
+        'view/giftVoucher.xml',
+        'view/addOns.xml',
+        'view/giftType.xml',
+        'view/voucherDelivery.xml',
+        'view/treatment.xml',
+
+    ],
+    'assets': {
+        'web.assets_frontend': [
+            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css',
+            'insabhi_custom_website/static/src/xml/homepage/homepage.xml',
+            'insabhi_custom_website/static/src/xml/aboutus/aboutus.xml',
+            'insabhi_custom_website/static/src/xml/careers/careers.xml',
+            'insabhi_custom_website/static/src/xml/contactus/contactus.xml',
+            'insabhi_custom_website/static/src/xml/tenStore/tenStore.xml',
+             'insabhi_custom_website/static/src/xml/serviceSelecting/serviceSelecting.xml',
+            'insabhi_custom_website/static/src/xml/giftVoucher/giftVoucher.xml',
+            'insabhi_custom_website/static/src/xml/addOns/addOns.xml',
+            'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
+            'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
+            'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
+
+
+            'insabhi_custom_website/static/src/scss/homepage/homepage.scss',
+            'insabhi_custom_website/static/src/scss/aboutus/aboutus.scss',
+            'insabhi_custom_website/static/src/scss/contactus/contact.scss',
+            'insabhi_custom_website/static/src/scss/careers/careers.scss',
+            'insabhi_custom_website/static/src/scss/tenStore/tenStore.scss',
+            'insabhi_custom_website/static/src/scss/serviceSelecting/serviceSelecting.scss',
+            'insabhi_custom_website/static/src/scss/giftVoucher/giftVoucher.scss',
+            'insabhi_custom_website/static/src/scss/addOns/addOns.scss',
+            'insabhi_custom_website/static/src/scss/giftType/giftType.scss',
+            'insabhi_custom_website/static/src/scss/treatment/treatment.scss',
+            'insabhi_custom_website/static/src/scss/voucherDelivery/voucherDelivery.scss',
+
+
+            'insabhi_custom_website/static/src/js/homepage/homepage.js',
+            'insabhi_custom_website/static/src/js/aboutus/aboutus.js',
+            'insabhi_custom_website/static/src/js/contactus/contactus.js',
+            'insabhi_custom_website/static/src/js/careers/careers.js',
+            'insabhi_custom_website/static/src/js/tenStore/tenStore.js',
+             'insabhi_custom_website/static/src/js/serviceSelecting/serviceSelecting.js',
+            'insabhi_custom_website/static/src/js/giftVoucher/giftVoucher.js',
+            'insabhi_custom_website/static/src/js/addOns/addOns.js',
+            'insabhi_custom_website/static/src/js/giftType/giftType.js',
+            'insabhi_custom_website/static/src/js/treatment/treatment.js',
+            'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
+
+        ],
+        'web.assets_backend': [
+            'insabhi_custom_website/static/src/scss/style.css',
+        ],
+
+    },
+
+    "qweb": [],
+    "installable": True,
+    "auto_install": False,
+    "application": False,
+    "price": 0.00,
+    "currency": "EUR",
+    "license": "AGPL-3",
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="insabhi_custom_website.ContactUs" owl="1">
+        <div class="contactus">
+
+        <div class="o_contact_page_content">
+
+            <section class="ten-contact-hero container-fluid py-5">
+                <div class="container py-lg-5 contact-hero-inner">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 py-5">
+                            <h1 class="ten-title">Contact us</h1>
+                            <p class="ten-subtitle">
+                                We welcome you to get in touch using your preferred contact method.-Team Ten
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="ten-contact-app" class="ten-intro-text">
+                            We’re here to assist you with any questions, bookings, or inquiries you may have. Whether you’re looking to learn more about our services, need help scheduling an appointment, or have feedback to share, we’d love to hear from you.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ten-contact-grid row text-center text-md-start pt-4 pb-5 gx-5 gy-5">
+
+                    <div class="col-md-4">
+                        <div class="ten-feature d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt ten-icon"></i>
+                            <div>
+                                <h4 class="ten-section-heading">Live assistance</h4>
+                                <p class="ten-feature-text">Receive immediate guidance from a real consultant, Monday - Sunday, 10am - 7pm ET.</p>
+                                <a href="#" class="ten-link small-link">Start conversation
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="ten-feature d-flex align-items-start gap-3">
+                            <i class="bi bi-telephone ten-icon"></i>
+                            <div>
+                                <h4 class="ten-section-heading">Phone</h4>
+                                <p class="ten-feature-text">Hours of operation: Monday - Friday, 10am – 7pm ET.</p>
+                                <a href="#" class="ten-link small-link">Call us
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="ten-feature d-flex align-items-start gap-3">
+                            <i class="bi bi-chat-left-text ten-icon"></i>
+                            <div>
+                                <h4 class="ten-section-heading">Enquiry form</h4>
+                                <p class="ten-feature-text">We welcome your questions or feedback via our online form.</p>
+                                <a href="#" class="ten-link small-link">Submit an enquiry
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="ten-feature d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt ten-icon"></i>
+                            <div>
+                                <h4 class="ten-section-heading">Store locator</h4>
+                                <p class="ten-feature-text">Visit a signature store for a personalised consultation.</p>
+                                <a href="#" class="ten-link small-link">Find a store
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="ten-feature d-flex align-items-start gap-3">
+                            <i class="bi bi-info-circle ten-icon"></i>
+                            <div>
+                                <h4 class="ten-section-heading">Help centre</h4>
+                                <p class="ten-feature-text">Find the answers to frequently asked questions, including information about orders, delivery and returns.</p>
+                                <a href="#" class="ten-link small-link">Explore help centre
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="ten-help-section py-5 my-5">
+                <div class="container">
+                    <div class="text-center py-5">
+                        <h3 class="ten-quote"> Whether you’re looking to learn more about our services, need help scheduling an appointment,
+    or have feedback to share, we’d love to hear from you.</h3>
+                        <p class="ten-quote-author">— Team Ten</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        </div>
+
+    </t>
+</templates>

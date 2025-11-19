@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="serviceSelecting" name="ServiceSelecting">
+            <t t-call="website.layout">
+                <section id="admin" class="serviceSelecting">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

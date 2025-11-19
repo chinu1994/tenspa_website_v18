@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="giftVoucher" name="GiftVoucher">
+            <t t-call="website.layout">
+                <section id="admin" class="giftVoucher">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

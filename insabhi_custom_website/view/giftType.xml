@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="giftType" name="GiftType">
+            <t t-call="website.layout">
+                <section id="admin" class="giftType">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

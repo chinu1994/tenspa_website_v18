@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="voucherDelivery" name="VoucherDelivery">
+            <t t-call="website.layout">
+                <section id="admin" class="voucherDelivery">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

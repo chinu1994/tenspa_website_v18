@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="owl_custom_website.TreatMent" owl="1">
+        <div class="treatment">
+
+            <!-- HERO SECTION -->
+            <section class="insabhi-hero-video position-relative height-fixer-hero">
+                <div class="position-absolute top-0 start-0 w-100 h-100">
+                    <img src="insabhi_custom_website/static/src/image/treatment.jpg"
+                         alt="Hero"
+                         class="w-100 h-100 object-fit-cover"/>
+                </div>
+                <div class="insabhi-hero-overlay-bottom">
+                    <div class="insabhi-hero-content-bottom container">
+                        <h1 class="insabhi-hero-title">TREATMENT</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== TEN WELLNESS LUXURY ===================== -->
+            <section class="ten-pure-luxury" id="ten-sanctuary">
+                <div class="luxury-canvas">
+
+                    <!-- GOLD PARTICLES -->
+                    <div class="gold-particles">
+                        <div class="particle p1"></div>
+                        <div class="particle p2"></div>
+                        <div class="particle p3"></div>
+                        <div class="particle p4"></div>
+                        <div class="particle p5"></div>
+                        <div class="particle p6"></div>
+                        <div class="particle p7"></div>
+                        <div class="particle p8"></div>
+                    </div>
+
+                    <div class="luxury-container">
+                        <div class="luxury-grid">
+
+                            <!-- LEFT: SVG FRAME -->
+                            <div class="svg-frame">
+                                <svg viewBox="0 0 400 600" class="ornate-frame">
+                                    <path d="
+                                        M50,20 Q10,20 10,60 L10,540
+                                        Q10,580 50,580 L350,580
+                                        Q390,580 390,540 L390,60
+                                        Q390,20 350,20 Z
+                                        M200,10 L200,0
+                                        M200,590 L200,600
+                                        M10,300 L0,300
+                                        M400,300 L410,300"
+                                        fill="none" stroke="#d4a574" stroke-width="2"/>
+                                    <circle cx="200" cy="300" r="80"
+                                            fill="none" stroke="#d4a574"
+                                            stroke-width="1.5" opacity="0.3"/>
+                                </svg>
+                            </div>
+
+                            <!-- CENTER CONTENT -->
+                            <div class="luxury-content">
+
+                                <h2 class="couture-title">
+                                    <span class="pre-title">Welcome to</span>
+                                    <span class="main-title">Ten Wellness</span>
+                                </h2>
+
+                                <div class="luxury-prose">
+                                    <p class="lead">
+                                        Step into a sanctuary of timeless luxury, where every moment is dedicated to your renewal.
+                                    </p>
+
+                                    <p class="body">
+                                        At Ten Wellness, we bring together the art of massage, the serenity of traditional baths,
+                                        the radiance of facials, and the elegance of immaculate grooming. Designed for both men
+                                        and women, our treatments blend wellness with sophistication.
+                                    </p>
+
+                                    <p class="signature">
+                                        Here, relaxation meets refinement.
+                                        <em>Escape the everyday — discover true rejuvenation crafted exclusively for you.</em>
+                                    </p>
+                                </div>
+
+                                <!-- BUTTONS -->
+                                <div class="couture-buttons">
+                                    <a href="/treatments/him" class="couture-btn royal">
+                                        <span>Treatment For Him</span>
+                                        <svg class="arrow" viewBox="0 0 60 20">
+                                            <path d="M0,10 L50,10 L45,5 M50,10 L45,15"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="/treatments/her" class="couture-btn empress">
+                                        <span>Treatment For Her</span>
+                                        <svg class="arrow" viewBox="0 0 60 20">
+                                            <path d="M0,10 L50,10 L45,5 M50,10 L45,15"/>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- RIGHT: CSS LEAVES -->
+                            <div class="css-leaves">
+                                <div class="leaf l1"></div>
+                                <div class="leaf l2"></div>
+                                <div class="leaf l3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </t>
+
+</templates>

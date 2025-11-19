@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="insabhi_custom_website.GiftVoucher" owl="1">
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/hero.webp"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Welcome To Our Gift Voucher</h1>
+                    <h2 class="insabhi-hero-subtitle">Enjoy with our Gift which is For You</h2>
+                    <p class="insabhi-hero-question">In The Ten Wellness</p>
+                    <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
+                       class="insabhi-hero-button" target="_blank" rel="noopener noreferrer">
+                       Book Gift
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="insabhi-new-notable py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="insabhi-section-title">New Gift of the Tens</h2>
+                    <p class="insabhi-section-subtitle">
+                        Experience the perfect blend of enduring favorites and the latest innovations.
+                    </p>
+                </div>
+                <div class="insabhi-carousel position-relative">
+                    <div class="insabhi-carousel-inner overflow-hidden">
+                        <div class="insabhi-carousel-track d-flex transition-transform">
+                            <t t-foreach="[0,1,2,3,4,5,6,7,8,9,10,11]" t-as="index" t-key="index">
+                                <div class="insabhi-carousel-item col-sm-6 col-lg-4">
+                                    <div class="insabhi-product-card text-center d-flex flex-column h-100 mx-auto"
+                                         style="max-width:460px; min-height:560px;">
+                                        <div class="insabhi-product-label">
+                                            <t t-if="index === 0">New addition</t>
+                                            <t t-else="">Beloved formulation</t>
+                                        </div>
+                                        <img t-att-src="'/insabhi_custom_website/static/src/image/gift3.jpg'"
+                                             alt="Product" class="img-fluid mb-3 mx-auto d-block"
+                                             style="height:250px; object-fit:contain;"/>
+                                        <h3 class="insabhi-product-name mt-auto mb-2"
+                                            style="font-size:1.05rem;line-height:1.3;">
+                                            <t t-if="index === 0">Eleos Nourishing Body Cleanser</t>
+                                            <t t-elif="index === 1">Resurrection Aromatique Hand Wash</t>
+                                            <t t-else="">Placeholder Product</t>
+                                        </h3>
+                                        <p class="insabhi-product-scent text-muted small mb-2"
+                                           style="font-size:0.85rem;">
+                                            <t t-if="index === 0">Herbaceous, woody, spicy</t>
+                                            <t t-else="">Clear, low-foaming gel</t>
+                                        </p>
+                                        <div class="insabhi-product-size mb-2">
+                                            <select class="form-select form-select-sm"><option>6.2 oz</option></select>
+                                        </div>
+                                        <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">
+                                            <t t-if="index === 0">$37.00</t>
+                                            <t t-else="">$46.00</t>
+                                        </p>
+                                        <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex justify-content-center gap-5 mt-4">
+                        <button class="insabhi-carousel-btn insabhi-carousel-prev btn btn-outline-secondary rounded-circle p-4">
+                            <i class="bi bi-chevron-left fs-3"></i>
+                        </button>
+                        <button class="insabhi-carousel-btn insabhi-carousel-next btn btn-outline-secondary rounded-circle p-4">
+                            <i class="bi bi-chevron-right fs-3"></i>
+                        </button>
+                    </div>
+                    <div class="insabhi-carousel-controls d-flex d-sm-none justify-content-between mt-4 px-4">
+                        <button class="insabhi-carousel-btn insabhi-carousel-prev"><i class="bi bi-chevron-left"></i></button>
+                        <button class="insabhi-carousel-btn insabhi-carousel-next"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <section class="insabhi-browse-category py-5 bg-white position-relative overflow-hidden">
+                </section>
+            </div>
+        </section>
+
+        <!--        yanha se career page ka content ka -->
+        <section class="careers-hero-section d-flex flex-column"
+                 style="background-image: url('/insabhi_custom_website/static/src/image/gift1.jpg'); background-size: cover; background-position: center; min-height: 500px;">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 careers-hero-content p-5">
+                                <h2 class="career">Seasonal Gift Kits</h2>
+                        <p>Ten This year our abundant collection of limited-release Gift Kits is inspired by the home, and our long-held reverence for considered design.
+                        </p>
+                        <a href="#" class="btn btn-light custom-hover-effect mt-4"
+                           style="font-size: 14px; padding: 10px 20px;">
+                                       Browse all openings →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insabhi-fragrance py-5 bg-white position-relative overflow-hidden">
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:6px;height:6px;box-shadow:0 0 18px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse delay-1s">
+                <div class="bg-gold rounded-circle" style="width:5px;height:5px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row g-5 align-items-center">
+
+                    <!-- LEFT: BOTTLE WITH 5-rem GAP -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <div class="position-relative d-inline-block hover-lift ms-lg-5">
+                            <img src="/insabhi_custom_website/static/src/image/gift3.jpg"
+                                 alt="Desert Rose Oud"
+                                 class="img-fluid rounded-4 shadow-lg"
+                                 style="height:560px; object-fit:contain; background:#fff;"/>
+
+                            <!-- BADGE: ONE LINE & CENTERED ON MOBILE -->
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-n4 w-100 text-center">
+                                <span class="bg-gold text-white px-4 py-2 rounded-pill shadow-lg fw-medium d-inline-block"
+                                      style="font-size:0.95rem; letter-spacing:1px; white-space:nowrap;">
+                                    Limited Edition 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: POETRY (NO <BR>) -->
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
+                        <div class="max-w-500 w-100">
+
+                            <!-- TITLE -->
+                            <div class="d-inline-flex align-items-center gap-4 mb-5 justify-content-center justify-content-lg-start">
+                           <div class="flex-grow-1 h-05 bg-gold"></div>
+                                <h2 class="display-5 fw-light m-0 px-4"
+                                    style="font-family:'Playfair Display',serif; white-space: nowrap;">
+                                   Touch Your Ten Gift
+                                    </h2>
+                                <div class="flex-grow-1 h-05 bg-gold"></div>
+                         </div>
+                            <!-- POEM (pure CSS line-break) -->
+                            <p class="lead text-muted mb-5"
+                               style="font-size:1.35rem; line-height:2; max-width: 600px; margin-left: auto; margin-right: auto;">
+                                Pair your Gift Voucher with a fragrance that elevates the entire experience. Our collection features masterfully blended scents that embody our ethos of refined wellness. They are designed not just to smell beautiful, but to create a subtle aura of calm and luxury around every Ten moment.
+                            </p>
+
+                            <!-- NAME -->
+                            <!-- <h3 class="fw-bold text-gold mb-4" style="font-size:1.9rem;
+                            letter-spacing:1px;">
+                                Desert Rose Oud
+                            </h3> -->
+
+                            <!-- NOTES (no <br>) -->
+                            <!-- <div class="text-muted mb-5" style="font-size:1rem;
+                            line-height:2;">
+                                <span class="d-block">Top: Bergamot &amp; Saffron</span>
+                                <span class="d-block">Heart: Damask Rose &amp; Cardamom</span>
+                                <span class="d-block">Base: Agarwood &amp; Amber</span>
+                            </div> -->
+
+                            <!-- BUTTONS: CENTERED ON MOBILE -->
+                            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                                <a href="#" class="btn btn-outline-dark rounded-pill px-5 py-3 text-uppercase fw-medium"
+                                   style="letter-spacing:2px;">
+                                    Discover the Scent
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=Hi%20Ten%20Wellness%2C%20I%E2%80%99d%20love%20to%20try%20Desert%20Rose%20Oud%20%F0%9F%8C%B9"
+                                   target="_blank"
+                                   class="btn btn-dark rounded-pill px-5 py-3 text-uppercase fw-medium"
+                                   style="letter-spacing:2px;">
+                                    Book a Sample
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="careers-people-section py-5 p-3">
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-4">
+                                <h3 class="careers-section-title">The Ultimate Gift of Wellness</h3>
+
+
+                            <p class="careers-text-content mb-4">Your loved ones will have complete freedom to select from our curated range of products and services. This encourages them to prioritize Self-Care and take a tranquil break from their daily rush. A gift that nourishes the soul, delivered with Choice, Quality, and Care.
+                            </p>
+                        </div>
+                    <div class="col-lg-8">
+                        <img src="/insabhi_custom_website/static/src/image/gift2.jpg" alt="Ten Wellness"
+                             class="img-fluid w-100 h-100" style="object-fit:cover;height:580px;"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="careers-people-section py-5 p-3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <video class="video w-100" autoplay="autoplay" muted="muted" loop="loop"
+                               playsinline="playsinline">
+                            <source src="/insabhi_custom_website/static/src/image/hero.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+
+                    <div class="col-lg-4">
+                                <h3 class="careers-section-title">The Ten Gift:A Moment of Bliss</h3>
+
+
+                        <p class="careers-text-content mb-4">Gifting is the purest expression of care. Our "Ten" Gift Vouchers offer your loved ones the chance to infuse their lives with a moment of peace and well-being by choosing exactly what they desire. It's not just a voucher; it's a promise of a special experience—whether it's a signature product or a rejuvenating service. Give them the gift they truly want, defined by their needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/gift4.jpg"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Welcome To Our Gift Voucher</h1>
+                    <h2 class="insabhi-hero-subtitle">Enjoy with our Ten's Gift </h2>
+                    <p class="insabhi-hero-question">In The Ten Wellness</p>
+                    <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
+                       class="insabhi-hero-button" target="_blank" rel="noopener noreferrer">
+                       Browse the Gift
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--        home page ka content -->
+
+        <section class="insabhi-browse-category py-5 bg-white position-relative overflow-hidden">
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle opacity-75" style="width:6px;height:6px;"></div>
+            </div>
+            <div class="position-absolute bottom-30 end-20 animate-pulse" style="animation-delay:0.8s;">
+                <div class="bg-gold rounded-circle opacity-75" style="width:4px;height:4px;"></div>
+            </div>
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <div class="d-inline-flex align-items-center gap-4">
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                        <h2 class="insabhi-section-title display-5 fw-light m-0 px-4"
+                            style="font-family:'Playfair Display',serif;letter-spacing:1px;">
+                            Category of the Ten's Gift
+                        </h2>
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                    </div>
+                    <p class="text-muted mt-3 lead">Curated rituals for every moment of self-care</p>
+                </div>
+                <div class="row g-4 g-xl-5 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Skin Care"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Skin Care</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro2.jpg" alt="Hand "
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hand </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro1.jpg" alt="Fragrance"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Fragrance</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro2.jpg" alt="Home"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Home</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Hair"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hair</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </t>
+</templates>

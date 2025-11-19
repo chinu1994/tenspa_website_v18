@@ -1,0 +1,349 @@
+/* Custom CSS for VoucherDelivery Component */
+
+/* 1. Overall Body/Background */
+body {
+    background-color: #f8f9fa; /* Light background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Hero Banner Full Screen Styling */
+.insabhi-hero-video img{
+    border-radius: 0;
+}
+
+
+
+/* 2. Voucher Delivery Container Styling */
+.Vpading {
+    max-width: 1000px; /* Increased container width for better spacing */
+    margin: 30px auto;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 0;
+}
+
+/* 3. Headers/Headings Style */
+.voucherDelivery h2, 
+.voucherDelivery h3, 
+.voucherDelivery h4, 
+.voucherDelivery h5 {
+    color: #343a40; /* Darker text */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* 4. Section Styling */
+.voucherDelivery section {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.voucherDelivery section:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* 5. Shipping Method Box */
+.voucherDelivery .bg-light {
+    background-color: #e9ecef !important;
+    border-color: #ced4da !important;
+}
+
+/* 6. Recipient Details - Input Fields */
+.voucherDelivery .form-control-md {
+    border-radius: 50px;
+    border: 1px solid #ced4da;
+    height: 40px;
+    box-shadow: none !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.voucherDelivery .form-control-md:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Input group styling */
+.voucherDelivery .input-group-text {
+    border-radius: 50px 0 0 50px;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-right: none;
+    font-size: 0.9rem;
+}
+
+.voucherDelivery .rounded-left-pill {
+    border-radius: 50px 0 0 50px !important;
+}
+
+.voucherDelivery .rounded-right-pill {
+    border-radius: 0 50px 50px 0 !important;
+}
+
+.voucherDelivery .input-group-md .form-control {
+    border: 1px solid #ced4da;
+    border-left: none;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 0.9rem;
+}
+
+.voucherDelivery .input-group-md .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 7. Toggle Switch (Custom switch styling) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* 8. Date and Time Slot Cards */
+.voucherDelivery .card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for cards */
+.voucherDelivery .card:hover {
+    border-color: #007bff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Active/Selected card state */
+.voucherDelivery .date-card.active,
+.voucherDelivery .time-slot.active {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.05);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Disabled slot styling */
+.voucherDelivery .disabled-slot {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* 9. Delivery Option Styling */
+.delivery-option {
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border: 2px solid #e9ecef;
+    height: auto;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.delivery-option.selected {
+    border-color: #007bff !important;
+    background-color: rgba(0, 123, 255, 0.05);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.delivery-option:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* 10. Buttons */
+.voucherDelivery .btn {
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    border-width: 2px;
+    font-size: 0.85rem;
+    height: auto;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voucherDelivery .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.voucherDelivery .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.voucherDelivery .btn-outline-secondary {
+    border-width: 2px;
+}
+
+.voucherDelivery .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    padding: 8px 20px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.voucherDelivery .btn-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(23, 162, 184, 0.3);
+}
+
+/* 11. Icons */
+.voucherDelivery .fa-map-marker-alt {
+    color: #dc3545 !important;
+}
+
+.voucherDelivery .fa-truck {
+    color: #17a2b8 !important;
+}
+
+/* 12. Badges */
+.voucherDelivery .badge-success {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* --- RESPONSIVENESS (Mobile View) --- */
+@media (max-width: 768px) {
+    .voucherDelivery {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    
+    .voucherDelivery .container {
+        padding: 0 10px;
+    }
+    
+    /* Adjust padding for smaller screens */
+    .voucherDelivery section {
+        padding: 20px;
+    }
+    
+    /* Date Cards - full width on mobile */
+    .voucherDelivery .d-flex.flex-wrap > [style*="width: 32%"] {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Time slots - full width on mobile */
+    .voucherDelivery .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Buttons - stacked on mobile */
+    .voucherDelivery .row.mt-5.mb-3 .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .voucherDelivery .row.mt-5.mb-3 .mr-3 {
+        margin-right: 0 !important;
+    }
+    
+    .voucherDelivery .row.mt-5.mb-3 .d-flex {
+        flex-direction: column;
+    }
+    
+    /* Adjust header spacing */
+    .voucherDelivery h2 {
+        font-size: 1.5rem;
+    }
+    
+    .voucherDelivery h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Improve spacing between sections */
+    .voucherDelivery section {
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust card padding */
+    .voucherDelivery .card {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .voucherDelivery {
+        padding: 0 5px;
+    }
+    
+    .voucherDelivery .p-3.p-md-4,
+    .voucherDelivery .p-4.p-md-5 {
+        padding: 15px !important;
+    }
+    
+    /* Adjust button size on very small screens */
+    .voucherDelivery .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="insabhi_custom_website.AboutUs" owl="1">
+        <div class="aboutus">
+
+            <!-- ==== HERO (matches uploaded image) ==== -->
+            <section class="insabhi-hero-video position-relative height-fixer-hero">
+                <div class="position-absolute top-0 start-0 w-100 h-100">
+                    <img src="insabhi_custom_website/static/src/image/about1.png"
+                         alt="Hero" class="w-100 h-100 object-fit-cover"/>
+                </div>
+                <div class="insabhi-hero-overlay-bottom">
+                    <div class="insabhi-hero-content-bottom container">
+                        <h1 class="insabhi-hero-title">ABOUT US</h1>
+                    </div>
+                </div>
+            </section>
+            <!-- ==== WHY CHOOSE US – Your Full Text ==== -->
+            <section class="s_our_story_ten py-5 o_animators position-relative overflow-hidden" data-snippet="s_our_story_ten">
+                <!-- Dynamic Golden Waves + Orb -->
+                <div class="golden-waves"></div>
+                <div class="golden-orb"></div>
+
+                <!-- Added container with max-width + horizontal padding for mobile -->
+                <div class="container position-relative px-4 px-md-5" style="z-index: 3; max-width: 1400px;">
+                    <div class="row align-items-center justify-content-center g-5">
+                        <!-- Image with safe top margin on mobile -->
+                        <div class="col-lg-5 text-center text-lg-start order-1 order-lg-1">
+                            <div class="o_animation" data-animation="fadeInLeft" data-delay="200">
+                                <div class="image-tilt-wrapper position-relative d-inline-block mx-auto mx-lg-0">
+                                    <div class="image-glow"></div>
+                                    <img src="/insabhi_custom_website/static/src/image/about2.jpg"
+                                         alt="Ten Wellness Sanctuary"
+                                         class="main-image rounded-4 img-fluid"/>
+                                    <div class="floating-badge">
+                                        <span class="badge-text">Since 2017 • Kuwait</span>
+                                    </div>
+                                    <div class="decor-ring"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text with proper mobile spacing -->
+                        <div class="col-lg-7 ps-lg-5 order-2 order-lg-2">
+                            <div class="o_animation" data-animation="fadeInRight" data-delay="400">
+                                <h2 class="display-4 fw-bold mb-4 mb-md-5 title-stroke text-center text-lg-start">
+                                    Our Story
+                                </h2>
+
+                                <div class="text-justify text-lg-start">
+                                    <p class="elegant-text mb-4">
+                                        Ten Wellness was founded with a mission to <span class="text-gold fw-bold">redefine wellness in Kuwait</span>.
+                                        Inspired by years of exploring world-class spa practices, the founders envisioned a space that not only combined
+                                        exceptional techniques and therapeutic treatments but also addressed deeper layers of well-being.
+                                        Every service is designed to ensure guest satisfaction and guarantee holistic treatment, offering a
+                                        <span class="text-gold italic">serene and rejuvenating journey</span> to restore mind and body.
+                                    </p>
+
+                                    <div class="golden-divider my-5 mx-auto mx-lg-0"></div>
+
+                                    <p class="elegant-text mb-4">
+                                        In July 2017, <strong class="text-gold">Yousef and Bader Alessa</strong> acquired Ten Wellness and transformed it into a
+                                        <span class="text-gold italic">sanctuary of relaxation, rejuvenation, and emotional healing</span>.
+                                        At Ten Wellness, the focus goes beyond physical care; it embraces the profound connection between body and mind,
+                                        offering treatments designed to release emotional tension and foster a sense of inner peace.
+                                    </p>
+
+                                    <p class="elegant-text mb-5">
+                                        Today, Ten Wellness stands as a <span class="text-gold fw-bold">leading destination for wellness</span>,
+                                        offering unparalleled services that promote balance, healing, and tranquility — empowering guests to
+                                        renew both their physical and emotional well-being.
+                                    </p>
+                                </div>
+
+                                <!-- Etiquette Card -->
+                                <div class="etiquette-card-glass p-4 p-md-5 rounded-4 shadow-2xl">
+                                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-4">
+                                        <div class="spa-icon-bg me-3">
+                                            <i class="fa fa-spa text-gold fa-2x"></i>
+                                        </div>
+                                        <h3 class="h3 fw-bold mb-0" style="font-family: 'Cinzel', serif; color: #2c1810;">
+                                            Spa Etiquette
+                                        </h3>
+                                    </div>
+
+                                    <p class="text-muted small mb-4 opacity-80 fst-italic text-center text-lg-start">
+                                        At Ten Wellness, we are committed to providing a tranquil and rejuvenating experience for all our guests.
+                                        To maintain an atmosphere of relaxation and harmony, we kindly ask all guests to follow our spa etiquette and policies.
+                                    </p>
+
+                                    <div class="etiquette-grid">
+                                        <!-- All 8 items unchanged -->
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Arrival Time:</strong> Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in process. Note that treatments will conclude at the scheduled time without extensions unless previously requested.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Late Arrivals:</strong> Late arrivals will result in a reduced treatment time to accommodate subsequent bookings.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Reservations:</strong> We recommend booking your appointments 1–2 days in advance to secure your preferred time and service.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Cancellations:</strong> Kindly provide at least 4 hours' notice for cancellations by calling us directly.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Refunds:</strong> Refund requests cannot be accommodated after the first 10 minutes of the treatment.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Valuables:</strong> Please avoid bringing valuables to the spa and please ensure emptying your locker before departing. Lockers are provided for your convenience, but the management is not responsible for any lost or misplaced items.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>No Mobiles &amp; No Smoking:</strong> For the privacy and tranquility of our spa environment, smoking and the use of mobile phones are strictly prohibited, even in silent mode.</div>
+                                        <div class="etiquette-item"><span class="gold-dot"></span><strong>Health Declarations:</strong> All guests are required to complete a consultation form with accurate and detailed information. Please inform the reception if you have high blood pressure, have undergone major surgery, are pregnant, have skin allergies, or have any other health concerns. Guests are solely responsible for determining their physical fitness for treatments.</div>
+                                    </div>
+
+                                    <div class="text-center text-lg-end mt-5">
+                                        <p class="text-gold signature-text">
+                                            Thank you for understanding and adhering to our policies
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+
+</templates>

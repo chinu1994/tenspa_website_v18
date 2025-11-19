@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="insabhi_custom_website.HomePage" owl="1">
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/hero.webp"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
+                    <h2 class="insabhi-hero-subtitle">The Highest Rated Spa On Google Reviews</h2>
+                    <p class="insabhi-hero-question">In The Arab World</p>
+                    <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
+                       class="insabhi-hero-button" target="_blank" rel="noopener noreferrer">
+                       Book Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="insabhi-new-notable py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="insabhi-section-title">New And Exceptional</h2>
+                    <p class="insabhi-section-subtitle">
+                        Experience the perfect blend of enduring favorites and the latest innovations.
+                    </p>
+                </div>
+                <div class="insabhi-carousel position-relative">
+                    <div class="insabhi-carousel-inner overflow-hidden">
+                        <div class="insabhi-carousel-track d-flex transition-transform">
+                            <t t-foreach="[0,1,2,3,4,5,6,7,8,9,10,11]" t-as="index" t-key="index">
+                                <div class="insabhi-carousel-item col-sm-6 col-lg-4">
+                                    <div class="insabhi-product-card text-center d-flex flex-column h-100 mx-auto"
+                                         style="max-width:460px; min-height:560px;">
+                                        <div class="insabhi-product-label">
+                                            <t t-if="index === 0">New addition</t>
+                                            <t t-else="">Beloved formulation</t>
+                                        </div>
+                                        <img t-att-src="'/insabhi_custom_website/static/src/image/pro' + (index + 1) + '.jpg'"
+                                             alt="Product" class="img-fluid mb-3 mx-auto d-block"
+                                             style="height:250px; object-fit:contain;"/>
+                                        <h3 class="insabhi-product-name mt-auto mb-2"
+                                            style="font-size:1.05rem;line-height:1.3;">
+                                            <t t-if="index === 0">Eleos Nourishing Body Cleanser</t>
+                                            <t t-elif="index === 1">Resurrection Aromatique Hand Wash</t>
+                                            <t t-else="">Placeholder Product</t>
+                                        </h3>
+                                        <p class="insabhi-product-scent text-muted small mb-2"
+                                           style="font-size:0.85rem;">
+                                            <t t-if="index === 0">Herbaceous, woody, spicy</t>
+                                            <t t-else="">Clear, low-foaming gel</t>
+                                        </p>
+                                        <div class="insabhi-product-size mb-2">
+                                            <select class="form-select form-select-sm"><option>6.2 oz</option></select>
+                                        </div>
+                                        <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">
+                                            <t t-if="index === 0">$37.00</t>
+                                            <t t-else="">$46.00</t>
+                                        </p>
+                                        <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex justify-content-center gap-5 mt-4">
+                        <button class="insabhi-carousel-btn insabhi-carousel-prev btn btn-outline-secondary rounded-circle p-4">
+                            <i class="bi bi-chevron-left fs-3"></i>
+                        </button>
+                        <button class="insabhi-carousel-btn insabhi-carousel-next btn btn-outline-secondary rounded-circle p-4">
+                            <i class="bi bi-chevron-right fs-3"></i>
+                        </button>
+                    </div>
+                    <div class="insabhi-carousel-controls d-flex d-sm-none justify-content-between mt-4 px-4">
+                        <button class="insabhi-carousel-btn insabhi-carousel-prev"><i class="bi bi-chevron-left"></i></button>
+                        <button class="insabhi-carousel-btn insabhi-carousel-next"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <section class="insabhi-browse-category py-5 bg-white position-relative overflow-hidden">
+                </section>
+            </div>
+        </section>
+
+        <!-- ABOUT TEN WELLNESS – LUXURY -->
+        <section class="insabhi-about py-5 position-relative overflow-hidden">
+            <div class="position-absolute top-0 start-0 w-100 h-100"
+                 style="background:#faf8f5;background-image:radial-gradient(circle at 20% 80%, #f5e6d3 0%, transparent 50%),radial-gradient(circle at 80% 20%, #e8d9c5 0%, transparent 50%);"></div>
+            <div class="container-fluid px-0 position-relative">
+                <div class="row g-0 align-items-center min-vh-75">
+                    <div class="col-12 col-lg-6 p-0">
+                        <div class="position-relative overflow-hidden">
+                            <img src="/insabhi_custom_website/static/src/image/about.jpg" alt="Ten Wellness"
+                                 class="img-fluid w-100 h-100" style="object-fit:cover;height:580px;"/>
+                            <div class="position-absolute top-0 start-0 w-100 h-100 pointer-events-none"
+                                 style="box-shadow:inset 0 0 80px rgba(212,176,140,.4);border:8px solid transparent;border-image:linear-gradient(45deg,#d4b08c,#f1d5a3) 1;"></div>
+                            <div class="position-absolute bottom-0 end-0 m-4">
+                                <span class="bg-white px-4 py-2 shadow-lg fw-medium text-gold"
+                                      style="font-family:'Playfair Display',serif;letter-spacing:1px;">
+                                            Est. 2018 · Kuwait
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 px-5 py-5 d-flex flex-column justify-content-center">
+                        <div class="w-50px h-1 bg-gold mb-4"></div>
+                        <p class="text-uppercase tracking-widest text-muted mb-2"
+                           style="letter-spacing:5px;font-size:0.8rem;">A SANCTUARY OF CALM</p>
+                        <h2 class="display-4 fw-light mb-4"
+                            style="font-family:'Playfair Display',serif;line-height:1.1;">
+                            Where Every
+                            <span class="position-relative d-block">
+                                        <span class="position-relative">Touch
+                                            <svg class="position-absolute start-0 bottom--2 w-100" viewBox="0 0 120 16"
+                                                 fill="none">
+                                                <path d="M0 8 Q30 0 60 8 T120 8" stroke="#d4b08c" stroke-width="2"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                            <span class="d-block">Tells a Story</span>
+                        </h2>
+                        <p class="lead text-muted mb-4" style="max-width:480px;line-height:1.8;">
+                            Born in the heart of Kuwait, Ten Wellness is the Arab world’s
+                            <span class="text-gold fw-600">highest Google-rated spa</span>—a space that not only
+                            combined exceptional techniques and therapeutic treatments but also addressed deeper layers
+                            of well-being, designed to ensure guest satisfaction and guarantee holistic treatment
+                        </p>
+                        <ul class="list-unstyled text-muted mb-5" style="line-height:2;">
+                            <li>✦ Holistic Treatment to restore mind and body</li>
+                            <li>✦ Focus on Emotional Healing and inner peace</li>
+                            <li>✦  World-Class Spa Practices and exceptional techniques</li>
+                        </ul>
+                        <a href="/aboutus" class="align-self-start position-relative overflow-hidden
+                                          btn btn-outline-dark rounded-pill px-5 py-3 text-uppercase border-2 fw-medium"
+                           style="letter-spacing:2px;">
+                            Discover Our Story
+                            <i class="bi bi-arrow-right ms-3"></i>
+                            <span class="position-absolute top-0 start-100 w-0 h-100 bg-gold"
+                                  style="transition:all .6s ease;"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:8px;height:8px;box-shadow:0 0 20px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse" style="animation-delay:1s;">
+                <div class="bg-gold rounded-circle" style="width:6px;height:6px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+        </section>
+
+        <!-- BROWSE BY CATEGORY – PURE WHITE LUXURY GALLERY -->
+        <section class="insabhi-browse-category py-5 bg-white position-relative overflow-hidden">
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle opacity-75" style="width:6px;height:6px;"></div>
+            </div>
+            <div class="position-absolute bottom-30 end-20 animate-pulse" style="animation-delay:0.8s;">
+                <div class="bg-gold rounded-circle opacity-75" style="width:4px;height:4px;"></div>
+            </div>
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <div class="d-inline-flex align-items-center gap-4">
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                        <h2 class="insabhi-section-title display-5 fw-light m-0 px-4"
+                            style="font-family:'Playfair Display',serif;letter-spacing:1px;">
+                            Browse by Category
+                        </h2>
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                    </div>
+                    <p class="text-muted mt-3 lead">Curated rituals for every moment of self-care</p>
+                </div>
+                <div class="row g-4 g-xl-5 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Skin Care"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Skin Care</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro2.jpg" alt="Hand &amp; Body"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hand &amp; Body</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro1.jpg" alt="Fragrance"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Fragrance</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro2.jpg" alt="Home"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Home</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="insabhi-category-card-wrapper">
+                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
+                                                transition-all hover-lift hover-shadow">
+                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Hair"
+                                         class="img-fluid w-100 rounded-3 transition-all"
+                                         style="height:200px; object-fit:contain; background:#fff;"/>
+                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
+                                </div>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hair</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LUXURY CERTIFICATIONS – SAME SIZE, NO GAP -->
+        <section class="insabhi-certifications-full py-5 bg-white position-relative overflow-hidden">
+
+            <!-- Subtle gold dots -->
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:5px;height:5px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-30 animate-pulse delay-1s">
+                <div class="bg-gold rounded-circle" style="width:4px;height:4px;box-shadow:0 0 12px #d4b08c;"></div>
+            </div>
+
+            <!-- <div class="container-fluid px-4 px-lg-5"> -->
+            <!-- change 1 -->
+            <div class="container-fluid px-0 px-md-4 px-lg-5">
+                <div class="row g-4 g-xl-5 justify-content-center">
+
+                    <!-- B CORP CARD -->
+                    <div class="col-12 col-md-5">
+                        <div class="insabhi-cert-column text-center p-5 bg-white rounded-4 shadow-sm
+                                    position-relative overflow-hidden hover-lift d-flex flex-column"
+                             style="height:320px;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x">
+                                <div class="bg-gold text-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+                                     style="width:76px;height:76px;font-size:1.8rem;">
+                                    B
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 d-flex flex-column justify-content-center pt-4">
+                                <h3 class="fw-bold text-gold mb-3"
+                                    style="font-family:'Playfair Display',serif;letter-spacing:1px;font-size:1.4rem;">
+                                    Certified B Corp
+                                </h3>
+                                <p class="text-muted small lh-lg mx-auto" style="max-width:260px;">
+                                    We meet the highest verified standards of social and environmental performance,
+                                    transparency and accountability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LEAPING BUNNY CARD -->
+                    <div class="col-12 col-md-5">
+                        <div class="insabhi-cert-column text-center p-5 bg-white rounded-4 shadow-sm
+                                    position-relative overflow-hidden hover-lift d-flex flex-column"
+                             style="height:320px;">
+                            <div class="position-absolute top-0 start-50 translate-middle-x">
+                                <div class="bg-gold text-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+                                     style="width:76px;height:76px;">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2">
+                                        <path d="M12 2a10 10 0 0 1 10 10c0 4-2.5 7.5-6 9m-8-9a10 10 0 0 1 10-10"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 d-flex flex-column justify-content-center pt-4">
+                                <h3 class="fw-bold text-gold mb-3"
+                                    style="font-family:'Playfair Display',serif;letter-spacing:1px;font-size:1.4rem;">
+                                    Leaping Bunny Approved
+                                </h3>
+                                <p class="text-muted small lh-lg mx-auto" style="max-width:260px;">
+                                    Our formulations are approved as cruelty-free under the Cruelty Free International
+                                    Leaping Bunny programme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TREATMENTS: FOR HER & FOR HIM – PURE LUXURY DUO -->
+        <section class="insabhi-treatments py-5 bg-white position-relative overflow-hidden">
+
+            <!-- Golden confetti dots -->
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:6px;height:6px;box-shadow:0 0 18px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse delay-1s">
+                <div class="bg-gold rounded-circle" style="width:5px;height:5px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <div class="d-inline-flex align-items-center gap-4">
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                        <h2 class="display-5 fw-light m-0 px-4"
+                            style="font-family:'Playfair Display',serif;letter-spacing:1px;">
+                            Classic Spa Treatments
+                        </h2>
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                    </div>
+                    <p class="lead text-muted mt-3 col-lg-8 mx-auto">
+                        Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience.
+                    </p>
+                </div>
+
+                <div class="row g-5 justify-content-center">
+
+                    <!-- FOR HER – FULL IMAGE -->
+                    <div class="col-12 col-lg-5">
+                        <div class="insabhi-treatment-card position-relative overflow-hidden rounded-4 shadow-lg hover-lift h-100 d-flex flex-column"
+                             style="background:#fdfcfb;">
+                            <div class="position-relative">
+                              <!-- CHANGE 2: object-fit: contain ko cover kiya -->
+                                <img src="/insabhi_custom_website/static/src/image/treat1.jpg"
+                                     alt="Treatment for Her"
+                                     class="w-100 rounded-top-4"
+                                     style="height:420px; object-fit:cover; background:#fff;"/>
+                                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+                                <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                                    <span class="bg-gold/90 px-3 py-1 rounded small fw-medium tracking-wider">
+                                        FOR HER
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5 flex-grow-1 d-flex flex-column">
+                                <p class="text-muted small mb-3">
+                                    Immerse yourself in an atmosphere of tranquility as our highly skilled therapists deliver expertly tailored treatments to restore balance to your mind, body, and spirit.
+                                </p>
+                                <a href="#"
+                                   class="mt-auto align-self-start btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase fw-medium"
+                                   style="letter-spacing:1.5px;font-size:0.875rem;">
+                                    Book Her Session <i class="bi bi-spa ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOR HIM – FULL IMAGE -->
+                    <div class="col-12 col-lg-5">
+                        <div class="insabhi-treatment-card position-relative overflow-hidden rounded-4 shadow-lg hover-lift h-100 d-flex flex-column"
+                             style="background:#fdfcfb;">
+                            <div class="position-relative">
+                            <!-- CHANGE 2: object-fit: contain ko cover kiya -->
+                                <img src="/insabhi_custom_website/static/src/image/treat2.webp"
+                                     alt="Treatment for Him"
+                                     class="w-100 rounded-top-4"
+                                     style="height:420px; object-fit:cover; background:#fff;"/>
+                                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+                                <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                                    <span class="bg-gold/90 px-3 py-1 rounded small fw-medium tracking-wider">
+                                        FOR HIM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5 flex-grow-1 d-flex flex-column">
+                                <p class="text-muted small mb-3">
+                                    Our signature massages are thoughtfully crafted to alleviate stress and tension, leaving you feeling refreshed and revitalized in meticulously designed 60- or 90-minute sessions.
+                                </p>
+                                <a href="#"
+                                   class="mt-auto align-self-start btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase fw-medium"
+                                   style="letter-spacing:1.5px;font-size:0.875rem;">
+                                    Book His Session <i class="bi bi-droplet ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- RECOMMENDED FRAGRANCE – NO <BR>, PERFECT BREATHING -->
+        <section class="insabhi-fragrance py-5 bg-white position-relative overflow-hidden">
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:6px;height:6px;box-shadow:0 0 18px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse delay-1s">
+                <div class="bg-gold rounded-circle" style="width:5px;height:5px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row g-5 align-items-center">
+
+                    <!-- LEFT: BOTTLE WITH 5-rem GAP -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <div class="position-relative d-inline-block hover-lift ms-lg-5">
+                            <img src="/insabhi_custom_website/static/src/image/pro9.jpg"
+                                 alt="Desert Rose Oud"
+                                 class="img-fluid rounded-4 shadow-lg"
+                                 style="height:560px; object-fit:contain; background:#fff;"/>
+
+                            <!-- BADGE: ONE LINE & CENTERED ON MOBILE -->
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-n4 w-100 text-center">
+                                <span class="bg-gold text-white px-4 py-2 rounded-pill shadow-lg fw-medium d-inline-block"
+                                      style="font-size:0.95rem; letter-spacing:1px; white-space:nowrap;">
+                                    Limited Edition 2025
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: POETRY (NO <BR>) -->
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
+                        <div class="max-w-500 w-100">
+
+                            <!-- TITLE -->
+                            <div class="d-inline-flex align-items-center gap-4 mb-5 justify-content-center justify-content-lg-start">
+                           <div class="flex-grow-1 h-05 bg-gold"></div>
+                                <h2 class="display-5 fw-light m-0 px-4"
+                                    style="font-family:'Playfair Display',serif; white-space: nowrap;">
+                                   Recommended Fragrance
+                                    </h2>
+                                <div class="flex-grow-1 h-05 bg-gold"></div>
+                         </div>
+                            <!-- POEM (pure CSS line-break) -->
+                            <p class="lead text-muted mb-5"
+                               style="font-size:1.35rem; line-height:2; max-width: 600px; margin-left: auto; margin-right: auto;">
+                                Crafted with exceptional sophistication and luxury with our
+                                specially curated fragrances. Sourced from the finest and
+                                most exclusive aromatic oils in the world. Every scent is designed
+                                to captivate your senses and make your special moments unforgettable.
+                            </p>
+
+                            <!-- NAME -->
+                            <!-- <h3 class="fw-bold text-gold mb-4" style="font-size:1.9rem;
+                            letter-spacing:1px;">
+                                Desert Rose Oud
+                            </h3> -->
+
+                            <!-- NOTES (no <br>) -->
+                            <!-- <div class="text-muted mb-5" style="font-size:1rem;
+                            line-height:2;">
+                                <span class="d-block">Top: Bergamot &amp; Saffron</span>
+                                <span class="d-block">Heart: Damask Rose &amp; Cardamom</span>
+                                <span class="d-block">Base: Agarwood &amp; Amber</span>
+                            </div> -->
+
+                            <!-- BUTTONS: CENTERED ON MOBILE -->
+                            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                                <a href="#" class="btn btn-outline-dark rounded-pill px-5 py-3 text-uppercase fw-medium"
+                                   style="letter-spacing:2px;">
+                                    Discover the Scent
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=Hi%20Ten%20Wellness%2C%20I%E2%80%99d%20love%20to%20try%20Desert%20Rose%20Oud%20%F0%9F%8C%B9"
+                                   target="_blank"
+                                   class="btn btn-dark rounded-pill px-5 py-3 text-uppercase fw-medium"
+                                   style="letter-spacing:2px;">
+                                    Book a Sample
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE -->
+        <section class="insabhi-quote py-5 bg-white position-relative overflow-hidden">
+
+            <!-- Golden dust -->
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle" style="width:6px;height:6px;box-shadow:0 0 18px #d4b08c;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse delay-1s">
+                <div class="bg-gold rounded-circle" style="width:5px;height:5px;box-shadow:0 0 15px #d4b08c;"></div>
+            </div>
+
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+
+                        <!-- Elegant quote container -->
+                        <blockquote class="insabhi-quote-block position-relative p-5 rounded-5"
+                                    style="background:linear-gradient(135deg, #fdfcfb, #f8f5f2);
+                                            box-shadow:0 20px 50px rgba(212,176,140,.15);">
+
+                            <!-- Opening quote mark -->
+                            <div class="position-absolute top-0 start-0 translate-middle">
+                                <span class="text-gold"
+                                      style="font-size:5rem; line-height:0; opacity:.2; font-family:'Playfair Display',serif;">
+                                    “
+                                </span>
+                            </div>
+
+                            <!-- Quote text – line by line, no <br> -->
+                            <p class="insabhi-quote-text mb-0"
+                               style="font-family:'Playfair Display',serif; font-size:2rem; line-height:1.9;
+                                      color:#333; letter-spacing:0.5px; position:relative; z-index:2;">
+                                <span class="d-block mb-3">Forgiveness and tolerance</span>
+                                <span class="d-block">are the foundation of peace.</span>
+                            </p>
+
+                            <!-- Closing quote mark -->
+                            <div class="position-absolute bottom-0 end-0 translate-middle">
+                                <span class="text-gold"
+                                      style="font-size:5rem; line-height:0; opacity:.2; font-family:'Playfair Display',serif;">
+                                    ”
+                                </span>
+                            </div>
+
+                            <!-- Author -->
+                            <footer class="insabhi-quote-author mt-5 d-block text-gold fw-medium"
+                                    style="font-size:1.1rem; letter-spacing:1.5px; text-transform:uppercase;">
+                                Ten Wellness Philosophy
+                            </footer>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL IMAGE SECTION (ex-video) -->
+        <section class="insabhi-fullvideo-section position-relative" style="min-height:60vh;">
+            <img src="/insabhi_custom_website/static/src/image/team.png" alt="Full section background"
+                 class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
+                 style="z-index:-1;"/>
+        </section>
+
+        <style>
+            @media (min-width: 768px) {
+                .insabhi-fullvideo-section {
+                    min-height: 100vh !important;
+                }
+            }
+        </style>
+        <!-- STORE FINDER -->
+        <section class="insabhi-store-finder py-5 bg-light">
+            <div class="container-fluid px-3 px-md-5">
+                <div class="text-center mb-5">
+                    <p class="insabhi-store-location text-muted small text-uppercase letter-spacing-1 mb-1">
+                        Tenspa Team
+                    </p>
+                    <h2 class="insabhi-store-title display-5 fw-normal">A neighbourly presence</h2>
+                    <p class="insabhi-store-desc text-muted col-lg-8 mx-auto mt-3">
+                        Our dedicated team works in harmony with our surroundings, reflecting local character, history, and values. We look forward to connecting with you and sharing what we do best.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- START: WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=96522288282"
+           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width: 60px; height: 60px; z-index: 1000;"
+           target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+</a>
+
+
+        <style>
+    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+    .whatsapp-fixed-btn {
+        /* approx 1.5rem or 24px from bottom and right */
+        bottom: 1.5rem;
+        right: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Add WhatsApp icon hover effect */
+    .whatsapp-fixed-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+</style>
+
+        <!-- END: WhatsApp Icon -->
+    </t>
+</templates>

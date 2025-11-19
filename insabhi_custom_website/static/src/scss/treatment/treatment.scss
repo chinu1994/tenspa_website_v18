@@ -1,0 +1,262 @@
+// TEN WELLNESS – 100% PURE CSS/SVG LUXURY (NO VIDEO, NO PNG)
+$gold: #d4a574;
+$deep: #0f0a05;
+$cream: #faf8f5;
+
+.ten-pure-luxury {
+    position: relative;
+    min-height: 100vh;
+    padding: 160px 0 200px;
+    background: radial-gradient(circle at 50% 50%, #1a120b 0%, #0f0a05 100%);
+    overflow: hidden;
+    font-family: 'Playfair Display', Georgia, serif;
+
+    .luxury-canvas {
+        position: relative;
+        z-index: 2;
+    }
+
+    // PURE CSS GOLD PARTICLES (replaces video)
+    .gold-particles {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: $gold;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 4px $gold;
+            animation: float 15s infinite linear;
+
+            @for $i from 1 through 8 {
+                &.p#{$i} {
+                    left: random(90) + 5%;
+                    top: -10%;
+                    animation-delay: $i * -2s;
+                    animation-duration: 12s + random(10);
+                    opacity: 0.3 + random(40)/100;
+                }
+            }
+        }
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0) translateX(0) rotate(0deg); }
+        100% { transform: translateY(110vh) translateX(50px) rotate(360deg); }
+    }
+
+    // LAYOUT
+    .luxury-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .luxury-grid {
+        display: grid;
+        grid-template-columns: 1fr 2.2fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    // SVG FRAME
+    .svg-frame {
+        .ornate-frame {
+            width: 340px;
+            filter: drop-shadow(0 0 50px rgba($gold, 0.4));
+            animation: shimmer 10s ease-in-out infinite;
+
+            path { stroke-linecap: round; }
+            circle { animation: pulse 6s ease-in-out infinite; }
+        }
+    }
+
+    // TYPOGRAPHY
+    .couture-title {
+        text-align: center;
+        margin-bottom: 70px;
+
+        .pre-title {
+            display: block;
+            font-size: 1.5rem;
+            color: rgba($cream, 0.7);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            font-weight: 300;
+        }
+
+        .main-title {
+            display: block;
+            font-size: clamp(5rem, 12vw, 9rem);
+            line-height: 0.85;
+            background: linear-gradient(90deg, #b8935a, #e8c39e, #d4a574, #f0d6b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 400;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 140px;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, $gold, transparent);
+                margin: 30px auto 0;
+            }
+        }
+    }
+
+    .luxury-prose {
+        max-width: 720px;
+        margin: 0 auto 80px;
+        text-align: center;
+        color: $cream;
+
+        .lead {
+            font-size: 1.6rem;
+            font-style: italic;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+
+        .body {
+            font-size: 1.28rem;
+            line-height: 1.8;
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+        .signature {
+            font-size: 1.4rem;
+            color: $gold;
+            em { font-style: normal; color: #f0d6b8; }
+        }
+    }
+
+    // BUTTONS
+    .couture-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        flex-wrap: wrap;
+    }
+
+    .couture-btn {
+        position: relative;
+        padding: 32px 64px;
+        min-width: 300px;
+        font-family: 'Cinzel', serif;
+        font-size: 1.15rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        overflow: hidden;
+        transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            opacity: 0;
+            transition: all 0.5s ease;
+            path { stroke: currentColor; stroke-width: 1.5; fill: none; }
+        }
+
+        &:hover .arrow {
+            opacity: 1;
+            transform: translateY(-50%) translateX(10px);
+        }
+    }
+
+    .royal {
+        background: linear-gradient(135deg, #0f0a05 0%, #1a120b 100%);
+        color: $gold;
+        border: 1px solid rgba($gold, 0.5);
+        box-shadow: 0 0 60px rgba($gold, 0.2);
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 40px 100px rgba($gold, 0.4);
+        }
+    }
+
+    .empress {
+        background: linear-gradient(135deg, rgba(26,18,11,0.9), rgba(45,32,21,0.9));
+        color: #f0d6b8;
+        border: 1px solid rgba(#e8c39e, 0.4);
+        backdrop-filter: blur(12px);
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba($gold, 0.15), transparent);
+            opacity: 0;
+            transition: opacity 0.7s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateY(-10px);
+            color: white;
+            box-shadow: 0 40px 100px rgba(240,214,184,0.35);
+        }
+    }
+
+    // PURE CSS GOLD LEAVES
+    .css-leaves {
+        position: relative;
+        pointer-events: none;
+
+        .leaf {
+            position: absolute;
+            width: 120px;
+            height: 180px;
+            background: linear-gradient(45deg, #d4a574, #e8c39e);
+            clip-path: polygon(50% 0%, 100% 30%, 80% 100%, 20% 100%, 0% 30%);
+            opacity: 0.25;
+            filter: drop-shadow(0 0 40px $gold);
+            animation: drift 20s infinite linear;
+
+            &.l1 { top: 10%; right: 10%; animation-delay: 0s; }
+            &.l2 { bottom: 20%; left: -10%; animation-delay: -8s; transform: scaleX(-1); }
+            &.l3 { top: 50%; right: -5%; animation-delay: -15s; }
+        }
+    }
+
+    @keyframes drift {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        100% { transform: translate(120px, -120px) rotate(360deg); }
+    }
+
+    @keyframes shimmer { 0%,100% { filter: drop-shadow(0 0 50px rgba($gold,0.4)); } 50% { filter: drop-shadow(0 0 80px rgba($gold,0.7)); } }
+    @keyframes pulse { 0%,100% { r: 80; } 50% { r: 90; } }
+}
+
+// RESPONSIVE
+@media (max-width: 1200px) {
+    .ten-pure-luxury .luxury-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+    .svg-frame, .css-leaves { display: none; }
+}
+
+@media (max-width: 768px) {
+    .ten-pure-luxury { padding: 120px 0; }
+    .couture-btn { min-width: 280px; padding: 28px 40px; }
+    .couture-buttons { flex-direction: column; align-items: center; }
+}

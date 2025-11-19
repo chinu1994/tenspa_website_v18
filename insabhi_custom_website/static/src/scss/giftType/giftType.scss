@@ -1,0 +1,89 @@
+/* --- General Page Styling --- */
+.giftType {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.giftType h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* --- Section Title & Subtitle --- */
+.insabhi-section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.insabhi-section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* --- Product Container --- */
+.insabhi-new-notable .row {
+    align-items: center;
+}
+
+.insabhi-new-notable img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.insabhi-new-notable img:hover {
+    transform: scale(1.03);
+}
+
+
+/* --- Product Text Styling --- */
+.insabhi-new-notable p.lead {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+.insabhi-new-notable p b {
+    color: #111;
+}
+
+
+/* --- Product Spacing --- */
+.col-12.my-4 {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.col-12.my-4:last-child {
+    border-bottom: none;
+}
+
+
+/* --- Responsive Styling --- */
+@media (max-width: 768px) {
+    .giftType h1 {
+        font-size: 2.2rem;
+    }
+
+    .insabhi-section-title {
+        font-size: 1.8rem;
+    }
+
+    .insabhi-new-notable p.lead {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .insabhi-new-notable img:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,187 @@
+/* ==================================== */
+/* 1. Global Variables */
+/* ==================================== */
+$ten-bg-light: #F6F5E8;        // Light Beige/Off-white background
+$ten-text-dark: #333333;       // Dark text (Titles, Primary Content)
+$ten-text-medium: #555555;     // Medium gray text (Body/Meta)
+$ten-separator-line: #E5E5E5;  // Light separator line
+$ten-off-black: #111111;       // Consistent color for darker elements (titles, icons)
+
+
+/* ==================================== */
+/* 2. Global Mixins / Utility Classes */
+/* ==================================== */
+
+// Common style for section titles in the two-column layout
+.careers-section-title {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 400;
+    color: $ten-off-black;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+    @media (min-width: 992px) {
+        // Ensure space between title and content columns
+        padding-right: 15px;
+    }
+}
+
+// Common style for large body paragraphs
+.careers-text-content {
+    font-size: 16px;
+    line-height: 1.7;
+    color: $ten-text-dark;
+}
+
+
+/* ==================================== */
+/* 3. Hero Section */
+/* ==================================== */
+.careers-hero-section {
+    background-color: #333333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+
+    .careers-hero-content {
+        h2 {
+            font-size: 56px;
+            font-weight: 400;
+            color: #ffffff !important;
+            margin-top: 15%;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ffffff !important;
+            max-width: 650px;
+            margin-top: 5%;
+            margin-bottom: 5px;
+        }
+    }
+/* Custom class for a noticeable hover effect */
+.custom-hover-effect:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+    border-color: #0d6efd !important;
+}
+
+
+}
+
+/* ==================================== */
+/* 4. Main Content (Values & Commitment) */
+/* ==================================== */
+.careers-main-content {
+    padding: 80px 0;
+    background-color: $ten-bg-light;
+
+    // Title and Text styling is handled by the global utility classes above
+
+    // List Style for 'Our values'
+    .careers-value-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+
+        .careers-value-item {
+            font-size: 20px;
+            font-weight: 400;
+            padding: 18px 0;
+            border-bottom: 1px solid $ten-separator-line;
+            color: $ten-off-black;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:first-child {
+                border-top: 1px solid $ten-separator-line;
+            }
+
+            i {
+                font-size: 24px;
+                color: $ten-off-black;
+                line-height: 1;
+                transition: transform 0.2s;
+            }
+        }
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid $ten-separator-line;
+    }
+}
+/* 5. Our People Section */
+.careers-people-section {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .careers-text-content {
+        max-width: 650px; // Keep content readable
+    }
+    // Title styling is handled by the global .careers-section-title
+}
+
+
+/* ==================================== */
+/* 6. FAQ/Hiring Process Section */
+/* ==================================== */
+.careers-faq-section {
+    padding: 50px 0 100px;
+    background-color: white;
+
+    .careers-section-title {
+        // Overrides the global title style for the center alignment here
+        text-align: center !important;
+        font-size: 30px;
+
+        // Remove media query padding for center title
+        @media (min-width: 992px) {
+            padding-right: 0;
+        }
+    }
+
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid $ten-separator-line;
+
+        &:first-of-type {
+            border-top: 1px solid $ten-separator-line;
+        }
+
+        .accordion-button {
+            font-size: 18px;
+            font-weight: 400;
+            color: $ten-off-black;
+            padding: 15px 0;
+
+            &::after {
+                background-image: none;
+                content: '⌄';
+                font-size: 24px;
+                transform: rotate(0deg);
+                margin-left: 10px;
+                color: $ten-off-black;
+                font-weight: 300;
+            }
+
+            &.collapsed::after {
+                transform: rotate(-90deg);
+            }
+        }
+        .accordion-body {
+            font-size: 16px;
+            color: $ten-text-medium;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

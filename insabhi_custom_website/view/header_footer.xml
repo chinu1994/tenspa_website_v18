@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="insabhi_custom_header" inherit_id="website.layout" name="Insabhi Custom Header">
+
+            <xpath expr="//main" position="before">
+
+                <header>
+                    <div class="insabhi-header-wrapper">
+
+                        <div class="insabhi-top-banner text-center py-2">
+                            Enjoy complimentary shipping with orders over 51KD.
+                        </div>
+
+                        <nav class="navbar navbar-expand-lg insabhi-navbar">
+                            <div class="container-fluid d-flex flex-column">
+                                <div class="d-flex w-100 align-items-center position-relative">
+
+                                    <a class="navbar-brand" href="/">
+                                        <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
+                                             class="logo-default img-fluid w-50"/>
+                                        <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
+                                             class="logo-hover img-fluid w-50"/>
+                                    </a>
+                                    <button class="navbar-toggler d-lg-none" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#insabhiNavbarCollapse"
+                                            aria-controls="insabhiNavbarCollapse"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </button>
+
+                                    <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">
+                                        <a class="nav-link">Stores</a>
+                                        <a class="nav-link">Customer service</a>
+                                    </div>
+
+                                    <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
+                                        <form class="insabhi-search-form d-flex me-3 position-relative">
+                                            <input class="form-control me-2 ps-5" type="search" placeholder="Search…"
+                                                   aria-label="Search"/>
+                                            <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
+                                            <button class="btn btn-search" type="submit">Search</button>
+                                        </form>
+                                        <a class="nav-link">Email sign up</a>
+                                        <a class="nav-link">Account</a>
+                                        <a class="nav-link">My cart</a>
+                                    </div>
+                                </div>
+
+                                <div class="insabhi-bottom-menu d-none d-lg-flex justify-content-center w-100 py-3 gap-5 mt-2">
+
+                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="/aboutus">About Us</a>
+
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="/treatment" role="button"
+                                            aria-expanded="false">
+                                            Treatment
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                             <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                        <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="/giftVoucher" role="button"
+                                           aria-expanded="false">
+                                            Gift Vouchers
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="/giftType">Gift Types</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="/addOns">Add ons</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <a class="nav-link" href="/tenStore">Ten Store</a>
+                                    <a class="nav-link" href="/careers">Careers</a>
+                                    <a class="nav-link" href="/contactus">Contact Us</a>
+
+
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="collapse navbar-collapse d-lg-none" id="insabhiNavbarCollapse">
+                            <ul class="navbar-nav mx-auto text-center">
+
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item  border-bottom border-light-subtle pb-2 mb-2">
+                                    <a class="nav-link" href="/aboutus">About Us</a>
+                                </li>
+
+                                <li class="nav-item dropdown pb-2 mb-2">
+                                    <a class="nav-link dropdown-toggle" href= "/treatment"
+                                       role="button" aria-expanded="false">Treatment
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                        <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown pb-2 mb-2">
+                                    <a class="nav-link dropdown-toggle" href="/giftVoucher"
+                                       role="button" aria-expanded="false">Gift Vouchers
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item">Gift Types</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item">Add ons</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                    <a class="nav-link" href="/tenStore">Ten Store</a>
+                                </li>
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                    <a class="nav-link" href="/careers">Careers</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contactus">Contact Us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </xpath>
+
+            <xpath expr="//header" position="replace"/>
+
+        </template>
+
+        <template id="insabhi_custom_footer" inherit_id="website.layout" name="Aesop Custom Footer">
+            <xpath expr="//footer" position="replace">
+
+                <footer class="o_footer pt-5 pb-5" style="background:#1a1a1a; color:#ccc;">
+
+                    <div class="container mb-5">
+                        <div class="row justify-content-center g-0">
+                            <div class="col-auto d-flex align-items-center mx-4">
+                                <i class="fa fa-lock me-2"></i>
+                                <span>Secure checkout</span>
+                            </div>
+                            <div class="col-auto d-flex align-items-center mx-4">
+                                <i class="fa fa-gift me-2"></i>
+                                <span>Complimentary gift wrapping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-lg-10 col-xl-9">
+                                <div class="row g-4 g-md-5">
+
+                                    <div class="col-6 col-md-3">
+                                        <h5 class="mb-3 text-white" style="font-size:15px;">Orders and support</h5>
+                                        <ul class="list-unstyled mb-0" style="font-size:15px; line-height:1.8;">
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Contact us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">FAQs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Shipping</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Returns</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Track your order</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Check gift card
+                                                    balance
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Terms of use</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Product recalls</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <h5 class="mb-3 text-white" style="font-size:15px;">About</h5>
+                                        <ul class="list-unstyled mb-0" style="font-size:15px; line-height:1.8;">
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Our story</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Foundation</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Careers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Online Preferences
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Privacy policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Accessibility
+                                                    Statement
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Your Privacy
+                                                    Choices
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Notice At
+                                                    Collection
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-muted text-decoration-none">Consumer Health Data
+                                                    Notice
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <h5 class="mb-3 text-white" style="font-size:15px;">Our
+                                            Philosophy
+                                        </h5>
+                                        <p class="small mb-0"
+                                           style="font-size:15px; line-height:1.6;">Ten Wellness
+                                            was founded to go beyond physical care. We focus on
+                                            emotional healing, offering treatments designed to
+                                            release tension and foster inner peace. Every service is
+                                            a rejuvenating journey to restore mind and body.
+                                            <a
+                                                    href="#"
+                                                    class="text-decoration-underline text-muted">Read
+                                                Our Story
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <h5 class="mb-3 text-white" style="font-size:15px;">Subscribe to Ten
+                                            communications
+                                        </h5>
+                                        <form id="aesop-newsletter-form" class="d-flex flex-column">
+                                            <input type="email" name="email" placeholder="Email address*"
+                                                   class="form-control mb-2 bg-dark text-white border-0"
+                                                   style="height:38px; font-size:15px;" required="required"/>
+                                            <p class="mb-2" style="font-size:11px; line-height:1.4;">
+                                                By submitting this form, I confirm I am a US resident and (1) agree to
+                                                Aesop’s
+                                                <a href="#" class="text-decoration-underline text-muted">Terms of Use
+                                                </a>
+                                                (which includes an arbitration provision) and
+                                                <a href="#" class="text-decoration-underline text-muted">Marketing
+                                                    Disclosure</a>;
+                                                and (2) have read and acknowledge Aesop’s
+                                                <a href="#" class="text-decoration-underline text-muted">Privacy
+                                                    Notice
+                                                </a>
+                                                and
+                                                <a href="#" class="text-decoration-underline text-muted">Notice of
+                                                    Financial Incentives</a>.
+                                            </p>
+                                            <button type="submit" class="btn btn-outline-light w-100"
+                                                    style="height:38px; font-size:15px;">Submit
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                    bottom baar-->
+
+                    <!-- change for center footer -->
+                    <!-- BOTTOM BAR -->
+                    <div class="container mt-5 pt-4 border-top border-secondary">
+
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <span style="font-size:13px; display: block; margin-bottom: 10px;">
+                                    © 2025 Ten Wellness | All Rights Reserved. This site uses cookies and related
+                                    technologies.
+                                    To learn more, please review our
+                                    <a href="#" class="text-decoration-underline text-muted">Privacy Policy</a>
+                                    and
+                                    <a href="#" class="text-decoration-underline text-muted">Cookie Noticey</a>
+                                </span>
+                            </div>
+
+                            <div class="col-12 mb-3 text-end">
+                                <a href="#" class="mx-3 text-white">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="mx-3 text-white">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="mx-3 text-white">
+                                    <i class="bi bi-pinterest"></i>
+                                </a>
+                                <a href="#" class="mx-3 text-white">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#" class="small text-muted mx-2">Terms &amp; Conditions</a>
+                                •
+                                <a href="#" class="small text-muted mx-2">Site Map</a>
+                                •
+                                <a href="#" class="small text-muted mx-2">Privacy Policy</a>
+                                •
+                                <a href="#" class="small text-muted mx-2">User Content Permissions</a>
+                                •
+                                <a href="#" class="small text-muted mx-2">Accessibility Statement</a>
+                                •
+                                <a href="#" class="small text-muted mx-2">Online Preferences</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--work for gift voucher-->
+<!--                    <script>-->
+<!--                        document.addEventListener("DOMContentLoaded", function() {-->
+<!--                        const linksWithDropdown =-->
+<!--                        document.querySelectorAll('a[href="/giftVoucher"][data-bs-toggle="dropdown"]');-->
+
+<!--                        linksWithDropdown.forEach(linkWithDropdown => {-->
+<!--                        linkWithDropdown.addEventListener('click', function(e) {-->
+<!--                        const targetUrl = this.getAttribute('href');-->
+
+<!--                        if (targetUrl &amp;&amp; e.button === 0) {-->
+<!--                        window.open(targetUrl, '_blank');-->
+<!--                        }-->
+<!--                        });-->
+<!--                        });-->
+<!--                        });-->
+<!--                    </script>-->
+
+                    <!--work for gift voucher-->
+
+                    <!-- foooter end -->
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                        const form = document.getElementById("aesop-newsletter-form");
+                        const loadSwal = async () => {
+                        if (typeof Swal === "undefined") {
+                        await new Promise((resolve) => {
+                        const script = document.createElement("script");
+                        script.src = "/insabhi_custom_website/static/src/lib/sweetalert2.min.js";
+                        script.onload = resolve;
+                        document.head.appendChild(script);
+                        });
+                        }
+                        };
+                        form.addEventListener("submit", async function (e) {
+                        e.preventDefault();
+                        await loadSwal();
+                        const email = form.email.value;
+                        try {
+                        const response = await fetch("/submit/newsletter", {
+                        method: "POST",
+                        headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
+                        body: JSON.stringify({ email })
+                        });
+                        if (response.ok) {
+                        Swal.fire({ icon: 'success', title: 'Success!', text: 'Subscribed!' }).then(() =>
+                        location.reload());
+                        } else {
+                        Swal.fire({ icon: 'error', title: 'Error', text: 'Try again.' });
+                        }
+                        } catch (err) {
+                        Swal.fire({ icon: 'error', title: 'Error', text: 'Network issue.' });
+                        }
+                        });
+                        });
+                    </script>
+
+                </footer>
+            </xpath>
+        </template>
+    </data>
+</odoo>

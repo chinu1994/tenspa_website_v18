@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="insabhi_custom_website.GiftType" owl="1">
+        <div class="giftType">
+
+            <h1>Ten Wellness Gift Types</h1>
+
+            <section class="insabhi-new-notable py-5">
+                <div class="container">
+
+                    <div class="text-center mb-5">
+                        <h2 class="insabhi-section-title">Curated Formulations</h2>
+                        <p class="insabhi-section-subtitle">
+                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.
+                        </p>
+                    </div>
+
+                    <div class="row g-4 px-3">
+
+                        <!-- Product 1 -->
+                        <div class="col-12 my-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-md-1 order-2 text-center">
+                                    <img src="insabhi_custom_website/static/src/image/DSC08242-2.jpg"
+                                         class="img-fluid rounded shadow-sm" alt="Product Image 1" />
+                                </div>
+
+                                <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
+                                    <p class="lead">
+                                                - Diamond Gift Voucher:
+                                                (Bamboo plant + Luxury bag + Invitation card box)
+                                                Price: 26.5 KWD, including delivery.
+
+                                    </p>
+
+                                    <p><b>Price:</b> 11.9 K.D. / Tabby 13</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-12 my-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-md-2 order-2 text-center">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg"
+                                         class="img-fluid rounded shadow-sm" alt="Product Image 2"/>
+                                </div>
+
+                                <div class="col-md-6 order-md-1 order-1 p-4">
+                                    <p class="lead" style="text-align: left;">
+                                        Discover luxury through the magic of an exceptional fragrance, carefully crafted from the
+                                        finest and rarest oils in the world.
+                                        In the first phase, the fragrance opens with rich saffron blended with raspberry and thyme.
+                                        From minute 16 up to 3 hours, it reveals luxurious notes of patchouli combined with jasmine
+                                        and frankincense. Finally, from hour 3 to hour 10, the scent settles into warm amber, leather,
+                                        and deep Indian woods.
+                                        We designed this olfactory journey especially for you—because you deserve it.
+                                    </p>
+
+                                    <p><b>Price:</b> 29.7 KWD / Tabby 33</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-12 my-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-md-1 order-2 text-center">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg"
+                                         class="img-fluid rounded shadow-sm" alt="Product Image 3"/>
+                                </div>
+
+                                <div class="col-md-6 order-md-2 order-1 p-4">
+                                    <p class="lead" style="text-align: left;">
+                                        Product 3 Review (I-D):
+                                        This scent is very sophisticated—musky and deep—perfect for evening events. Longevity is
+                                        amazing; apply in the morning and it lasts until night.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="col-12 my-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-md-2 order-2 text-center">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
+                                         class="img-fluid rounded shadow-sm" alt="Product Image 4"/>
+                                </div>
+
+                                <div class="col-md-6 order-md-1 order-1 p-4">
+                                    <p class="lead" style="text-align: left;">
+                                        Product 4 Review (D-I):
+                                        I love floral scents and this one is absolutely perfect. It has a very natural and sweet
+                                        smell. The packaging is beautiful, making it a great gifting option.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </t>
+
+</templates>

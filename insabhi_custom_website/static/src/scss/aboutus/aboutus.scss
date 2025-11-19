@@ -1,0 +1,310 @@
+/* ===== TEN WELLNESS – OUR STORY LUXURY EDITION ===== */
+.s_our_story_ten {
+    background: linear-gradient(135deg, #faf6f2 0%, #f8f0e6 35%, #ede4dc 100%);
+    font-family: 'Lora', serif;
+    position: relative;
+    overflow: hidden;
+}
+.height-fixer-hero {
+    height: 60vh;
+    min-height: 320px; /* prevents it from becoming too small on very small screens */
+}
+
+/* Mobile phones (portrait) */
+@media (max-width: 576px) {
+    .height-fixer-hero {
+        height: 25vh !important;
+    }
+}
+
+/* Small tablets / large phones */
+@media (min-width: 577px) and (max-width: 768px) {
+    .height-fixer-hero {
+        height: 40vh !important;
+    }
+}
+
+/* Tablets & small desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+    .height-fixer-hero {
+        height: 50vh !important;
+    }
+}
+
+/* Desktops */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .height-fixer-hero {
+        height: 55vh !important;
+    }
+}
+
+/* Large desktops & above */
+@media (min-width: 1201px) {
+    .height-fixer-hero {
+        height: 60vh !important;
+    }
+}
+/* Dynamic Golden Waves */
+.golden-waves {
+    position: absolute;
+    top: 0; left: 0; width: 200%; height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23a67c52" fill-opacity="0.08" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,0L0,0Z"></path></svg>') repeat-x;
+    animation: wave 25s linear infinite;
+    z-index: 1;
+}
+
+.golden-orb {
+    position: absolute;
+    top: 20%; left: 50%;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(166,124,82,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: translateX(-50%);
+    z-index: 1;
+    animation: pulse 20s infinite ease-in-out;
+}
+
+/* 3D Tilt Image */
+.image-tilt-wrapper { perspective: 1000px; }
+.image-tilt-wrapper:hover .main-image {
+    transform: rotateY(6deg) rotateX(6deg);
+    box-shadow: 0 50px 120px rgba(166,124,82,0.35) !important;
+}
+.image-tilt-wrapper:hover { transform: translateY(-20px); }
+
+.main-image {
+    width: 440px; max-width: 100%; height: 560px;
+    object-fit: cover; border: 14px solid #fff;
+    box-shadow: 0 30px 80px rgba(44,24,16,0.25);
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    border-radius: 1rem;
+}
+
+.image-glow {
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle at center, rgba(166,124,82,0.3), transparent);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.image-tilt-wrapper:hover .image-glow { opacity: 1; }
+
+.decor-ring {
+    position: absolute;
+    top: -30px; left: -30px; right: -30px; bottom: -30px;
+    border: 3px solid rgba(166,124,82,0.2);
+    border-radius: 50% 35% 45% 40%;
+    animation: rotate 30s linear infinite;
+    z-index: -1;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -20px; left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #fff, #fdfbfa);
+    padding: 12px 32px;
+    border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(166,124,82,0.25);
+    border: 2px solid #a67c52;
+    animation: floatBadge 6s ease-in-out infinite;
+}
+.badge-text {
+    font-family: 'Playfair Display', serif;
+    color: #a67c52;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+}
+
+/* Typography */
+.text-gold { color: #a67c52 !important; }
+.title-stroke {
+    color: #2c1810;
+    letter-spacing: 3px;
+    font-family: 'Cinzel', serif;
+    position: relative;
+}
+.title-stroke::before {
+    content: 'Our Story';
+    position: absolute;
+    left: 0; top: 0;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(166,124,82,0.3);
+    transform: translate(3px, 3px);
+}
+.elegant-text {
+    line-height: 2;
+    font-weight: 900;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    color: #5a4738;
+}
+
+/* Golden Divider */
+.golden-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #a67c52, transparent);
+    width: 120px;
+    margin-left: 0;
+    position: relative;
+}
+.golden-divider::before {
+    content: '';
+    position: absolute;
+    top: -8px; left: 50%;
+    transform: translateX(-50%);
+    width: 12px; height: 12px;
+    background: #a67c52;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(166,124,82,0.6);
+}
+
+/* Glassmorphism Etiquette Card */
+.etiquette-card-glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(166,124,82,0.2);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.etiquette-card-glass:hover {
+    transform: translateY(-15px);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 30px 80px rgba(166,124,82,0.28) !important;
+    border-color: #a67c52;
+}
+
+.spa-icon-bg {
+    width: 60px; height: 60px;
+    background: linear-gradient(135deg, rgba(166,124,82,0.15), rgba(166,124,82,0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(166,124,82,0.3);
+}
+
+/* Etiquette Grid */
+.etiquette-grid {
+    display: grid;
+    gap: 1.1rem;
+    max-height: 460px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin: 1rem 0;
+}
+.etiquette-grid::-webkit-scrollbar { width: 6px; }
+.etiquette-grid::-webkit-scrollbar-track { background: rgba(166,124,82,0.1); border-radius: 10px; }
+.etiquette-grid::-webkit-scrollbar-thumb { background: #a67c52; border-radius: 10px; }
+
+.etiquette-item {
+    position: relative;
+    padding-left: 32px;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: #5a4738;
+}
+.etiquette-item strong {
+    color: #2c1810;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+.gold-dot {
+    position: absolute;
+    left: 0; top: 7px;
+    width: 10px; height: 10px;
+    background: #a67c52;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(166,124,82,0.6);
+}
+
+.signature-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+/* Animations */
+@keyframes wave { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes pulse { 0%, 100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.1); } }
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes floatBadge { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-12px); } }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-image { width: 380px !important; height: 480px !important; }
+    .decor-ring, .image-glow { display: none; }
+    .etiquette-grid { max-height: 560px; }
+}
+@media (max-width: 576px) {
+    .display-4 { font-size: 2.8rem !important; }
+    .title-stroke::before { display: none; }
+    .golden-divider { margin: 2.5rem auto; }
+    .etiquette-card-glass { padding: 1.8rem !important; }
+    .etiquette-item { font-size: 0.94rem; padding-left: 28px; }
+    .signature-text { font-size: 1.4rem; }
+}
+/* Fix header overlap on mobile */
+@media (min-width: 992px) {
+    .mx-lg-0 {
+        margin-right: 0 !important;
+        margin-left: 5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-image {
+        width: 220px !important;
+        height: 230px !important;
+        border-width: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .elegant-text { font-size: 1rem; }
+}
+
+/* Final Mobile Safety */
+@media (max-width: 480px) {
+    .container { padding-left: 20px !important; padding-right: 20px !important; }
+    .main-image { width: 300px !important; height: 265px !important; }
+    .title-stroke { font-size: 2.4rem !important; }
+    .etiquette-item { font-size: 0.92rem; padding-left: 28px; }
+    .gold-dot { top: 6px; }
+}
+
+/* -------------------------------------------------
+   UTILITIES
+   ------------------------------------------------- */
+%full-abs {
+  position: absolute;
+  inset: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero {
+    height: 55vh;
+    &__title { font-size: 3rem; }
+  }
+  .why-choose { padding: 3rem 0; }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 50vh;
+    &__title { font-size: 2.5rem; }
+  }
+  .section-title { font-size: 1.8rem; }
+}

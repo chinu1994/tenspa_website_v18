@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="addOns" name="AddOns">
+            <t t-call="website.layout">
+                <section id="admin" class="addOns">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>
