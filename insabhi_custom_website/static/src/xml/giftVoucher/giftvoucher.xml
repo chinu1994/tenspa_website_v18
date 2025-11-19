@@ -196,9 +196,15 @@
                             <p class="careers-text-content mb-4">Your loved ones will have complete freedom to select from our curated range of products and services. This encourages them to prioritize Self-Care and take a tranquil break from their daily rush. A gift that nourishes the soul, delivered with Choice, Quality, and Care.
                             </p>
                         </div>
+<!--                    <div class="col-lg-8">-->
+<!--                        <img src="/insabhi_custom_website/static/src/image/gift2.jpg" alt="Ten Wellness"-->
+<!--                             class="img-fluid w-100 h-28" style="object-fit:cover;height:530px;"/>-->
+<!--                    </div>-->
                     <div class="col-lg-8">
-                        <img src="/insabhi_custom_website/static/src/image/gift2.jpg" alt="Ten Wellness"
-                             class="img-fluid w-100 h-100" style="object-fit:cover;height:580px;"/>
+                        <img src="/insabhi_custom_website/static/src/image/gift2.jpg"
+                             alt="Ten Wellness"
+                              class="img-fluid"
+                               style="width:85%; height:420px; object-fit:cover; display:block; margin-left:auto;"/>
                     </div>
                 </div>
             </div>

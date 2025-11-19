@@ -5,7 +5,7 @@
             <div class="o_careers_page_content">
 
                 <section class="careers-hero-section d-flex flex-column"
-                         style="background-image: url('/insabhi_custom_website/static/src/image/careers.jpg'); background-size: cover; background-position: center; min-height: 500px;">
+                         style="background-image: url('/insabhi_custom_website/static/src/image/about1.png'); background-size: cover; background-position: center; min-height: 500px;">
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
                             <div class="col-lg-6 careers-hero-content p-5">

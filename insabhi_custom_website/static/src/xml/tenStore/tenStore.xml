@@ -49,8 +49,12 @@
             <div class="col-12 my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 2"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
+
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead *text-start*" style="text-align: left">Discover luxury through the magic of an exceptional fragrance, carefully crafted from the finest and rarest oils in the world, designed to embrace your uniqueness..
                           In the first phase, from the very first minute, the fragrance opens with the richness of saffron blended with raspberry and thyme. From minute 16 up to 3 hours, it reveals the luxurious notes of patchouli combined with jasmine and frankincense. Finally, from 3 hours to 10 hours after application, the scent settles into warm amber, leather, and the deep essence of Indian woods.
@@ -64,8 +68,14 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 3"/>
+<!--                    <div class="col-md-6 order-md-1 order-2 text-center">-->
+<!--                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 3"/>-->
+<!--                    </div>-->
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead *text-start" style="text-align: left">Product 3 Review (I-D):* Yeh scent bohot sophisticated hai. Thoda musky aur deep hai, jo evening events ke liye best hai. Longetivity toh amazing hai, subah lagao toh raat tak rehta hai.</p>
@@ -75,8 +85,14 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
+<!--                    <div class="col-md-6 order-md-2 order-2 text-center">-->
+<!--                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 4"/>-->
+<!--                    </div>-->
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 4"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead *text-start" style="text-align: left" >Product 4 Review (D-I):* Mujhe floral scents pasand hain aur yeh waala bilkul perfect hai. Bahut natural aur sweet smell hai. Packaging bhi bohot sundar hai, ek acha gift option hai.</p>
@@ -86,8 +102,14 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 5"/>
+<!--                    <div class="col-md-6 order-md-1 order-2 text-center">-->
+<!--                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 5"/>-->
+<!--                    </div>-->
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead *text-start" style="text-align: left">Product 5 Review (I-D):* Yeh ek unique scent hai, thoda woody aur spicy. Jab bhi lagata hoon, log poochte hain kaunsa perfume hai. Definitely ek head-turner hai!</p>
@@ -97,8 +119,14 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
+<!--                    <div class="col-md-6 order-md-2 order-2 text-center">-->
+<!--                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 6"/>-->
+<!--                    </div>-->
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 6"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead">*Product 6 Review (D-I):* Value for money product! Itni achi quality aur scent itne kam price mein. Har din use karta hoon, skin par bhi smooth rehta hai.</p>
@@ -108,8 +136,14 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="img-fluid rounded shadow-sm" alt="Product Image 7"/>
+<!--                    <div class="col-md-6 order-md-1 order-2 text-center">-->
+<!--                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="img-fluid rounded shadow-sm" alt="Product Image 7"/>-->
+<!--                    </div>-->
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead">*Product 7 Review (I-D):* Mera all-time favorite! Iska scent bohot hi soothing aur calming hai. Office aur casual outings, dono ke liye perfect hai.</p>
@@ -120,7 +154,10 @@
             <div class="col-12 my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat8.png" class="img-fluid rounded shadow-sm" alt="Product Image 8"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat8.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead">*Product 8 Review (D-I):* Thoda fruity aur sweet notes hain. Young log aur jo playful scent pasand karte hain, unke liye best hai. Summer mein zyada acha lagta hai.</p>
@@ -130,9 +167,13 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat9.png" class="img-fluid rounded shadow-sm" alt="Product Image 9"/>
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat9.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
+
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead">*Product 9 Review (I-D):* Bahut hi rich aur intense fragrance hai. Special occasions ke liye rakha hai. Thoda zyada lagane ki zaroorat nahi padti, ek spray hi kaafi hai.</p>
                     </div>
@@ -142,8 +183,12 @@
             <div class="col-12 my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat10.png" class="img-fluid rounded shadow-sm" alt="Product Image 10"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat10.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
+
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead">*Product 10 Review (D-I):* Clean aur aquatic feel deta hai. Gym ya outdoor activities ke baad bahut refreshing lagta hai. Iska freshness boht der tak rehta hai.</p>
                     </div>
@@ -152,8 +197,11 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat11.png" class="img-fluid rounded shadow-sm" alt="Product Image 11"/>
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat11.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead">*Product 11 Review (I-D):* Mujhe iski vanilla ki hint bohot pasand aayi. Bilkul bhi overwhelming nahi hai, soft aur inviting hai. Winter ke liye toh mast hai!</p>
@@ -164,7 +212,10 @@
             <div class="col-12 my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="img-fluid rounded shadow-sm" alt="Product Image 12"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead">*Product 12 Review (D-I):* Ekdum classic aur time-less scent hai. Har age group ke log use kar sakte hain. Professional setting ke liye ideal hai, classy feel deta hai.</p>
@@ -174,8 +225,11 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat13.jpg" class="img-fluid rounded shadow-sm" alt="Product Image 13"/>
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead">*Product 13 Review (I-D):* Thoda exotic aur spicy notes hain, jo ek mysterious feel dete hain. Date nights aur parties ke liye rakha hai. Scent trail bhi bohot acha hai.</p>
@@ -186,7 +240,10 @@
             <div class="col-12 my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png" class="img-fluid rounded shadow-sm" alt="Product Image 14"/>
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-1 order-1 p-4">
                         <p class="lead">*Product 14 Review (D-I):* Citrus aur floral ka bahut hi acha blend hai. Summer days ke liye non-negotiable hai. Boht zyada halka hai aur irritation nahi karta.</p>
@@ -196,8 +253,11 @@
 
             <div class="col-12 my-4">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 text-center">
-                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png" class="img-fluid rounded shadow-sm" alt="Product Image 15"/>
+                    <div class="col-md-6 order-md-2 order-2 text-center">
+                        <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Product Image 2"
+                             style="width:40%; height:400px; object-fit:cover;" />
                     </div>
                     <div class="col-md-6 order-md-2 order-1 p-4">
                         <p class="lead">*Product 15 Review (I-D):* Yeh ek solid perfume hai. Travel-friendly aur use karne mein easy. Scent concentration achi hai aur bohot subtle rehta hai, tez nahi lagta.</p>
