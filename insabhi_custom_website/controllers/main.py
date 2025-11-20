@@ -51,3 +51,9 @@ class OwlPlayground(http.Controller):
     @http.route('/voucherDelivery', type='http', auth='public', website=True)
     def voucherDelivery(self):
         return request.render('insabhi_custom_website.voucherDelivery')
+
+    @http.route('/ten-products', type='http', auth='public', website=True)
+    def ten_products_dynamic(self):
+        products = request.env['ten.product.card'].sudo().search([('active', '=', True)], order='sequence')
+        return request.render('insabhi_custom_website.dynamic_products_list', {'products': products})
+
