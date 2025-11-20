@@ -83,7 +83,7 @@
 
                                 <!-- BUTTONS -->
                                 <div class="couture-buttons">
-                                    <a href="/treatments/him" class="couture-btn royal">
+                                    <a href="/treatmentHim" class="couture-btn royal">
                                         <span>Treatment For Him</span>
                                         <svg class="arrow" viewBox="0 0 60 20">
                                             <path d="M0,10 L50,10 L45,5 M50,10 L45,15"/>

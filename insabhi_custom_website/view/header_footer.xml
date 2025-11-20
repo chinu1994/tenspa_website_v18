@@ -62,7 +62,7 @@
                                             Treatment
                                         </a>
                                         <ul class="dropdown-menu">
-                                             <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                             <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
                                         <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
                                         </ul>
                                     </div>
@@ -112,7 +112,7 @@
                                        role="button" aria-expanded="false">Treatment
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                        <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
                                         <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
                                     </ul>
                                 </li>
