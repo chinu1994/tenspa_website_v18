@@ -52,6 +52,9 @@ class OwlPlayground(http.Controller):
     def voucherDelivery(self):
         return request.render('insabhi_custom_website.voucherDelivery')
 
+    @http.route('/treatmentHim', type='http', auth='public', website=True)
+    def treatmentHim(self):
+        return request.render('insabhi_custom_website.treatmentHim')
     @http.route('/treatmentHer', type='http', auth='public', website=True)
     def treatmentHer(self):
         return request.render('insabhi_custom_website.treatmentHer')

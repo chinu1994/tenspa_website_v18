@@ -10,6 +10,35 @@ $font-body : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /* --------------------------------------------------------------
    2. GLOBAL RESET & RESPONSIVE FIXES
    -------------------------------------------------------------- */
+
+// .navbar-brand .logo-default,
+.navbar-brand .logo-hover {
+  height: 40px;           // Set the desired logo height
+  width: auto;            // Keeps natural aspect ratio
+  max-width: 90px;       // Optional: maximum width, adjust as needed
+  display: inline-block;
+  object-fit: contain;    // Ensures the image fits within the box
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); // Centres logo if needed
+}
+
+/* Position relative for navbar-brand, so absolute logo is properly centered */
+.navbar-brand {
+  position: relative;
+  width: 200px;          // Set this to the max-width above
+  height: 60px;          // Set to logo height
+}
+
+/* Hide hover logo by default, show only on hover */
+.logo-hover { display: none; }
+.navbar-brand:hover .logo-default { display: none; }
+.navbar-brand:hover .logo-hover { display: inline-block; }
+
+
+
 html, body {
   overflow-x: hidden !important;
   width: 100%;

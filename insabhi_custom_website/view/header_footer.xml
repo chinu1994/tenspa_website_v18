@@ -18,11 +18,12 @@
                                 <div class="d-flex w-100 align-items-center position-relative">
 
                                     <a class="navbar-brand" href="/">
+                                        <img src="/insabhi_custom_website/static/src/image/logo.png" alt="Tēnspa"
+                                             class="logo-default img-fluid"/>
                                         <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
-                                             class="logo-default img-fluid w-50"/>
-                                        <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
-                                             class="logo-hover img-fluid w-50"/>
+                                             class="logo-hover img-fluid"/>
                                     </a>
+
                                     <button class="navbar-toggler d-lg-none" type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#insabhiNavbarCollapse"
@@ -62,7 +63,7 @@
                                             Treatment
                                         </a>
                                         <ul class="dropdown-menu">
-                                             <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                             <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
                                         <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
                                         </ul>
                                     </div>
@@ -112,7 +113,7 @@
                                        aria-expanded="false" data-bs-toggle="dropdown" role="button">Treatment
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/treatment/him">Ten Treatments For Him</a></li>
+                                        <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
                                         <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
                                     </ul>
                                 </li>
