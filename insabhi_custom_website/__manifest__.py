@@ -93,6 +93,7 @@
             'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
             'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
             'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
+            'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js'
 
         ],
         'web.assets_backend': [

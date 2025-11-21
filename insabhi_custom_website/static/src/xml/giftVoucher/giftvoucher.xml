@@ -57,8 +57,8 @@
                                             <select class="form-select form-select-sm"><option>6.2 oz</option></select>
                                         </div>
                                         <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">
-                                            <t t-if="index === 0">$37.00</t>
-                                            <t t-else="">$46.00</t>
+                                            <t t-if="index === 0">K.D37.00</t>
+                                            <t t-else="">K.D46.00</t>
                                         </p>
                                         <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
                                     </div>
@@ -213,13 +213,23 @@
         <section class="careers-people-section py-5 p-3">
             <div class="container">
                 <div class="row">
+<!--                    change -->
+                    <div class="col-lg-5 d-flex justify-content-center mb-4 mb-lg-0">
+                <div class="reel-video-wrapper position-relative rounded-4 overflow-hidden">
+                  <video class="reel-video w-100" autoplay="autoplay" muted="muted" loop="loop"  playsinline="playsinline">
+                       <source src="insabhi_custom_website/static/src/image/hero1.0.mp4" type="video/mp4"/>
+                   </video>
 
-                    <div class="col-lg-8">
-                        <video class="video w-100" autoplay="autoplay" muted="muted" loop="loop"
-                               playsinline="playsinline">
-                            <source src="/insabhi_custom_website/static/src/image/hero.mp4" type="video/mp4"/>
-                        </video>
-                    </div>
+                </div>
+            </div>
+
+<!--                    <div class="col-lg-8">-->
+<!--                        <video class="video w-100 h-50"  autoplay="autoplay" muted="muted" loop="loop"-->
+<!--                               playsinline="playsinline" style="object-fit:cover">-->
+<!--                            <source src="insabhi_custom_website/static/src/image/hero1.0.mp4" type="video/mp4"/>-->
+<!--                        </video>-->
+<!--                    </div>-->
+
 
                     <div class="col-lg-4">
                                 <h3 class="careers-section-title">The Ten Gift:A Moment of Bliss</h3>

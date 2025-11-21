@@ -59,24 +59,29 @@
 
                                     <div class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="/treatment"
-                                            aria-expanded="false">
+                                           aria-expanded="false">
                                             Treatment
                                         </a>
                                         <ul class="dropdown-menu">
-                                             <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
-                                        <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
+                                            </li>
                                         </ul>
                                     </div>
 
                                     <div class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="/giftVoucher"
-                                           aria-expanded="false" >
+                                           aria-expanded="false">
                                             Gift Vouchers
                                         </a>
 
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
+                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page
+                                                </a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="/giftType">Gift Types</a>
@@ -109,18 +114,28 @@
                                 </li>
 
                                 <li class="nav-item dropdown pb-2 mb-2">
-                                    <a class="nav-link dropdown-toggle" href= "/treatment"
-                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Treatment
+                                    <!--                                    <a class="nav-link dropdown-toggle" href="/treatment"-->
+                                    <!--                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Treatment-->
+                                    <!--                                    </a>-->
+                                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
+                                       data-bs-toggle="dropdown" role="button" data-nav-url="/treatment">Treatment
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
-                                        <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
+                                        </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown pb-2 mb-2">
-                                    <a class="nav-link dropdown-toggle" href="/giftVoucher"
-                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Gift Vouchers
+                                    <!--                                    <a class="nav-link dropdown-toggle" href="/giftVoucher"-->
+                                    <!--                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Gift Vouchers-->
+                                    <!--                                    </a>-->
+                                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
+                                       data-bs-toggle="dropdown" role="button" data-nav-url="/giftVoucher">Gift Vouchers
                                     </a>
 
                                     <ul class="dropdown-menu">
@@ -277,34 +292,26 @@
 
                                     <div class="col-6 col-md-3">
                                         <h5 class="mb-3 text-white" style="font-size:15px;">Subscribe to Ten
-                                            communications
+                                            Communications
                                         </h5>
                                         <form id="aesop-newsletter-form" class="d-flex flex-column">
                                             <input type="email" name="email" placeholder="Email address*"
                                                    class="form-control mb-2 bg-dark text-white border-0"
                                                    style="height:38px; font-size:15px;" required="required"/>
                                             <p class="mb-2" style="font-size:11px; line-height:1.4;">
-                                                By submitting this form, I confirm I am a US resident and (1) agree to
-                                                Aesop’s
-                                                <a href="#" class="text-decoration-underline text-muted">Terms of Use
-                                                </a>
-                                                (which includes an arbitration provision) and
-                                                <a href="#" class="text-decoration-underline text-muted">Marketing
-                                                    Disclosure</a>;
-                                                and (2) have read and acknowledge Aesop’s
-                                                <a href="#" class="text-decoration-underline text-muted">Privacy
-                                                    Notice
+                                                By submitting this form, you agree to receive communications from Ten
+                                                Store regarding promotions and new arrivals. Please read our
+                                                <a href="#" class="text-decoration-underline text-muted">Privacy Policy
                                                 </a>
                                                 and
-                                                <a href="#" class="text-decoration-underline text-muted">Notice of
-                                                    Financial Incentives</a>.
+                                                <a href="#" class="text-decoration-underline text-muted">Terms &amp;
+                                                    Conditions</a>.
                                             </p>
                                             <button type="submit" class="btn btn-outline-light w-100"
                                                     style="height:38px; font-size:15px;">Submit
                                             </button>
                                         </form>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -359,27 +366,27 @@
                     </div>
 
                     <!--work for gift voucher-->
-<!--                    <script>-->
-<!--                        document.addEventListener("DOMContentLoaded", function() {-->
-<!--                        const linksWithDropdown =-->
-<!--                        document.querySelectorAll('a[href="/giftVoucher"][data-bs-toggle="dropdown"]');-->
+                    <!--                    <script>-->
+                    <!--                        document.addEventListener("DOMContentLoaded", function() {-->
+                    <!--                        const linksWithDropdown =-->
+                    <!--                        document.querySelectorAll('a[href="/giftVoucher"][data-bs-toggle="dropdown"]');-->
 
-<!--                        linksWithDropdown.forEach(linkWithDropdown => {-->
-<!--                        linkWithDropdown.addEventListener('click', function(e) {-->
-<!--                        const targetUrl = this.getAttribute('href');-->
+                    <!--                        linksWithDropdown.forEach(linkWithDropdown => {-->
+                    <!--                        linkWithDropdown.addEventListener('click', function(e) {-->
+                    <!--                        const targetUrl = this.getAttribute('href');-->
 
-<!--                        if (targetUrl &amp;&amp; e.button === 0) {-->
-<!--                        window.open(targetUrl, '_blank');-->
-<!--                        }-->
-<!--                        });-->
-<!--                        });-->
-<!--                        });-->
-<!--                    </script>-->
+                    <!--                        if (targetUrl &amp;&amp; e.button === 0) {-->
+                    <!--                        window.open(targetUrl, '_blank');-->
+                    <!--                        }-->
+                    <!--                        });-->
+                    <!--                        });-->
+                    <!--                        });-->
+                    <!--                    </script>-->
 
                     <!--work for gift voucher-->
 
                     <!-- foooter end -->
-                    <script>
+                    <script type="text/javascript">
                         document.addEventListener("DOMContentLoaded", function () {
                         const form = document.getElementById("aesop-newsletter-form");
                         const loadSwal = async () => {
@@ -413,10 +420,18 @@
                         }
                         });
                         });
+
+
+                        <!--navlink dropdown-->
+
                     </script>
+                    <script type="text/javascript"
+                            src="/insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js"/>
 
                 </footer>
             </xpath>
+
+
         </template>
     </data>
 </odoo>

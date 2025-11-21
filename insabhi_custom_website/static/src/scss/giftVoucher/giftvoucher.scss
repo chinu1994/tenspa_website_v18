@@ -10,3 +10,42 @@
     color: var(--some-hover-color); /* Ya koi aur style jo aap chahte hain */
   }
 }
+
+// viedo responvive
+/* --- Default (Small Devices: Phones, under ~768px) --- */
+/* Small devices par height aur width fix karni hai */
+.reel-video-wrapper {
+    /* Optional: Small devices par width fix kar sakte hain */
+    max-width: 300px; /* Example value, aap apne hisaab se set karein */
+    width: 100%;
+    /* Height fix karne ke liye */
+    height: 350px; /* Example value, aap apne hisaab se set karein */
+    margin: 0 auto; /* Center karne ke liye */
+}
+
+.reel-video {
+    /* Fixed height ko maintain karne ke liye */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Taki video cut na ho aur poora fill kare */
+}
+
+/* --- Large Devices (Laptops, Tablets, >= 992px) --- */
+/* Large devices par full responsive hona chahiye (jaise abhi hai) */
+@media (min-width: 992px) {
+    .reel-video-wrapper {
+        /* Large devices par fixed height hat jayegi ya kam ho jayegi */
+        max-width: none;
+        height: auto; /* Height auto ho jayegi */
+        margin: 0;
+      background-color: transparent;
+    }
+
+    .reel-video {
+        /* Original max-height agar chahiye toh yahan set kar sakte hain */
+        max-height: 400px; /* Ya jo bhi aapki default value thi */
+        width: 100%;
+        height: auto;
+       background-color: transparent;
+    }
+}

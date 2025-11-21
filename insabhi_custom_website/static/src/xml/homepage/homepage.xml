@@ -57,8 +57,8 @@
                                             <select class="form-select form-select-sm"><option>6.2 oz</option></select>
                                         </div>
                                         <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">
-                                            <t t-if="index === 0">$37.00</t>
-                                            <t t-else="">$46.00</t>
+                                            <t t-if="index === 0">K.D 37.00</t>
+                                            <t t-else="">K.D 46.00</t>
                                         </p>
                                         <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
                                     </div>

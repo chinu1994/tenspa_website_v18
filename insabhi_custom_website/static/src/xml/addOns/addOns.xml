@@ -70,8 +70,8 @@
                         </div>
 
                         <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">
-                            <t t-if="index === 0">$37.00</t>
-                            <t t-else="">$46.00</t>
+                            <t t-if="index === 0">K.D37.00</t>
+                            <t t-else="">K.D46.00</t>
                         </p>
 
                         <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>

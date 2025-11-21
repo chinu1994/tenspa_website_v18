@@ -20,7 +20,7 @@
 
      <div class="row mb-4 text-center">
 <div class="col-12">
- <h1 class="display-5 fw-bold text-primary" style="margin-top:5rem;">Gift Selection Page</h1>
+ <h1 class="display-5 fw-bold text-primary" style="margin-top:5rem;">Select Massage Service</h1>
     <p class="lead text-muted">Please select your preferred massage service.</p>
  </div>
  </div>
@@ -44,7 +44,7 @@
         </ul>
     </div>
          <div class="col-lg-6">
-        <img src="https://media.glamourmagazine.co.uk/photos/613898ea2b5bbea008292146/16:9/w_1600,c_limit/shutterstock_1831809430_sf.jpg"
+        <img src="insabhi_custom_website/static/src/image/herTreat2.jpg"
              alt="Relaxing Spa Environment"
              class="img-fluid rounded shadow-lg"
              loading="lazy"
@@ -98,7 +98,7 @@
      <hr/>
 
 
-     <h2 class="text-center my-4 fw-bold text-info">💆‍♀️ Explore Our Range of Massages</h2>
+     <h2 class="text-center my-4 fw-bold text-info">Explore Our Range of Massages</h2>
 
 
      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-5">
@@ -270,7 +270,7 @@
 
      <div class="row my-5 p-4 bg-light rounded shadow-sm">
  <div class="col-12 text-center">
- <h2 class="h3 fw-bold text-dark mb-3">💖 What Our Clients Say</h2>
+ <h2 class="h3 fw-bold text-dark mb-3">What Our Clients Say</h2>
 
      <blockquote class="blockquote">
  <p class="mb-0 fst-italic">"The Balinese massage was pure bliss! Best gift ever. Thank you for the wonderful experience."</p>

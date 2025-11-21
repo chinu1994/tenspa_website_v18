@@ -3,12 +3,9 @@
 
     <t t-name="insabhi_custom_website.GiftType" owl="1">
         <div class="giftType">
-
-            <h1>Ten Wellness Gift Types</h1>
-
             <section class="insabhi-hero-video position-relative height-fixer-hero">
                 <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="insabhi_custom_website/static/src/image/img1.jpg"
+                    <img src="insabhi_custom_website/static/src/image/herTreat3.jpg"
                          alt="Hero" class="w-100 h-100 object-fit-cover"/>
                 </div>
                 <div class="insabhi-hero-overlay-bottom">
@@ -18,51 +15,39 @@
                 </div>
             </section>
 
-            #yha se
 
             <section class="insabhi-new-notable py-5">
                 <div class="container">
-
-<!--                    <div class="text-center mb-5">-->
-<!--                        <h2 class="insabhi-section-title">Curated Formulations</h2>-->
-<!--                        <p class="insabhi-section-subtitle">-->
-<!--                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.-->
-<!--                        </p>-->
-<!--                    </div>-->
-
-
                     <div class="row g-4 px-3">
 
-                        <!-- Product 1 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
 
                                 <div class="col-md-6 order-md-1 order-2 text-center">
                                      <img src="insabhi_custom_website/static/src/image/gift1.jpg"
                                           alt="Product Image 1"
-                                         style="width:85%; height:550px; object-fit:cover; display:block; margin-left:auto;" />
+                                         style="width:90%; max-height:550px; height:auto; object-fit:contain; display:block; margin:0 auto;" />
                                 </div>
 
 
                                 <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
-                                    <p class="lead">
+                                    <p class="lead text-md-justify text-center">
                                                 - Diamond Gift Voucher:
                                                 (Bamboo plant + Luxury bag + Invitation card box)
                                                 Price: 26.5 KWD, including delivery.
 
                                     </p>
 
-                                    <p><b>Price:</b> 11.9 K.D. / Tabby 13</p>
+                                    <p class="text-md-justify text-center"><b>Price:</b> 11.9 K.D. / Tabby 13</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Product 2 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
 
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead" style="text-align: left;">
+                                <div class="col-md-6 order-md-1 order-1 p-4" style="text-align: justify;">
+                                    <p class="lead text-md-left text-center">
                                         Discover luxury through the magic of an exceptional fragrance, carefully crafted from the
                                         finest and rarest oils in the world.
                                         In the first phase, the fragrance opens with rich saffron blended with raspberry and thyme.
@@ -72,31 +57,30 @@
                                         We designed this olfactory journey especially for you—because you deserve it.
                                     </p>
 
-                                    <p><b>Price:</b> 29.7 KWD / Tabby 33</p>
+                                    <p class="text-md-left text-center"><b>Price:</b> 29.7 KWD / Tabby 33</p>
                                 </div>
 
-                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                <div class="col-md-6 order-md-2 order-2 d-flex justify-content-center justify-content-md-end">
                                     <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png"
                                          alt="Product Image 1"
-                                         style="width:85%; height:420px; object-fit:cover;" />
+                                         style="width:90%; max-height:420px; height:auto; object-fit:contain; display:block;" />
                                 </div>
 
                             </div>
                         </div>
 
 
-                        <!-- Product 3 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-center justify-content-md-end">
                                     <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png"
                                          alt="Product Image 1"
-                                         style="width:85%; height:420px; object-fit:cover;" />
+                                         style="width:90%; max-height:420px; height:auto; object-fit:contain; display:block;" />
                                 </div>
 
 
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead" style="text-align: left;">
+                                <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
+                                    <p class="lead text-md-left text-center">
                                         Product 3 Review (I-D):
                                         This scent is very sophisticated—musky and deep—perfect for evening events. Longevity is
                                         amazing; apply in the morning and it lasts until night.
@@ -105,23 +89,22 @@
                             </div>
                         </div>
 
-                        <!-- Product 4 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
 
 
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead" style="text-align: left;">
+                                <div class="col-md-6 order-md-1 order-1 p-4" style="text-align: justify;">
+                                    <p class="lead text-md-left text-center">
                                         Product 4 Review (D-I):
                                         I love floral scents and this one is absolutely perfect. It has a very natural and sweet
                                         smell. The packaging is beautiful, making it a great gifting option.
                                     </p>
                                 </div>
 
-                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                <div class="col-md-6 order-md-2 order-2 d-flex justify-content-center justify-content-md-end">
                                     <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
                                          alt="Product Image 1"
-                                         style="width:85%; height:420px; object-fit:cover;" />
+                                         style="width:90%; max-height:420px; height:auto; object-fit:contain; display:block;" />
                                 </div>
                             </div>
                         </div>
