@@ -82,7 +82,7 @@
                     </div>
                 </section>
 
-                <section class="insabhi-fullvideo-section position-relative" style="min-height:60vh;">
+                <section class="insabhi-fullvideo-section position-relative" style="min-height:110vh;">
                     <img src="/insabhi_custom_website/static/src/image/team.png" alt="Full section background"
                          class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
                          style="z-index:-1;"/>
