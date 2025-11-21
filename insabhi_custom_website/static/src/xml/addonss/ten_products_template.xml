@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <!-- OWL Template Wrapper -->
+    <t t-name="insabhi_custom_website.dynamic_products_list" owl="1">
+
+        <!-- Website Layout Load -->
+        <t t-call="website.layout">
+
+            <section class="dynamic_products_list container mt-5">
+                <div class="row">
+
+                    <!-- Dynamic Products Loop -->
+                    <t t-if="products">
+                        <t t-foreach="products" t-as="p">
+
+                            <div class="col-12 col-md-4 mb-5">
+
+                                <div class="product-card shadow-sm">
+
+                                    <!-- Tag -->
+                                    <p class="tag">
+                                        <t t-esc="p.tag == 'new' and 'NEW ADDITION' or 'BELOVED FORMULATION'"/>
+                                    </p>
+
+                                    <!-- Image -->
+                                    <div class="image-container">
+                                        <img t-att-src="'data:image/png;base64,%s' % p.image"/>
+                                    </div>
+
+                                    <!-- Name -->
+                                    <h4 class="title mt-3">
+                                        <t t-esc="p.name"/>
+                                    </h4>
+
+                                    <!-- Subtitle -->
+                                    <p class="subtitle text-muted">
+                                        <t t-esc="p.subtitle"/>
+                                    </p>
+
+                                    <!-- Price -->
+                                    <p class="price mt-2">
+                                        $<t t-esc="p.price"/>
+                                    </p>
+
+                                    <!-- Add to Cart -->
+                                    <a href="#" class="btn btn-dark w-100 mt-3">
+                                        ADD TO CART
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </t>
+                    </t>
+
+                </div>
+            </section>
+
+        </t>
+
+    </t>
+
+</templates>

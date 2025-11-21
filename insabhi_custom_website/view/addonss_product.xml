@@ -1,0 +1,104 @@
+<odoo>
+    <data>
+
+        <!-- ================== WEBSITE TEMPLATE ================== -->
+        <template id="dynamic_products_list" name="dynamic_products_list">
+            <t t-call="website.layout">
+                <section id="admin" class="dynamic_products_list">
+                </section>
+            </t>
+        </template>
+
+
+        <!-- ================== PRODUCT SIZE VIEWS ================== -->
+        <record id="view_ten_product_size_form" model="ir.ui.view">
+            <field name="name">ten.product.size.form</field>
+            <field name="model">ten.product.size</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_ten_product_size_tree" model="ir.ui.view">
+            <field name="name">ten.product.size.tree</field>
+            <field name="model">ten.product.size</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_ten_product_size" model="ir.actions.act_window">
+            <field name="name">Product Sizes</field>
+            <field name="res_model">ten.product.size</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <!-- ================== PRODUCT CARD VIEWS ================== -->
+        <record id="view_ten_product_card_form" model="ir.ui.view">
+            <field name="name">ten.product.card.form</field>
+            <field name="model">ten.product.card</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="subtitle"/>
+                            <field name="price"/>
+                            <field name="tag"/>
+                            <field name="size_option_ids" widget="many2many_tags"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                            <field name="image" widget="image"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_ten_product_card_tree" model="ir.ui.view">
+            <field name="name">ten.product.card.tree</field>
+            <field name="model">ten.product.card</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="price"/>
+                    <field name="tag"/>
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_ten_product_card" model="ir.actions.act_window">
+            <field name="name">Ten Spa Products</field>
+            <field name="res_model">ten.product.card</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <!-- ================== MENU ITEMS ================== -->
+        <menuitem id="menu_ten_root" name="Ten Spa" sequence="10"/>
+
+        <menuitem id="menu_ten_products"
+                  name="Products"
+                  parent="menu_ten_root"
+                  action="action_ten_product_card"
+                  sequence="10"/>
+
+        <menuitem id="menu_ten_sizes"
+                  name="Sizes"
+                  parent="menu_ten_root"
+                  action="action_ten_product_size"
+                  sequence="20"/>
+
+    </data>
+</odoo>

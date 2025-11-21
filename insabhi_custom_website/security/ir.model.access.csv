@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ten_product_card,access_ten_product_card,model_ten_product_card,,1,1,1,1
+access_ten_product_size,access_ten_product_size,model_ten_product_size,,1,1,1,1

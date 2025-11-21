@@ -6,7 +6,7 @@
                       <!-- ==== HERO (matches uploaded image) ==== -->
             <section class="insabhi-hero-video position-relative height-fixer-hero">
                 <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="insabhi_custom_website/static/src/image/ParcelBanner.jpg"
+                    <img src="insabhi_custom_website/static/src/image/about.jpg"
                          alt="Hero" class="w-100 h-100 object-fit-cover"/>
                 </div>
             
