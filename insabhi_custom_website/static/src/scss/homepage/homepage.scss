@@ -1,4 +1,4 @@
-/* --------------------------------------------------------------
+  /* --------------------------------------------------------------
    1. VARIABLES
    -------------------------------------------------------------- */
 $orange    : #ff6a00;
@@ -446,8 +446,10 @@ html, body {
 
 /* Small: 2 cards + arrows below */
 @media (max-width: 575.98px) {
+
   .insabhi-carousel { padding: 0 20px; }
   .insabhi-carousel-item { flex: 0 0 50%; max-width: 50%; padding: 0 .5rem; }
+
 
   .insabhi-carousel-btn {
     position: static;
@@ -565,7 +567,7 @@ html, body {
 
     .navbar-brand {
       position: absolute;
-      left: 1rem;
+      left: 4rem;
       top: 50%;
       transform: translateY(-50%);
       margin: 0 !important;

@@ -40,6 +40,7 @@
         'view/giftType.xml',
         'view/voucherDelivery.xml',
         'view/treatment.xml',
+        'view/treatmentHer.xml',
         'view/addonss_product.xml',
 
     ],
@@ -57,6 +58,7 @@
             'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
             'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
             'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
+            'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
             'insabhi_custom_website/static/src/xml/addonss/ten_products_template.xml',
 
 
@@ -71,6 +73,8 @@
             'insabhi_custom_website/static/src/scss/giftType/giftType.scss',
             'insabhi_custom_website/static/src/scss/treatment/treatment.scss',
             'insabhi_custom_website/static/src/scss/voucherDelivery/voucherDelivery.scss',
+            'insabhi_custom_website/static/src/scss/treatmentHer/treatmentHer.scss',
+
             # 'insabhi_custom_website/static/src/scss/addons_images/addons_images.scss',
 
             'insabhi_custom_website/static/src/js/homepage/homepage.js',
@@ -84,6 +88,7 @@
             'insabhi_custom_website/static/src/js/giftType/giftType.js',
             'insabhi_custom_website/static/src/js/treatment/treatment.js',
             'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
+            'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
 
         ],
         'web.assets_backend': [
