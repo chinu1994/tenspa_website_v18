@@ -26,6 +26,7 @@
     'version': '1.0.0',
     'depends': ["base", "web", "website", "crm", "product"],
     'data': [
+        'security/ir.model.access.csv',
         'view/homepage.xml',
         'view/aboutus.xml',
         'view/header_footer.xml',
@@ -39,6 +40,7 @@
         'view/giftType.xml',
         'view/voucherDelivery.xml',
         'view/treatment.xml',
+        'view/addonss_product.xml',
 
     ],
     'assets': {
@@ -55,6 +57,7 @@
             'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
             'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
             'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
+            'insabhi_custom_website/static/src/xml/addonss/ten_products_template.xml',
 
 
             'insabhi_custom_website/static/src/scss/homepage/homepage.scss',
@@ -68,7 +71,7 @@
             'insabhi_custom_website/static/src/scss/giftType/giftType.scss',
             'insabhi_custom_website/static/src/scss/treatment/treatment.scss',
             'insabhi_custom_website/static/src/scss/voucherDelivery/voucherDelivery.scss',
-
+            # 'insabhi_custom_website/static/src/scss/addons_images/addons_images.scss',
 
             'insabhi_custom_website/static/src/js/homepage/homepage.js',
             'insabhi_custom_website/static/src/js/aboutus/aboutus.js',
@@ -92,7 +95,7 @@
     "qweb": [],
     "installable": True,
     "auto_install": False,
-    "application": False,
+    "application": True,
     "price": 0.00,
     "currency": "EUR",
     "license": "AGPL-3",

@@ -6,25 +6,43 @@
 
             <h1>Ten Wellness Gift Types</h1>
 
+            <section class="insabhi-hero-video position-relative height-fixer-hero">
+                <div class="position-absolute top-0 start-0 w-100 h-100">
+                    <img src="insabhi_custom_website/static/src/image/img1.jpg"
+                         alt="Hero" class="w-100 h-100 object-fit-cover"/>
+                </div>
+                <div class="insabhi-hero-overlay-bottom">
+                    <div class="insabhi-hero-content-bottom container">
+                          <h1>Curated Formulations</h1>
+                    </div>
+                </div>
+            </section>
+
+            #yha se
+
             <section class="insabhi-new-notable py-5">
                 <div class="container">
 
-                    <div class="text-center mb-5">
-                        <h2 class="insabhi-section-title">Curated Formulations</h2>
-                        <p class="insabhi-section-subtitle">
-                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.
-                        </p>
-                    </div>
+<!--                    <div class="text-center mb-5">-->
+<!--                        <h2 class="insabhi-section-title">Curated Formulations</h2>-->
+<!--                        <p class="insabhi-section-subtitle">-->
+<!--                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.-->
+<!--                        </p>-->
+<!--                    </div>-->
+
 
                     <div class="row g-4 px-3">
 
                         <!-- Product 1 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
+
                                 <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/DSC08242-2.jpg"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 1" />
+                                     <img src="insabhi_custom_website/static/src/image/gift1.jpg"
+                                          alt="Product Image 1"
+                                         style="width:85%; height:550px; object-fit:cover; display:block; margin-left:auto;" />
                                 </div>
+
 
                                 <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
                                     <p class="lead">
@@ -42,10 +60,6 @@
                         <!-- Product 2 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 2"/>
-                                </div>
 
                                 <div class="col-md-6 order-md-1 order-1 p-4">
                                     <p class="lead" style="text-align: left;">
@@ -60,16 +74,26 @@
 
                                     <p><b>Price:</b> 29.7 KWD / Tabby 33</p>
                                 </div>
+
+                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png"
+                                         alt="Product Image 1"
+                                         style="width:85%; height:420px; object-fit:cover;" />
+                                </div>
+
                             </div>
                         </div>
+
 
                         <!-- Product 3 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 3"/>
+                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png"
+                                         alt="Product Image 1"
+                                         style="width:85%; height:420px; object-fit:cover;" />
                                 </div>
+
 
                                 <div class="col-md-6 order-md-2 order-1 p-4">
                                     <p class="lead" style="text-align: left;">
@@ -84,10 +108,7 @@
                         <!-- Product 4 -->
                         <div class="col-12 my-4">
                             <div class="row align-items-center">
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 4"/>
-                                </div>
+
 
                                 <div class="col-md-6 order-md-1 order-1 p-4">
                                     <p class="lead" style="text-align: left;">
@@ -95,6 +116,12 @@
                                         I love floral scents and this one is absolutely perfect. It has a very natural and sweet
                                         smell. The packaging is beautiful, making it a great gifting option.
                                     </p>
+                                </div>
+
+                                <div class="col-md-6 order-md-1 order-2 d-flex justify-content-end">
+                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
+                                         alt="Product Image 1"
+                                         style="width:85%; height:420px; object-fit:cover;" />
                                 </div>
                             </div>
                         </div>
