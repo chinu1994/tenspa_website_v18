@@ -90,7 +90,7 @@
                                         </svg>
                                     </a>
 
-                                    <a href="/treatments/her" class="couture-btn empress">
+                                    <a href="/treatmentHer" class="couture-btn empress">
                                         <span>Treatment For Her</span>
                                         <svg class="arrow" viewBox="0 0 60 20">
                                             <path d="M0,10 L50,10 L45,5 M50,10 L45,15"/>

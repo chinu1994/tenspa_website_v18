@@ -58,19 +58,19 @@
                                     <a class="nav-link" href="/aboutus">About Us</a>
 
                                     <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="/treatment" role="button"
+                                        <a class="nav-link dropdown-toggle" href="/treatment"
                                             aria-expanded="false">
                                             Treatment
                                         </a>
                                         <ul class="dropdown-menu">
                                              <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
-                                        <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
+                                        <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="/giftVoucher" role="button"
-                                           aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="/giftVoucher"
+                                           aria-expanded="false" >
                                             Gift Vouchers
                                         </a>
 
@@ -110,17 +110,17 @@
 
                                 <li class="nav-item dropdown pb-2 mb-2">
                                     <a class="nav-link dropdown-toggle" href= "/treatment"
-                                       role="button" aria-expanded="false">Treatment
+                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Treatment
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
-                                        <li><a class="dropdown-item" href="/treatment/her">Ten Treatments For Her</a></li>
+                                        <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item dropdown pb-2 mb-2">
                                     <a class="nav-link dropdown-toggle" href="/giftVoucher"
-                                       role="button" aria-expanded="false">Gift Vouchers
+                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Gift Vouchers
                                     </a>
 
                                     <ul class="dropdown-menu">
