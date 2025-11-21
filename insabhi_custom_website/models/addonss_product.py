@@ -19,7 +19,7 @@ class TenProductCard(models.Model):
         string="Size Options"
     )
 
-    image = fields.Binary("Product Image", required=True)
+    image = fields.Binary("Product Image")
     sequence = fields.Integer("Sequence", default=10)
     active = fields.Boolean("Active", default=True)
 
@@ -28,4 +28,4 @@ class TenProductSize(models.Model):
     _name = "ten.product.size"
     _description = "Ten Spa Product Sizes"
 
-    name = fields.Char("Size", required=True)
+    name = fields.Char("Size")
