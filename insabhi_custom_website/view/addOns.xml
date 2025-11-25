@@ -8,3 +8,98 @@
         </template>
     </data>
 </odoo>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<odoo>-->
+<!--    <data>-->
+<!--        &lt;!&ndash; Website template for AddOns / New And Exceptional products &ndash;&gt;-->
+<!--        <template id="addOns" name="AddOns">-->
+<!--            <t t-call="website.layout">-->
+<!--                <section id="admin" class="addOns insabhi-new-notable py-5">-->
+<!--                    <div class="container">-->
+<!--                        <div class="text-center mb-5">-->
+<!--                            <h2 class="insabhi-section-title">New And Exceptional</h2>-->
+<!--                            <p class="insabhi-section-subtitle">-->
+<!--                                Experience the perfect blend of enduring favorites and the latest innovations.-->
+<!--                            </p>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash; fetch products from backend (server-side) &ndash;&gt;-->
+<!--                        <t t-set="products"-->
+<!--                           t-value="request.env['ten.product.card'].sudo().search([('active','=',True)], order='sequence asc')"/>-->
+
+<!--                        <div class="insabhi-carousel position-relative">-->
+<!--                            <div class="insabhi-carousel-inner overflow-hidden">-->
+<!--                                <div class="insabhi-carousel-track d-flex transition-transform">-->
+<!--                                    <t t-foreach="products" t-as="product" t-key="product.id">-->
+<!--                                        <div class="insabhi-carousel-item col-sm-6 col-lg-4">-->
+<!--                                            <div class="insabhi-product-card text-center d-flex flex-column h-100 mx-auto"-->
+<!--                                                 style="max-width:460px; min-height:560px;">-->
+
+<!--                                                <div class="insabhi-product-label">-->
+<!--                                                    <t t-if="product.tag == 'new'">New addition</t>-->
+<!--                                                    <t t-elif="product.tag == 'beloved'">Beloved formulation</t>-->
+<!--                                                    <t t-else="">Featured</t>-->
+<!--                                                </div>-->
+
+<!--                                                <t t-if="product.image">-->
+<!--                                                    <img t-att-src="'/web/image/ten.product.card/%s/image' % product.id"-->
+<!--                                                         alt="Product"-->
+<!--                                                         class="img-fluid mb-3 mx-auto d-block insabhi-product-img"-->
+<!--                                                         style="height:250px; object-fit:contain;"/>-->
+<!--                                                </t>-->
+<!--                                                <t t-else="">-->
+<!--                                                    &lt;!&ndash; fallback image (use your static image) &ndash;&gt;-->
+<!--                                                    <img src="/insabhi_custom_website/static/src/image/fallback.png"-->
+<!--                                                         alt="Product"-->
+<!--                                                         class="img-fluid mb-3 mx-auto d-block insabhi-product-img"-->
+<!--                                                         style="height:250px; object-fit:contain;"/>-->
+<!--                                                </t>-->
+
+<!--                                                <h3 class="insabhi-product-name mt-auto mb-2" style="font-size:1.05rem;line-height:1.3;">-->
+<!--                                                    <t t-esc="product.name"/>-->
+<!--                                                </h3>-->
+
+<!--                                                <p class="insabhi-product-scent text-muted small mb-2" style="font-size:0.85rem;">-->
+<!--                                                    <t t-esc="product.subtitle or ''"/>-->
+<!--                                                </p>-->
+
+<!--                                                <div class="insabhi-product-size mb-2">-->
+<!--                                                    <select class="form-select form-select-sm">-->
+<!--                                                        <t t-foreach="product.size_option_ids" t-as="size" t-key="size.id">-->
+<!--                                                            <option t-esc="size.name"/>-->
+<!--                                                        </t>-->
+<!--                                                        <t t-if="not product.size_option_ids">-->
+<!--                                                            <option>Default</option>-->
+<!--                                                        </t>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+
+<!--                                                <p class="insabhi-product-price fw-bold mb-3" style="font-size:1.1rem;">-->
+<!--                                                    <t t-esc="'$%.2f' % (product.price or 0.0)"/>-->
+<!--                                                </p>-->
+
+<!--                                                <button class="insabhi-add-to-cart mt-auto w-100 btn btn-dark btn-sm">ADD TO CART</button>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </t>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="d-none d-md-flex justify-content-center gap-5 mt-4">-->
+<!--                                <button class="insabhi-carousel-btn insabhi-carousel-prev btn btn-outline-secondary rounded-circle p-4">-->
+<!--                                    <i class="bi bi-chevron-left fs-3"></i>-->
+<!--                                </button>-->
+<!--                                <button class="insabhi-carousel-btn insabhi-carousel-next btn btn-outline-secondary rounded-circle p-4">-->
+<!--                                    <i class="bi bi-chevron-right fs-3"></i>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </section>-->
+<!--            </t>-->
+<!--        </template>-->
+<!--    </data>-->
+<!--</odoo>-->

@@ -61,7 +61,6 @@
             'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
             'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
             'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
-            'insabhi_custom_website/static/src/xml/addonss/ten_products_template.xml',
 
 
             'insabhi_custom_website/static/src/scss/homepage/homepage.scss',
