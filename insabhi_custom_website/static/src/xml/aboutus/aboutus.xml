@@ -1,152 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-    <t t-name="insabhi_custom_website.AboutUs" owl="1">
-        <div class="aboutus">
+<t t-name="insabhi_custom_website.AboutUs" owl="1">
+    <div class="aboutus">
 
-            <!-- HERO -->
-            <div class="hero-wrapper">
-                <section class="insabhi-hero hero-aesop position-relative">
-                    <div class="hero-image-wrapper">
-                        <img src="insabhi_custom_website/static/src/image/about1.png"
-                             alt="Our story hero"
-                             class="hero-image"/>
+        <!-- HERO – COMPLETELY UNCHANGED (your original code) -->
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/about1.png"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Our Story</h1>
+                    <h2 class="insabhi-hero-subtitle">Ten Wellness was born from a vision to redefine wellness in Kuwait — blending world-class spa techniques</h2>
+                    <p class="insabhi-hero-question">with profound emotional healing, creating a serene space where mind and body are gently restored.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- REDESIGNED LUXURY SECTION BELOW (matches your homepage perfectly) -->
+        <section class="luxury-story py-5" style="background:#f8f6f3;">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+
+                    <!-- Left: Image with double gold border + badge -->
+                    <div class="col-lg-6">
+                        <div class="position-relative d-inline-block hover-lift">
+                            <img src="/insabhi_custom_website/static/src/image/about2.jpg"
+                                 alt="Ten Wellness Sanctuary"
+                                 class="w-100 rounded-4 shadow-lg"
+                                 style="height:680px; object-fit:cover;"/>
+
+                            <!-- Double gold border (same as homepage) -->
+                            <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 border border-4"
+                                 style="border-color:#d4b08c; box-shadow:inset 0 0 120px rgba(212,176,140,.3);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 border border-4"
+                                 style="border-color:#f1d5a3; transform:translate(-50%,-50%) scale(1.04);"></div>
+
+                            <!-- Badge -->
+                            <div class="position-absolute start-50 translate-middle-x top-10">
+                                <span class="bg-white px-5 py-2 rounded-pill shadow-lg fw-medium d-inline-block border border-gold"
+                                      style="font-family:'Playfair Display',serif; letter-spacing:2px; font-size:0.95rem; border-color:#d4b08c;">
+                                    Established 2017 • Kuwait
+                                </span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="hero-overlay">
-                        <div class="container hero-text-container">
-                            <h2 class="hero-title">Our story</h2>
-                            <p class="hero-subtitle">
-                                We offer skin, hair and body care formulations created with meticulous attention to detail,
-                                and with efficacy and sensory pleasure in mind.
+                    <!-- Right: Full original text + luxury typography -->
+                    <div class="col-lg-6">
+                        <div class="ps-lg-5">
+                            <div class="w-80px h-1 bg-gold mb-5" style="background:#d4b08c;"></div>
+
+                            <h2 class="display-4 fw-light mb-5" style="font-family:'Playfair Display',serif; line-height:1.2; color:#2d2a26;">
+                                Our Story
+                            </h2>
+
+                            <p class="lead text-muted mb-4" style="font-size:1.18rem; line-height:1.9; max-width:620px;">
+                                Ten Wellness was founded with a mission to redefine wellness in Kuwait. Inspired by years of exploring world-class spa practices, the founders envisioned a space that not only combined exceptional techniques and therapeutic treatments but also addressed deeper layers of well-being. Every service is designed to ensure guest satisfaction and guarantee holistic treatment, offering a serene and rejuvenating journey to restore mind and body.
+                            </p>
+
+                            <p class="text-muted mb-5" style="line-height:1.9; max-width:620px;">
+                                In July 2017, Yousef and Bader Alessa acquired Ten Wellness and transformed it into a sanctuary of relaxation, rejuvenation, and emotional healing. At Ten Wellness, the focus goes beyond physical care; it embraces the profound connection between body and mind, offering treatments designed to release emotional tension and foster a sense of inner peace.
+                            </p>
+
+                            <p class="text-muted" style="line-height:1.9; max-width:620px;">
+                                Today, Ten Wellness stands as a leading destination for wellness, offering unparalleled services that promote balance, healing, and tranquility — empowering guests to renew both their physical and emotional well-being.
                             </p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
+
+
+<!-- SPA ETIQUETTE – FINAL LUXURIOUS VERSION WITH HOVER LIFT + DOUBLE BORDER -->
+<section class="luxury-etiquette py-5 bg-white">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <div class="d-inline-flex align-items-center gap-4 mb-4">
+                <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
+                <h2 class="display-5 fw-light m-0 px-4" style="font-family:'Playfair Display',serif;">
+                    Spa Etiquette
+                </h2>
+                <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
+            </div>
+            <p class="lead text-muted col-lg-8 mx-auto">
+                A few gentle guidelines to preserve the tranquil atmosphere we cherish for all guests.
+            </p>
+        </div>
+
+        <div class="row g-4 g-xl-5 justify-content-center">
+
+            <!-- RE-USABLE CARD WITH FULL HOVER LIFT + ZOOM + GLOW -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06);
+                            border:1px solid rgba(0,0,0,0.04);
+                            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+                            transform: translateY(0) scale(1);">
+
+                    <!-- Outer elegant gold border -->
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <!-- Inner soft glow line -->
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+
+                    <!-- HOVER STYLE (inline!) -->
+                    <style>
+                        .transition-all:hover {
+                            transform: translateY(-16px) scale(1.04) !important;
+                            box-shadow: 0 30px 70px rgba(212,176,140,0.25) !important;
+                        }
+                    </style>
+
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">
+                        Arrival Time
+                    </h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">
+                        Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in process. Note that treatments will conclude at the scheduled time without extensions unless previously requested.
+                    </p>
+                </div>
             </div>
 
-
-            <!-- OUR STORY -->
-            <section class="s_our_story_ten py-5" data-snippet="s_our_story_ten">
-                <div class="container maxwide">
-                    <div class="row align-items-center g-5">
-
-                        <!-- IMAGE LEFT -->
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <div class="photo-card">
-                                <img src="/insabhi_custom_website/static/src/image/about2.jpg"
-                                     alt="Ten Wellness Sanctuary"
-                                     class="main-image"/>
-                            </div>
-                        </div>
-
-                        <!-- TEXT RIGHT -->
-                        <div class="col-lg-5 ps-lg-5">
-                            <div class="content-wrap">
-
-                                <h2 class="section-heading">Our Story</h2>
-
-                                <div class="story-copy">
-                                    <p>
-                                        Founded in 2017, <strong class="accent">Ten Wellness</strong> began with a
-                                        simple aim:
-                                        to offer considered, professional wellness experiences in a calm, refined
-                                        setting.
-                                    </p>
-
-                                    <p>
-                                        Today we remain committed to thoughtful treatments, personalised care and a peaceful atmosphere
-                                        that helps guests restore balance of mind and body.
-                                    </p>
-                                </div>
-
-                                <div class="brief-note">
-                                    <p><strong class="accent">Since 2017 • Kuwait</strong></p>
-                                    <p class="muted">
-                                        We welcome appointments by prior booking and ask guests to observe a few simple guidelines to
-                                        preserve the tranquil environment for everyone.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
+            <!-- CARD 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Late Arrivals</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Late arrivals will result in a reduced treatment time to accommodate subsequent bookings.</p>
                 </div>
-            </section>
+            </div>
 
-
-
-            <!-- ✨ SPA ETIQUETTE SECTION (Clean & Minimal) -->
-            <section class="spa-etiquette py-5">
-                <div class="container maxwide text-center">
-
-                    <h2 class="section-heading">Spa Etiquette</h2>
-                    <p class="muted" style="max-width:60ch; margin:auto;">
-                        A few guidelines to help preserve a peaceful and comfortable experience for all our guests.
-                    </p>
-
+            <!-- CARD 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Reservations</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">We recommend booking your appointments 1–2 days in advance to secure your preferred time and service.</p>
                 </div>
+            </div>
 
-                <!-- Grid layout -->
-                <div class="container maxwide mt-4">
-                    <div class="etiquette-grid">
-
-                        <div class="etiquette-item">
-                            <h4>Arrival Time</h4>
-                            <p>Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in.
-                               Treatments end at the scheduled time.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Late Arrivals</h4>
-                            <p>Late arrival may shorten your treatment time to accommodate the next guest.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Reservations</h4>
-                            <p>We recommend booking 1–2 days in advance to secure your preferred time and service.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Cancellations</h4>
-                            <p>Please provide at least 4 hours’ notice for cancellations by calling us directly.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Refunds</h4>
-                            <p>Refund requests cannot be accommodated after the first 10 minutes of treatment.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Valuables</h4>
-                            <p>Please avoid bringing valuables. Lockers are provided, but management is not responsible
-                               for lost items.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>No Mobiles &amp; No Smoking</h4>
-                            <p>For privacy and tranquility, mobile phones and smoking are strictly prohibited.</p>
-                        </div>
-
-                        <div class="etiquette-item">
-                            <h4>Health Declarations</h4>
-                            <p>Please complete the consultation form and inform us of any health conditions, pregnancy,
-                               allergies, or recent surgeries.</p>
-                        </div>
-
-                    </div>
+            <!-- CARD 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Cancellations</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Kindly provide at least 4 hours' notice for cancellations by calling us directly.</p>
                 </div>
+            </div>
 
-                <div class="container maxwide text-center mt-4">
-                    <p class="muted" style="max-width:60ch; margin:auto;">
-                        Thank you for understanding and adhering to our policies.
-                    </p>
+            <!-- CARD 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Refunds &amp; Valuables</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Refund requests cannot be accommodated after the first 10 minutes of the treatment. Please avoid bringing valuables.</p>
                 </div>
-            </section>
+            </div>
 
+            <!-- CARD 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">No Mobiles &amp; No Smoking</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">For the privacy and tranquility of our spa environment, smoking and the use of mobile phones are strictly prohibited, even in silent mode.</p>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Health Declarations</h4>
+                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">All guests are required to complete a consultation form with accurate and detailed information.</p>
+                </div>
+            </div>
 
         </div>
-    </t>
+
+        <div class="text-center mt-5">
+            <p class="text-muted lead">Thank you for understanding and adhering to our policies.</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Optional CTA -->
+        <section class="py-5 text-center bg-light">
+            <div class="container py-5">
+                <a href="https://api.whatsapp.com/send?phone=96522288282" target="_blank"
+                   class="btn btn-outline-dark rounded-pill px-5 py-3 text-uppercase fw-medium border-2"
+                   style="letter-spacing:2.5px; font-size:0.95rem;">
+                    Book Your Experience Now
+                </a>
+            </div>
+        </section>
+
+    </div>
+</t>
 
 </templates>
