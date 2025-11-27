@@ -1,310 +1,351 @@
-/* ===== TEN WELLNESS – OUR STORY LUXURY EDITION ===== */
-.s_our_story_ten {
-    background: linear-gradient(135deg, #faf6f2 0%, #f8f0e6 35%, #ede4dc 100%);
-    font-family: 'Lora', serif;
-    position: relative;
-    overflow: hidden;
-}
-.height-fixer-hero {
-    height: 60vh;
-    min-height: 320px; /* prevents it from becoming too small on very small screens */
+
+/* ===== TEN WELLNESS – Clean Aesop-like edition (FINAL) ===== */
+
+/* Fonts (recommended: include in assets.xml or base template for production) */
+// @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap');
+
+:root{
+  --bg: #f6f2ea;
+  --panel: #f0eadf;
+  --text: #2b2b2b;
+  --muted: #6b4a39;
+  --accent: #a67c52;
+  --max-width: 1400px;
 }
 
-/* Mobile phones (portrait) */
+/* Reset + base */
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body {
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+}
+
+/* Container */
+.container.maxwide {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* HERO */
+.insabhi-hero {
+  position: relative;
+  width: 100%;
+  height: 440px; /* fixed height for a normal banner size */
+  display: block;
+  overflow: hidden;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  height: 100%; /* take full height of parent */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%; /* take full height of parent */
+  object-fit: cover;
+  display: block;
+}
+
+/* subtle overlay for text */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 70%);
+}
+
+/* UPDATED: limited container width + slight right shift like Aesop */
+.hero-text-container {
+  width: 100%;
+  padding: 3.5rem 4rem;
+  pointer-events: auto;
+  max-width: 650px;   /* bump a bit so title fits well while controlling subtitle line-length */
+  margin-left: 32%;   /* move container slightly right (Aesop feel) */
+  text-align: left;   /* Aesop uses left-aligned heading/subtitle */
+//   margin-left: 150px;
+
+}
+
+.hero-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(26px, 3.8vw, 48px);
+  color: #fff; /* or var(--text) if you want */
+  letter-spacing: 0.06em;
+  /* background: transparent; remove white background if present */
+  display: block;            /* make block so it stacks cleanly above subtitle */
+  padding: 0;                /* remove extra padding so it matches Aesop spacing */
+  border-radius: 6px;
+    margin-left: 150px;
+
+  /* box-shadow commented out on purpose to keep look clean */
+}
+
+/* UPDATED: subtitle constrained so it wraps to ~2 lines and is readable */
+.hero-subtitle {
+  margin-top: 0.7rem;
+  font-family: "Inter", sans-serif;
+  color: #fff;  /* white text */
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.55;   /* slightly tighter for 2-line look */
+  max-width: 55ch;     /* control character width to force ~2-line wrap */
+  margin-bottom: 0;
+  display: block;
+  margin-left: 150px;
+
+}
+
+/* Responsive adjustment for smaller devices */
 @media (max-width: 576px) {
-    .height-fixer-hero {
-        height: 25vh !important;
-    }
+  .hero-title {
+    font-size: 1.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  /* reduce right shift on small screens so content remains visible */
+  .hero-text-container { margin-left: 6%; max-width: 92%; padding: 2rem 1rem; }
 }
 
-/* Small tablets / large phones */
-@media (min-width: 577px) and (max-width: 768px) {
-    .height-fixer-hero {
-        height: 40vh !important;
-    }
+
+
+
+/* subtle overlay for text */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+}
+.hero-text-container {
+  width: 100%;
+  padding: 3.5rem 1.25rem;
+  pointer-events: auto;
 }
 
-/* Tablets & small desktops */
-@media (min-width: 769px) and (max-width: 992px) {
-    .height-fixer-hero {
-        height: 50vh !important;
-    }
-}
 
-/* Desktops */
-@media (min-width: 993px) and (max-width: 1200px) {
-    .height-fixer-hero {
-        height: 55vh !important;
-    }
+/* OUR STORY section layout */
+.s_our_story_ten {
+  background: transparent;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  position: relative;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.col-lg-5, .col-lg-7 {
+  padding: 0 1rem;
+}
+.col-lg-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+.col-lg-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
 
-/* Large desktops & above */
-@media (min-width: 1201px) {
-    .height-fixer-hero {
-        height: 60vh !important;
-    }
+/* Photo card - larger, framed, shadowed */
+.photo-card {
+  display: inline-block;
 }
-/* Dynamic Golden Waves */
-.golden-waves {
-    position: absolute;
-    top: 0; left: 0; width: 200%; height: 100%;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23a67c52" fill-opacity="0.08" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,0L0,0Z"></path></svg>') repeat-x;
-    animation: wave 25s linear infinite;
-    z-index: 1;
-}
-
-.golden-orb {
-    position: absolute;
-    top: 20%; left: 50%;
-    width: 800px; height: 800px;
-    background: radial-gradient(circle, rgba(166,124,82,0.15) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(100px);
-    transform: translateX(-50%);
-    z-index: 1;
-    animation: pulse 20s infinite ease-in-out;
-}
-
-/* 3D Tilt Image */
-.image-tilt-wrapper { perspective: 1000px; }
-.image-tilt-wrapper:hover .main-image {
-    transform: rotateY(6deg) rotateX(6deg);
-    box-shadow: 0 50px 120px rgba(166,124,82,0.35) !important;
-}
-.image-tilt-wrapper:hover { transform: translateY(-20px); }
 
 .main-image {
-    width: 440px; max-width: 100%; height: 560px;
-    object-fit: cover; border: 14px solid #fff;
-    box-shadow: 0 30px 80px rgba(44,24,16,0.25);
-    transition: all 0.6s ease;
-    transform-style: preserve-3d;
-    border-radius: 1rem;
+  width: 920px;
+  height: 420px;
+  max-width: 100%;
+  object-fit: cover;
+//   border-radius: 10px;
+  display: block;
+//   box-shadow: 0 20px 55px rgba(0,0,0,0.08);
+  transition: transform .45s ease, box-shadow .45s ease;
 }
 
-.image-glow {
-    position: absolute;
-    inset: -20px;
-    background: radial-gradient(circle at center, rgba(166,124,82,0.3), transparent);
-    border-radius: inherit;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.6s;
-}
-.image-tilt-wrapper:hover .image-glow { opacity: 1; }
-
-.decor-ring {
-    position: absolute;
-    top: -30px; left: -30px; right: -30px; bottom: -30px;
-    border: 3px solid rgba(166,124,82,0.2);
-    border-radius: 50% 35% 45% 40%;
-    animation: rotate 30s linear infinite;
-    z-index: -1;
-}
-
-.floating-badge {
-    position: absolute;
-    bottom: -20px; left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(135deg, #fff, #fdfbfa);
-    padding: 12px 32px;
-    border-radius: 50px;
-    box-shadow: 0 15px 35px rgba(166,124,82,0.25);
-    border: 2px solid #a67c52;
-    animation: floatBadge 6s ease-in-out infinite;
-}
-.badge-text {
-    font-family: 'Playfair Display', serif;
-    color: #a67c52;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 0.95rem;
+/* subtle hover lift for desktop */
+.photo-card:hover .main-image {
+  transform: translateY(-6px);
 }
 
 /* Typography */
-.text-gold { color: #a67c52 !important; }
-.title-stroke {
-    color: #2c1810;
-    letter-spacing: 3px;
-    font-family: 'Cinzel', serif;
-    position: relative;
+.section-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(28px, 4.2vw, 44px);
+  margin: 0 0 1rem 0;
+  color: var(--text);
 }
-.title-stroke::before {
-    content: 'Our Story';
-    position: absolute;
-    left: 0; top: 0;
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(166,124,82,0.3);
-    transform: translate(3px, 3px);
+.story-copy p {
+  font-family: "Inter", sans-serif;
+  color: #5a4738;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin: 0 0 1rem 0;
+  max-width: 66ch;
 }
-.elegant-text {
-    line-height: 2;
-    font-weight: 900;
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
-    color: #5a4738;
-}
-
-/* Golden Divider */
-.golden-divider {
-    height: 2px;
-    background: linear-gradient(to right, transparent, #a67c52, transparent);
-    width: 120px;
-    margin-left: 0;
-    position: relative;
-}
-.golden-divider::before {
-    content: '';
-    position: absolute;
-    top: -8px; left: 50%;
-    transform: translateX(-50%);
-    width: 12px; height: 12px;
-    background: #a67c52;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(166,124,82,0.6);
+.sub-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  width: 140px;
+  margin: 1.6rem 0;
 }
 
-/* Glassmorphism Etiquette Card */
-.etiquette-card-glass {
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(166,124,82,0.2);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+/* small note */
+.brief-note .muted { color: rgba(43,43,43,0.65); margin-top:0.35rem; }
+
+/* Etiquette card (simpler) */
+.etiquette-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(166,124,82,0.06);
+  box-shadow: 0 22px 60px rgba(40,30,20,0.05);
+  margin-top: 1.4rem;
+  padding: 1.5rem;
 }
-.etiquette-card-glass:hover {
-    transform: translateY(-15px);
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 30px 80px rgba(166,124,82,0.28) !important;
-    border-color: #a67c52;
+.etiquette-card .etiquette-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+.icon-circle {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(166,124,82,0.06);
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+.etiquette-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem; margin: 0; color: var(--text);
+}
+.etiquette-list { list-style: none; padding: 0; margin: 0.75rem 0 0 0; color: #5a4738; }
+.etiquette-list li { padding: 0.45rem 0; line-height: 1.6; font-size: 0.98rem; }
+
+/* Accent and muted helpers */
+.accent { color: var(--accent); font-weight: 600; }
+.muted { color: rgba(43,43,43,0.65); }
+
+/* Responsive rules (important) */
+@media (max-width: 1200px) {
+  /* slightly smaller on medium large screens */
+  .main-image { width: 480px; height: 560px; }
+  .photo-card { padding: 0.8rem; border-radius: 12px; }
 }
 
-.spa-icon-bg {
-    width: 60px; height: 60px;
-    background: linear-gradient(135deg, rgba(166,124,82,0.15), rgba(166,124,82,0.05));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(166,124,82,0.3);
+@media (max-width: 992px) {
+  .col-lg-5, .col-lg-7 { flex: 0 0 100%; max-width: 100%; padding: 0 1rem; }
+  .s_our_story_ten { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .hero-text-container { padding: 2rem 1rem; display:flex; justify-content:center; }
+  .hero-title { font-size: 1.5rem; }
+  .main-image {
+    width: 420px;
+    height: auto;      /* keep natural aspect on tablet */
+    max-width: 92%;
+  }
+  .section-heading { text-align:center; margin-top: 0.6rem; }
+  .story-copy p { text-align:center; margin-left:auto; margin-right:auto; }
+  .etiquette-card { padding: 1.2rem; }
 }
 
-/* Etiquette Grid */
+@media (max-width: 576px) {
+  .hero-image { height: 28vh; object-fit:cover; }
+  .hero-title { font-size: 1.15rem; padding: 0.45rem 0.8rem; }
+  .main-image {
+    max-width: 320px;
+    height: auto;
+    width: 100%;
+  }
+  .story-copy p { font-size: 0.98rem; line-height: 1.7; }
+  .etiquette-card { padding: 1rem; }
+}
+
+/* Utility */
+.rounded-3 { border-radius: 0.6rem; }
+.p-4 { padding: 1rem !important; }
+
+/* small accessibility improvements */
+img { max-width: 100%; height: auto; display: block; }
+
+
+/* ============================================
+   SPA ETIQUETTE – Clean Minimal Aesop Style
+   ============================================ */
+
+.spa-etiquette {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 .etiquette-grid {
     display: grid;
-    gap: 1.1rem;
-    max-height: 460px;
-    overflow-y: auto;
-    padding-right: 10px;
-    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.2rem;
+    margin-top: 2rem;
 }
-.etiquette-grid::-webkit-scrollbar { width: 6px; }
-.etiquette-grid::-webkit-scrollbar-track { background: rgba(166,124,82,0.1); border-radius: 10px; }
-.etiquette-grid::-webkit-scrollbar-thumb { background: #a67c52; border-radius: 10px; }
 
-.etiquette-item {
-    position: relative;
-    padding-left: 32px;
+/* Item Card (Minimal, No Border, No Box Shadow) */
+.etiquette-item h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.etiquette-item p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
     font-size: 0.98rem;
-    line-height: 1.75;
+    line-height: 1.7;
     color: #5a4738;
 }
-.etiquette-item strong {
-    color: #2c1810;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-.gold-dot {
-    position: absolute;
-    left: 0; top: 7px;
-    width: 10px; height: 10px;
-    background: #a67c52;
-    border-radius: 50%;
-    box-shadow: 0 0 12px rgba(166,124,82,0.6);
+
+/* Spa Etiquette Main Title Styling */
+.spa-etiquette .section-heading {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 0.8rem;
+    color: var(--text);
 }
 
-.signature-text {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.55rem;
-    font-weight: 400;
-}
-
-/* Animations */
-@keyframes wave { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-@keyframes pulse { 0%, 100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.1); } }
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-@keyframes floatBadge { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-12px); } }
-
-/* Responsive */
-@media (max-width: 992px) {
-    .main-image { width: 380px !important; height: 480px !important; }
-    .decor-ring, .image-glow { display: none; }
-    .etiquette-grid { max-height: 560px; }
-}
-@media (max-width: 576px) {
-    .display-4 { font-size: 2.8rem !important; }
-    .title-stroke::before { display: none; }
-    .golden-divider { margin: 2.5rem auto; }
-    .etiquette-card-glass { padding: 1.8rem !important; }
-    .etiquette-item { font-size: 0.94rem; padding-left: 28px; }
-    .signature-text { font-size: 1.4rem; }
-}
-/* Fix header overlap on mobile */
-@media (min-width: 992px) {
-    .mx-lg-0 {
-        margin-right: 0 !important;
-        margin-left: 5rem !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-image {
-        width: 220px !important;
-        height: 230px !important;
-        border-width: 10px;
-    }
-}
-
+/* Responsive Tweaks */
 @media (max-width: 768px) {
-    .elegant-text { font-size: 1rem; }
+    .spa-etiquette {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .etiquette-grid {
+        gap: 1.8rem;
+    }
+
+    .etiquette-item h4 {
+        font-size: 1.15rem;
+    }
+
+    .etiquette-item p {
+        font-size: 0.95rem;
+    }
 }
 
-/* Final Mobile Safety */
-@media (max-width: 480px) {
-    .container { padding-left: 20px !important; padding-right: 20px !important; }
-    .main-image { width: 300px !important; height: 265px !important; }
-    .title-stroke { font-size: 2.4rem !important; }
-    .etiquette-item { font-size: 0.92rem; padding-left: 28px; }
-    .gold-dot { top: 6px; }
-}
-
-/* -------------------------------------------------
-   UTILITIES
-   ------------------------------------------------- */
-%full-abs {
-  position: absolute;
-  inset: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .hero {
-    height: 55vh;
-    &__title { font-size: 3rem; }
-  }
-  .why-choose { padding: 3rem 0; }
-}
-
-@media (max-width: 576px) {
-  .hero {
-    height: 50vh;
-    &__title { font-size: 2.5rem; }
-  }
-  .section-title { font-size: 1.8rem; }
-}
