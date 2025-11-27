@@ -410,7 +410,122 @@
             </div>
         </section>
 
-        <!-- QUOTE -->
+        <!-- TEN WELLNESS TESTIMONIALS SECTION -->
+        <section class="insabhi-testimonials py-5 position-relative overflow-hidden" style="background:#f8f6f3;">
+            <!-- Subtle gold dots -->
+            <div class="position-absolute top-10 start-10 animate-pulse">
+                <div class="bg-gold rounded-circle opacity-60" style="width:8px;height:8px;"></div>
+            </div>
+            <div class="position-absolute bottom-20 end-20 animate-pulse" style="animation-delay:1s;">
+                <div class="bg-gold rounded-circle opacity-40" style="width:6px;height:6px;"></div>
+            </div>
+
+            <div class="container-fluid px-4 px-lg-5">
+                <!-- Section Title -->
+                <div class="text-center mb-5">
+                    <div class="d-inline-flex align-items-center gap-4 mb-4">
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                        <h2 class="display-5 fw-light m-0 px-4" style="font-family:'Playfair Display',serif; letter-spacing:1px;">
+                            Ten Wellness Testimonials
+                        </h2>
+                        <div class="flex-grow-1 h-05 bg-gold"></div>
+                    </div>
+                    <p class="lead text-muted col-lg-8 mx-auto">Real words from our cherished guests</p>
+                </div>
+
+                <div class="row g-5 align-items-stretch">
+
+                    <!-- GOOGLE REVIEWS – LEFT SIDE -->
+                    <div class="col-12 col-lg-8">
+                        <div class="row g-4">
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column transition-all">
+                                    <div class="text-gold mb-3 fs-5">★★★★★</div>
+                                    <p class="text-muted small flex-grow-1" style="line-height:1.8;">
+                                        Hands down the best spa experience I’ve had in Kuwait and believe me when I say that I go to a spa every week for the past two years nothing compared to the service friendliness and experience I totally recommend this to anyone, words cannot describe how amazing the session felt and the atmosphere all the services keep it up.
+                                    </p>
+                                    <p class="fw-medium text-dark mt-3">— Nour</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column transition-all">
+                                    <div class="text-gold mb-3 fs-5">★★★★★</div>
+                                    <p class="text-muted small flex-grow-1" style="line-height:1.8;">
+                                        I had a wonderful experience at Ten Spa. After a few days of intense workouts, I booked a 60-minute massage to help relax my muscles — and it was exactly what I needed. The masseur was extremely friendly, professional, and clearly experienced. I left feeling completely recharged.
+                                    </p>
+                                    <p class="fw-medium text-dark mt-3">— Najla</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column transition-all">
+                                    <div class="text-gold mb-3 fs-5">★★★★★</div>
+                                    <p class="text-muted small flex-grow-1" style="line-height:1.8;">
+                                        I recently visited Ten Spa in Kuwait for a massage and nail care. The massage was exceptionally professional — the pain in my shoulder completely disappeared. Impeccable cleanliness and calming atmosphere.
+                                    </p>
+                                    <p class="fw-medium text-dark mt-3">— Samer</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column transition-all">
+                                    <div class="text-gold mb-3 fs-5">★★★★★</div>
+                                    <p class="text-muted small flex-grow-1" style="line-height:1.8;">
+                                        Amazing experience! Super clean and relaxing atmosphere. Priyanto gave one of the best massages I’ve ever had — professional, intuitive, and spot on. Left feeling totally refreshed.
+                                    </p>
+                                    <p class="fw-medium text-dark mt-3">— Hamad</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CELEBRITY TESTIMONIAL (unchanged) -->
+                    <div class="col-12 col-lg-4">
+                        <div class="text-center">
+                            <p class="text-uppercase tracking-widest text-muted small mb-3" style="letter-spacing:4px;">
+                                Celebrity Experience
+                            </p>
+                            <video
+                                class="reel-video w-100"
+                                loop="loop"
+                                autoplay="autoplay"
+                                playsinline="playsinline"
+                                muted="false"
+                                controls="controls"
+                                preload="auto"
+                            >
+                                <source src="/insabhi_custom_website/static/src/image/testimonial.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ONLY THIS CSS TO ADD (for hover zoom + rich gold stars) -->
+        <style>
+            :root {
+                --gold: #D4AF37;
+            }
+            .text-gold { color: var(--gold) !important; }
+            .bg-gold { background-color: var(--gold) !important; }
+
+            .testimonial-card {
+                transition: all 0.35s ease;
+                transform: translateZ(0); /* for smooth performance */
+            }
+            .testimonial-card:hover {
+                transform: translateY(-10px) scale(1.05);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
+                z-index: 10;
+            }
+        </style>
+
+         <!-- QUOTE -->
         <section class="insabhi-quote py-5 bg-white position-relative overflow-hidden">
 
             <!-- Golden dust -->
