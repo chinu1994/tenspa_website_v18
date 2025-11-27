@@ -1,252 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-    <t t-name="insabhi_custom_website.Careers" owl="1">
-        <div class="careers">
-            <div class="o_careers_page_content">
 
-                <section class="careers-hero-section d-flex flex-column"
-                         style="background-image: url('/insabhi_custom_website/static/src/image/about1.png'); background-size: cover; background-position: center; min-height: 500px;">
-                    <div class="container h-100">
-                        <div class="row align-items-center h-100">
-                            <div class="col-lg-6 careers-hero-content p-5">
-                                <h2 class="career">Career opportunities</h2>
-                                <p>Ten workplaces are distinguished by a rare blend of courtesy, cordiality and
-                                    intellectual energy. We seek skilled individuals who can bring a wealth of
-                                    perspectives and inspired ideas to our table.
-                                </p>
-                                <a href="#" class="btn btn-light custom-hover-effect mt-4"
-                                   style="font-size: 14px; padding: 10px 20px;">
-                                       Browse all openings →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<t t-name="insabhi_custom_website.Careers" owl="1">
+    <div class="careers-page">
 
-                <section class="careers-main-content py-5 p-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h3 class="careers-section-title">Our values</h3>
-                            </div>
-                            <div class="col-lg-8">
-                                <ul class="careers-value-list">
-                                    <t t-set="values"
-                                       t-value="['Respect', 'Creativity', 'Excellence', 'Passion', 'Integrity']"/>
-                                    <t t-foreach="values" t-as="value" t-key="value_index">
-                                        <li class="careers-value-item" data-bs-toggle="collapse"
-                                            t-att-data-bs-target="'#valueCollapse_' + value_index">
-                                            <span t-esc="value"/>
-                                            <i class="oi oi-arrow-down"/> </li>
-                                    </t>
-                                </ul>
-                            </div>
-                        </div>
+        <!-- HERO – FULL TEAM IMAGE + CENTERED TEXT + FADE-IN ANIMATION (same as homepage) -->
+         <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/team.png"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Careers at Ten Wellness</h1>
+                </div>
+            </div>
+        </section>
 
-                        <hr class="my-5"/>
-                        <div class="row pt-5">
-                            <div class="col-lg-4">
-                                <h3 class="careers-section-title">Our commitment</h3>
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="careers-text-content">We dedicate ourselves fervently to humble but significant philanthropic endeavours,
-                                    and our approach is best described by the adage ‘actions speak louder than words’-Team Ten.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="careers-people-section py-5 p-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h3 class="careers-section-title">Our people</h3>
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="careers-text-content mb-4">Our people play an integral role in our continued success. We support
-                                    and encourage our employees’ endeavours to learn and grow, whether working towards
-                                    the mastery of a specialist skill, building experience that will enable them to
-                                    apply to an aspirational role, or strengthening their portable life skills.
-                                </p>
-                                <p class="careers-text-content mb-4">We take a holistic approach to ensure genuine wellbeing and psychological safety by focusing on
-                                    supporting professional, physical, financial and emotional wellbeing. All employees around the global
-                                    also have access to a local wellbeing provider through our employee assistance program.
-                                </p>
-                                <p class="careers-text-content mb-5">We are also on a mission to unlock opportunities for people from all backgrounds, and have groups and
-                                    communities that champion women and allies, LGBTQIA+ individuals, neurodiversity, race, ethnicity
-                                    and culture.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <!-- WHY JOIN US – LUXURIOUS TEXT SECTION (English only) -->
+        <section class="py-5" style="background:#f8f6f3;">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9 text-center">
 
-                <section class="insabhi-fullvideo-section position-relative" style="min-height:110vh;">
-                    <img src="/insabhi_custom_website/static/src/image/team.png" alt="Full section background"
-                         class="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
-                         style="z-index:-1;"/>
-                </section>
+                        <h2 class="display-5 fw-light mb-5" style="font-family:'Playfair Display',serif; color:#2d2a26;">
+                            Why Join Us?
+                        </h2>
 
-                <section class="careers-faq-section py-5 p-3">
-                    <div class="container">
-                        <h3 class="careers-section-title text-center mb-5">Our hiring process</h3>
+                        <div class="w-120px h-1 bg-gold mx-auto mb-5" style="background:#d4b08c;"></div>
 
-                        <div class="accordion" id="hiringProcessAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseA">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseA" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseB">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseB" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseC">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseC" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseD">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseD" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseE">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseE" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseF">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseF" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseG">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseG" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseH">
-                                        What is the hiring process at Tenspa?
-                                    </button>
-                                </h2>
-                                <div id="collapseH" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The process typically involves an application review, an initial screening call,
-                                        and 1-2 rounds of interviews with the hiring manager and team members.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseI">
-                                        How long does the hiring process take?
-                                    </button>
-                                </h2>
-                                <div id="collapseI" class="accordion-collapse collapse"
-                                     data-bs-parent="#hiringProcessAccordion">
-                                    <div class="accordion-body">
-                                        The length of the hiring process depends on the position and the experience level.
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="luxury-prose" style="font-size:1.25rem; line-height:2; color:#444; max-width:960px; margin:0 auto;">
+                            <p class="mb-5">
+                                At the heart of our work is <strong>integrity and entrepreneurship</strong>. What matters most is the willingness to do whatever it takes to deliver top-quality results, together as a team.
+                            </p>
+                            <p class="mb-5">
+                                Here, we’re an <strong>A-player team that’s got each other’s backs</strong>. One way we show that is through our <strong>WOW Prize</strong> — whenever you spot a teammate living one of our eight values, talk to HR and they could earn <strong>five Kuwaiti dinar</strong> and a certificate of recognition.
+                            </p>
+                            <p class="mb-5">
+                                Growth isn’t just a buzzword; it’s real. We evaluate performance <strong>twice every 12 months</strong> to spot and grow those who work hard, show heart, and drive Ten forward.
+                            </p>
+                            <p class="mb-5">
+                                To succeed, focus on integrity and knowledge — invest in yourself with reading and courses, because <strong>when you grow, we invest in you too</strong>.
+                            </p>
+                            <p class="mb-5">
+                                We want you to come to work <strong>excited</strong>, to have fun with your teammates, to find meaning, and to see your skills and opportunities expand year after year.
+                            </p>
+                            <p class="lead fst-italic mt-5" style="color:#d4b08c; font-size:1.7rem;">
+                                That’s what being part of this team is all about.
+                            </p>
                         </div>
 
-                        <div class="text-center mt-5">
-                            <p>We invite you to browse Tenspa career opportunities.</p>
-                            <a href="#" class="btn btn-dark mt-2" style="font-size: 14px; padding: 10px 30px;">Browse
-                                all openings →
+                        <!-- APPLY BUTTON (link can be added later) -->
+                        <div class="mt-5 pt-4">
+                            <a href="#" class="btn btn-outline-dark rounded-pill px-5 py-3 text-uppercase fw-medium border-2"
+                               style="letter-spacing:3px; font-size:0.95rem;">
+                                View Open Positions
+                                <i class="bi bi-arrow-right ms-3"></i>
                             </a>
                         </div>
-                    </div>
-                </section>
 
+                    </div>
+                </div>
             </div>
-        </div>
-    </t>
+        </section>
+
+    </div>
+</t>
+
 </templates>
