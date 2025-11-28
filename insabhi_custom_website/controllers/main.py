@@ -21,10 +21,24 @@ class OwlPlayground(http.Controller):
     def careers(self, **kw):
         return request.render('insabhi_custom_website.careers')
 
+    # @http.route('/tenStore', type='http', auth='public', website=True)
+    # def tenStore(self):
+    #     return request.render('insabhi_custom_website.tenStore')
+
     @http.route('/tenStore', type='http', auth='public', website=True)
-    def tenStore(self):
+    def tenStore(self, **kw):
+        # Render the listing page (cards)
         return request.render('insabhi_custom_website.tenStore')
 
+    # New: product detail page — uses same module (no new file)
+    @http.route('/tenStore/product/<string:key>', type='http', auth='public', website=True)
+    def tenStore_product_detail(self, key, **kw):
+        values = {
+            'key': key,
+        }
+        return request.render('insabhi_custom_website.tenStore_product_detail', values)
+
+    #######
     @http.route('/giftVoucher', type='http', auth='public', website=True)
     def giftVoucher(self):
         return request.render('insabhi_custom_website.giftVoucher')
@@ -71,8 +85,4 @@ class OwlPlayground(http.Controller):
         return request.render('insabhi_custom_website.dynamic_products_list', {
             'products': products
         })
-
-    @http.route('/faq', type='http', auth='public', website=True)
-    def faq(self):
-        return request.render('insabhi_custom_website.faq')
 

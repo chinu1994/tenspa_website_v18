@@ -3,252 +3,152 @@
 
     <t t-name="insabhi_custom_website.TenStore" owl="1">
         <div class="tenStore">
-            <section class="insabhi-hero-video position-relative height-fixer-hero">
-                <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="insabhi_custom_website/static/src/image/about2.jpg"
-                         alt="Hero" class="w-100 h-100 object-fit-cover"/>
-                </div>
-                <div class="insabhi-hero-overlay-bottom">
-                    <div class="insabhi-hero-content-bottom container">
-                          <h1>The World of Ten Store</h1>
-                    </div>
+
+            <!-- HERO -->
+            <section class="insabhi-hero hero-aesop position-relative">
+                <div class="hero-image-wrapper">
+                    <img src="insabhi_custom_website/static/src/image/about.jpg"
+                         alt="ten store"
+                         class="hero-image"/>
                 </div>
             </section>
 
+            <!-- CURATED FORMULATIONS -->
             <section class="insabhi-new-notable py-5">
                 <div class="container">
                     <div class="text-center mb-5">
-                        <h2 class="insabhi-section-title">Curated Formulations</h2>
+                        <h2 class="insabhi-section-title">Welcome to Ten Spa's Store</h2>
                         <p class="insabhi-section-subtitle">
-                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.
-                        </p>
-                    </div>
-                    <div class="row g-4 px-3">
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat1.png"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 1"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;"/>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
-                                    <p class="lead">This is a world-class stainless steel product.
-                                        It is specially designed to keep your drink hot for up to 12
-                                        hours or refreshingly cold for up to 24 hours. We also ensured
-                                        the addition of an extremely durable outer layer that can withstand
-                                        the toughest conditions, guaranteeing you an exceptional drinking experience.</p>
-
-                                        <p><b> Price:</b> 11.9 K.D. / Tabby 13</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Discover luxury through the magic of an exceptional fragrance, carefully crafted from the finest and rarest oils in the world, designed to embrace your uniqueness..
-                                      In the first phase, from the very first minute, the fragrance opens with the richness of saffron blended with raspberry and thyme. From minute 16 up to 3 hours, it reveals the luxurious notes of patchouli combined with jasmine and frankincense. Finally, from 3 hours to 10 hours after application, the scent settles into warm amber, leather, and the deep essence of Indian woods.
-                                      We designed this olfactory journey especially for you—because you truly deserve it.
-                                  </p>
-                                      <p><b> Price:</b> 29.7 KWD / tabby 33
-                                 </p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 2"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 3"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Product 3 Review (I-D):  Yeh scent bohot sophisticated hai. Thoda musky aur deep hai, jo evening events ke liye best hai. Longetivity toh amazing hai, subah lagao toh raat tak rehta hai.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left" >Product 4 Review (D-I):  Mujhe floral scents pasand hain aur yeh waala bilkul perfect hai. Bahut natural aur sweet smell hai. Packaging bhi bohot sundar hai, ek acha gift option hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 4"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 5"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Product 5 Review (I-D):  Yeh ek unique scent hai, thoda woody aur spicy. Jab bhi lagata hoon, log poochte hain kaunsa perfume hai. Definitely ek head-turner hai!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 6 Review (D-I):  Value for money product! Itni achi quality aur scent itne kam price mein. Har din use karta hoon, skin par bhi smooth rehta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 6"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 7"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 7 Review (I-D):  Mera all-time favorite! Iska scent bohot hi soothing aur calming hai. Office aur casual outings, dono ke liye perfect hai.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 8 Review (D-I):  Thoda fruity aur sweet notes hain. Young log aur jo playful scent pasand karte hain, unke liye best hai. Summer mein zyada acha lagta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat8.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 8"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat9.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 9"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 9 Review (I-D):  Bahut hi rich aur intense fragrance hai. Special occasions ke liye rakha hai. Thoda zyada lagane ki zaroorat nahi padti, ek spray hi kaafi hai.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 10 Review (D-I):  Clean aur aquatic feel deta hai. Gym ya outdoor activities ke baad bahut refreshing lagta hai. Iska freshness boht der tak rehta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat10.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 10"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat11.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 11"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 11 Review (I-D):  Mujhe iski vanilla ki hint bohot pasand aayi. Bilkul bhi overwhelming nahi hai, soft aur inviting hai. Winter ke liye toh mast hai!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 12 Review (D-I):  Ekdum classic aur time-less scent hai. Har age group ke log use kar sakte hain. Professional setting ke liye ideal hai, classy feel deta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 12"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 13"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 13 Review (I-D):  Thoda exotic aur spicy notes hain, jo ek mysterious feel dete hain. Date nights aur parties ke liye rakha hai. Scent trail bhi bohot acha hai.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 14 Review (D-I):  Citrus aur floral ka bahut hi acha blend hai. Summer days ke liye non-negotiable hai. Boht zyada halka hai aur irritation nahi karta.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 14"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 15"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 15 Review (I-D): Yeh ek solid perfume hai. Travel-friendly aur use karne mein easy. Scent concentration achi hai aur bohot subtle rehta hai, tez nahi lagta.</p>
-                                </div>
-                            </div>
-                        </div>
-
+                            Step into a sanctuary of wellness and indulgence at Ten Spa's store, where nature meets luxury.
+                            Explore our collection of organic skincare, body care, and enchanting fragrances,
+                            crafted with the finest natural ingredients. From nourishing lotions to revitalizing bath salts
+                            and scented candles, our products elevate self-care into moments of pure indulgence.                        </p>
                     </div>
                 </div>
             </section>
+
+            <!-- PRODUCT CARDS SECTION -->
+            <section id="treatments" class="mb-5">
+                <div class="row g-4">
+
+                    <div class="treatment-cards-row">
+
+                        <!-- Product Card Example -->
+                        <!-- CART IMAGE 1 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('aromatherapy')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Perfume one 100ml</div>
+                            </div>
+                        </div>
+
+                        <!--CART IMAGE 2 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('ten shampoos')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Ten Shampoos</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 3 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('bamboo plant')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Bamboo Plant</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 4 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('ten two')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Ten Two</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 5 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('testimonials')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Testimonials</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 6 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('swedish')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat13.jpg" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Swedish Massage</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 7 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('TenProteinShampoo')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Ten Protein Shampoo</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 8 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('Ten')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Ten Protein Shampoo</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 9 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('Ten one')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat9.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Ten Protein</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 10 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('Ten four')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat8.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Sansevieria (Snake Plant)</div>
+                            </div>
+                        </div>
+
+                        <!-- CART IMAGE 11 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('Ten five')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat11.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Sansevieria (Snake Plant)</div>
+                            </div>
+                        </div>
+
+                        <!--CART IMAGE 12 -->
+                        <div class="treatment-card" onclick="showFullScreenModal('Ten six')">
+                            <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="card-img"/>
+                            <div class="card-footer">
+                                <button class="book-now-short">Book Now</button>
+                                <div class="card-title">Wooden Sage</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     </t>
 
 </templates>
+
+
