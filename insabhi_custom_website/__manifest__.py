@@ -33,7 +33,6 @@
         'view/contactus.xml',
         'view/careers.xml',
         'view/tenStore.xml',
-        'view/giftvoucher.xml',
         'view/serviceSelecting.xml',
         'view/addOns.xml',
         'view/giftType.xml',
