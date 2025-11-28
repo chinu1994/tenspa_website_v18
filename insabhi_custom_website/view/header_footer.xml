@@ -98,6 +98,7 @@
                                     <a class="nav-link" href="/tenStore">Ten Store</a>
                                     <a class="nav-link" href="/careers">Careers</a>
                                     <a class="nav-link" href="/contactus">Contact Us</a>
+                                    <a class="nav-link" href="/faq">FAQ</a>
 
 
                                 </div>
@@ -163,6 +164,10 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="/contactus">Contact Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/faq">FAQ</a>
                                 </li>
 
                             </ul>
