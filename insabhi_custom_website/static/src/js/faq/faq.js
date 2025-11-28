@@ -1,10 +1,19 @@
 /** @odoo-module **/
 
-import { Component, mount, whenReady, useState, onWillStart } from "@odoo/owl";
+import { Component, mount, whenReady, useState } from "@odoo/owl";
 import { getTemplate } from "@web/core/templates";
-import { rpc } from "@web/core/network/rpc";
 
 export class Faq extends Component {
+
+    setup() {
+        this.state = useState({
+            activeTab: "general",
+        });
+    }
+
+    switchTab(tabName) {
+        this.state.activeTab = tabName;
+    }
 }
 
 Faq.template = "insabhi_custom_website.Faq";
