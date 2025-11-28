@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+  <t t-name="insabhi_custom_website.Faq">
+    <main id="ten-faq-page" class="ten-faq-page o_container_small">
+
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+              <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/treatment1.jpg"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+              </div>
+
+              <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                  <div class="faq-header-banner text-center">
+                    <h1 class="faq-title mb-3">FAQs</h1>
+                    <h2 class="faq-subtitle mb-3">
+                      Welcome to Ten Wellness – Where Luxury Meets Well-being
+                    </h2>
+                    <hr class="faq-divider"/>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+      <section class="container py-5">
+        <!-- Heading -->
+<!--        <div class="faq-header text-center mb-5">-->
+<!--          <h1 class="faq-title mb-3">FAQs</h1>-->
+<!--          <h2 class="faq-subtitle mb-3">-->
+<!--            Welcome to Ten Wellness – Where Luxury Meets Well-being-->
+<!--          </h2>-->
+<!--          <hr class="faq-divider"/>-->
+<!--        </div>-->
+
+        <!-- FAQ document link -->
+        <div class="faq-link-block mb-5">
+          <p class="mb-2">
+            <strong>Frequently Asked Questions (FAQ)</strong> – this is the link for FAQ doc:
+          </p>
+          <p class="mb-0">
+<!--            <a href="https://docs.google.com/..." target="_blank" class="faq-doc-link">-->
+<!--              Open full FAQ document-->
+<!--            </a>-->
+          </p>
+        </div>
+
+        <!-- Topics table / block -->
+        <div class="faq-topics-wrapper">
+          <div class="faq-topics-card">
+
+            <div class="faq-topics-header">
+              <span>Topics</span>
+              <span>Details</span>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Orders and delivery
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  Order and delivery information
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Here you can describe shipping times, carriers, and delivery options in more detail.
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Product and advice
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  Cancel or amend an order
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Information on when and how an order can be changed or cancelled after it has been placed.
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Gift services
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  Issue with order
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Guidance on what to do if an item is missing, damaged, or incorrect in your order.
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Payment and My Account
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  Returns and exchanges
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Outline your return policy, exchange options, and how refunds are processed.
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Sustainability
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  More about our approach
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Briefly explain your environmental and ethical commitments, sourcing, and packaging.
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="faq-topic-row js-faq-row">
+              <div class="faq-topic-label">
+                <span class="faq-topic-icon"></span>
+                Other
+              </div>
+              <div class="faq-topic-value">
+                <div class="faq-topic-summary">
+                  General questions
+                  <span class="faq-toggle-icon"></span>
+                </div>
+                <div class="faq-topic-content">
+                  Use this section for any additional information customers often ask about.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple accordion JS -->
+      <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function () {
+            document
+              .querySelectorAll('.ten-faq-page .js-faq-row .faq-topic-summary')
+              .forEach(function (summary) {
+                summary.addEventListener('click', function () {
+                  var row = summary.closest('.js-faq-row');
+                  if (row) {
+                    row.classList.toggle('is-open');
+                  }
+                });
+              });
+          });
+      </script>
+
+    </main>
+  </t>
+</templates>
