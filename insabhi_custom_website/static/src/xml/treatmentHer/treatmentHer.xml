@@ -27,11 +27,11 @@
 
 
                 <!-- Intro Section -->
-                <section class="intro-section py-5 bg-light">
+                <section class="intro-section py-5" style="background:#f5f5f5;">
                     <div class="container py-4">
                         <div class="row justify-content-center">
                             <div class="col-lg-10 text-center">
-                                <h2 class="section-title display-5 fw-bold text-primary mb-4">Ten Wellness Treatments for Her</h2>
+                                <h2 class="section-title display-5 fw-bold mb-4" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Ten Wellness Treatments for Her</h2>
                                 <p class="lead fs-5">
                                     Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of tranquility as our highly skilled therapists deliver expertly tailored treatments to restore balance to your mind, body, and spirit. Our signature massages are thoughtfully crafted to alleviate stress and tension, leaving you feeling refreshed and revitalized. With meticulously designed 60- or 90-minute sessions, we ensure each treatment provides unparalleled comfort and care. Embrace the serene ambiance and allow our therapies to guide you to a state of complete renewal and well-being.
                                 </p>
@@ -45,7 +45,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3">Classic Spa Treatments</h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Classic Spa Treatments</h2>
                                 <div class="title-underline mx-auto"></div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Foot Reflexology (Zone Therapy)</h3>
+                                        <h3 class="card-title fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Foot Reflexology (Zone Therapy)</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Improving circulation, stress relief, digestive support</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Medium to Strong</li>
@@ -68,10 +68,10 @@
                                             <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Also known as zone therapy, foot reflexology is an ancient practice rooted in traditional Chinese medicine with a history spanning nearly 2,000 years. This treatment applies pressure to specific points on the feet to stimulate blood circulation, alleviate stress, aid digestion, and promote overall health. It is widely believed to have therapeutic and healing properties.
+                                            <span class="fw-bold">About:</span> Also known as zone therapy, foot reflexology is an ancient practice rooted in traditional Chinese medicine with a history spanning nearly 2,000 years. This treatment applies pressure to specific points on the feet to stimulate blood circulation, alleviate stress, aid digestion, and promote overall health. It is widely believed to have therapeutic and healing properties.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During a reflexology session, precise pressure is applied to specific areas of the foot believed to correspond with organs and systems throughout the body. This technique is designed to encourage relaxation, alleviate stress, and support the body's natural healing processes, leaving you feeling balanced and revitalized.
+                                            <span class="fw-bold">What to Expect:</span> During a reflexology session, precise pressure is applied to specific areas of the foot believed to correspond with organs and systems throughout the body. This technique is designed to encourage relaxation, alleviate stress, and support the body's natural healing processes, leaving you feeling balanced and revitalized.
                                         </p>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Swedish Massage (Classic Massage)</h3>
+                                        <h3 class="card-title fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Swedish Massage (Classic Massage)</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Muscle tension relief and overall relaxation</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Light to Medium</li>
@@ -96,10 +96,10 @@
                                             <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Also known as the classic massage, Swedish massage originates from Sweden and is widely practiced across Europe. This soothing treatment uses soft to medium pressure without stretching techniques, making it perfect for relaxation and stress relief. By easing tension and promoting muscle relaxation, it can also improve posture by preventing muscles from overcompensating due to physical stress.
+                                            <span class="fw-bold">About:</span> Also known as the classic massage, Swedish massage originates from Sweden and is widely practiced across Europe. This soothing treatment uses soft to medium pressure without stretching techniques, making it perfect for relaxation and stress relief. By easing tension and promoting muscle relaxation, it can also improve posture by preventing muscles from overcompensating due to physical stress.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> The technique combines long, kneading strokes with rhythmic tapping and gentle joint movements. Targeting the uppermost muscle layers, Swedish massage is designed to relieve tension, enhance circulation, and leave you feeling relaxed and rejuvenated.
+                                            <span class="fw-bold">What to Expect:</span> The technique combines long, kneading strokes with rhythmic tapping and gentle joint movements. Targeting the uppermost muscle layers, Swedish massage is designed to relieve tension, enhance circulation, and leave you feeling relaxed and rejuvenated.
                                         </p>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Indonesian (Balinese) Massage</h3>
+                                        <h3 class="card-title fw-bold mb-3">Indonesian (Balinese) Massage</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Stress relief, circulation boost, detoxification</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Medium to Strong</li>
@@ -124,10 +124,10 @@
                                             <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Originating from Indonesia, this traditional massage blends Balinese techniques with medium to strong pressure and gentle stretching. Known for its holistic approach, Balinese massage reduces stress, stimulates blood circulation, alleviates muscle strain, detoxifies the body, and nourishes the skin for a radiant glow.
+                                            <span class="fw-bold">About:</span> Originating from Indonesia, this traditional massage blends Balinese techniques with medium to strong pressure and gentle stretching. Known for its holistic approach, Balinese massage reduces stress, stimulates blood circulation, alleviates muscle strain, detoxifies the body, and nourishes the skin for a radiant glow.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> The massage incorporates long, flowing palm strokes, kneading, and precise thumb pressure to create an authentic and deeply therapeutic experience. With its dynamic movement techniques, Balinese massage leaves you feeling both relaxed and re-energized.
+                                            <span class="fw-bold">What to Expect:</span> The massage incorporates long, flowing palm strokes, kneading, and precise thumb pressure to create an authentic and deeply therapeutic experience. With its dynamic movement techniques, Balinese massage leaves you feeling both relaxed and re-energized.
                                         </p>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">04</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Deep Tissue / Sports Massage</h3>
+                                        <h3 class="card-title fw-bold mb-3">Deep Tissue / Sports Massage</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Muscle pain relief after intense physical activity</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Strong</li>
@@ -152,10 +152,10 @@
                                             <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Deep Tissue/Sports Massage is designed for those seeking relief from muscle pain and tension, especially after intense physical activity or exercise. This treatment uses deep pressure combined with stretching techniques to improve flexibility, promote recovery, and address muscle-related issues.
+                                            <span class="fw-bold">About:</span> Deep Tissue/Sports Massage is designed for those seeking relief from muscle pain and tension, especially after intense physical activity or exercise. This treatment uses deep pressure combined with stretching techniques to improve flexibility, promote recovery, and address muscle-related issues.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During a Deep Tissue Massage, the therapist applies slow, deliberate strokes and firm pressure to target the deepest layers of muscles and connective tissues, alleviating tension and soreness. Sports Massage focuses on reducing pain, improving circulation, and releasing muscle tension while stimulating the production of endorphins.
+                                            <span class="fw-bold">What to Expect:</span> During a Deep Tissue Massage, the therapist applies slow, deliberate strokes and firm pressure to target the deepest layers of muscles and connective tissues, alleviating tension and soreness. Sports Massage focuses on reducing pain, improving circulation, and releasing muscle tension while stimulating the production of endorphins.
                                         </p>
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">05</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Aromatherapy Hot Stone Massage</h3>
+                                        <h3 class="card-title fw-bold mb-3">Aromatherapy Hot Stone Massage</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Deep muscle relaxation and improved blood flow, reduces anxiety, tension, and promotes better sleep &amp; relieves body aches and muscle tension</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Light</li>
@@ -180,10 +180,10 @@
                                             <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Aromatherapy Hot stone Massage is the perfect choice for travelers or anyone experiencing fatigue and body exhaustion. It combines gentle massage techniques with the soothing warmth of hot stones, helping to relax muscles deeply and stimulate circulation. This session is designed to ease tension, calm the mind, and restore the body's natural balance—promoting restful sleep and leaving you refreshed after travel or long periods of stress.
+                                            <span class="fw-bold">About:</span> The Aromatherapy Hot stone Massage is the perfect choice for travelers or anyone experiencing fatigue and body exhaustion. It combines gentle massage techniques with the soothing warmth of hot stones, helping to relax muscles deeply and stimulate circulation. This session is designed to ease tension, calm the mind, and restore the body's natural balance—promoting restful sleep and leaving you refreshed after travel or long periods of stress.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, hot stones are placed on key points of the body to distribute heat evenly, while the therapist uses light, flowing massage techniques to melt away tension. The warmth penetrates deep into the muscles, relieving stiffness and aches while creating a profound sense of comfort and relaxation. You'll leave the treatment feeling light, calm, and completely renewed.
+                                            <span class="fw-bold">What to Expect:</span> During the session, hot stones are placed on key points of the body to distribute heat evenly, while the therapist uses light, flowing massage techniques to melt away tension. The warmth penetrates deep into the muscles, relieving stiffness and aches while creating a profound sense of comfort and relaxation. You'll leave the treatment feeling light, calm, and completely renewed.
                                         </p>
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">06</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Warrior Thai Massage (Therapeutic)</h3>
+                                        <h3 class="card-title fw-bold mb-3">Warrior Thai Massage (Therapeutic)</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Muscle recovery, improving flexibility, pain relief, stress reduction, and overall body balance.</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Medium to Strong</li>
@@ -208,10 +208,10 @@
                                             <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Warrior Thai Massage is a therapeutic bodywork technique that blends pressure and compression with deep, assisted stretches. Rooted in traditional Thai practices, this massage focuses on releasing muscle tension, enhancing flexibility, and restoring the body's natural energy flow. It is particularly beneficial for active individuals or anyone seeking recovery and relaxation after physical exertion.
+                                            <span class="fw-bold">About:</span> The Warrior Thai Massage is a therapeutic bodywork technique that blends pressure and compression with deep, assisted stretches. Rooted in traditional Thai practices, this massage focuses on releasing muscle tension, enhancing flexibility, and restoring the body's natural energy flow. It is particularly beneficial for active individuals or anyone seeking recovery and relaxation after physical exertion.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist uses their hands, palms, and body weight to apply firm pressure and perform guided stretching movements. These dynamic techniques improve joint mobility, ease muscle tightness, and promote a sense of balance and renewal. The experience is both therapeutic and deeply revitalizing, leaving you energized yet relaxed.
+                                            <span class="fw-bold">What to Expect:</span> During the session, the therapist uses their hands, palms, and body weight to apply firm pressure and perform guided stretching movements. These dynamic techniques improve joint mobility, ease muscle tightness, and promote a sense of balance and renewal. The experience is both therapeutic and deeply revitalizing, leaving you energized yet relaxed.
                                         </p>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">07</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Back, Neck, Shoulder, and Head Massage</h3>
+                                        <h3 class="card-title fw-bold mb-3">Back, Neck, Shoulder, and Head Massage</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Relieving muscle tightness, reducing headaches and neck pain, releasing stress, and promoting overall relaxation.</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Gentle to Firm</li>
@@ -236,10 +236,10 @@
                                             <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Back, Neck, Shoulder, and Head Massage is a targeted therapeutic session focusing on the body's most common areas of tension. By applying gentle to firm pressure, this treatment helps release stiffness, ease pain, and restore balance, making it ideal for those who carry stress in their upper body or experience frequent headaches.
+                                            <span class="fw-bold">About:</span> The Back, Neck, Shoulder, and Head Massage is a targeted therapeutic session focusing on the body's most common areas of tension. By applying gentle to firm pressure, this treatment helps release stiffness, ease pain, and restore balance, making it ideal for those who carry stress in their upper body or experience frequent headaches.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.
+                                            <span class="fw-bold">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.
                                         </p>
                                     </div>
                                 </div>
@@ -255,7 +255,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-primary rounded-pill mb-3">08</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">30mins Aircups Therapy</h3>
+                                        <h3 class="card-title fw-bold mb-3">30mins Aircups Therapy</h3>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Stimulating blood circulation, relieving muscle tension, reducing inflammation, detoxifying the body, and supporting natural healing.</li>
                                             <li class="mb-2"><strong>Pressure:</strong> Gentle to Medium (with suction)</li>
@@ -264,10 +264,10 @@
                                             <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Aircups Therapy is a 30-minute targeted back massage combined with gentle suction cup techniques to encourage blood flow and release muscle tension. This treatment is designed to promote faster recovery, reduce inflammation, and support the body's natural detoxification and healing process.
+                                            <span class="fw-bold">About:</span> The Aircups Therapy is a 30-minute targeted back massage combined with gentle suction cup techniques to encourage blood flow and release muscle tension. This treatment is designed to promote faster recovery, reduce inflammation, and support the body's natural detoxification and healing process.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.
+                                            <span class="fw-bold">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.
                                         </p>
                                     </div>
                                 </div>
@@ -277,11 +277,11 @@
                 </section>
 
                 <!-- Rituals Section -->
-                <section class="rituals py-5 bg-light">
+                <section class="rituals py-5" style="background:#f5f5f5;">
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Rituals (Luxury Packages)</h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;"> Rituals (Luxury Packages)</h2>
                                 <div class="title-underline mx-auto"></div>
                                 <p class="lead fs-5 mt-4">
                                     Immerse yourself in the ultimate spa experience with Ten Wellness Rituals — luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an unparalleled journey of indulgence and pure bliss.
@@ -294,7 +294,7 @@
                                 <div class="card border-0 shadow-lg mb-5 ritual-card">
                                     <div class="card-body p-4 p-lg-5">
                                         <div class="d-flex justify-content-between align-items-start mb-4">
-                                            <h3 class="card-title fw-bold text-primary">Marabya Nights</h3>
+                                            <h3 class="card-title fw-bold">Marabya Nights</h3>
                                             <span class="badge bg-primary rounded-pill px-3 py-2">120 Minutes</span>
                                         </div>
 
@@ -307,7 +307,7 @@
                                                 </ul>
                                             </div>
                                             <div class="col-md-6">
-                                                <p class="fw-bold text-primary mb-2">Highlights:</p>
+                                                <p class="fw-bold mb-2">Highlights:</p>
                                                 <ul class="highlights-list list-group list-group-flush">
                                                     <li class="list-group-item px-0">Thalasso Steam Session (Detoxifying)</li>
                                                     <li class="list-group-item px-0">Revitalizing Exfoliation</li>
@@ -333,7 +333,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Distinguished Grooming for Women</h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;"> Distinguished Grooming for Women</h2>
                                 <div class="title-underline mx-auto"></div>
                                 <p class="lead fs-5 mt-4">
                                     Discover a new standard of care designed to leave you looking polished and feeling your best. Redefine your personal care routine with our Distinguished Grooming for Women services, thoughtfully crafted for the modern woman. From revitalizing facial treatments that refresh and refine your complexion to precision manicures and pedicures that exude confidence, every detail is tailored to enhance your style and sophistication.
@@ -357,7 +357,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Spoil Me Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Spoil Me Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(90 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Complete pampering, relaxation, detailed nail and skin care, and a luxurious grooming experience.</li>
@@ -365,10 +365,10 @@
                                             <li><strong>Duration:</strong> 90 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Spoil Me Mani &amp; Pedi is our most indulgent and relaxing experience, performed by two therapists working simultaneously — one focusing on your hands and the other on your feet. This luxury treatment offers full nail and cuticle care, complemented with advanced techniques to ensure total rejuvenation. It is designed to leave you feeling completely pampered, polished, and refreshed.
+                                            <span class="fw-bold ">About:</span> The Spoil Me Mani &amp; Pedi is our most indulgent and relaxing experience, performed by two therapists working simultaneously — one focusing on your hands and the other on your feet. This luxury treatment offers full nail and cuticle care, complemented with advanced techniques to ensure total rejuvenation. It is designed to leave you feeling completely pampered, polished, and refreshed.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
@@ -395,7 +395,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Elegant Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Elegant Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(45 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> A refined and time-efficient session, professional nail and cuticle care, and a premium experience in less than an hour.</li>
@@ -403,10 +403,10 @@
                                             <li><strong>Duration:</strong> 45 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Elegant Mani &amp; Pedi is a sophisticated and efficient treatment, performed by two therapists working together simultaneously. This service includes nail shaping, cuticle care, and exfoliating scrubs for both hands and feet, with the option of adding red light therapy for the face. The session concludes with a professional polish application, all set in a calming environment with soothing music and aromatherapy. Perfect for those who want a premium grooming experience in under an hour.
+                                            <span class="fw-bold">About:</span> The Elegant Mani &amp; Pedi is a sophisticated and efficient treatment, performed by two therapists working together simultaneously. This service includes nail shaping, cuticle care, and exfoliating scrubs for both hands and feet, with the option of adding red light therapy for the face. The session concludes with a professional polish application, all set in a calming environment with soothing music and aromatherapy. Perfect for those who want a premium grooming experience in under an hour.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
@@ -432,7 +432,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Basic Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Basic Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(30 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Quick nail maintenance, clean and polished look, and efficient care without compromising on quality.</li>
@@ -440,10 +440,10 @@
                                             <li><strong>Duration:</strong> 30 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Basic Mani &amp; Pedi is a simple, time-efficient session focused on essential nail care. Performed by two therapists working at the same time, this treatment ensures your hands and feet look neat and refreshed in the shortest time possible. Perfect for those who want a quick grooming boost while still maintaining quality and precision.
+                                            <span class="fw-bold">About:</span> The Basic Mani &amp; Pedi is a simple, time-efficient session focused on essential nail care. Performed by two therapists working at the same time, this treatment ensures your hands and feet look neat and refreshed in the shortest time possible. Perfect for those who want a quick grooming boost while still maintaining quality and precision.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working simultaneously (hands &amp; feet)</li>
@@ -460,6 +460,33 @@
                 </section>
             </div>
         </div>
+
+        <!-- START: WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=96522288282"
+           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width: 60px; height: 60px; z-index: 1000;"
+           target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+</a>
+
+
+        <style>
+    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+    .whatsapp-fixed-btn {
+        /* approx 1.5rem or 24px from bottom and right */
+        bottom: 1.5rem;
+        right: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Add WhatsApp icon hover effect */
+    .whatsapp-fixed-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+</style>
+
+        <!-- END: WhatsApp Icon -->
     </t>
 
 </templates>
