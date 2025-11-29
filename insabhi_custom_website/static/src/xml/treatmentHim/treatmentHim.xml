@@ -27,11 +27,11 @@
 
 
                 <!-- Intro Section -->
-                <section class="intro-section py-5 bg-light">
+                <section class="intro-section py-5" style="background:#f5f5f5;">
                     <div class="container py-4">
                         <div class="row justify-content-center">
                             <div class="col-lg-10 text-center">
-                                <h2 class="section-title display-5 fw-bold text-primary mb-4">Ten Wellness Treatments for Him</h2>
+                                <h2 class="section-title display-5 fw-bold text-primary mb-4" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Ten Wellness Treatments for Him</h2>
                                 <p class="lead fs-5">
                                     Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of
                                      tranquility as our highly skilled therapists deliver expertly tailored treatments to restore
@@ -48,7 +48,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3">Classic Spa Treatments</h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;">Classic Spa Treatments</h2>
                                 <div class="title-underline mx-auto"></div>
                             </div>
                         </div>
@@ -280,11 +280,11 @@
                 </section>
 
                 <!-- Rituals Section -->
-                <section class="rituals py-5 bg-light">
+                <section class="rituals py-5" style="background:#f5f5f5;">
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Rituals (Luxury Packages)</h2>
+                                <h2 class="section-title display-5 fw-bold mb-3"  style="font-family:'Playfair Display',serif;letter-spacing:1px;"> Rituals (Luxury Packages)</h2>
                                 <div class="title-underline mx-auto"></div>
                                 <p class="lead fs-5 mt-4">
                                     Immerse yourself in the ultimate spa experience with Ten Wellness Rituals — luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an unparalleled journey of indulgence and pure bliss.
@@ -434,7 +434,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3">  Skin Conditioning Treatments </h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;">  Skin Conditioning Treatments </h2>
                                 <div class="title-underline mx-auto"></div>
                                 <p class="lead fs-5 mt-4">
                                    Reveal your skin's true potential with our expertly crafted skin conditioning treatments. Designed to rejuvenate and restore, these treatments cater to your skin's unique needs, delivering hydration, nourishment, and a healthy glow. From deep-cleansing facials to targeted masks and serums.</p>
@@ -525,7 +525,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Distinguished Grooming for Gentlemen </h2>
+                                <h2 class="section-title display-5 fw-bold mb-3" style="font-family:'Playfair Display',serif;letter-spacing:1px;"> Distinguished Grooming for Gentlemen </h2>
                                 <div class="title-underline mx-auto"></div>
                                 <p class="lead fs-5 mt-4">
                                     Discover a new standard of care designed to leave you looking polished and feeling your best. Redefine your personal care routine with our Distinguished Grooming for Women services, thoughtfully crafted for the modern woman. From revitalizing facial treatments that refresh and refine your complexion to precision manicures and pedicures that exude confidence, every detail is tailored to enhance your style and sophistication.
@@ -549,7 +549,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Spoil Me Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Spoil Me Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(90 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Complete pampering, relaxation, detailed nail and skin care, and a luxurious grooming experience.</li>
@@ -557,10 +557,10 @@
                                             <li><strong>Duration:</strong> 90 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Spoil Me Mani &amp; Pedi is our most indulgent and relaxing experience, performed by two therapists working simultaneously — one focusing on your hands and the other on your feet. This luxury treatment offers full nail and cuticle care, complemented with advanced techniques to ensure total rejuvenation. It is designed to leave you feeling completely pampered, polished, and refreshed.
+                                            <span class="fw-bold">About:</span> The Spoil Me Mani &amp; Pedi is our most indulgent and relaxing experience, performed by two therapists working simultaneously — one focusing on your hands and the other on your feet. This luxury treatment offers full nail and cuticle care, complemented with advanced techniques to ensure total rejuvenation. It is designed to leave you feeling completely pampered, polished, and refreshed.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
@@ -587,7 +587,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Elegant Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Elegant Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(45 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> A refined and time-efficient session, professional nail and cuticle care, and a premium experience in less than an hour.</li>
@@ -595,10 +595,10 @@
                                             <li><strong>Duration:</strong> 45 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Elegant Mani &amp; Pedi is a sophisticated and efficient treatment, performed by two therapists working together simultaneously. This service includes nail shaping, cuticle care, and exfoliating scrubs for both hands and feet, with the option of adding red light therapy for the face. The session concludes with a professional polish application, all set in a calming environment with soothing music and aromatherapy. Perfect for those who want a premium grooming experience in under an hour.
+                                            <span class="fw-bold">About:</span> The Elegant Mani &amp; Pedi is a sophisticated and efficient treatment, performed by two therapists working together simultaneously. This service includes nail shaping, cuticle care, and exfoliating scrubs for both hands and feet, with the option of adding red light therapy for the face. The session concludes with a professional polish application, all set in a calming environment with soothing music and aromatherapy. Perfect for those who want a premium grooming experience in under an hour.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
@@ -624,7 +624,7 @@
                                 <div class="col-lg-7">
                                     <div class="card-body p-4 p-lg-5">
                                         <span class="treatment-number badge bg-info rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Basic Mani &amp; Pedi</h3>
+                                        <h3 class="card-title fw-bold mb-3">Basic Mani &amp; Pedi</h3>
                                         <p class="card-text small text-muted mb-3">(30 Mins – 2 Therapists)</p>
                                         <ul class="treatment-details list-unstyled small mb-3">
                                             <li class="mb-2"><strong>Ideal for:</strong> Quick nail maintenance, clean and polished look, and efficient care without compromising on quality.</li>
@@ -632,10 +632,10 @@
                                             <li><strong>Duration:</strong> 30 minutes</li>
                                         </ul>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Basic Mani &amp; Pedi is a simple, time-efficient session focused on essential nail care. Performed by two therapists working at the same time, this treatment ensures your hands and feet look neat and refreshed in the shortest time possible. Perfect for those who want a quick grooming boost while still maintaining quality and precision.
+                                            <span class="fw-bold">About:</span> The Basic Mani &amp; Pedi is a simple, time-efficient session focused on essential nail care. Performed by two therapists working at the same time, this treatment ensures your hands and feet look neat and refreshed in the shortest time possible. Perfect for those who want a quick grooming boost while still maintaining quality and precision.
                                         </p>
                                         <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
+                                            <span class="fw-bold">What to Expect:</span>
                                         </p>
                                         <ul class="expect-list list-group list-group-flush small">
                                             <li class="list-group-item px-0">Two therapists working simultaneously (hands &amp; feet)</li>
@@ -652,6 +652,33 @@
                 </section>
             </div>
         </div>
+
+        <!-- START: WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=96522288282"
+           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width: 60px; height: 60px; z-index: 1000;"
+           target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+</a>
+
+
+        <style>
+    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+    .whatsapp-fixed-btn {
+        /* approx 1.5rem or 24px from bottom and right */
+        bottom: 1.5rem;
+        right: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Add WhatsApp icon hover effect */
+    .whatsapp-fixed-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+</style>
+
+        <!-- END: WhatsApp Icon -->
     </t>
 
 </templates>
