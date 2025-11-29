@@ -23,9 +23,9 @@ body {
 }
 
 /* 3. Headers/Headings Style */
-.voucherDelivery h2,
-.voucherDelivery h3,
-.voucherDelivery h4,
+.voucherDelivery h2, 
+.voucherDelivery h3, 
+.voucherDelivery h4, 
 .voucherDelivery h5 {
     color: #343a40; /* Darker text */
     font-weight: 600;
@@ -344,3 +344,6 @@ input:checked + .slider:before {
         font-size: 0.9rem;
     }
 }
+
+
+

@@ -17,6 +17,11 @@ class OwlPlayground(http.Controller):
         """ Render the Odoo View which contains the OWL Component """
         return request.render('insabhi_custom_website.contactus')
 
+    @http.route('/faq', type='http', auth='public', website=True, post_load=True)
+    def faq(self, **kw):
+        """ Render the Odoo View which contains the OWL Component """
+        return request.render('insabhi_custom_website.faq')
+
     @http.route('/careers', type='http', auth='public', website=True, post_load=True)
     def careers(self, **kw):
         return request.render('insabhi_custom_website.careers')

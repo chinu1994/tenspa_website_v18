@@ -12,80 +12,62 @@
         <div class="container py-5 tenStore_product_detail">
           <div class="row g-5">
 
-            <!-- LEFT IMAGE 1 -->
+            <!-- LEFT IMAGE (WITH BORDER FOR ALL IMAGES) -->
             <div class="col-lg-6 text-center">
               <t t-if="key == 'aromatherapy'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
                      class="product-detail-image img-fluid rounded-3"
+                     style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Perfume one 100ml"/>
               </t>
-             <!-- LEFT IMAGE 2 -->
               <t t-if="key == 'ten shampoos'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Ten Shampoos"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Perfume Two 100ml"/>
               </t>
-            <!-- LEFT IMAGE 3-->
               <t t-if="key == 'bamboo plant'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat6.jpg"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Bamboo Plant"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Perfume Three 100ml"/>
               </t>
-              <!-- LEFT IMAGE 4 -->
               <t t-if="key == 'ten two'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat14.png"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Ten Two"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Wahaj Candle"/>
               </t>
-            <!-- LEFT IMAGE 5 -->
-              <t t-if="key == 'testimonials'">
+              <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Testimonials"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Wooden Sage"/>
               </t>
-            <!-- LEFT IMAGE 6-->
               <t t-if="key == 'swedish'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
                      class="product-detail-image img-fluid rounded-3"
+                     style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Swedish Massage"/>
               </t>
-            <!-- LEFT IMAGE 7-->
-              <t t-if="key == 'TenProteinShampoo'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png"
-                     class="product-detail-image img-fluid rounded-3"
-                     alt="Ten Protein Shampoo"/>
-              </t>
-            <!-- LEFT IMAGE 8-->
               <t t-if="key == 'Ten'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Ten"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Sukoon Candle"/>
               </t>
-            <!-- LEFT IMAGE 9-->
-              <t t-if="key == 'Ten one'">
+              <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat9.png"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Ten one"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Bamboo Plant"/>
               </t>
-            <!-- LEFT IMAGE 10-->
-              <t t-if="key == 'Ten four'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat8.png"
-                     class="product-detail-image img-fluid rounded-3"
-                     alt="Ten four"/>
-              </t>
-            <!-- LEFT IMAGE 11 -->
               <t t-if="key == 'Ten five'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat11.png"
                      class="product-detail-image img-fluid rounded-3"
-                     alt="Ten five"/>
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Sansevieria (Snake Plant)"/>
               </t>
-            <!-- LEFT IMAGE 12 -->
-              <t t-if="key == 'Ten six'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.png"
-                     class="product-detail-image img-fluid rounded-3"
-                     alt="Ten six"/>
-              </t>
-
             </div>
 
             <!-- RIGHT DETAILS -->
@@ -93,103 +75,176 @@
 
               <h2 class="mb-3">
                 <t t-if="key == 'aromatherapy'">Perfume one 100ml</t>
-                <t t-if="key == 'ten shampoos'">Ten Shampoos</t>
-                <t t-if="key == 'bamboo plant'">Bamboo Plant</t>
-                <t t-if="key == 'ten two'">Ten Two</t>
-                <t t-if="key == 'testimonials'">Testimonials</t>
-                <t t-if="key == 'swedish'">Swedish Massage</t>
-                <t t-if="key == 'TenProteinShampoo'">Ten Protein Shampoo</t>
-                <t t-if="key == 'Ten'">Ten Protein</t>
-                <t t-if="key == 'Ten one'">Ten Protein</t>
-                <t t-if="key == 'Ten four'">Snake Plant</t>
-                <t t-if="key == 'Ten five'">Snake Plant</t>
-                <t t-if="key == 'Ten six'">Wooden Sage</t>
-
+                <t t-if="key == 'ten shampoos'">Perfume Two 100ml</t>
+                <t t-if="key == 'bamboo plant'">Perfume Three 100ml</t>
+                <t t-if="key == 'ten two'">Wahaj Candle</t>
+                <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">Wooden Sage</t>
+                <t t-if="key == 'swedish'">Ten Protein Shampoo</t>
+                <t t-if="key == 'Ten'">Sukoon Candle</t>
+                <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">Bamboo Plant</t>
+                <t t-if="key == 'Ten five'">Sansevieria (Snake Plant)</t>
               </h2>
 
               <p class="h5 text-muted mb-4">
-                <t t-if="key == 'aromatherapy'">Price: 14.5 KWD / tabby 15.5</t>
-                <t t-if="key == 'ten shampoos'">Price: 19.5 KWD / tabby 16.5</t>
-                <t t-if="key == 'bamboo plant'">Price: 9.5 KWD / tabby 15.5</t>
-                <t t-if="key == 'ten two'">Price: 29.5 KWD / tabby 18.5</t>
-                <t t-if="key == 'testimonials'">Price: 19.5 KWD / tabby 15.2</t>
-                <t t-if="key == 'swedish'">Price: 22.3 KWD / tabby 35.5</t>
-                <t t-if="key == 'TenProteinShampoo'">Price: 39.5 KWD / tabby 25.5</t>
-                <t t-if="key == 'Ten'">Price: 23.8 KWD / tabby 32.2</t>
-                <t t-if="key == 'Ten one'">Price: 21.5 KWD / tabby 15.5</t>
-                <t t-if="key == 'Ten four'">Price: 8.5 KWD / tabby 15.5</t>
+                <t t-if="key == 'aromatherapy'">Price:  29.7 KWD / tabby 33</t>
+                <t t-if="key == 'ten shampoos'">Price: 29.7 KWD / tabby 33</t>
+                <t t-if="key == 'bamboo plant'">Price: 29.7 KWD / tabby 33</t>
+                <t t-if="key == 'ten two'">Price: 15 KWD / tabby 16.5</t>
+                <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">Price: 14.5 KWD / tabby 15.5</t>
+                <t t-if="key == 'swedish'">Price: 19.5 KWD / tabby 21.5</t>
+                <t t-if="key == 'Ten'">Price: 19.5 KWD / tabby 21</t>
+                <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">Price: 19.5 KWD / tabby 21</t>
                 <t t-if="key == 'Ten five'">Price: 18.5 KWD / tabby 13.5</t>
-                <t t-if="key == 'Ten six'">Price: 13.5 KWD / tabby 15.5</t>
               </p>
 
-              <p class="mb-4">
-                <t t-if="key == 'aromatherapy'">
-                  We narrate a story of sophistication and elegance in this fragrance.
-                </t>
+              <!-- DETAILED DESCRIPTIONS BELOW -->
 
-                <t t-if="key == 'ten shampoos'">
-                  Plant-based &amp; organic hair formulation from Korea.
-                </t>
+              <!-- Perfume One -->
+              <t t-if="key == 'aromatherapy'">
+                <p class="lead mb-4">
+                  Discover luxury through the magic of an exceptional fragrance, carefully crafted from the finest and rarest oils in the world, designed to embrace your uniqueness.
+                </p>
+                <p class="mb-4">
+                  In the first phase, from the very first minute, the fragrance opens with the richness of saffron blended with raspberry and thyme. From minute 16 up to 3 hours, it reveals the luxurious notes of patchouli combined with jasmine and frankincense. Finally, from 3 hours to 10 hours after application, the scent settles into warm amber, leather, and the deep essence of Indian woods.
+                </p>
+                <p class="fst-italic text-muted mb-5">
+                  We designed this olfactory journey especially for you—because you truly deserve it.
+                </p>
+              </t>
 
-                <t t-if="key == 'bamboo plant'">
-                  Bamboo — a symbol of elegance and inner peace.
-                </t>
+              <!-- Perfume Two -->
+              <t t-if="key == 'ten shampoos'">
+                <p class="lead mb-4">
+                  We narrate a story of sophistication and elegance in this fragrance, crafted from the finest and most enduring aromatic oils in the world, to create a scent experience that captivates your senses and shines through your special moments.
+                </p>
+                <p class="mb-4">
+                  In the first phase, from the very first minute, the fragrance unveils the invigorating notes of ginger and nutmeg. From minute 16 up to 3 hours, it transforms into the richness of Kashmiri oud blended with amber. Finally, from 3 hours to 10 hours after application, it settles into the deep, earthy essence of vetiver combined with the sensual warmth of musk.
+                </p>
+                <p class="fst-italic text-muted mb-5">
+                  We designed this olfactory journey especially for you—because you truly deserve it.
+                </p>
+              </t>
 
-                <t t-if="key == 'ten two'">
-                  A long-lasting luxurious perfume crafted with premium oils.
-                </t>
+              <!-- Perfume Three -->
+              <t t-if="key == 'bamboo plant'">
+                <p class="lead mb-4">
+                  Enjoy the scent of luxurious perfume and immerse yourself in the allure of an exceptional fragrance designed from the best, most expensive, and proven oils in the world, specifically to touch your uniqueness.
+                </p>
+                <p class="mb-4">
+                  In the first phase, from the very first minute, you’ll be greeted by the fresh notes of bergamot, pineapple, and grapefruit. From minute 16 up to 3 hours, the fragrance unfolds into the richness of luxurious patchouli blended with cedarwood and jasmine. Finally, from 3 hours to 10 hours after application, the scent settles into the depth of oakmoss with a woody hint of sandalwood.
+                </p>
+                <p class="fst-italic text-muted mb-5">
+                  We designed this olfactory journey especially for you—because you truly deserve it.
+                </p>
+              </t>
 
-                <t t-if="key == 'testimonials'">
-                  Customer testimonials and real product reviews.
-                </t>
+              <!-- Wahaj Candle -->
+              <t t-if="key == 'ten two'">
+                <p class="lead mb-4">
+                  Specially crafted with care by Ten Wellness, this luxurious candle fills your space with a warm and elegant fragrance that inspires calmness and serenity.
+                </p>
+                <p class="mb-3"><strong>Benefits:</strong></p>
+                <ul class="mb-4">
+                  <li>Creates a distinctive atmosphere and enhances relaxation.</li>
+                  <li>Leaves behind a pure, steady, and refined scent.</li>
+                </ul>
+                <p class="mb-3"><strong>Volume:</strong> 200 g</p>
+                <p class="mb-2"><strong>Sathya:</strong></p>
+                <p class="mb-5">
+                  From the moment I lit the Wahaj candle, it drew me in. The fragrance is light and clean, yet grounded which striking a beautiful balance between fresh florals and warm, earthy depth. A gentle hint of rose adds softness, while the subtle musk brings a comforting, cozy richness to the overall experience.<br/>
+                  It’s a beautifully layered fragrance, ideal for winding down in the evening, or for creating a calm, welcoming space. It definitely fills the room within 10–15 minutes of lighting.<br/>
+                  Additionally, its minimalist jar design complements any style of décor effortlessly.
+                </p>
+              </t>
 
-                <t t-if="key == 'swedish'">
-                  Swedish Massage oil &amp; wellness formulation.
-                </t>
+              <!-- Wooden Sage (both keys) -->
+              <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
+                <p class="lead mb-4">
+                  Carefully designed by our partners in Korea, it offers a refreshing aromatic blend that gently cleanses your skin, leaving it feeling soft and revitalized.
+                </p>
+                <p class="mb-3"><strong>Ingredients:</strong><br/>
+                  Wood Sage, Green Tea, Glycerin, Keratin, Collagen, Protein Compounds, Organic &amp; Fruits Extracts.
+                </p>
+                <p class="mb-3"><strong>Benefits:</strong></p>
+                <ul class="mb-4">
+                  <li>Deeply cleanses the skin while hydrating and perfuming it with a woody fragrance.</li>
+                  <li>Provides a long-lasting scent.</li>
+                </ul>
+                <p class="mb-3"><strong>Volume:</strong> 1000 ml</p>
+                <p class="mb-2"><strong>Maryam:</strong></p>
+                <p class="mb-5">
+                  I just tried the Wooden Sage Shampoo and Body Wash from Ten Spa and wow… I’m obsessed! The scent is so refreshing and calming, it honestly feels like a spa at home. My skin feels super clean and soft, and my hair smells amazing. Totally in love with this product!
+                </p>
+              </t>
 
-                <t t-if="key == 'TenProteinShampoo'">
-                  Nourishes the hair and helps prevent hair loss.
-                  Restores strength and vitality.
-                  Leaves hair healthy, soft, and smooth.
-                </t>
+              <!-- Protein Shampoo -->
+              <t t-if="key == 'swedish'">
+                <p class="lead mb-4">
+                  Carefully designed by our partners in Korea to provide deep nourishment and complete protection for your hair.
+                </p>
+                <p class="mb-3"><strong>Ingredients:</strong><br/>
+                  Black Soybean Extracts, Fruits Extracts, Protein Compounds &amp; Glycerin.
+                </p>
+                <p class="mb-3"><strong>Benefits:</strong></p>
+                <ul class="mb-4">
+                  <li>Nourishes the hair and helps prevent hair loss.</li>
+                  <li>Restores strength and vitality.</li>
+                  <li>Leaves hair healthy, soft, and smooth.</li>
+                </ul>
+                <p class="mb-3"><strong>Volume:</strong> 1000 ml</p>
+                <p class="mb-2"><strong>Hussain:</strong></p>
+                <p class="mb-5">
+                  Personally I like the product, before my hair used to fall too much, currently it’s not, my hair is smooth and fresh with more volume and I would really choose the protein shampoo again and again.
+                </p>
+              </t>
 
-                <t t-if="key == 'Ten'">
-                  Enhances relaxation and purifies the ambiance.
-                  Fills the space with a refined and long-lasting fragrance.
-                </t>
+              <!-- Bamboo Plant (all three keys) -->
+              <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">
+                <p class="lead mb-4">
+                  To be surrounded by nature means to enjoy a state of serenity… and to be beside a plant is to maintain the best mood you can have throughout the day.<br/>
+                  Because we believe in beauty as a value and in offering comfort and peace as a guaranteed experience, we chose to present you with Bamboo—a symbol of elegance and inner peace, and a magical addition to your world.
+                </p>
+                <p class="mb-3"><strong>Bamboo Features:</strong></p>
+                <ul class="mb-4">
+                  <li>An indoor plant that symbolizes elegance</li>
+                  <li>Increases oxygen levels</li>
+                </ul>
+                <p class="mb-5"><strong>Easy care:</strong> add water every two weeks</p>
+              </t>
 
-                <t t-if="key == 'Ten one'">
-                  Exclusively designed by Ten Wellness, this luxurious aromatic blend
-                  adds a touch of relaxation and serenity to your atmosphere.
-                </t>
+              <!-- Snake Plant -->
+              <t t-if="key == 'Ten five'">
+                <p class="lead mb-5">
+                  We’ve chosen for you one of the plants recommended by NASA, as it produces high levels of oxygen both during the day and at night, while requiring very little water—needing to be watered only once a month. It naturally increases the oxygen levels in your home, boosting the energy and vitality of everyone who lives with you. We wish you a life filled with comfort and vitality.
+                </p>
+              </t>
 
-                <t t-if="key == 'Ten four'">
-                  We’ve chosen for you one of the plants recommended by NASA,
-                  as it produces high levels of oxygen both during the day and at night.
-                </t>
+              <!-- Sukoon Candle -->
+              <t t-if="key == 'Ten'">
+                <p class="lead mb-4">
+                  Exclusively designed by Ten Wellness, this luxurious aromatic blend adds a touch of relaxation and serenity to your atmosphere.
+                </p>
+                <p class="mb-3"><strong>Benefits:</strong></p>
+                <ul class="mb-4">
+                  <li>Enhances relaxation and purifies the ambiance.</li>
+                  <li>Fills the space with a refined and long-lasting fragrance.</li>
+                </ul>
+                <p class="mb-3"><strong>Volume:</strong> 200 g</p>
+                <p class="mb-2"><strong>Customer Reviews:</strong></p>
+                <p class="mb-2"><strong>Kareem:</strong> This candle is pure luxury! The scent is amazing and fills the entire room from the first light. Not the weak kind that disappears quickly. Even after blowing it out, the fragrance lingers beautifully. 10/10, will buy again!</p>
+                <p class="mb-2"><strong>Ali:</strong> Honestly the scent is unreal and fills the whole room. Amazing quality, especially the lid — no smoke smell after extinguishing. Highly recommend, 10/10! Ten Spa never disappoints.</p>
+                <p class="mb-5"><strong>Zainab:</strong> Tried the Sukoon candle and the scent is warm, calming, and fills the space without being overwhelming. Burns clean with no soot, packaging is luxurious and perfect as a gift. Worth every penny.</p>
+              </t>
 
-                <t t-if="key == 'Ten five'">
-                  The products used are plant-based and organic, carefully designed and developed
-                  by our partners in Korea to suit our climate, enhance skin and hair health, and balance the scalp.
-                </t>
-
-                <t t-if="key == 'Ten six'">
-                  I just tried the Wooden Sage Shampoo and Body Wash from Ten Spa and wow… I’m obsessed!
-                  The scent is so refreshing and calming, it honestly feels like a spa at home.
-                </t>
-
-              </p>
-
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 mt-4">
                 <button class="btn btn-dark">Add to Cart</button>
                 <button class="btn btn-outline-secondary">Book Now</button>
-
               </div>
 
             </div>
-
           </div>
         </div>
+
 
         <!-- ONLY DESCRIPTION SECTION (centered like Aesop) -->
         <div class="product-desc-section">

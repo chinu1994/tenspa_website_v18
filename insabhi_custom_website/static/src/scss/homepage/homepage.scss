@@ -368,16 +368,11 @@ html, body {
 }
 
 .insabhi-product-label {
-  font-size: 10px;
-  //color: #777;
+  font-size: .8rem;
+  color: #777;
   margin-bottom: .75rem;
   letter-spacing: .5px;
   text-transform: uppercase;
-  font-weight: bold;
-  color: red;
-}
-.insabhi-wishlist-btn i{
-  font-size: 10px;
 }
 
 .insabhi-product-name {
@@ -433,7 +428,6 @@ html, body {
 /* --------------------------------------------------------------
    10. CAROUSEL – NEW & NOTABLE
    -------------------------------------------------------------- */
-
 .insabhi-carousel {
   position: relative;
   max-width: 100%;
@@ -473,12 +467,7 @@ html, body {
 .insabhi-carousel-prev { left: 127px; }
 .insabhi-carousel-next { right: 127px; }
 
-@media (max-width: 480px) {
-    .container, .o_container_small {
-      padding-left: 1px !important;
-       padding-right: 1px !important;
-    }
-}
+/* Medium: 2 cards */
 @media (max-width: 991.98px) {
   .insabhi-carousel-item { flex: 0 0 50%; max-width: 50%; }
   .insabhi-carousel { padding: 0 50px; }
@@ -486,15 +475,9 @@ html, body {
 
 /* Small: 2 cards + arrows below */
 @media (max-width: 575.98px) {
-  //change pading 0 20px to 0
-  .insabhi-carousel {
-  padding: 0;
-  }
-  //padding 0 .5rem to 0
-  .insabhi-carousel-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0; }
+
+  .insabhi-carousel { padding: 0 20px; }
+  .insabhi-carousel-item { flex: 0 0 50%; max-width: 50%; padding: 0 .5rem; }
 
 
   .insabhi-carousel-btn {
@@ -504,72 +487,48 @@ html, body {
     width: 40px; height: 40px;
     font-size: 1.2rem;
   }
-  //cnage padding 0 15px to 0
+
   .insabhi-carousel-controls.d-sm-none {
     display: flex !important;
     justify-content: space-between;
-    max-width: 500px;
+    max-width: 300px;
     margin: 1.5rem auto 0;
-    padding: 0;
+    padding: 0 15px;
     margin-bottom: 2rem;
   }
 
 
   /* 9. NEW & NOTABLE SECTION adjustments */
     .insabhi-new-notable {
-        /* Section padding kam kiya 3rem 0 to 0 */
-        padding: 0;
-      background: #ffffff;
+        /* Section padding kam kiya */
+        padding: 3rem 0;
     }
 
-    .insabhi-text{
-      margin-bottom: 0.25rem !important;
-      text-align: left !important;
-      padding-left: 10px;
-    }
     .insabhi-section-title {
-        /* Title size kam kiya  1.8 to 1.4*/
-        font-size: 1.4rem !important;
+        /* Title size kam kiya */
+        font-size: 1.8rem;
     }
 
     .insabhi-section-subtitle {
         /* Subtitle margin kam kiya */
         margin: 0 auto 2rem;
-      font-size: 14px !important;
     }
 
     .insabhi-product-card {
-        /* Product card padding kam kiya, jisse content zyada space mein adjust ho  1rem 0.5rem se 0px*/
-        padding: 52px 0 23px 0;
-      height: 75% !important;
+        /* Product card padding kam kiya, jisse content zyada space mein adjust ho */
+        padding: 1rem 0.5rem;
     }
 
     .insabhi-product-label {
         /* Product label font size aur margin adjust kiye */
-        font-size: 10px;
+        font-size: 0.75rem;
         margin-bottom: 0.5rem;
-      width: 20px;
-      //font-weight: bold;
-      padding: 0 5px;
     }
-  .insabhi-product-label p{
-    //color: red;
-    display: flex;
-    flex-wrap: wrap;
-    width: 20%;
-    padding-left: 5px;
-  }
-  .insabhi-wishlist-btn i{
-    font-size: 1rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
 
     .insabhi-product-name {
-        /* Product name font size kam kiya 1rem se 15px */
-        font-size: 15px;
+        /* Product name font size kam kiya */
+        font-size: 1rem;
         margin: 0.3rem 0;
-      padding: 0 5px !important;
     }
 
     .insabhi-product-scent {
@@ -579,26 +538,23 @@ html, body {
     }
 
     .insabhi-product-price {
-        /* Price font size kam kiya 1rem se 0.9rem */
-        font-size: 0.9rem !important;
+        /* Price font size kam kiya */
+        font-size: 1rem;
         margin-bottom: 0.75rem;
-
     }
 
     /* *'Add to Cart' Button Fix* */
     .insabhi-add-to-cart {
         /* Button padding aur font size kam kiya taaki height choti ho aur single line mein adjust ho */
-        width: 75% !important;
         padding: 0.4rem 1rem;
         font-size: 0.5rem;
         letter-spacing: 0.5px; /* Thoda kam kiya for better fit */
-      margin-left: 20px;
     }
 
     /* 10. CAROUSEL adjustments for side space */
     .insabhi-carousel {
-        /* Side space aur kam kiya  0 10px se 0px */
-        padding: 0;
+        /* Side space aur kam kiya */
+        padding: 0 10px;
     }
 
 
@@ -743,12 +699,6 @@ html, body {
   .insabhi-right-icons { margin-left: auto !important; margin-right: 0 !important; order: 3 !important; }
 }
 
-  
-  @media (min-width: 1020px) {
-     .logo-default, .logo-hover{
-       margin-left: -140px;
-     }
-  }
 /* --------------------------------------------------------------
    MEDIUM SCREENS (992px – 1400px)
    -------------------------------------------------------------- */
@@ -829,45 +779,3 @@ html, body {
 }
 .bg-gradient-to-b { background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.3) 100%); }
 .h-05 { height: 0.5px; }
-
-//dash dash
-  .insabhi-carousel-indicators {
-    gap: 8px;
-}
-
-.insabhi-indicator {
-    width: 30px;
-    height: 4px;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.insabhi-indicator.active {
-    background-color: #333;
-    width: 40px;
-}
-
-@media (max-width: 575.98px) {
-  .insabhi-indicator {
-    width: 25px;
-    height: 3px;
-  }
-
-  .insabhi-indicator.active {
-    width: 35px;
-  }
-
-  .insabhi-carousel-indicators {
-    gap: 6px;
-    margin-top: 1rem !important;
-  }
-
-  /* Ensure indicators are visible on small screens */
-  .d-flex.d-sm-none .insabhi-carousel-indicators {
-    display: flex !important;
-    justify-content: center;
-    width: 100%;
-  }
-}
