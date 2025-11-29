@@ -1,8 +1,4 @@
 // Treatment Her Page Styles
-$font-body : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-html, body{
-   font-family: $font-body;
-}
 
 .treatmentHer {
   font-family: 'Roboto', sans-serif;
@@ -67,9 +63,9 @@ html, body{
   .intro-section {
     background-color: #f8f9fa;
 
-    //.section-title {
-    //  color: #3498db;
-    //}
+    .section-title {
+      color: #3498db;
+    }
   }
 
   // Treatment Cards
@@ -172,7 +168,7 @@ html, body{
 
         &::before {
           content: "✓";
-          //color: #3498db;
+          color: #3498db;
           font-weight: bold;
           display: inline-block;
           width: 20px;

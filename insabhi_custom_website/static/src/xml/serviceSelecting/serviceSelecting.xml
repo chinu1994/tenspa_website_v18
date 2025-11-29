@@ -20,7 +20,7 @@
 
      <div class="row mb-4 text-center">
 <div class="col-12">
- <h1 class="display-5 fw-bold" style="margin-top:5rem;">Select Massage Service</h1>
+ <h1 class="display-5 fw-bold text-primary" style="margin-top:5rem;">Select Massage Service</h1>
     <p class="lead text-muted">Please select your preferred massage service.</p>
  </div>
  </div>
@@ -56,7 +56,7 @@
      <hr/>
 
      <div class="row my-5 py-3 text-center bg-light rounded shadow-sm">
-                <h2 class="h3 fw-bold mb-4">🎁 Our Simple Gifting Process</h2>
+                <h2 class="h3 fw-bold text-info mb-4">🎁 Our Simple Gifting Process</h2>
 
          <div class="col-md-4">
                     <div class="p-3">
@@ -98,7 +98,7 @@
      <hr/>
 
 
-     <h2 class="text-center my-4 fw-bold">Explore Our Range of Massages</h2>
+     <h2 class="text-center my-4 fw-bold text-info">Explore Our Range of Massages</h2>
 
 
      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-5">
@@ -205,7 +205,7 @@
 
      <div class="row my-5">
                 <div class="col-12">
-                    <h2 class="h3 fw-bold mb-4 text-center">❓ Frequently Asked Questions (FAQs)</h2>
+                    <h2 class="h3 fw-bold text-primary mb-4 text-center">❓ Frequently Asked Questions (FAQs)</h2>
 
                     <div class="accordion" id="faqAccordion">
                         
@@ -299,33 +299,6 @@
  object-fit: cover;
  }
 </style>
-
-     <!-- START: WhatsApp Icon -->
-        <a href="https://api.whatsapp.com/send?phone=96522288282"
-           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; z-index: 1000;"
-           target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
-
-
-        <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
-
-        <!-- END: WhatsApp Icon -->
  </t>
 
 </templates>

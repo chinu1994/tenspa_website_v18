@@ -5,7 +5,7 @@
   justify-items: center;                  /* center card horizontally inside column */
 
   width: 100%;
-  padding-left: 5%;       /* LEFT spacing = 5% of viewport */
+  padding-left: 7%;       /* LEFT spacing = 5% of viewport */
   padding-right: 5%;      /* RIGHT spacing = 5% of viewport */
   box-sizing: border-box;
   margin: 0 auto 60px auto; /* vertical spacing; horizontally centered */
@@ -18,12 +18,10 @@
   border-radius: 24px;
   overflow: hidden;
   cursor: pointer;
-
-  /* In grid the card should fill its column but not exceed a comfortable width */
+  border: 1px solid rgba(0,0,0,0.2);
   width: 100%;
-  max-width: 410px;   /* visual size */
-  min-width: 0;       /* prevents overflow inside grid columns */
-
+  max-width: 410px;
+  min-width: 0;
   position: relative;
   box-shadow: 0 16px 40px rgba(30,30,30,0.13);
   display: flex;
