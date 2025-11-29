@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+  <t t-name="insabhi_custom_website.tenStore_product_detail">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-6 text-center">
+          <t t-if="key == 'aromatherapy'">
+            <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.jpg" class="img-fluid rounded-3"/>
+          </t>
+          <!-- ... other t-if blocks as above ... -->
+        </div>
+        <div class="col-lg-6">
+          <!-- right side content same as above -->
+        </div>
+      </div>
+    </div>
+  </t>
+</templates>
