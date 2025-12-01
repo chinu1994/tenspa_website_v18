@@ -2,65 +2,123 @@
 <odoo>
     <data>
 
+        <!-- ================== HEADER ================== -->
         <template id="insabhi_custom_header" inherit_id="website.layout" name="Insabhi Custom Header">
 
-            <xpath expr="//main" position="before">
+            <!-- Default header ko replace karo, aur login page par hide karo -->
+            <xpath expr="//header" position="replace">
+                <t t-if="not request.httprequest.path.startswith('/web/login')">
+                    <header>
+                        <div class="insabhi-header-wrapper">
 
-                <header>
-                    <div class="insabhi-header-wrapper">
+                            <div class="insabhi-top-banner text-center py-2">
+                                Enjoy complimentary shipping with orders over 51KD.
+                            </div>
 
-                        <div class="insabhi-top-banner text-center py-2">
-                            Enjoy complimentary shipping with orders over 51KD.
-                        </div>
+                            <nav class="navbar navbar-expand-lg insabhi-navbar">
+                                <div class="container-fluid d-flex flex-column">
+                                    <div class="d-flex w-100 align-items-center position-relative">
 
-                        <nav class="navbar navbar-expand-lg insabhi-navbar">
-                            <div class="container-fluid d-flex flex-column">
-                                <div class="d-flex w-100 align-items-center position-relative">
+                                        <a class="navbar-brand" href="/">
+                                            <img src="/insabhi_custom_website/static/src/image/logo.png" alt="Tēnspa"
+                                                 class="logo-default img-fluid"/>
+                                            <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
+                                                 class="logo-hover img-fluid"/>
+                                        </a>
 
-                                    <a class="navbar-brand" href="/">
-                                        <img src="/insabhi_custom_website/static/src/image/logo.png" alt="Tēnspa"
-                                             class="logo-default img-fluid"/>
-                                        <img src="/insabhi_custom_website/static/src/image/logo1.0.png" alt="Tēnspa"
-                                             class="logo-hover img-fluid"/>
-                                    </a>
+                                        <button class="navbar-toggler d-lg-none" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#insabhiNavbarCollapse"
+                                                aria-controls="insabhiNavbarCollapse"
+                                                aria-expanded="false" aria-label="Toggle navigation">
+                                            <div class="line"></div>
+                                            <div class="line"></div>
+                                            <div class="line"></div>
+                                        </button>
 
-                                    <button class="navbar-toggler d-lg-none" type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#insabhiNavbarCollapse"
-                                            aria-controls="insabhiNavbarCollapse"
-                                            aria-expanded="false" aria-label="Toggle navigation">
-                                        <div class="line"></div>
-                                        <div class="line"></div>
-                                        <div class="line"></div>
-                                    </button>
+                                        <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">
+                                            <a class="nav-link">Stores</a>
+                                            <a class="nav-link">Customer service</a>
+                                        </div>
 
-                                    <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">
-                                        <a class="nav-link">Stores</a>
-                                        <a class="nav-link">Customer service</a>
+                                        <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
+                                            <form class="insabhi-search-form d-flex me-3 position-relative">
+                                                <input class="form-control me-2 ps-5" type="search" placeholder="Search…"
+                                                       aria-label="Search"/>
+                                                <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
+                                                <button class="btn btn-search" type="submit">Search</button>
+                                            </form>
+                                            <a class="nav-link">Email sign up</a>
+                                            <a class="nav-link">Account</a>
+                                            <a class="nav-link">My cart</a>
+                                        </div>
                                     </div>
 
-                                    <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
-                                        <form class="insabhi-search-form d-flex me-3 position-relative">
-                                            <input class="form-control me-2 ps-5" type="search" placeholder="Search…"
-                                                   aria-label="Search"/>
-                                            <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
-                                            <button class="btn btn-search" type="submit">Search</button>
-                                        </form>
-                                        <a class="nav-link">Email sign up</a>
-                                        <a class="nav-link">Account</a>
-                                        <a class="nav-link">My cart</a>
+                                    <div class="insabhi-bottom-menu d-none d-lg-flex justify-content-center w-100 py-3 gap-5 mt-2">
+
+                                        <a class="nav-link" href="/">Home</a>
+                                        <a class="nav-link" href="/aboutus">About Us</a>
+
+                                        <div class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="/treatment"
+                                               aria-expanded="false">
+                                                Treatment
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="/giftVoucher"
+                                               aria-expanded="false">
+                                                Gift Vouchers
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="/serviceSelecting">Service selecting page
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="/giftType">Gift Types</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="/addOns">Add ons</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a class="nav-link" href="/tenStore">Ten Store</a>
+                                        <a class="nav-link" href="/careers">Careers</a>
+                                        <a class="nav-link" href="/contactus">Contact Us</a>
+                                        <a class="nav-link" href="/faq">FAQ</a>
+
                                     </div>
                                 </div>
+                            </nav>
 
-                                <div class="insabhi-bottom-menu d-none d-lg-flex justify-content-center w-100 py-3 gap-5 mt-2">
+                            <div class="collapse navbar-collapse d-lg-none" id="insabhiNavbarCollapse">
+                                <ul class="navbar-nav mx-auto text-center">
 
-                                    <a class="nav-link" href="/">Home</a>
-                                    <a class="nav-link" href="/aboutus">About Us</a>
+                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item  border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/aboutus">About Us</a>
+                                    </li>
 
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="/treatment"
-                                           aria-expanded="false">
-                                            Treatment
+                                    <li class="nav-item dropdown pb-2 mb-2">
+                                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
+                                           data-bs-toggle="dropdown" role="button" data-nav-url="/treatment">Treatment
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -70,111 +128,55 @@
                                                 <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </li>
 
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="/giftVoucher"
-                                           aria-expanded="false">
-                                            Gift Vouchers
+                                    <li class="nav-item dropdown pb-2 mb-2">
+                                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
+                                           data-bs-toggle="dropdown" role="button" data-nav-url="/giftVoucher">Gift Vouchers
                                         </a>
 
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page
-                                                </a>
+                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="/giftType">Gift Types</a>
+                                                <a class="dropdown-item">Gift Types</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="/addOns">Add ons</a>
+                                                <a class="dropdown-item">Add ons</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </li>
 
-                                    <a class="nav-link" href="/tenStore">Ten Store</a>
-                                    <a class="nav-link" href="/careers">Careers</a>
-                                    <a class="nav-link" href="/contactus">Contact Us</a>
+                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/tenStore">Ten Store</a>
+                                    </li>
+                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/careers">Careers</a>
+                                    </li>
 
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/contactus">Contact Us</a>
+                                    </li>
 
-                                </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/faq">FAQ</a>
+                                    </li>
+
+                                </ul>
                             </div>
-                        </nav>
-                        <div class="collapse navbar-collapse d-lg-none" id="insabhiNavbarCollapse">
-                            <ul class="navbar-nav mx-auto text-center">
 
-                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item  border-bottom border-light-subtle pb-2 mb-2">
-                                    <a class="nav-link" href="/aboutus">About Us</a>
-                                </li>
-
-                                <li class="nav-item dropdown pb-2 mb-2">
-                                    <!--                                    <a class="nav-link dropdown-toggle" href="/treatment"-->
-                                    <!--                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Treatment-->
-                                    <!--                                    </a>-->
-                                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
-                                       data-bs-toggle="dropdown" role="button" data-nav-url="/treatment">Treatment
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown pb-2 mb-2">
-                                    <!--                                    <a class="nav-link dropdown-toggle" href="/giftVoucher"-->
-                                    <!--                                       aria-expanded="false" data-bs-toggle="dropdown" role="button">Gift Vouchers-->
-                                    <!--                                    </a>-->
-                                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
-                                       data-bs-toggle="dropdown" role="button" data-nav-url="/giftVoucher">Gift Vouchers
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item">Gift Types</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item">Add ons</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                    <a class="nav-link" href="/tenStore">Ten Store</a>
-                                </li>
-                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                    <a class="nav-link" href="/careers">Careers</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contactus">Contact Us</a>
-                                </li>
-
-                            </ul>
                         </div>
-                    </div>
-                </header>
+                    </header>
+                </t>
             </xpath>
-
-            <xpath expr="//header" position="replace"/>
 
         </template>
 
+        <!-- ================== FOOTER (unchanged) ================== -->
         <template id="insabhi_custom_footer" inherit_id="website.layout" name="Aesop Custom Footer">
             <xpath expr="//footer" position="replace">
 
@@ -430,8 +432,7 @@
 
                 </footer>
             </xpath>
-
-
         </template>
+
     </data>
 </odoo>

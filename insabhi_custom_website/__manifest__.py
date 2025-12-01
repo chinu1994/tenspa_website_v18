@@ -42,6 +42,10 @@
         'view/treatmentHim.xml',
         'view/treatmentHer.xml',
         'view/addonss_product.xml',
+        'view/treatment_him_detail.xml',
+        'view/treatment_her_detail.xml',
+        'view/faq.xml',
+        'view/homecard_detail.xml',
 
     ],
     'assets': {
@@ -61,6 +65,8 @@
             'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
             'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
             'insabhi_custom_website/static/src/xml/addonss/ten_products_template.xml',
+            'insabhi_custom_website/static/src/xml/faq/faq.xml',
+
 
 
             'insabhi_custom_website/static/src/scss/homepage/homepage.scss',
@@ -76,8 +82,9 @@
             'insabhi_custom_website/static/src/scss/voucherDelivery/voucherDelivery.scss',
             'insabhi_custom_website/static/src/scss/treatmentHim/treatmentHim.scss',
             'insabhi_custom_website/static/src/scss/treatmentHer/treatmentHer.scss',
+            'insabhi_custom_website/static/src/scss/faq/faq.scss',
 
-            # 'insabhi_custom_website/static/src/scss/addons_images/addons_images.scss',
+
 
             'insabhi_custom_website/static/src/js/homepage/homepage.js',
             'insabhi_custom_website/static/src/js/aboutus/aboutus.js',
@@ -92,7 +99,9 @@
             'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
             'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
             'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
-            'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js'
+            'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js',
+            'insabhi_custom_website/static/src/js/faq/faq.js'
+
 
         ],
         'web.assets_backend': [
