@@ -86,15 +86,15 @@
               </h2>
 
               <p class="h5 text-muted mb-4">
-                <t t-if="key == 'aromatherapy'">Price:  29.7 KWD / tabby 33</t>
-                <t t-if="key == 'ten shampoos'">Price: 29.7 KWD / tabby 33</t>
-                <t t-if="key == 'bamboo plant'">Price: 29.7 KWD / tabby 33</t>
-                <t t-if="key == 'ten two'">Price: 15 KWD / tabby 16.5</t>
-                <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">Price: 14.5 KWD / tabby 15.5</t>
-                <t t-if="key == 'swedish'">Price: 19.5 KWD / tabby 21.5</t>
-                <t t-if="key == 'Ten'">Price: 19.5 KWD / tabby 21</t>
-                <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">Price: 19.5 KWD / tabby 21</t>
-                <t t-if="key == 'Ten five'">Price: 18.5 KWD / tabby 13.5</t>
+                <t t-if="key == 'aromatherapy'">Price:  29.7 KWD</t>
+                <t t-if="key == 'ten shampoos'">Price: 29.7 KWD</t>
+                <t t-if="key == 'bamboo plant'">Price: 29.7 KWD</t>
+                <t t-if="key == 'ten two'">Price: 15 KWD</t>
+                <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">Price: 14.5 KWD</t>
+                <t t-if="key == 'swedish'">Price: 19.5 KWD</t>
+                <t t-if="key == 'Ten'">Price: 19.5 KWD</t>
+                <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">Price: 19.5 KWD</t>
+                <t t-if="key == 'Ten five'">Price: 18.5 KWD</t>
               </p>
 
               <!-- DETAILED DESCRIPTIONS BELOW -->

@@ -36,8 +36,25 @@
                                       <div class="insabhi-product-label d-flex justify-content-between align-items-center w-100">
                                           <div class="insabhi-label-text">
                                               <t t-if="index === 0">
+                                                  <p>Limited-release</p>
+                                              </t>
+
+                                              <t t-elif="index === 1">
                                                  <p>New addition</p>
                                               </t>
+                                               <t t-elif="index === 2">
+                                                 <p>Beloved formulation</p>
+                                              </t>
+                                               <t t-elif="index === 3">
+                                                 <p>Limited-release</p>
+                                              </t>
+                                               <t t-elif="index === 4">
+                                                 <p>New addition</p>
+                                              </t>
+                                               <t t-elif="index === 5">
+                                                 <p>New addition</p>
+                                              </t>
+
                                               <t t-else=""><p>Beloved formulation</p></t>
                                           </div>
                                            <!-- if click no color change-->
@@ -47,16 +64,25 @@
 
                                       <img t-att-src="'/insabhi_custom_website/static/src/image/pro' + (index + 1) + '.jpg'" alt="Product" class="img-fluid mb-3 mx-auto d-block insabhi-product-image"/>
                                       <h3 class="insabhi-product-name mt-auto mb-2" style="font-size:1.05rem;line-height:1.3;">
-                                          <t t-if="index === 0">Eleos Nourishing Body Cleanser</t>
-                                          <t t-elif="index === 1">Resurrection Aromatique Hand Wash</t>
+                                          <t t-if="index === 0">Perfume Three 100ml</t>
+                                          <t t-elif="index === 1">Ten Protein Shampoo</t>
+                                          <t t-elif="index === 2">Sukoon Candle</t>
+                                          <t t-elif="index === 3">Wooden Sage</t>
+                                          <t t-elif="index === 4">Wahaj Candle</t>
+                                          <t t-elif="index === 5">Sukoon Candle</t>
                                           <t t-else="">Placeholder Product</t>
                                       </h3>
-                                      <p class="insabhi-product-scent text-muted small mb-4" style="font-size:0.85rem;">
-                                          <t t-if="index === 0">Herbaceous, woody, spicy</t>
-                                          <t t-else="">Clear, low-foaming gel</t>
-                                      </p>
+<!--                                      <p class="insabhi-product-scent text-muted small mb-4" style="font-size:0.85rem;">-->
+<!--                                          <t t-if="index === 0">Herbaceous, woody, spicy</t>-->
+<!--                                          <t t-else="">Clear, low-foaming gel</t>-->
+<!--                                      </p>-->
                                       <p class="insabhi-product-price fw-bold mb-4" style="font-size:1.1rem;">
-                                          <t t-if="index === 0">K.D 37.00</t>
+                                          <t t-if="index === 0">K.D 29.70</t>
+                                          <t t-elif="index === 1">K.D 19.50</t>
+                                           <t t-elif="index === 2">K.D 19.50</t>
+                                          <t t-elif="index === 3">K.D 14.50</t>
+                                           <t t-elif="index === 4">K.D 15.00</t>
+                                           <t t-elif="index === 5">K.D 19.50</t>
                                           <t t-else="">K.D 46.00</t>
                                       </p>
                                       <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
@@ -196,12 +222,12 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Skin Care"
+                                    <img src="/insabhi_custom_website/static/src/image/pro1.jpg" alt="Skin Care"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Skin Care</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Perfume Three 100ml</h3>
                             </div>
                         </div>
                     </div>
@@ -215,7 +241,7 @@
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hand &amp; Body</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Ten Protein Shampoo</h3>
                             </div>
                         </div>
                     </div>
@@ -224,12 +250,12 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/image/pro1.jpg" alt="Fragrance"
+                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Fragrance"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Fragrance</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Sukoon Candle</h3>
                             </div>
                         </div>
                     </div>
@@ -238,12 +264,12 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/image/pro2.jpg" alt="Home"
+                                    <img src="/insabhi_custom_website/static/src/image/pro4.jpg" alt="Home"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Home</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Wooden Sage</h3>
                             </div>
                         </div>
                     </div>
@@ -252,12 +278,12 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/image/pro3.jpg" alt="Hair"
+                                    <img src="/insabhi_custom_website/static/src/image/pro5.jpg" alt="Hair"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Hair</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Wahaj Candle</h3>
                             </div>
                         </div>
                     </div>
