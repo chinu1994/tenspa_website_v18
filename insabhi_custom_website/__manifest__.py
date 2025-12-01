@@ -41,8 +41,8 @@
         'view/treatmentHim.xml',
         'view/treatmentHer.xml',
         'view/addonss_product.xml',
-        'view/treatment_him_detail.xml',
-        'view/treatment_her_detail.xml',
+        # 'view/treatment_him_detail.xml',
+        # 'view/treatment_her_detail.xml',
         'view/faq.xml',
 
     ],
@@ -62,7 +62,6 @@
             'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
             'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
             'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
-            'insabhi_custom_website/static/src/xml/addonss/ten_products_template.xml',
             'insabhi_custom_website/static/src/xml/faq/faq.xml',
 
 
