@@ -20,54 +20,72 @@
             </div>
         </section>
 
-  <section class="insabhi-new-notable py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="insabhi-section-title">New And Exceptional</h2>
-                    <p class="insabhi-section-subtitle">Experience the perfect blend of enduring favorites and the latest innovations.</p>
-                </div>
-                <div class="insabhi-carousel position-relative">
-                    <div class="insabhi-carousel-inner overflow-hidden">
-                        <div class="insabhi-carousel-track d-flex transition-transform">
-                            <t t-foreach="[0,1,2,3,4,5,6,7,8,9,10,11]" t-as="index" t-key="index">
-                                <div class="insabhi-carousel-item col-sm-6 col-lg-4">
-                                    <div class="insabhi-product-card text-center d-flex flex-column h-100 mx-auto" style="max-width:460px; min-height:560px;">
-                                        <div class="insabhi-product-label">
-                                            <t t-if="index === 0">New addition</t>
-                                            <t t-else="">Beloved formulation</t>
-                                        </div>
-                                        <img t-att-src="'/insabhi_custom_website/static/src/image/pro' + (index + 1) + '.jpg'" alt="Product" class="img-fluid mb-3 mx-auto d-block" style="height:250px; object-fit:contain;"/>
-                                        <h3 class="insabhi-product-name mt-auto mb-2" style="font-size:1.05rem;line-height:1.3;">
-                                            <t t-if="index === 0">Eleos Nourishing Body Cleanser</t>
-                                            <t t-elif="index === 1">Resurrection Aromatique Hand Wash</t>
-                                            <t t-else="">Placeholder Product</t>
-                                        </h3>
-                                        <p class="insabhi-product-scent text-muted small mb-4" style="font-size:0.85rem;">
-                                            <t t-if="index === 0">Herbaceous, woody, spicy</t>
-                                            <t t-else="">Clear, low-foaming gel</t>
-                                        </p>
-                                        <p class="insabhi-product-price fw-bold mb-4" style="font-size:1.1rem;">
-                                            <t t-if="index === 0">K.D 37.00</t>
-                                            <t t-else="">K.D 46.00</t>
-                                        </p>
-                                        <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
-                                    </div>
-                                </div>
-                            </t>
-                        </div>
-                    </div>
-                    <!-- carousel arrows unchanged -->
-                    <div class="d-none d-md-flex justify-content-center gap-5 mt-4">
-                        <button class="insabhi-carousel-btn insabhi-carousel-prev btn btn-outline-secondary rounded-circle p-4"><i class="bi bi-chevron-left fs-3"></i></button>
-                        <button class="insabhi-carousel-btn insabhi-carousel-next btn btn-outline-secondary rounded-circle p-4"><i class="bi bi-chevron-right fs-3"></i></button>
-                    </div>
-                    <div class="insabhi-carousel-controls d-flex d-sm-none justify-content-between mt-4 px-4">
-                        <button class="insabhi-carousel-btn insabhi-carousel-prev"><i class="bi bi-chevron-left"></i></button>
-                        <button class="insabhi-carousel-btn insabhi-carousel-next"><i class="bi bi-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="insabhi-new-notable py-5">
+          <div class="container">
+              <div class="text-center mb-5 insabhi-text">
+                  <h2 class="insabhi-section-title">New And Exceptional</h2>
+                  <p class="insabhi-section-subtitle">Experience the perfect blend of enduring favorites and the latest innovations.</p>
+              </div>
+              <div class="insabhi-carousel position-relative">
+                  <div class="insabhi-carousel-inner overflow-hidden">
+                      <div class="insabhi-carousel-track d-flex transition-transform">
+                          <t t-foreach="[0,1,2,3,4,5,6,7,8,9,10,11]" t-as="index" t-key="index">
+                              <div class="insabhi-carousel-item col-sm-6 col-lg-4">
+                                  <div class="insabhi-product-card text-center d-flex flex-column">
+
+                                      <div class="insabhi-product-label d-flex justify-content-between align-items-center w-100">
+                                          <div class="insabhi-label-text">
+                                              <t t-if="index === 0">
+                                                 <p>New addition</p>
+                                              </t>
+                                              <t t-else=""><p>Beloved formulation</p></t>
+                                          </div>
+                                           <!-- if click no color change-->
+                                          <!--    <button class="insabhi-wishlist-btn btn p-0 border-0" style="line-height: 1;"><i class="bi bi-bookmark fs-5"></i></button>-->
+                                          <button class="insabhi-wishlist-btn btn p-0 border-0 text-dark" style="line-height: 1;" onclick="toggleWishlist(this)"><i class="bi bi-bookmark fs-5"></i></button>
+                                      </div>
+
+                                      <img t-att-src="'/insabhi_custom_website/static/src/image/pro' + (index + 1) + '.jpg'" alt="Product" class="img-fluid mb-3 mx-auto d-block insabhi-product-image"/>
+                                      <h3 class="insabhi-product-name mt-auto mb-2" style="font-size:1.05rem;line-height:1.3;">
+                                          <t t-if="index === 0">Eleos Nourishing Body Cleanser</t>
+                                          <t t-elif="index === 1">Resurrection Aromatique Hand Wash</t>
+                                          <t t-else="">Placeholder Product</t>
+                                      </h3>
+                                      <p class="insabhi-product-scent text-muted small mb-4" style="font-size:0.85rem;">
+                                          <t t-if="index === 0">Herbaceous, woody, spicy</t>
+                                          <t t-else="">Clear, low-foaming gel</t>
+                                      </p>
+                                      <p class="insabhi-product-price fw-bold mb-4" style="font-size:1.1rem;">
+                                          <t t-if="index === 0">K.D 37.00</t>
+                                          <t t-else="">K.D 46.00</t>
+                                      </p>
+                                      <button class="insabhi-add-to-cart mt-auto w-100 btn-sm">Add to cart</button>
+                                  </div>
+                              </div>
+                          </t>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex justify-content-center gap-5 mt-4">
+                      <button class="insabhi-carousel-btn insabhi-carousel-prev btn btn-outline-secondary rounded-circle p-4"><i class="bi bi-chevron-left fs-3"></i></button>
+                      <div class="insabhi-carousel-indicators d-flex justify-content-center mt-4">
+              <t t-foreach="[0,1,2,3]" t-as="indicator" t-key="indicator">
+                  <button class="insabhi-indicator mx-1 rounded" t-att-data-slide="indicator"></button>
+              </t>
+          </div>
+                      <button class="insabhi-carousel-btn insabhi-carousel-next btn btn-outline-secondary rounded-circle p-4"><i class="bi bi-chevron-right fs-3"></i></button>
+                  </div>
+                  <div class="insabhi-carousel-controls d-flex d-sm-none justify-content-between mt-4 px-4">
+                      <button class="insabhi-carousel-btn insabhi-carousel-prev"><i class="bi bi-chevron-left"></i></button>
+                      <div class="insabhi-carousel-indicators d-flex justify-content-center mt-4">
+              <t t-foreach="[0,1,2,3,4,5]" t-as="indicator" t-key="indicator">
+                  <button class="insabhi-indicator mx-1 rounded" t-att-data-slide="indicator"></button>
+              </t>
+          </div>
+                      <button class="insabhi-carousel-btn insabhi-carousel-next"><i class="bi bi-chevron-right"></i></button>
+                  </div>
+              </div>
+          </div>
+</section>
 
         <!-- ABOUT TEN WELLNESS – LUXURY -->
         <section class="insabhi-about py-5 position-relative overflow-hidden" style="background:#f5f5f5;">
