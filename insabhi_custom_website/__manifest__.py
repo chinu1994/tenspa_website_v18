@@ -41,6 +41,8 @@
         'view/treatmentHim.xml',
         'view/treatmentHer.xml',
         'view/addonss_product.xml',
+        'view/giftvoucher.xml',
+        'view/tenstore_product_detail.xml',
         # 'view/treatment_him_detail.xml',
         # 'view/treatment_her_detail.xml',
         'view/faq.xml',
@@ -62,6 +64,7 @@
             'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
             'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
             'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
+            'insabhi_custom_website/static/src/xml/tenstoreProductDetails/tenstore_product_detail.xml',
             'insabhi_custom_website/static/src/xml/faq/faq.xml',
 
 
@@ -93,8 +96,8 @@
             'insabhi_custom_website/static/src/js/giftType/giftType.js',
             'insabhi_custom_website/static/src/js/treatment/treatment.js',
             'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
-            # 'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
-            # 'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
+            'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
+            'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
             'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js',
             'insabhi_custom_website/static/src/js/faq/faq.js'
 
