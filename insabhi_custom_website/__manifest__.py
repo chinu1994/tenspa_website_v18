@@ -93,8 +93,8 @@
             'insabhi_custom_website/static/src/js/giftType/giftType.js',
             'insabhi_custom_website/static/src/js/treatment/treatment.js',
             'insabhi_custom_website/static/src/js/voucherDelivery/voucherDelivery.js',
-            'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
-            'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
+            # 'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
+            # 'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
             'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js',
             'insabhi_custom_website/static/src/js/faq/faq.js'
 
