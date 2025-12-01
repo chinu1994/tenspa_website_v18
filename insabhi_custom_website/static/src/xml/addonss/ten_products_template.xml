@@ -59,6 +59,33 @@
 
         </t>
 
+                <!-- START: WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=96522288282"
+           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width: 60px; height: 60px; z-index: 1000;"
+           target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+</a>
+
+
+        <style>
+    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+    .whatsapp-fixed-btn {
+        /* approx 1.5rem or 24px from bottom and right */
+        bottom: 1.5rem;
+        right: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Add WhatsApp icon hover effect */
+    .whatsapp-fixed-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+</style>
+
+        <!-- END: WhatsApp Icon -->
+
     </t>
 
 </templates>
