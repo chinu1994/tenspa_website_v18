@@ -349,3 +349,20 @@ img { max-width: 100%; height: auto; display: block; }
     }
 }
 
+@media (max-width: 576px) {
+    .mobile-badge {
+        padding: 4px 25px !important;   /* less height, more width */
+        font-size: 0.8rem !important;
+        letter-spacing: 1px !important;
+        white-space: nowrap !important; /* force one line */
+    }
+}
+
+
+/* Perfect vertical centering of "Our Story" text on phones only */
+@media (max-width: 576px) {
+    .luxury-story .col-lg-6:nth-child(2) {
+        display: flex;
+        align-items: center;
+    }
+}

@@ -4,7 +4,7 @@
 <t t-name="insabhi_custom_website.AboutUs" owl="1">
     <div class="aboutus">
 
-        <!-- HERO – COMPLETELY UNCHANGED (your original code) -->
+        <!-- HERO – UNCHANGED -->
         <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
                 <img src="/insabhi_custom_website/static/src/image/about1.png"
@@ -15,35 +15,29 @@
                 <div class="insabhi-hero-content-bottom container">
                     <h1 class="insabhi-hero-title">Our Story</h1>
                     <h2 class="insabhi-hero-subtitle">Ten Wellness was born from a vision to redefine wellness in Kuwait — blending world-class spa techniques</h2>
-                    <p class="insabhi-hero-question">with profound emotional healing, creating a serene space where mind and body are gently restored.
-                    </p>
+                    <p class="insabhi-hero-question">with profound emotional healing, creating a serene space where mind and body are gently restored.</p>
                 </div>
             </div>
         </section>
 
-
-        <!-- REDESIGNED LUXURY SECTION BELOW (matches your homepage perfectly) -->
+        <!-- OUR STORY SECTION – EXACT TEXT ONLY -->
         <section class="luxury-story py-5" style="background:#f8f6f3;">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
-
-                    <!-- Left: Image with double gold border + badge -->
                     <div class="col-lg-6">
                         <div class="position-relative d-inline-block hover-lift">
-                            <img src="/insabhi_custom_website/static/src/image/about2.jpg"
+                            <img src="/insabhi_custom_website/static/src/image/contactus.png"
                                  alt="Ten Wellness Sanctuary"
                                  class="w-100 rounded-4 shadow-lg"
                                  style="height:680px; object-fit:cover;"/>
 
-                            <!-- Double gold border (same as homepage) -->
                             <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 border border-4"
                                  style="border-color:#d4b08c; box-shadow:inset 0 0 120px rgba(212,176,140,.3);"></div>
                             <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 border border-4"
                                  style="border-color:#f1d5a3; transform:translate(-50%,-50%) scale(1.04);"></div>
 
-                            <!-- Badge -->
                             <div class="position-absolute start-50 translate-middle-x top-10">
-                                <span class="bg-white px-5 py-2 rounded-pill shadow-lg fw-medium d-inline-block border border-gold"
+                                <span class="bg-white px-5 py-2 rounded-pill shadow-lg fw-medium d-inline-block border border-gold mobile-badge"
                                       style="font-family:'Playfair Display',serif; letter-spacing:2px; font-size:0.95rem; border-color:#d4b08c;">
                                     Established 2017 • Kuwait
                                 </span>
@@ -51,11 +45,9 @@
                         </div>
                     </div>
 
-                    <!-- Right: Full original text + luxury typography -->
                     <div class="col-lg-6">
                         <div class="ps-lg-5">
                             <div class="w-80px h-1 bg-gold mb-5" style="background:#d4b08c;"></div>
-
                             <h2 class="display-4 fw-light mb-5" style="font-family:'Playfair Display',serif; line-height:1.2; color:#2d2a26;">
                                 Our Story
                             </h2>
@@ -77,130 +69,117 @@
             </div>
         </section>
 
+        <!-- SPA ETIQUETTE – EXACT ORIGINAL TEXT ONLY, NO EXTRA LINES -->
+        <section class="luxury-etiquette py-5 bg-white">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <div class="d-inline-flex align-items-center gap-4 mb-4">
+                        <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
+                        <h2 class="display-5 fw-light m-0 px-4" style="font-family:'Playfair Display',serif;">
+                            Spa Etiquette
+                        </h2>
+                        <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
+                    </div>
 
-<!-- SPA ETIQUETTE – FINAL LUXURIOUS VERSION WITH HOVER LIFT + DOUBLE BORDER -->
-<section class="luxury-etiquette py-5 bg-white">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <div class="d-inline-flex align-items-center gap-4 mb-4">
-                <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
-                <h2 class="display-5 fw-light m-0 px-4" style="font-family:'Playfair Display',serif;">
-                    Spa Etiquette
-                </h2>
-                <div class="flex-grow-1 h-05 bg-gold" style="background:#d4b08c;"></div>
-            </div>
-            <p class="lead text-muted col-lg-8 mx-auto">
-                A few gentle guidelines to preserve the tranquil atmosphere we cherish for all guests.
-            </p>
-        </div>
-
-        <div class="row g-4 g-xl-5 justify-content-center">
-
-            <!-- RE-USABLE CARD WITH FULL HOVER LIFT + ZOOM + GLOW -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06);
-                            border:1px solid rgba(0,0,0,0.04);
-                            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-                            transform: translateY(0) scale(1);">
-
-                    <!-- Outer elegant gold border -->
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <!-- Inner soft glow line -->
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-
-                    <!-- HOVER STYLE (inline!) -->
-                    <style>
-                        .transition-all:hover {
-                            transform: translateY(-16px) scale(1.04) !important;
-                            box-shadow: 0 30px 70px rgba(212,176,140,0.25) !important;
-                        }
-                    </style>
-
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">
-                        Arrival Time
-                    </h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">
-                        Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in process. Note that treatments will conclude at the scheduled time without extensions unless previously requested.
+                    <!-- EXACT INTRO PARAGRAPH YOU PROVIDED – NOTHING ELSE -->
+                    <p class="lead text-muted col-lg-10 mx-auto mb-5" style="line-height:1.9;">
+                        At Ten Wellness, we are committed to providing a tranquil and rejuvenating experience for all our guests. To maintain an atmosphere of relaxation and harmony, we kindly ask all guests to follow our spa etiquette and policies. These guidelines ensure a seamless and enjoyable experience for everyone while respecting the time and privacy of others:
                     </p>
                 </div>
-            </div>
 
-            <!-- CARD 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Late Arrivals</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Late arrivals will result in a reduced treatment time to accommodate subsequent bookings.</p>
+                <div class="row g-4 g-xl-5 justify-content-center">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Arrival Time</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">
+                                Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in process. Note that treatments will conclude at the scheduled time without extensions unless previously requested.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Late Arrivals</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">Late arrivals will result in a reduced treatment time to accommodate subsequent bookings.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Reservations</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">We recommend booking your appointments 1–2 days in advance to secure your preferred time and service.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Cancellations</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">Kindly provide at least 4 hours' notice for cancellations by calling us directly.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Refunds</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">Refund requests cannot be accommodated after the first 10 minutes of the treatment.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Valuables</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">Please avoid bringing valuables to the spa and please ensure emptying your locker before departing. Lockers are provided for your convenience, but the management is not responsible for any lost or misplaced items.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">No Mobiles &amp; No Smoking</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">For the privacy and tranquility of our spa environment, smoking and the use of mobile phones are strictly prohibited, even in silent mode.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
+                             style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04);">
+                            <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem;"></div>
+                            <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem;"></div>
+                            <h4 class="fw-semibold mb-4" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem;">Health Declarations</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height:1.8;">All guests are required to complete a consultation form with accurate and detailed information. Please inform the reception if you have high blood pressure, have undergone major surgery, are pregnant, have skin allergies, or have any other health concerns. Guests are solely responsible for determining their physical fitness for treatments.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+                    <p class="text-muted lead">Thank you for understanding and adhering to our policies.</p>
                 </div>
             </div>
+        </section>
 
-            <!-- CARD 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Reservations</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">We recommend booking your appointments 1–2 days in advance to secure your preferred time and service.</p>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Cancellations</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Kindly provide at least 4 hours' notice for cancellations by calling us directly.</p>
-                </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Refunds &amp; Valuables</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">Refund requests cannot be accommodated after the first 10 minutes of the treatment. Please avoid bringing valuables.</p>
-                </div>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">No Mobiles &amp; No Smoking</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">For the privacy and tranquility of our spa environment, smoking and the use of mobile phones are strictly prohibited, even in silent mode.</p>
-                </div>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="p-5 bg-white rounded-4 h-100 d-flex flex-column text-center position-relative overflow-hidden transition-all"
-                     style="box-shadow:0 10px 30px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04); transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);">
-                    <div style="position:absolute; inset:0; border:1px solid rgba(212,176,140,0.28); border-radius:1rem; pointer-events:none;"></div>
-                    <div style="position:absolute; inset:8px; border:1px solid rgba(212,176,140,0.15); border-radius:0.9rem; pointer-events:none;"></div>
-                    <h4 class="fw-semibold mb-4 position-relative" style="font-family:'Playfair Display',serif; color:#d4b08c; font-size:1.4rem; z-index:2;">Health Declarations</h4>
-                    <p class="text-muted small flex-grow-1 position-relative" style="line-height:1.8; z-index:2;">All guests are required to complete a consultation form with accurate and detailed information.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="text-center mt-5">
-            <p class="text-muted lead">Thank you for understanding and adhering to our policies.</p>
-        </div>
-    </div>
-</section>
-
-        <!-- Optional CTA -->
+        <!-- CTA & WHATSAPP (UNCHANGED) -->
         <section class="py-5 text-center bg-light">
             <div class="container py-5">
                 <a href="https://api.whatsapp.com/send?phone=96522288282" target="_blank"
@@ -212,32 +191,18 @@
         </section>
 
     </div>
-     <!-- START: WhatsApp Icon -->
-        <a href="https://api.whatsapp.com/send?phone=96522288282"
-           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; z-index: 1000;"
-           target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
 
+    <a href="https://api.whatsapp.com/send?phone=96522288282"
+       class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+       style="width: 60px; height: 60px; z-index: 1000; bottom: 1.5rem; right: 1.5rem;"
+       target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+    </a>
 
-        <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+    <style>
+        .whatsapp-fixed-btn:hover { transform: scale(1.1); box-shadow: 0 6px 15px rgba(0,0,0,0.3) !important; }
+        .transition-all:hover { transform: translateY(-16px) scale(1.04) !important; box-shadow: 0 30px 70px rgba(212,176,140,0.25) !important; }
+    </style>
 
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
-
-        <!-- END: WhatsApp Icon -->
 </t>
-
 </templates>

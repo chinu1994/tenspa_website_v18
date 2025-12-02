@@ -53,10 +53,11 @@
                                             <p class="text-muted mb-2">Sanabel Tower, 26 Jaber Al-Mubarak Street</p>
                                             <p class="text-muted mb-4">Al Kuwayt, Kuwait</p>
                                             <p class="text-success fw-semibold mb-4">Daily 8:30 AM – 4:30 AM</p>
-                                            <a href="https://www.google.com/maps/place/Ten+Spa+for+men" target="_blank"
-                                               class="text-gold fw-medium text-decoration-none">
-                                               Open in Google Maps
-                                            </a>
+                                                <a href="https://www.google.com/maps/place/%D8%AA%D9%86+%D8%B3%D8%A8%D8%A7+%D9%84%D9%84%D8%B1%D8%AC%D8%A7%D9%84+Ten+Spa+for+men%E2%80%AD/@29.3576073,47.9275895,13z/data=!4m6!3m5!1s0x3fcf85349fc12b43:0x58da00530958b254!8m2!3d29.3854415!4d47.9869485!16s%2Fg%2F11glxg_k_f?entry=tts"
+                                                   target="_blank"
+                                                   class="text-gold fw-medium text-decoration-none">
+                                                   Open in Google Maps →
+                                                </a>
                                         </div>
                                     </div>
                                 </div>
@@ -79,10 +80,11 @@
                                             <p class="text-muted mb-2">The Tower, Block 2 Street 216, 2nd Floor</p>
                                             <p class="text-muted mb-4">Sabah Al Salem, Kuwait</p>
                                             <p class="text-success fw-semibold mb-4">Daily 2:30 PM – 2:30 AM</p>
-                                            <a href="https://www.google.com/maps/place/Ten+Spa+-+Sabah+Al+Salem" target="_blank"
-                                               class="text-gold fw-medium text-decoration-none">
-                                               Open in Google Maps
-                                            </a>
+                                                <a href="https://www.google.com/maps/place/Ten+Spa+-+Sabah+Al+Salem+%D8%AA%D9%86+%D8%B3%D8%A8%D8%A7+%E2%80%93+%D8%B5%D8%A8%D8%A7%D8%AD+%D8%A7%D9%84%D8%B3%D8%A7%D9%84%D9%85%E2%80%AD/@29.2500992,48.0883866,459m/data=!3m1!1e3!4m6!3m5!1s0x3fcf756a2ccd1059:0xea9ffdbe1c413da1!8m2!3d29.2506033!4d48.0901343!16s%2Fg%2F11yjh8cp3l?entry=ttu"
+                                                   target="_blank"
+                                                   class="text-gold fw-medium text-decoration-none">
+                                                   Open in Google Maps →
+                                                </a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,11 +142,26 @@
                 <div class="container text-center">
                     <h4 class="fw-semibold mb-4" style="color:#333;">Follow us</h4>
                     <div class="d-flex justify-content-center gap-5 flex-wrap">
-                        <a href="https://www.tiktok.com/@tenspa" target="_blank" class="text-dark fs-3"><i class="bi bi-tiktok"></i></a>
-                        <a href="https://www.instagram.com/tenspakw/" target="_blank" class="text-dark fs-3"><i class="bi bi-instagram"></i></a>
-                        <a href="https://x.com/tenspakw" target="_blank" class="text-dark fs-3"><i class="bi bi-twitter-x"></i></a>
-                        <a href="https://www.facebook.com/tenspakw/" target="_blank" class="text-dark fs-3"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.youtube.com/@tenspakw" target="_blank" class="text-dark fs-3"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@tenspa" target="_blank" class="text-dark text-decoration-none text-center">
+                            <i class="bi bi-tiktok fs-3 d-block"></i>
+                            <small class="d-block mt-1">TikTok</small>
+                        </a>
+                        <a href="https://www.instagram.com/tenspakw/" target="_blank" class="text-dark text-decoration-none text-center">
+                            <i class="bi bi-instagram fs-3 d-block"></i>
+                            <small class="d-block mt-1">Instagram</small>
+                        </a>
+                        <a href="https://x.com/tenspakw" target="_blank" class="text-dark text-decoration-none text-center">
+                            <i class="bi bi-twitter-x fs-3 d-block"></i>
+                            <small class="d-block mt-1">X</small>
+                        </a>
+                        <a href="https://www.facebook.com/tenspakw/" target="_blank" class="text-dark text-decoration-none text-center">
+                            <i class="bi bi-facebook fs-3 d-block"></i>
+                            <small class="d-block mt-1">Facebook</small>
+                        </a>
+                        <a href="https://www.youtube.com/@tenspakw" target="_blank" class="text-dark text-decoration-none text-center">
+                            <i class="bi bi-youtube fs-3 d-block"></i>
+                            <small class="d-block mt-1">YouTube</small>
+                        </a>
                     </div>
                 </div>
             </section>
