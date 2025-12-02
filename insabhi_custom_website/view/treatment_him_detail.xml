@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="TreatmentHim" name="Treatment Him Detail">
+    <t t-call="website.layout">
+      <main class="treatment-detail-page">
+        <t t-if="treatment">
+          <section class="container-fluid py-5" style="background-color:#ffffff;; color:#000;">
+            <div class="row g-0">
+              <!-- Left: Big Image -->
+              <div class="col-lg-6 col-12">
+                <img t-att-src="treatment.get('image')"
+                     t-att-alt="treatment.get('name')"
+                     class="img-fluid w-100 h-80"
+                     style="object-fit:cover; min-height:300px; margin-top:20%;"/>
+              </div>
+
+              <!-- Right: Text Content -->
+              <div class="col-lg-6 col-12 px-5 py-5">
+                <h1 class="mb-4" t-esc="treatment.get('name')"/>
+
+                <ul class="list-unstyled mb-4">
+                  <t t-if="treatment.get('ideal_for')">
+                    <li>
+                      <strong>Ideal for:</strong>
+                      <span t-esc="treatment.get('ideal_for')"/>
+                    </li>
+                  </t>
+
+                  <t t-if="treatment.get('oil_type')">
+                    <li>
+                      <strong>Oil Type:</strong>
+                      <span t-esc="treatment.get('oil_type')"/>
+                    </li>
+                  </t>
+
+                  <t t-if="treatment.get('duration')">
+                    <li>
+                      <strong>Duration:</strong>
+                      <span t-esc="treatment.get('duration')"/>
+                    </li>
+                  </t>
+
+                  <t t-if="treatment.get('pressure')">
+                    <li>
+                      <strong>Pressure:</strong>
+                      <span t-esc="treatment.get('pressure')"/>
+                    </li>
+                  </t>
+
+                  <t t-if="treatment.get('highlights')">
+                    <li>
+                      <strong>Highlights:</strong>
+                      <span t-esc="treatment.get('highlights')"/>
+                    </li>
+                  </t>
+
+                  <t t-if="treatment.get('addon')">
+                    <li>
+                      <strong>Optional Add-on:</strong>
+                      <span t-esc="treatment.get('addon')"/>
+                    </li>
+                  </t>
+                </ul>
+
+                <t t-if="treatment.get('description')">
+                  <p class="mb-4" t-esc="treatment.get('description')"/>
+                </t>
+
+                <t t-if="treatment.get('what_to_expect_title')">
+                  <h4 class="mt-4 mb-2" t-esc="treatment.get('what_to_expect_title')"/>
+                  <p class="mb-4" t-esc="treatment.get('what_to_expect')"/>
+                </t>
+
+                <a href="/shop" class="btn btn-light btn-lg px-5">BOOK NOW</a>
+              </div>
+            </div>
+          </section>
+        </t>
+
+        <t t-else="">
+          <section class="container py-5 text-center">
+            <h1>Treatment not found</h1>
+          </section>
+        </t>
+      </main>
+    </t>
+  </template>
+</odoo>

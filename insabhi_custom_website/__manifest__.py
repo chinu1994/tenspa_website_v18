@@ -41,11 +41,10 @@
         'view/treatmentHim.xml',
         'view/treatmentHer.xml',
         'view/addonss_product.xml',
-        'view/giftvoucher.xml',
-        'view/tenstore_product_detail.xml',
-        # 'view/treatment_him_detail.xml',
-        # 'view/treatment_her_detail.xml',
+        'view/treatment_him_detail.xml',
+        'view/treatment_her_detail.xml',
         'view/faq.xml',
+        'view/homecard_detail.xml',
 
     ],
     'assets': {
@@ -56,14 +55,15 @@
             'insabhi_custom_website/static/src/xml/careers/careers.xml',
             'insabhi_custom_website/static/src/xml/contactus/contactus.xml',
             'insabhi_custom_website/static/src/xml/tenStore/tenStore.xml',
-             # 'insabhi_custom_website/static/src/xml/serviceSelecting/serviceSelecting.xml',
-            # 'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
-            # 'insabhi_custom_website/static/src/xml/addOns/addOns.xml',
-            # 'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
-            # 'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
-            # 'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
-            # 'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
-            # 'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
+
+            'insabhi_custom_website/static/src/xml/serviceSelecting/serviceSelecting.xml',
+            'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
+            'insabhi_custom_website/static/src/xml/addOns/addOns.xml',
+            'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
+            'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
+            'insabhi_custom_website/static/src/xml/voucherDelivery/voucherDelivery.xml',
+            'insabhi_custom_website/static/src/xml/treatmentHim/treatmentHim.xml',
+            'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
             'insabhi_custom_website/static/src/xml/tenstoreProductDetails/tenstore_product_detail.xml',
             'insabhi_custom_website/static/src/xml/faq/faq.xml',
 
@@ -82,8 +82,6 @@
             'insabhi_custom_website/static/src/scss/treatmentHim/treatmentHim.scss',
             'insabhi_custom_website/static/src/scss/treatmentHer/treatmentHer.scss',
             'insabhi_custom_website/static/src/scss/faq/faq.scss',
-
-            # 'insabhi_custom_website/static/src/scss/addons_images/addons_images.scss',
 
             'insabhi_custom_website/static/src/js/homepage/homepage.js',
             'insabhi_custom_website/static/src/js/aboutus/aboutus.js',

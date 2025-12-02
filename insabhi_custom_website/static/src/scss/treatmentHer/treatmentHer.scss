@@ -1,248 +1,347 @@
-// Treatment Her Page Styles
+.ten-wellness-spa {
+  font-family: 'Lato', sans-serif;
+  color: #5a4a6d;
+}
+
+$orange    : #ff6a00;
+$black     : #000000;
+$white     : #ffffff;
+// $font-logo : 'Cairoli Classic', serif;
+$font-body : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .treatmentHer {
-  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
 
-  // Hero Section
-  .insabhi-hero {
-    position: relative;
-    overflow: hidden;
+  /* Top classic banner card style (white card on light bg) */
+  .spa-banner-classic {
+    min-height: 300px;
+    background: url('/insabhi_custom_website/static/src/image/HerBanner.jpg') center center/cover no-repeat;
+//     background-color: #000;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    padding: 3rem 1.5rem;
+    margin-bottom: 3rem;
 
-    .hero-image-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      max-height: 700px;
+    .banner-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top:7rem;
 
-      .hero-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
     }
 
-    .insabhi-hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
-
-      .hero-title {
-        color: white;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        margin-bottom: 1rem;
-      }
-
-      .hero-subtitle {
-        max-width: 600px;
-      }
+    .banner-description {
+      font-size: 1rem;
+      max-width: 900px;
+      color: #fff;
+      margin-top:2rem;
     }
   }
 
-  // Section Titles
+  /* Section headings for sub‑blocks (Rituals, Skin, Grooming, Facial) */
   .section-title {
-    position: relative;
-    color: #2c3e50;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #473356;
+  }
 
-    &::after {
-      content: '';
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: #3498db;
-      margin: 0.5rem auto;
-      border-radius: 2px;
+  .rituals-intro,
+  .skin-intro,
+  .grooming-intro,
+  .facial-intro {
+    text-align: center;
+    color: #5a4a6d;
+
+    .lead {
+      font-size: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
   }
 
-  // Intro Section
-  .intro-section {
-    background-color: #f8f9fa;
-
-    .section-title {
-      color: #3498db;
-    }
+  /* Give subtle separation between big groups */
+  .rituals-intro,
+  .skin-intro,
+  .grooming-intro,
+  .facial-intro {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  // Treatment Cards
+  /* Cards grid (shared by all sections) */
+  .treatment-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .treatment-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+
+  .treatmentHer {
+
+  .treatment-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  /* === DESKTOP: 4 bada card per row === */
   .treatment-card {
-    transition: all 0.3s ease;
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 24px;
     overflow: hidden;
-    background: white;
+    cursor: pointer;
+    flex: 0 1 calc(25% - 32px);   /* 4 columns */
+    max-width: 400px;             /* thoda bada card */
+    box-shadow: 0 16px 40px rgba(30,30,30,0.13);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+      transform: translateY(-6px);
+      box-shadow: 0 22px 55px rgba(0,0,0,0.18);
+      filter: brightness(1.02);
+    }
+  }
+
+  .card-img {
+    width: 100%;
+    height: 360px;      /* image height bada, tenwellness jaisa */
+    object-fit: cover;
+  }
+
+  /* === Laptop / medium: 3 per row === */
+  @media (max-width: 1200px) {
+    .treatment-card {
+      flex: 0 1 calc(33.333% - 32px);
+      max-width: 380px;
+    }
+  }
+
+  /* === Tablet: 2 per row === */
+  @media (max-width: 992px) {
+    .treatment-card {
+      flex: 0 1 calc(50% - 28px);
+      max-width: 420px;
+    }
+    .card-img {
+      height: 280px;
+    }
+  }
+
+  /* === Mobile: 1 per row === */
+  @media (max-width: 576px) {
+    .treatment-card {
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+    .card-img {
+      height: 240px;
+    }
+  }
+}
+
+
+  .card-footer {
+    background: #fff;
+    text-align: center;
+    padding: 24px 0 18px;
+  }
+
+  .book-now-short {
+    background: #fff;
+    border: 1.5px solid #dedede;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    width: 220px;
+    height: 42px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease, transform .15s ease;
+
+    &:hover {
+      background-color: #73426c;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #222;
+  }
+
+  /* Small spacing tweak between big blocks */
+  section.mb-5 + .rituals-intro,
+  section.mb-5 + .skin-intro,
+  section.mb-5 + .grooming-intro,
+  section.mb-5 + .facial-intro {
+    margin-top: 0.5rem;
+  }
+
+
+
+/* LIST PAGE STYLES (already tumne yahan kaafi likh liya hai) */
+
+/* DETAIL PAGE STYLES */
+.treatment-detail-page {
+  background-color: #000;
+  color: #fff;
+
+  section.container-fluid {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    margin-top:45%;
+  }
+
+  ul.list-unstyled li {
+    margin-bottom: 0.35rem;
+    font-size: 0.98rem;
+
+    strong {
+      font-weight: 600;
+      margin-right: 4px;
+    }
+  }
+
+  p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .btn.btn-light {
+    font-weight: 600;
+    padding-inline: 2.5rem;
+
+  }
+
+  @media (max-width: 992px) {
+    section.container-fluid {
+      padding-inline: 1.25rem;
     }
 
-    .treatment-image {
-      height: 100%;
-      object-fit: cover;
-      min-height: 300px;
+    h1 {
+      font-size: 2rem;
     }
 
-    .treatment-number {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
+    .col-lg-6:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p, ul.list-unstyled li {
+      font-size: 0.92rem;
+    }
+  }
+}
+
+
+  /* ---------- Responsive adjustments ---------- */
+
+  @media (max-width: 992px) {
+    .spa-banner-classic {
+      padding: 2.5rem 1.25rem;
+
+      .banner-title {
+        font-size: 2rem;
+      }
+      .banner-description {
+        font-size: 0.95rem;
+      }
+    }
+
+    .card-img {
+      height: 230px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .spa-banner-classic {
+      margin-bottom: 2.25rem;
+
+      .banner-title {
+        font-size: 1.7rem;
+      }
+      .banner-description {
+        font-size: 0.92rem;
+      }
+    }
+
+    .treatment-cards-row {
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .treatment-card {
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+    }
+
+    .rituals-intro .lead,
+    .skin-intro .lead,
+    .grooming-intro .lead,
+    .facial-intro .lead {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .spa-banner-classic {
+      padding: 2rem 1rem;
+      border-radius: 18px;
+
+      .banner-title {
+        font-size: 1.4rem;
+      }
+      .banner-description {
+        font-size: 0.9rem;
+      }
+    }
+
+    .card-img {
+      height: 210px;
+    }
+
+    .book-now-short {
+      width: 200px;
+      height: 40px;
+      font-size: 0.98rem;
     }
 
     .card-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .treatment-details {
-      li {
-        padding: 0.25rem 0;
-        border-bottom: 1px dashed #eee;
-
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-    }
-
-    .card-text {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-
-      .fw-bold {
-        display: inline-block;
-        margin-right: 0.5rem;
-      }
-    }
-  }
-
-  // Rituals Section
-  .rituals {
-    .ritual-card {
-      border-radius: 12px;
-      background: white;
-
-      .card-title {
-        font-size: 1.75rem;
-      }
-
-      .highlights-list {
-        .list-group-item {
-          border: none;
-          padding: 0.5rem 0;
-
-          &::before {
-            content: "✓";
-            color: #27ae60;
-            font-weight: bold;
-            display: inline-block;
-            width: 20px;
-          }
-        }
-      }
-    }
-
-    .ritual-image {
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      max-height: 400px;
-      object-fit: cover;
-    }
-  }
-
-  // Grooming Section
-  .grooming-for-women {
-    .grooming-image {
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      max-height: 500px;
-      object-fit: cover;
-    }
-
-    .expect-list {
-      .list-group-item {
-        border: none;
-        padding: 0.5rem 0;
-
-        &::before {
-          content: "✓";
-          color: #3498db;
-          font-weight: bold;
-          display: inline-block;
-          width: 20px;
-        }
-      }
-    }
-  }
-
-  // Placeholder for missing images
-
-
-  .image-placeholder {
-    min-height: 300px;
-
-
-    span {
-      font-size: 1.2rem;
-    }
-  }
-  .grooming-image{
-    background-image: url("insabhi_custom_website/static/src/image/treat8.webp");
-    background-size: cover;
-  }
-
-  // Responsive adjustments
-  @media (max-width: 991.98px) {
-    .insabhi-hero {
-      .hero-image-container {
-        height: 60vh;
-      }
-
-      .insabhi-hero-overlay {
-        .hero-title {
-          font-size: 2rem;
-        }
-      }
-    }
-
-    .treatment-card {
-      .treatment-image {
-        min-height: 250px;
-      }
-    }
-  }
-
-  @media (max-width: 767.98px) {
-    .insabhi-hero {
-      .hero-image-container {
-        height: 50vh;
-      }
-
-      .insabhi-hero-overlay {
-        .hero-title {
-          font-size: 1.75rem;
-        }
-
-        .hero-subtitle {
-          font-size: 1rem;
-        }
-      }
+      font-size: 0.98rem;
     }
 
     .section-title {
-      font-size: 1.75rem;
-    }
-
-    .treatment-card {
-      .card-title {
-        font-size: 1.25rem;
-      }
-
-      .treatment-image {
-        min-height: 200px;
-      }
+      font-size: 1.4rem;
     }
   }
 }
