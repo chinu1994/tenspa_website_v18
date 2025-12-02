@@ -4,6 +4,8 @@
 
     <template id="tenStore_product_detail" name="TenStore Product Detail">
       <t t-call="website.layout">
+        <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
+
 
         <!-- optional spacer so the content starts below fixed header -->
         <div class="page-spacer" aria-hidden="true" style="height:190px;"></div>
