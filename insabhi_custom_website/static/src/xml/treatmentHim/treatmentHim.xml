@@ -1,684 +1,328 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
+  <t t-name="insabhi_custom_website.TreatmentHim">
+    <div class="treatmentHim">
+      <div class="container py-5 ten-wellness-spa">
 
-    <t t-name="insabhi_custom_website.TreatmentHim" owl="1">
-        <div class="treatmentHim">
-           <div class="treatment-page container-fluid px-0">
+        <!-- Classic Spa Treatments Banner -->
+        <section class="mb-5">
+          <div class="spa-banner spa-banner-classic d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="banner-title mb-3">
+              Classic Spa Treatments
+            </h1>
+            <p class="banner-description mb-4 px-3 px-md-5">
+              Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of tranquility as our highly skilled therapists deliver expertly tailored treatments to restore balance to your mind, body, and spirit. Our signature massages are thoughtfully crafted to alleviate stress and tension, leaving you feeling refreshed and revitalized. With meticulously designed 60- or 90-minute sessions, we ensure each treatment provides unparalleled comfort and care. Embrace the serene ambiance and allow our therapies to guide you to a state of complete renewal and well-being.
+            </p>
+            <a href="#treatments" class="btn btn-primary btn-lg px-5">Explore Treatments</a>
+          </div>
+        </section>
 
-                  <!-- Hero Section -->
-          <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/image/treatment1.jpg"
-                     alt="Ten Wellness Hero"
-                     class="w-100 h-100 object-fit-cover d-block"/>
-            </div>
-            <div class="insabhi-hero-overlay-bottom">
-                <div class="insabhi-hero-content-bottom container">
-                    <h1 class="insabhi-hero-title">Ten Wellness Treatments</h1>
-                    <h2 class="insabhi-hero-subtitle">Discover the pinnacle of relaxation and rejuvenation</h2>
-                    <p class="insabhi-hero-question">at Ten Wellness</p>
-                    <a href="#"
-                       class="insabhi-hero-button" target="_blank" rel="noopener noreferrer">
-                       Visit Now
-                    </a>
+        <!-- Cards row (list page) -->
+        <section id="treatments" class="mb-5">
+          <div class="treatment-cards-row">
+
+            <!-- Aromatherapy -->
+            <a href="/treatmentHim/aromatherapy-massage" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat9.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Aromatherapy Massage</div>
                 </div>
-            </div>
+              </div>
+            </a>
+
+            <!-- Foot Reflexology -->
+            <a href="/treatmentHim/foot-reflexology" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat15.jpeg" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Foot Reflexology</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Swedish -->
+            <a href="/treatmentHim/swedish-massage" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat12.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Swedish Massage</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Indonesian -->
+            <a href="/treatmentHim/indonesian-balinese-massage" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat13.jpeg" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Indonesian (Balinese) Massage</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Deep tissue -->
+            <a href="/treatmentHim/deep-tissue-sports-massage" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat11.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Deep Tissue / Sports Massage</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Thai -->
+            <a href="/treatmentHim/thai-massage" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat8.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Thai Massage</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Back/Neck/Shoulder/Head -->
+            <a href="/treatmentHim/back-neck-shoulder-head" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat7.jpg" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">
+                    Back, Neck, Shoulder, and Head Massage
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Aircups -->
+            <a href="/treatmentHim/aircups-30min" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/gift4.jpg" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">30mins Aircups</div>
+                </div>
+              </div>
+            </a>
+
+          </div>
         </section>
 
 
-                <!-- Intro Section -->
-                <section class="intro-section py-5 bg-light">
-                    <div class="container py-4">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10 text-center">
-                                <h2 class="section-title display-5 fw-bold text-primary mb-4">Ten Wellness Treatments for Him</h2>
-                                <p class="lead fs-5">
-                                    Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of
-                                     tranquility as our highly skilled therapists deliver expertly tailored treatments to restore
-                                     balance to your mind, body, and spirit. Our signature massages are thoughtfully crafted
-                                     to alleviate stress and tension, leaving you feeling refreshed and revitalized.
-                                </p>
-                            </div>
-                        </div>
+          <!-- Rituals intro -->
+        <section class="rituals-intro py-5">
+          <h2 class="section-title text-center mb-3">Rituals (Luxury Packages)</h2>
+          <p class="lead text-center mb-4 px-3 px-md-5">
+            Immerse yourself in the ultimate spa experience with Ten Wellness Rituals —
+            luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual
+            combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique
+            needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an
+            unparalleled journey of indulgence and pure bliss.
+          </p>
+        </section>
+
+        <!-- Rituals cards -->
+        <section class="mb-5">
+          <div class="treatment-cards-row">
+
+            <!-- Sunset Boulevard Ritual -->
+            <a href="/treatmentHim/sunset-boulevard-ritual" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat13.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Sunset Boulevard Ritual</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Marbaya Nights -->
+            <a href="/treatmentHim/marbaya-nights" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat21.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Marbaya Nights (120 Minutes)</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Hollywood Grooming -->
+            <a href="/treatmentHim/hollywood-grooming" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat16.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Hollywood Grooming (180 Minutes)</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Walk In Shaheed Park -->
+            <a href="/treatmentHim/walk-in-shaheed-park" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/mass5.png" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Walk In Shaheed Park (120 Minutes)</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Self-Love Package -->
+            <a href="/treatmentHim/self-love-package" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="/insabhi_custom_website/static/src/image/treat20.webp" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Self-Love Package</div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+
+          <!-- Skin Conditioning intro -->
+            <section class="skin-intro py-5">
+              <h2 class="section-title text-center mb-3">Skin Conditioning Treatments</h2>
+              <p class="lead text-center mb-4 px-3 px-md-5">
+                Reveal your skin's true potential with our expertly crafted skin conditioning treatments. Designed to rejuvenate and restore, these treatments deliver hydration, nourishment, and a healthy glow, tailored to your skin’s unique needs.
+              </p>
+            </section>
+
+            <!-- Skin Conditioning cards -->
+            <section class="mb-5">
+              <div class="treatment-cards-row">
+
+                <!-- Traditional (60 Minutes) -->
+                <a href="/treatmentHim/traditional-hammam" class="treatment-card-link">
+                  <div class="treatment-card">
+                    <img src="/insabhi_custom_website/static/src/image/treat18.webp" class="card-img"/>
+                    <div class="card-footer">
+                      <button class="book-now-short">Book Now</button>
+                      <div class="card-title">Traditional (60 Minutes)</div>
                     </div>
-                </section>
+                  </div>
+                </a>
 
-                <!-- Classic Spa Treatments -->
-                <section class="classic-spa-treatments py-5">
-                    <div class="container">
-                        <div class="row mb-5">
-                            <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3">Classic Spa Treatments</h2>
-                                <div class="title-underline mx-auto"></div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 1 -->
-                        <div id="treatment-1" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat9.webp" class="treatment-image img-fluid rounded-start" alt="Foot Reflexology Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Aromatherapy Massage</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Deep relaxation, stress relief, post-travel recovery</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Calming essential oils</li>
-                                            <li class="mb-2"><strong>Duration:</strong>  90 or 120 minutes</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong>Light to medium</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> This deeply relaxing massage promotes overall well-being, relieves stress, and helps reduce jet lag—making it ideal after long periods of travel. Specially selected aromatherapy oils, tailored to your needs, address concerns such as sleeplessness, stress overload, anxiety, and muscle soreness..
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> Warm essential oils are gently massaged into the skin, activating your senses and promoting relaxation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 2 -->
-                        <div id="treatment-2" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat12.webp" class="treatment-image img-fluid rounded-start" alt="Swedish Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Swedish Massage (Classic Massage)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Muscle tension relief and overall relaxation</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Light to Medium</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 / 90 / 120 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> No oil or light aromatic oils</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Also known as the classic massage, Swedish massage originates from Sweden and is widely practiced across Europe. This soothing treatment uses soft to medium pressure without stretching techniques, making it perfect for relaxation and stress relief. By easing tension and promoting muscle relaxation, it can also improve posture by preventing muscles from overcompensating due to physical stress.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> The technique combines long, kneading strokes with rhythmic tapping and gentle joint movements. Targeting the uppermost muscle layers, Swedish massage is designed to relieve tension, enhance circulation, and leave you feeling relaxed and rejuvenated.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 3 -->
-                        <div id="treatment-3" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat13.jpeg" class="treatment-image img-fluid rounded-start" alt="Balinese Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Indonesian (Balinese) Massage</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Stress relief, circulation boost, detoxification</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Medium to Strong</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 / 90 / 120 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> Light aromatic oils</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Originating from Indonesia, this traditional massage blends Balinese techniques with medium to strong pressure and gentle stretching. Known for its holistic approach, Balinese massage reduces stress, stimulates blood circulation, alleviates muscle strain, detoxifies the body, and nourishes the skin for a radiant glow.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> The massage incorporates long, flowing palm strokes, kneading, and precise thumb pressure to create an authentic and deeply therapeutic experience. With its dynamic movement techniques, Balinese massage leaves you feeling both relaxed and re-energized.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 4 -->
-                        <div id="treatment-4" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat11.webp" class="treatment-image img-fluid rounded-start" alt="Deep Tissue Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">04</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Deep Tissue / Sports Massage</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Muscle pain relief after intense physical activity</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Strong</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 / 90 / 120 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> Light aromatic oils</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Deep Tissue/Sports Massage is designed for those seeking relief from muscle pain and tension, especially after intense physical activity or exercise. This treatment uses deep pressure combined with stretching techniques to improve flexibility, promote recovery, and address muscle-related issues.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During a Deep Tissue Massage, the therapist applies slow, deliberate strokes and firm pressure to target the deepest layers of muscles and connective tissues, alleviating tension and soreness. Sports Massage focuses on reducing pain, improving circulation, and releasing muscle tension while stimulating the production of endorphins.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 5 -->
-                        <div id="treatment-5" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat15.jpeg" class="treatment-image img-fluid rounded-start" alt="Hot Stone Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">05</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Foot Reflexology</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>Improving circulation, stress relief, digestive support</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Medium to strong</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> No oil or light aromatic oils</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Aromatherapy Hot stone Massage is the perfect choice for travelers or anyone experiencing fatigue and body exhaustion. It combines gentle massage techniques with the soothing warmth of hot stones, helping to relax muscles deeply and stimulate circulation. This session is designed to ease tension, calm the mind, and restore the body's natural balance—promoting restful sleep and leaving you refreshed after travel or long periods of stress.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, hot stones are placed on key points of the body to distribute heat evenly, while the therapist uses light, flowing massage techniques to melt away tension. The warmth penetrates deep into the muscles, relieving stiffness and aches while creating a profound sense of comfort and relaxation. You'll leave the treatment feeling light, calm, and completely renewed.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 6 -->
-                        <div id="treatment-6" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat8.webp" class="treatment-image img-fluid rounded-start" alt="Warrior Thai Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">06</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Thai Massage </h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Muscle recovery, improving flexibility, pain relief, stress reduction, and overall body balance.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Medium to Strong</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 / 90 / 120 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> No oil</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Thai Massage is a therapeutic bodywork technique that blends pressure and compression with deep, assisted stretches. Rooted in traditional Thai practices, this massage focuses on releasing muscle tension, enhancing flexibility, and restoring the body's natural energy flow. It is particularly beneficial for active individuals or anyone seeking recovery and relaxation after physical exertion.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist uses their hands, palms, and body weight to apply firm pressure and perform guided stretching movements. These dynamic techniques improve joint mobility, ease muscle tightness, and promote a sense of balance and renewal. The experience is both therapeutic and deeply revitalizing, leaving you energized yet relaxed.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 7 -->
-                        <div id="treatment-7" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat17.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">07</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Back, Neck, Shoulder, and Head Massage</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Relieving muscle tightness, reducing headaches and neck pain, releasing stress, and promoting overall relaxation.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Gentle to Firm</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 30 / 60 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> Light aromatic oils</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Back, Neck, Shoulder, and Head Massage is a targeted therapeutic session focusing on the body's most common areas of tension. By applying gentle to firm pressure, this treatment helps release stiffness, ease pain, and restore balance, making it ideal for those who carry stress in their upper body or experience frequent headaches.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 8 -->
-                        <div id="treatment-8" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/gift4.jpg" class="treatment-image img-fluid rounded-start" alt="Aircups Therapy Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">08</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">30mins Aircups Therapy</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Stimulating blood circulation, relieving muscle tension, reducing inflammation, detoxifying the body, and supporting natural healing.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Gentle to Medium (with suction)</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 30 mins</li>
-                                            <li class="mb-2"><strong>Oil Type:</strong> Calming essential oils</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> The Aircups Therapy is a 30-minute targeted back massage combined with gentle suction cup techniques to encourage blood flow and release muscle tension. This treatment is designed to promote faster recovery, reduce inflammation, and support the body's natural detoxification and healing process.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Mud Wrap (60 Minutes) -->
+                <a href="/treatmentHim/mud-wrap" class="treatment-card-link">
+                  <div class="treatment-card">
+                    <img src="/insabhi_custom_website/static/src/image/treat21.webp" class="card-img"/>
+                    <div class="card-footer">
+                      <button class="book-now-short">Book Now</button>
+                      <div class="card-title">Mud Wrap (60 Minutes)</div>
                     </div>
-                </section>
+                  </div>
+                </a>
 
-                <!-- Rituals Section -->
-                <section class="rituals py-5 bg-light">
-                    <div class="container">
-                        <div class="row mb-5">
-                            <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Rituals (Luxury Packages)</h2>
-                                <div class="title-underline mx-auto"></div>
-                                <p class="lead fs-5 mt-4">
-                                    Immerse yourself in the ultimate spa experience with Ten Wellness Rituals — luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an unparalleled journey of indulgence and pure bliss.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div id="treatment-1" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat13.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Sunset Boulevard Ritual </h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>  Deep relaxation, skin renewal, and body revitalization.</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 30 / 60 mins</li>
-                                            <li class="mb-2"><strong>Highlights:</strong> Steam session, double exfoliation, and a 60-minute deep massage that brings a sense of comfort and balance.</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Indulge in the luxurious Sunset Boulevard Ritual, a 120-minute experience designed to rejuvenate and relax. Begin with a soothing steam session to detoxify, followed by a double-scrub process to exfoliate and refresh your skin
-                                        </p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 8 -->
-                        <div id="treatment-2" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat21.webp" class="treatment-image img-fluid rounded-start" alt="Aircups Therapy Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Marbaya Nights (120 Minutes)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Body detox, skin revitalization, and deep relaxation</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 120 mins</li>
-                                            <li class="mb-2"><strong>Highlights:</strong> Thalasso steam session, revitalizing exfoliation, nourishing body wrap, and
-                                                    a massage of your choice.</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Escape to the luxury of Marbaya Nights with this 120-minute rejuvenating ritual. Begin with a Thalasso steam to detoxify and refresh, followed by a revitalizing scrub and nourishing mud wrap to restore your skin’s natural glow..
-                                        </p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="treatment-3" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat16.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Hollywood Grooming (180 Minutes)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Skin rejuvenation, Body detox, nail care and deep relaxation.</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 180 minutes</li>
-                                            <li class="mb-2"><strong>Highlight:</strong>Steam session, double exfoliation, deep relaxation, and manicure pedicure for a complete look</li>
-                                            <li><strong>Optional Add-on:</strong>  Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Experience the ultimate in self-care with our Hollywood Grooming ritual, a 180-minute session designed to leave you polished and refreshed. Begin with a detoxifying steam, followed by a double scrub process and nourishing cream application</p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 8 -->
-                        <div id="treatment-4" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/mass5.webp" class="treatment-image img-fluid rounded-start" alt="Aircups Therapy Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">04</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Walk In Shaheed Park (120 Minutes)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>  Energizing and skin renewal.</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 120 minutes</li>
-                                            <li class="mb-2"><strong>Highlight:</strong> Revitalizing exfoliation, nourishing body wrap, and a calming massage for restored vitality.</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Take a restorative journey with our Walk in Shaheed Park ritual, a 120-minute deluxe experience inspired by the serene beauty of Kuwait’s iconic park. Begin with an invigorating treatment scrub to refresh your skin, followed by nourishing mud wraps that restore and rejuvenate.</p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="treatment-5" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat20.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">05</span>
-                                        <h3 class="card-title fw-bold text-success mb-3"> Self-Love Package</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>A complete body relaxation experience, skin detoxification, and facial rejuvenation</li>
-                                            <li class="mb-2"><strong>Duration:</strong>  4 hours</li>
-                                            <li class="mb-2"><strong>Highlight:</strong> manicure &amp; pedicure, traditional bath, full-body massage, and deep facial cleansing</li>
-                                            <li><strong>Benefits:</strong> Elegantly groomed hands and feet, soft and purified skin, total muscle relaxation and improved circulation, clean and refreshed face, enhanced hygiene and refined appearance</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Indulge in the ultimate self-care with our Self-Love Package. This luxurious 4-hour experience begins with meticulous grooming of the hands and feet, followed by a revitalizing traditional bath that refreshes the senses and restores vitality.
-                                        </p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                <!-- Double Scrub (60 Minutes) -->
+                <a href="/treatmentHim/double-scrub" class="treatment-card-link">
+                  <div class="treatment-card">
+                    <img src="/insabhi_custom_website/static/src/image/treat20.webp" class="card-img"/>
+                    <div class="card-footer">
+                      <button class="book-now-short">Book Now</button>
+                      <div class="card-title">Double Scrub (60 Minutes)</div>
                     </div>
-                </section>
+                  </div>
+                </a>
+
+              </div>
+            </section>
 
 
-                <!--  Skin Conditioning Treatments  -->
 
+          <!-- Distinguished Grooming intro -->
+<section class="grooming-intro py-5">
+  <h2 class="section-title text-center mb-3">
+    Distinguished Grooming for Gentlemen
+  </h2>
+  <p class="lead text-center mb-4 px-3 px-md-5">
+    Discover a new standard of care designed to leave you looking polished and feeling your best.
+    From revitalizing facials to precision manicures and pedicures, every detail is tailored to enhance
+    your style, confidence, and overall appearance.
+  </p>
+</section>
 
-               <section class="rituals py-5 bg-light">
-                    <div class="container">
-                        <div class="row mb-5">
-                            <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3">  Skin Conditioning Treatments </h2>
-                                <div class="title-underline mx-auto"></div>
-                                <p class="lead fs-5 mt-4">
-                                   Reveal your skin's true potential with our expertly crafted skin conditioning treatments. Designed to rejuvenate and restore, these treatments cater to your skin's unique needs, delivering hydration, nourishment, and a healthy glow. From deep-cleansing facials to targeted masks and serums.</p>
-                            </div>
-                        </div>
+<!-- Grooming cards: Mani & Pedi -->
+<section class="mb-5">
+  <div class="treatment-cards-row">
 
-                        <div id="treatment-1" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat18.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Traditional (60 Minutes) </h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>  Tired skin .</li>
-                                            <li class="mb-2"><strong>Duration:</strong>  60 mins</li>
-                                            <li class="mb-2"><strong>Highlights:</strong> Includes a soothing steam session, nourishing olive oil mask, and exfoliation with a kessa mitt for softness and glow..</li>
-                                            <li><strong>Optional Add-on:</strong> Aircups / Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Experience the essence of traditional Moroccan luxury. This rejuvenating 60-minute ritual begins with a soothing steam session, followed by the application of an olive body mask to nourish and detoxify the skin.
-                                        </p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment 8 -->
-                        <div id="treatment-2" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat21.webp" class="treatment-image img-fluid rounded-start" alt="Aircups Therapy Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Mud Wrap (60 Minutes)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Fatigued and stressed skin</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 minutes</li>
-                                            <li class="mb-2"><strong>Highlights:</strong> Inspired by the magical sunset of Santorini, includes therapeutic steam, exfoliation, and body wrap with nourishing mud.</li>
-                                            <li><strong>Optional Add-on:</strong> Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Escape to the blissful Mud Wrap. This 60-minute indulgence begins with a Thalasso conditioning steam to detoxify and invigorate, followed by a rejuvenating body scrub and a nourishing mud wrap to replenish and restore your skin</p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist applies suction cups along the back in combination with massage techniques. The cups create a gentle vacuum effect that increases circulation, helps muscles relax, and encourages the repair of cells, leaving you with a lighter, refreshed feeling.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="treatment-3" class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <img src="insabhi_custom_website/static/src/image/treat20.webp" class="treatment-image img-fluid rounded-start" alt="Back, Neck, Shoulder, and Head Massage Image"/>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-primary rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-success mb-3">Double Scrub (60 Minutes)</h3>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong>Dull, tired skin</li>
-                                            <li class="mb-2"><strong>Duration:</strong> 60 minutes</li>
-                                            <li class="mb-2"><strong>Highlight:</strong> Therapeutic steam, dual exfoliation, and deep hydration gel for radiant skin.</li>
-                                            <li><strong>Optional Add-on:</strong>  Oxygen Mask / Red Light Therapy</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-primary">About:</span> Indulge in this sophisticated ritual and unveil your ultimate glow. This luxurious 60-minute experience begins with a Thalasso steam session to detoxify and refresh, followed by a double-scrub process that gently exfoliates and smooths your skin</p>
-<!--                                        <p class="card-text">-->
-<!--                                            <span class="fw-bold text-primary">What to Expect:</span> During the session, the therapist concentrates on the back, neck, shoulders, and head using a combination of soothing strokes and firm pressure techniques. This approach improves blood circulation, melts away tightness, and promotes deep relaxation, leaving you refreshed and light.-->
-<!--                                        </p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Grooming Section -->
-                <section class="grooming-for-women py-5">
-                    <div class="container">
-                        <div class="row mb-5">
-                            <div class="col-12 text-center">
-                                <h2 class="section-title display-5 fw-bold mb-3"> Distinguished Grooming for Gentlemen </h2>
-                                <div class="title-underline mx-auto"></div>
-                                <p class="lead fs-5 mt-4">
-                                    Discover a new standard of care designed to leave you looking polished and feeling your best. Redefine your personal care routine with our Distinguished Grooming for Women services, thoughtfully crafted for the modern woman. From revitalizing facial treatments that refresh and refine your complexion to precision manicures and pedicures that exude confidence, every detail is tailored to enhance your style and sophistication.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="text-center mb-5">
-                            <img src="insabhi_custom_website/static/src/image/treatment.jpg" class="grooming-image img-fluid rounded shadow mb-4" alt="Manicure and Pedicure Service"/>
-                        </div>
-
-                        <!-- Grooming Treatment 1 -->
-                        <div class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-
-                              <div class="col-lg-5">
-                                    <div class="image-placeholder d-flex align-items-center justify-content-center h-100 rounded-start bg-info bg-opacity-10">
-                                            <img src="insabhi_custom_website/static/src/image/treat3.jpg" class="treatment-image img-fluid rounded-start" alt="Warrior Thai Massage Image"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-info rounded-pill mb-3">01</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Spoil Me Mani &amp; Pedi</h3>
-                                        <p class="card-text small text-muted mb-3">(90 Mins – 2 Therapists)</p>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Complete pampering, relaxation, detailed nail and skin care, and a luxurious grooming experience.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Gentle</li>
-                                            <li><strong>Duration:</strong> 90 minutes</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Spoil Me Mani &amp; Pedi is our most indulgent and relaxing experience, performed by two therapists working simultaneously — one focusing on your hands and the other on your feet. This luxury treatment offers full nail and cuticle care, complemented with advanced techniques to ensure total rejuvenation. It is designed to leave you feeling completely pampered, polished, and refreshed.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
-                                        </p>
-                                        <ul class="expect-list list-group list-group-flush small">
-                                            <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
-                                            <li class="list-group-item px-0">Full nail and cuticle care</li>
-                                            <li class="list-group-item px-0">Red light therapy for the face</li>
-                                            <li class="list-group-item px-0">Foot soak with hand &amp; foot scrubs</li>
-                                            <li class="list-group-item px-0">Massage up to the knees</li>
-                                            <li class="list-group-item px-0">Hot stone therapy</li>
-                                            <li class="list-group-item px-0">Finish with your choice of polish or natural buff</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Grooming Treatment 2 -->
-                        <div class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0 flex-lg-row-reverse">
-                                <div class="col-lg-5">
-                                    <div class="image-placeholder d-flex align-items-center justify-content-center h-100 rounded-start bg-info bg-opacity-10">
-                                            <img src="insabhi_custom_website/static/src/image/treat7.jpg" class="treatment-image img-fluid rounded-start" alt="Warrior Thai Massage Image"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-info rounded-pill mb-3">02</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Elegant Mani &amp; Pedi</h3>
-                                        <p class="card-text small text-muted mb-3">(45 Mins – 2 Therapists)</p>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> A refined and time-efficient session, professional nail and cuticle care, and a premium experience in less than an hour.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Gentle</li>
-                                            <li><strong>Duration:</strong> 45 minutes</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Elegant Mani &amp; Pedi is a sophisticated and efficient treatment, performed by two therapists working together simultaneously. This service includes nail shaping, cuticle care, and exfoliating scrubs for both hands and feet, with the option of adding red light therapy for the face. The session concludes with a professional polish application, all set in a calming environment with soothing music and aromatherapy. Perfect for those who want a premium grooming experience in under an hour.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
-                                        </p>
-                                        <ul class="expect-list list-group list-group-flush small">
-                                            <li class="list-group-item px-0">Two therapists working at the same time (hands &amp; feet)</li>
-                                            <li class="list-group-item px-0">Nail shaping and cuticle care</li>
-                                            <li class="list-group-item px-0">Hand and foot exfoliating scrubs</li>
-                                            <li class="list-group-item px-0">Optional red light therapy for the face</li>
-                                            <li class="list-group-item px-0">Professional polish application</li>
-                                            <li class="list-group-item px-0">Relaxing setup with calming music and aromatherapy</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Grooming Treatment 3 -->
-                        <div class="treatment-card card border-0 shadow-sm mb-4">
-                            <div class="row g-0">
-                                <div class="col-lg-5">
-                                    <div class="image-placeholder d-flex align-items-center justify-content-center h-100 rounded-start bg-info bg-opacity-10">
-                                            <img src="insabhi_custom_website/static/src/image/treat6.jpg" class="treatment-image img-fluid rounded-start" alt="Warrior Thai Massage Image"/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card-body p-4 p-lg-5">
-                                        <span class="treatment-number badge bg-info rounded-pill mb-3">03</span>
-                                        <h3 class="card-title fw-bold text-info mb-3">Basic Mani &amp; Pedi</h3>
-                                        <p class="card-text small text-muted mb-3">(30 Mins – 2 Therapists)</p>
-                                        <ul class="treatment-details list-unstyled small mb-3">
-                                            <li class="mb-2"><strong>Ideal for:</strong> Quick nail maintenance, clean and polished look, and efficient care without compromising on quality.</li>
-                                            <li class="mb-2"><strong>Pressure:</strong> Gentle</li>
-                                            <li><strong>Duration:</strong> 30 minutes</li>
-                                        </ul>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">About:</span> The Basic Mani &amp; Pedi is a simple, time-efficient session focused on essential nail care. Performed by two therapists working at the same time, this treatment ensures your hands and feet look neat and refreshed in the shortest time possible. Perfect for those who want a quick grooming boost while still maintaining quality and precision.
-                                        </p>
-                                        <p class="card-text">
-                                            <span class="fw-bold text-info">What to Expect:</span>
-                                        </p>
-                                        <ul class="expect-list list-group list-group-flush small">
-                                            <li class="list-group-item px-0">Two therapists working simultaneously (hands &amp; feet)</li>
-                                            <li class="list-group-item px-0">Nail trimming and shaping</li>
-                                            <li class="list-group-item px-0">Cuticle care</li>
-                                            <li class="list-group-item px-0">Gentle scrub for hands and feet</li>
-                                            <li class="list-group-item px-0">Professional polish application</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <!-- Mani & Pedi Usual -->
+    <a href="/treatmentHim/mani-pedi-usual" class="treatment-card-link">
+      <div class="treatment-card">
+        <img src="/insabhi_custom_website/static/src/image/treat6.jpg" class="card-img"/>
+        <div class="card-footer">
+          <button class="book-now-short">Book Now</button>
+          <div class="card-title">Mani &amp; Pedi Usual</div>
         </div>
+      </div>
+    </a>
 
-         <!-- START: WhatsApp Icon -->
-        <a href="https://api.whatsapp.com/send?phone=96522288282"
-           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; z-index: 1000;"
-           target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
+    <!-- Mani & Pedi Super -->
+    <a href="/treatmentHim/mani-pedi-super" class="treatment-card-link">
+      <div class="treatment-card">
+        <img src="/insabhi_custom_website/static/src/image/treat10.webp" class="card-img"/>
+        <div class="card-footer">
+          <button class="book-now-short">Book Now</button>
+          <div class="card-title">Mani &amp; Pedi Super</div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- Facial Services intro -->
+<section class="facial-intro py-5">
+  <h2 class="section-title text-center mb-3">Facial Services</h2>
+  <p class="lead text-center mb-4 px-3 px-md-5">
+    Redefine your personal care routine with facial treatments designed specifically for men,
+    targeting hydration, anti-aging, and everyday skin maintenance.
+  </p>
+</section>
+
+<!-- Facial cards -->
+<section class="mb-5">
+  <div class="treatment-cards-row">
+
+    <!-- Combination & Anti-Aging Facial -->
+    <a href="/treatmentHim/combination-anti-aging-facial" class="treatment-card-link">
+      <div class="treatment-card">
+        <img src="/insabhi_custom_website/static/src/image/treat7.jpg" class="card-img"/>
+        <div class="card-footer">
+          <button class="book-now-short">Book Now</button>
+          <div class="card-title">Combination &amp; Anti-Aging Facial</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Express Facial -->
+    <a href="/treatmentHim/express-facial" class="treatment-card-link">
+      <div class="treatment-card">
+        <img src="/insabhi_custom_website/static/src/image/treat2.webp" class="card-img"/>
+        <div class="card-footer">
+          <button class="book-now-short">Book Now</button>
+          <div class="card-title">Express Facial</div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
 
 
-        <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
 
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
 
-        <!-- END: WhatsApp Icon -->
-    </t>
-
+      </div>
+    </div>
+  </t>
 </templates>
