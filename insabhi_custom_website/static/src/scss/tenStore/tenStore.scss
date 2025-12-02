@@ -276,3 +276,38 @@
     font-size: 15px;
   }
 }
+
+
+
+/* Set full product detail page background to white */
+body.tenStore_product_detail {
+    background-color: #ffffff !important;
+}
+
+/* Make the left image container background white */
+body.tenStore_product_detail section {
+    background-color: #ffffff !important;
+}
+
+/* Navbar black text fix */
+body.tenStore_product_detail .navbar a,
+body.tenStore_product_detail .navbar .navbar-brand,
+body.tenStore_product_detail .navbar .nav-link {
+  color: black !important;
+}
+
+/* Keep navbar transparent */
+body.tenStore_product_detail .navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Product detail page — TEN logo black */
+body.tenStore_product_detail .navbar-brand img {
+    filter: brightness(0) invert(0) !important;   /* make it pure black */
+}
+
+
+
+
