@@ -423,15 +423,17 @@
                         <div class="max-w-500 w-100">
 
                             <!-- TITLE -->
-                            <div class="d-inline-flex align-items-center gap-4 mb-5 justify-content-center justify-content-lg-start">
-                           <div class="flex-grow-1 h-05 bg-gold"></div>
-                                <h2 class="display-5 fw-light m-0 px-4"
+                           <div class="d-flex align-items-center justify-content-center w-100 small-center-fix">
+                                <div class="flex-grow-1 h-05 bg-gold bar-left"></div>
+
+                                <h2 class="display-5 fw-light m-0 px-4 text-center"
                                     style="font-family:'Playfair Display',serif; white-space: nowrap;">
-                                   Recommended Fragrance
-                                    </h2>
-                                <div class="flex-grow-1 h-05 bg-gold"></div>
-                         </div>
-                            <!-- POEM (pure CSS line-break) -->
+                                    Recommended Fragrance
+                                </h2>
+
+                                <div class="flex-grow-1 h-05 bg-gold bar-right"></div>
+                            </div>
+                                <!-- POEM (pure CSS line-break) -->
                             <p class="lead text-muted mb-5"
                                style="font-size:1.35rem; line-height:2; max-width: 600px; margin-right: auto;">
                                 Crafted with exceptional sophistication and luxury with our
@@ -572,6 +574,12 @@
                 transform: translateY(-10px) scale(1.05);
                 box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
                 z-index: 10;
+            }
+            @media (max-width: 375px) {
+                .small-center-fix .bar-left,
+                .small-center-fix .bar-right {
+                    display: none !important;
+                }
             }
         </style>
 
