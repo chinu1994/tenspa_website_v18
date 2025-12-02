@@ -1,0 +1,23 @@
+.ten-faq-page {
+  --gold: #d4b08c;
+  background: #fdfcfb;
+  font-family: 'Lato', sans-serif;
+
+  .bg-gold { background: var(--gold) !important; color: white !important; }
+  .text-gold { color: var(--gold) !important; }
+  .cursor-pointer { cursor: pointer; }
+
+  .faq-cat {
+    transition: all 0.3s ease;
+    &:hover { background: var(--gold) !important; color: white !important; }
+  }
+
+  .faq-section p {
+    line-height: 1.9;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 992px) {
+    .sticky-top { position: static !important; }
+  }
+}

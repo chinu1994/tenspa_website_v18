@@ -3,252 +3,348 @@
 
     <t t-name="insabhi_custom_website.TenStore" owl="1">
         <div class="tenStore">
-            <section class="insabhi-hero-video position-relative height-fixer-hero">
-                <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="insabhi_custom_website/static/src/image/about2.jpg"
-                         alt="Hero" class="w-100 h-100 object-fit-cover"/>
+
+            <!-- HERO SECTION -->
+            <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                    <img src="/insabhi_custom_website/static/src/image/tenStoreBanner1.0.jpg"
+                         alt="Ten Wellness Hero"
+                         class="w-100 h-100 object-fit-cover d-block"/>
                 </div>
                 <div class="insabhi-hero-overlay-bottom">
                     <div class="insabhi-hero-content-bottom container">
-                          <h1>The World of Ten Store</h1>
+                        <h1 class="insabhi-hero-title">Welcome To Ten Store</h1>
                     </div>
                 </div>
             </section>
 
-            <section class="insabhi-new-notable py-5">
+           <section class="py-5 py-lg-8 bg-white">
+            <div class="container">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <!-- Right Side: Text Content -->
+                    <div class="col-lg-6">
+                        <div class="ps-lg-5">
+                            <h2 class="display-5 fw-bold text-dark mb-4">
+                                Struggling to Stay Hydrated Throughout the Day?
+                            </h2>
+                            <h3 class="fs-1 fw-semibold mb-4" style="color:#d4b08c;">Discover Ten Bottle</h3>
+                            <p class="lead text-muted mb-4">
+                                Because we believe in the importance of staying hydrated and its profound impact
+                                on both your physical and mental well-being, we’ve selected this product made from
+                                the world’s purest stainless steel.
+                            </p>
+                            <p class="fs-5 text-muted mb-5">
+                                It is specially designed to keep your drink
+                                <strong>perfectly hot for up to 12 hours</strong> or
+                                <strong>refreshingly cold for up to 24 hours</strong>.
+                                We’ve also ensured an ultra-durable outer layer that withstands the toughest conditions,
+                                guaranteeing you an exceptional drinking experience.
+                            </p>
+                            <div class="d-flex align-items-baseline gap-4 flex-wrap">
+                                <div>
+                                    <h3 class="fw-bold text-dark mb-1">Price: <span style="color:#d4b08c;">11.9 KWD</span></h3>
+                                    <p class="text-muted mb-0">Tabby Installments: 13 KWD</p>
+                                </div>
+                                <a href="/shop" class="btn btn-lg btn-dark px-5 shadow">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left Side: Auto-rotating Images -->
+                    <div class="col-lg-6">
+                        <div class="ten-bottle-slider rounded-4 overflow-hidden shadow-lg">
+                            <img src="/insabhi_custom_website/static/src/image/tenbottle3.jpg"
+                                 alt="Ten Bottle - View 1"
+                                 class="slider-img w-100"/>
+                            <img src="/insabhi_custom_website/static/src/image/tenbottle2.jpg"
+                                 alt="Ten Bottle - View 2"
+                                 class="slider-img w-100"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEN BOTTLE CUSTOMER REVIEWS – CARD STYLE WITH GOLDEN STARS -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-light display-6">Customer Reviews – Ten Bottle</h2>
+                <div class="section-line mx-auto mb-5" style="width:100px; height:3px; background:linear-gradient(90deg,#FFD700,#FFA500);"></div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Review 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title text-primary mb-0">Roaa</h5>
+                                </div>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    Keeps water ice-cold at the same temperature for over 12 hours! Hot drinks stay warm even longer. Super practical and lightweight – not tiring to carry at all.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <h5 class="card-title text-primary">Abdulaziz</h5>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    The exterior build quality is outstanding. Keeps drinks cold for more than 24 hours. Best part? It doesn’t give any metallic taste to the water. Double-walled design means even ice-cold water feels comfortable to hold – no freezing hands!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <h5 class="card-title text-primary">Omar</h5>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    Tried their bottle and honestly – it’s amazing. Keeps ice water cold for nearly 24 hours and hot coffee/tea stays perfect for 8–10 hours. No leaks, no sweating, tight-sealing lid, wide mouth (fits ice cubes easily), perfect size for car cup holders, and super easy to clean. Only wish? I’d love an even bigger size!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+            <!-- PRODUCT CARDS SECTION -->
+            <section id="treatments" class="mb-5 py-5">
                 <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="insabhi-section-title">Curated Formulations</h2>
-                        <p class="insabhi-section-subtitle">
-                            Explore enduring favourites and latest innovations, crafted for enduring pleasure.
-                        </p>
-                    </div>
-                    <div class="row g-4 px-3">
+                    <div class="row g-4">
+                        <div class="treatment-cards-row d-flex flex-wrap justify-content-center justify-content-md-start">
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat1.png"
-                                         class="img-fluid rounded shadow-sm" alt="Product Image 1"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;"/>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4" style="text-align: justify;">
-                                    <p class="lead">This is a world-class stainless steel product.
-                                        It is specially designed to keep your drink hot for up to 12
-                                        hours or refreshingly cold for up to 24 hours. We also ensured
-                                        the addition of an extremely durable outer layer that can withstand
-                                        the toughest conditions, guaranteeing you an exceptional drinking experience.</p>
-
-                                        <p><b> Price:</b> 11.9 K.D. / Tabby 13</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('aromatherapy')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Perfume One 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Discover luxury through the magic of an exceptional fragrance, carefully crafted from the finest and rarest oils in the world, designed to embrace your uniqueness..
-                                      In the first phase, from the very first minute, the fragrance opens with the richness of saffron blended with raspberry and thyme. From minute 16 up to 3 hours, it reveals the luxurious notes of patchouli combined with jasmine and frankincense. Finally, from 3 hours to 10 hours after application, the scent settles into warm amber, leather, and the deep essence of Indian woods.
-                                      We designed this olfactory journey especially for you—because you truly deserve it.
-                                  </p>
-                                      <p><b> Price:</b> 29.7 KWD / tabby 33
-                                 </p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat2.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 2"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('ten shampoos')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Perfume Two 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat3.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 3"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Product 3 Review (I-D):  Yeh scent bohot sophisticated hai. Thoda musky aur deep hai, jo evening events ke liye best hai. Longetivity toh amazing hai, subah lagao toh raat tak rehta hai.</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('bamboo plant')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Perfume Three 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left" >Product 4 Review (D-I):  Mujhe floral scents pasand hain aur yeh waala bilkul perfect hai. Bahut natural aur sweet smell hai. Packaging bhi bohot sundar hai, ek acha gift option hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 4"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('ten two')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat14.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Wahaj Candle</div>
+                                    <div class="text-muted small fw-bold mt-1">15 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 5"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start" style="text-align: left">Product 5 Review (I-D):  Yeh ek unique scent hai, thoda woody aur spicy. Jab bhi lagata hoon, log poochte hain kaunsa perfume hai. Definitely ek head-turner hai!</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('testimonials')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Wooden Sage</div>
+                                    <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 6 Review (D-I):  Value for money product! Itni achi quality aur scent itne kam price mein. Har din use karta hoon, skin par bhi smooth rehta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat6.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 6"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('swedish')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Ten Protein Shampoo</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat7.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 7"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 7 Review (I-D):  Mera all-time favorite! Iska scent bohot hi soothing aur calming hai. Office aur casual outings, dono ke liye perfect hai.</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('TenProteinShampoo')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Wooden Sage</div>
+                                    <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 8 Review (D-I):  Thoda fruity aur sweet notes hain. Young log aur jo playful scent pasand karte hain, unke liye best hai. Summer mein zyada acha lagta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat8.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 8"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('Ten')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Sukoon Candle</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat9.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 9"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 9 Review (I-D):  Bahut hi rich aur intense fragrance hai. Special occasions ke liye rakha hai. Thoda zyada lagane ki zaroorat nahi padti, ek spray hi kaafi hai.</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('Ten one')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat9.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 10 Review (D-I):  Clean aur aquatic feel deta hai. Gym ya outdoor activities ke baad bahut refreshing lagta hai. Iska freshness boht der tak rehta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat10.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 10"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('Ten four')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat8.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat11.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 11"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 11 Review (I-D):  Mujhe iski vanilla ki hint bohot pasand aayi. Bilkul bhi overwhelming nahi hai, soft aur inviting hai. Winter ke liye toh mast hai!</p>
+                            <div class="treatment-card" onclick="showFullScreenModal('Ten five')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat11.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Sansevieria (Snake Plant)</div>
+                                    <div class="text-muted small fw-bold mt-1">18.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 12 Review (D-I):  Ekdum classic aur time-less scent hai. Har age group ke log use kar sakte hain. Professional setting ke liye ideal hai, classy feel deta hai.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat12.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 12"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
+                            <div class="treatment-card" onclick="showFullScreenModal('Ten six')">
+                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="card-img"/>
+                                <div class="card-footer">
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
+                                    <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 13"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 13 Review (I-D):  Thoda exotic aur spicy notes hain, jo ek mysterious feel dete hain. Date nights aur parties ke liye rakha hai. Scent trail bhi bohot acha hai.</p>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-1 p-4">
-                                    <p class="lead text-start"> Product 14 Review (D-I):  Citrus aur floral ka bahut hi acha blend hai. Summer days ke liye non-negotiable hai. Boht zyada halka hai aur irritation nahi karta.</p>
-                                </div>
-                                <div class="col-md-6 order-md-2 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat14.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 14"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 my-4">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 order-md-1 order-2 text-center">
-                                    <img src="insabhi_custom_website/static/src/image/tenStoreProducat15.png"
-                                         class="img-fluid rounded shadow-sm"
-                                         alt="Product Image 15"
-                                         style="width:100%; max-height:400px; height:auto; object-fit:contain; margin: 0 auto;" />
-                                </div>
-                                <div class="col-md-6 order-md-2 order-1 p-4">
-                                    <p class="lead text-start"> Product 15 Review (I-D): Yeh ek solid perfume hai. Travel-friendly aur use karne mein easy. Scent concentration achi hai aur bohot subtle rehta hai, tez nahi lagta.</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
-        </div>
-    </t>
 
+        </div>
+
+        <!-- Auto Image Slider - Pure CSS (No JS needed) -->
+        <style>
+            .ten-bottle-slider {
+                position: relative;
+                width: 100%;
+                height: 560px;
+                border: 1px solid rgba(0,0,0,0.2);
+                overflow: hidden;
+            }
+            .slider-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                opacity: 0;
+                transition: opacity 1.8s ease-in-out;
+                border-radius: 1.5rem;
+            }
+            .slider-img:nth-child(1) {
+                opacity: 1;
+                animation: slideShow 8s infinite;
+            }
+            .slider-img:nth-child(2) {
+                animation: slideShow 8s infinite 4s;
+            }
+            @keyframes slideShow {
+                0%   { opacity: 0; }
+                6.25% { opacity: 1; }
+                43.75% { opacity: 1; }
+                50%  { opacity: 0; }
+                100% { opacity: 0; }
+            }
+
+            /* GOLDEN STARS CSS - Added exactly here as requested */
+            .stars {
+                color: #FFD700;
+                font-size: 1.6rem;
+                letter-spacing: 5px;
+                text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            }
+            .review-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+            }
+        </style>
+
+        <!-- START: WhatsApp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=96522288282"
+           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width: 60px; height: 60px; z-index: 1000;"
+           target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+        </a>
+
+        <style>
+            /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+            .whatsapp-fixed-btn {
+                bottom: 1.5rem;
+                right: 1.5rem;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Add WhatsApp icon hover effect */
+            .whatsapp-fixed-btn:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+            }
+        </style>
+        <!-- END: WhatsApp Icon -->
+    </t>
 </templates>

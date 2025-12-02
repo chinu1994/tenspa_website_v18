@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+  <t t-name="insabhi_custom_website.tenStore_product_detail">
+
+    <div class="tenStore_product_detail">
+
+      <div class="container py-5">
+        <div class="row g-5">
+
+          <div class="col-lg-6 text-center">
+            <t t-if="key == 'aromatherapy'">
+              <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.jpg"
+                   class="img-fluid rounded-3"/>
+            </t>
+
+            <!-- other t-if images.... -->
+
+          </div>
+
+          <div class="col-lg-6">
+            <!-- right side content -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- START: WhatsApp Icon -->
+      <a href="https://api.whatsapp.com/send?phone=96522288282"
+         class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex
+                align-items-center justify-content-center whatsapp-fixed-btn"
+         style="width: 60px; height: 60px; z-index: 1000;"
+         target="_blank" rel="noopener noreferrer">
+         <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+      </a>
+
+      <style>
+        .whatsapp-fixed-btn {
+            bottom: 1.5rem;
+            right: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .whatsapp-fixed-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+        }
+      </style>
+      <!-- END: WhatsApp Icon -->
+
+    </div>
+
+  </t>
+
+</templates>
