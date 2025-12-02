@@ -3,37 +3,32 @@
 
     <t t-name="owl_custom_website.TreatMent" owl="1">
         <div class="treatment">
-            <div class="hero-wrapper">
-                <section class="insabhi-hero hero-aesop position-relative">
-                    <div class="hero-image-wrapper">
-                        <img src="insabhi_custom_website/static/src/image/treatment.jpg"
-                             alt="Bannaer"
-                             class="hero-image"/>
-                    </div>
-                </section>
+           <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/treatment.jpg"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
             </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
+                </div>
+            </div>
+        </section>
 
             <section class="intro-section py-5 bg-light">
                     <div class="container py-4">
                         <div class="row justify-content-center">
                             <div class="col-lg-10 text-center">
-                                <h2 class="section-title display-5 fw-bold text-primary mb-4">Welcome to Ten Wellness</h2>
                                 <p class="lead fs-5">
-                                    Step into a sanctuary of timeless luxury, where every moment is dedicated to your renewal.
-                                    At Ten Wellness, we bring together the art of massage, the serenity of traditional baths,
-                                    the radiance of facials, and the elegance of immaculate grooming. Designed for both men
-                                    and women, our treatments blend wellness with sophistication, creating an experience that
-                                    restores balance, refines beauty, and awakens the senses.
+                                    Step into a sanctuary of timeless luxury, where every moment is dedicated to your renewal. At Ten Wellness, we bring together the art of massage, the serenity of traditional baths, the radiance of facials, and the elegance of immaculate grooming. Designed for both men and women, our treatments blend wellness with sophistication, creating an experience that restores balance, refines beauty, and awakens the senses.
                                 </p>
-                                <p class="lead fs-5"> Here, relaxation meets refinement, and every detail whispers indulgence. Escape the everyday
-                                and discover the essence of true rejuvenation crafted exclusively for you.
+                                <p class="lead fs-5"> Here, relaxation meets refinement, and every detail whispers indulgence. Escape the everyday and discover the essence of true rejuvenation crafted exclusively for you.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-
-
 
 <!--             ===================== TEN WELLNESS LUXURY =====================-->
             <section class="ten-pure-luxury" id="ten-sanctuary">
