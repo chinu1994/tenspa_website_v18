@@ -5,17 +5,37 @@
       <div class="container py-5 ten-wellness-spa">
 
         <!-- Classic Spa Treatments Banner -->
-        <section class="mb-5">
-          <div class="spa-banner spa-banner-classic d-flex flex-column justify-content-center align-items-center text-center">
-            <h1 class="banner-title mb-3">
-              Classic Spa Treatments
-            </h1>
-            <p class="banner-description mb-4 px-3 px-md-5">
-              Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of tranquility as our highly skilled therapists deliver expertly tailored treatments to restore balance to your mind, body, and spirit. Our signature massages are thoughtfully crafted to alleviate stress and tension, leaving you feeling refreshed and revitalized. With meticulously designed 60- or 90-minute sessions, we ensure each treatment provides unparalleled comfort and care. Embrace the serene ambiance and allow our therapies to guide you to a state of complete renewal and well-being.
-            </p>
-            <a href="#treatments" class="btn btn-primary btn-lg px-5">Explore Treatments</a>
-          </div>
-        </section>
+          <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/image/HerBanner.jpg"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Ten Treatments For Her</h1>
+                </div>
+            </div>
+          </section>
+
+          <section class="intro-section py-5 bg-light">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 style="color: #000;">Classic Spa Treatments</h1>
+                        <p class="lead fs-5">
+                            Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience. Immerse yourself in an atmosphere of
+                             tranquility as our highly skilled therapists deliver expertly tailored treatments to restore
+                             balance to your mind, body, and spirit. Our signature massages are thoughtfully crafted
+                             to alleviate stress and tension, leaving you feeling refreshed and revitalized. With
+                             meticulously designed 60- or 90-minute sessions, we ensure each treatment provides
+                             unparalleled comfort and care. Embrace the serene ambiance and allow our therapies to
+                             guide you to a state of complete renewal and well-being.</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+
 
         <!-- Cards row (list page) -->
         <section id="treatments" class="mb-5">
