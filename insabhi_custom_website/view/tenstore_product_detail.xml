@@ -6,15 +6,14 @@
       <t t-call="website.layout">
         <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
 
-
-        <!-- optional spacer so the content starts below fixed header -->
+        <!-- Spacer for fixed header -->
         <div class="page-spacer" aria-hidden="true" style="height:190px;"></div>
 
-        <!-- MAIN PRODUCT ROW (image + details) -->
+        <!-- MAIN PRODUCT ROW -->
         <div class="container py-5 tenStore_product_detail">
           <div class="row g-5">
 
-            <!-- LEFT IMAGE (WITH BORDER FOR ALL IMAGES) -->
+            <!-- LEFT IMAGE -->
             <div class="col-lg-6 text-center">
               <t t-if="key == 'aromatherapy'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
@@ -50,7 +49,7 @@
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
-                     alt="Swedish Massage"/>
+                     alt="Ten Protein Shampoo"/>
               </t>
               <t t-if="key == 'Ten'">
                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png"
@@ -99,9 +98,7 @@
                 <t t-if="key == 'Ten five'">Price: 18.5 KWD</t>
               </p>
 
-              <!-- DETAILED DESCRIPTIONS BELOW -->
-
-              <!-- Perfume One -->
+              <!-- Long Descriptions (reviews removed from here) -->
               <t t-if="key == 'aromatherapy'">
                 <p class="lead mb-4">
                   Discover luxury through the magic of an exceptional fragrance, carefully crafted from the finest and rarest oils in the world, designed to embrace your uniqueness.
@@ -114,20 +111,18 @@
                 </p>
               </t>
 
-              <!-- Perfume Two -->
               <t t-if="key == 'ten shampoos'">
                 <p class="lead mb-4">
                   We narrate a story of sophistication and elegance in this fragrance, crafted from the finest and most enduring aromatic oils in the world, to create a scent experience that captivates your senses and shines through your special moments.
                 </p>
                 <p class="mb-4">
-                  In the first phase, from the very first minute, the fragrance unveils the invigorating notes of ginger and nutmeg. From minute 16 up to 3 hours, it transforms into the richness of Kashmiri oud blended with amber. Finally, from 3 hours to 10 hours after application, it settles into the deep, earthy essence of vetiver combined with the sensual warmth of musk.
+                  In the first phase, from the very first minute, the fragrance unveils the invigorating notes of ginger and nutmeg. From minute 16 minutes up to 3 hours, it transforms into the richness of Kashmiri oud blended with amber. Finally, from 3 hours to 10 hours after application, it settles into the deep, earthy essence of vetiver combined with the sensual warmth of musk.
                 </p>
                 <p class="fst-italic text-muted mb-5">
                   We designed this olfactory journey especially for you—because you truly deserve it.
                 </p>
               </t>
 
-              <!-- Perfume Three -->
               <t t-if="key == 'bamboo plant'">
                 <p class="lead mb-4">
                   Enjoy the scent of luxurious perfume and immerse yourself in the allure of an exceptional fragrance designed from the best, most expensive, and proven oils in the world, specifically to touch your uniqueness.
@@ -140,7 +135,6 @@
                 </p>
               </t>
 
-              <!-- Wahaj Candle -->
               <t t-if="key == 'ten two'">
                 <p class="lead mb-4">
                   Specially crafted with care by Ten Wellness, this luxurious candle fills your space with a warm and elegant fragrance that inspires calmness and serenity.
@@ -150,16 +144,9 @@
                   <li>Creates a distinctive atmosphere and enhances relaxation.</li>
                   <li>Leaves behind a pure, steady, and refined scent.</li>
                 </ul>
-                <p class="mb-3"><strong>Volume:</strong> 200 g</p>
-                <p class="mb-2"><strong>Sathya:</strong></p>
-                <p class="mb-5">
-                  From the moment I lit the Wahaj candle, it drew me in. The fragrance is light and clean, yet grounded which striking a beautiful balance between fresh florals and warm, earthy depth. A gentle hint of rose adds softness, while the subtle musk brings a comforting, cozy richness to the overall experience.<br/>
-                  It’s a beautifully layered fragrance, ideal for winding down in the evening, or for creating a calm, welcoming space. It definitely fills the room within 10–15 minutes of lighting.<br/>
-                  Additionally, its minimalist jar design complements any style of décor effortlessly.
-                </p>
+                <p class="mb-5"><strong>Volume:</strong> 200 g</p>
               </t>
 
-              <!-- Wooden Sage (both keys) -->
               <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
                 <p class="lead mb-4">
                   Carefully designed by our partners in Korea, it offers a refreshing aromatic blend that gently cleanses your skin, leaving it feeling soft and revitalized.
@@ -172,14 +159,9 @@
                   <li>Deeply cleanses the skin while hydrating and perfuming it with a woody fragrance.</li>
                   <li>Provides a long-lasting scent.</li>
                 </ul>
-                <p class="mb-3"><strong>Volume:</strong> 1000 ml</p>
-                <p class="mb-2"><strong>Maryam:</strong></p>
-                <p class="mb-5">
-                  I just tried the Wooden Sage Shampoo and Body Wash from Ten Spa and wow… I’m obsessed! The scent is so refreshing and calming, it honestly feels like a spa at home. My skin feels super clean and soft, and my hair smells amazing. Totally in love with this product!
-                </p>
+                <p class="mb-5"><strong>Volume:</strong> 1000 ml</p>
               </t>
 
-              <!-- Protein Shampoo -->
               <t t-if="key == 'swedish'">
                 <p class="lead mb-4">
                   Carefully designed by our partners in Korea to provide deep nourishment and complete protection for your hair.
@@ -193,14 +175,9 @@
                   <li>Restores strength and vitality.</li>
                   <li>Leaves hair healthy, soft, and smooth.</li>
                 </ul>
-                <p class="mb-3"><strong>Volume:</strong> 1000 ml</p>
-                <p class="mb-2"><strong>Hussain:</strong></p>
-                <p class="mb-5">
-                  Personally I like the product, before my hair used to fall too much, currently it’s not, my hair is smooth and fresh with more volume and I would really choose the protein shampoo again and again.
-                </p>
+                <p class="mb-5"><strong>Volume:</strong> 1000 ml</p>
               </t>
 
-              <!-- Bamboo Plant (all three keys) -->
               <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">
                 <p class="lead mb-4">
                   To be surrounded by nature means to enjoy a state of serenity… and to be beside a plant is to maintain the best mood you can have throughout the day.<br/>
@@ -214,14 +191,12 @@
                 <p class="mb-5"><strong>Easy care:</strong> add water every two weeks</p>
               </t>
 
-              <!-- Snake Plant -->
               <t t-if="key == 'Ten five'">
                 <p class="lead mb-5">
                   We’ve chosen for you one of the plants recommended by NASA, as it produces high levels of oxygen both during the day and at night, while requiring very little water—needing to be watered only once a month. It naturally increases the oxygen levels in your home, boosting the energy and vitality of everyone who lives with you. We wish you a life filled with comfort and vitality.
                 </p>
               </t>
 
-              <!-- Sukoon Candle -->
               <t t-if="key == 'Ten'">
                 <p class="lead mb-4">
                   Exclusively designed by Ten Wellness, this luxurious aromatic blend adds a touch of relaxation and serenity to your atmosphere.
@@ -231,93 +206,272 @@
                   <li>Enhances relaxation and purifies the ambiance.</li>
                   <li>Fills the space with a refined and long-lasting fragrance.</li>
                 </ul>
-                <p class="mb-3"><strong>Volume:</strong> 200 g</p>
-                <p class="mb-2"><strong>Customer Reviews:</strong></p>
-                <p class="mb-2"><strong>Kareem:</strong> This candle is pure luxury! The scent is amazing and fills the entire room from the first light. Not the weak kind that disappears quickly. Even after blowing it out, the fragrance lingers beautifully. 10/10, will buy again!</p>
-                <p class="mb-2"><strong>Ali:</strong> Honestly the scent is unreal and fills the whole room. Amazing quality, especially the lid — no smoke smell after extinguishing. Highly recommend, 10/10! Ten Spa never disappoints.</p>
-                <p class="mb-5"><strong>Zainab:</strong> Tried the Sukoon candle and the scent is warm, calming, and fills the space without being overwhelming. Burns clean with no soot, packaging is luxurious and perfect as a gift. Worth every penny.</p>
+                <p class="mb-5"><strong>Volume:</strong> 200 g</p>
               </t>
 
               <div class="d-flex gap-3 mt-4">
                 <button class="btn btn-dark">Add to Cart</button>
-                <button class="btn btn-outline-secondary">Book Now</button>
+                <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
+                   class="btn btn-outline-secondary" target="_blank">Book Now</a>
               </div>
 
             </div>
           </div>
         </div>
 
+        <!-- DESCRIPTION SECTION -->
+        <div class="product-desc-section py-5 bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="section-title mb-4 fw-semibold" style="color:#333; letter-spacing:0.5px;">
+                        Description
+                    </h3>
+                    <div class="section-line mx-auto mb-5" style="width:90px; height:3px; background:#333; border-radius:2px;"></div>
 
-        <!-- ONLY DESCRIPTION SECTION (centered like Aesop) -->
-        <div class="product-desc-section">
-          <div class="container">
-            <div class="desc-inner">
+                    <div class="desc-text lead text-muted px-4 px-md-5" style="max-width:820px; margin-left:auto; margin-right:auto; line-height:1.8;">
+                        <t t-if="key == 'aromatherapy'">
+                            Long-standing and much-adored residents: a refined fragrance crafted from carefully selected aromatic oils to create a memorable olfactory experience.
+                        </t>
+                        <t t-if="key == 'ten shampoos'">
+                            Plant-based &amp; organic hair formulation from Korea — designed to cleanse, nourish and bring vitality to your hair.
+                        </t>
+                        <t t-if="key == 'bamboo plant'">
+                            A decorative bamboo piece that brings serenity and a touch of nature to interiors.
+                        </t>
+                        <t t-if="key == 'ten two'">
+                            Specially crafted luxury candle with layered fragrance notes for lasting ambience.
+                        </t>
+                        <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
+                            Korean-formulated shampoo and body wash with natural ingredients for skin and hair health.
+                        </t>
+                        <t t-if="key == 'swedish'">
+                            Deeply nourishing protein shampoo that helps prevent hair loss and adds volume.
+                        </t>
+                        <t t-if="key == 'Ten'">
+                            Exclusive luxury candle designed to create a serene and calming atmosphere.
+                        </t>
+                        <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">
+                            Elegant indoor bamboo plant that increases oxygen and requires minimal care.
+                        </t>
+                        <t t-if="key == 'Ten five'">
+                            NASA-recommended snake plant that purifies air day and night with minimal watering.
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-              <h3 class="section-title">Description</h3>
-              <div class="section-line" aria-hidden="true"></div>
+        <!-- CUSTOMER REVIEWS SECTION WITH GOLDEN STARS -->
+        <div class="container py-5">
+          <h3 class="text-center mb-4 display-6 fw-light">Customer Reviews</h3>
+          <div class="section-line mx-auto mb-5" style="width:100px; height:3px; background:linear-gradient(90deg,#FFD700,#FFA500);"></div>
 
-              <div class="desc-text">
-                <t t-if="key == 'aromatherapy'">
-                  Long-standing and much-adored residents: a refined fragrance crafted from
-                  carefully selected aromatic oils to create a memorable olfactory experience.
-                </t>
-
-                <t t-if="key == 'ten shampoos'">
-                  Plant-based &amp; organic hair formulation from Korea — designed to cleanse,
-                  nourish and bring vitality to your hair.
-                </t>
-
-                <t t-if="key == 'bamboo plant'">
-                  A decorative bamboo piece that brings serenity and a touch of nature to interiors.
-                </t>
-
-                <t t-if="key == 'ten two'">
-                  A luxurious perfume that unfolds across multiple notes, crafted for longevity.
-                </t>
-
-                <t t-if="key == 'testimonials'">
-                  Collection of customer testimonials and authentic user experiences.
-                </t>
-
-                <t t-if="key == 'swedish'">
-                  Swedish massage formulation designed for relaxation and mindful restoration.
-                </t>
-
-                <t t-if="key == 'TenProteinShampoo'">
-                  Carefully designed by our partners in Korea to provide deep nourishment and complete protection for your hair.
-                </t>
-
-                <t t-if="key == 'Ten'">
-                Exclusively designed by Ten Wellness, this luxurious aromatic blend adds a touch of relaxation and serenity to
-                  your atmosphere.
-                </t>
-
-                <t t-if="key == 'Ten one'">
-                It’s a beautifully layered fragrance, ideal for winding down in the evening, or for creating a calm, welcoming space. It definitely fills the room within 10–15 minutes of lighting.
-                Additionally, its minimalist jar design complements any style of décor effortlessly.
-                </t>
-
-                <t t-if="key == 'Ten four'">
-                It naturally increases the oxygen levels in your home, boosting the energy and vitality of everyone who
-                  lives with you. We wish you a life filled with comfort and vitality.
-                </t>
-
-                <t t-if="key == 'Ten five'">
-                 Carefully designed by our partners in Korea, it offers a refreshing aromatic blend that gently
-                  cleanses your skin, leaving it feeling soft and revitalized.
-                </t>
-
-                <t t-if="key == 'Ten five'">
-                 I just tried the Wooden Sage Shampoo and Body Wash from Ten Spa and wow… I’m obsessed!
-                  The scent is so refreshing and calming, it honestly feels like a spa at home.
-                  My skin feels super clean and soft, and my hair smells amazing. Totally in love with this product!
-
-                </t>
+          <!-- Perfume One -->
+          <t t-if="key == 'aromatherapy'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Aza</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">This perfume is amazing! From the first spray I felt a luxurious and comforting scent with a soft oriental touch that suits every occasion. Longevity is excellent especially on skin. It changes beautifully after hours. Became one of my favorite perfumes, highly recommend!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Mohammed</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">My experience with Perfume One from Ten Boutique was special in every detail, the scent combines luxury and longevity with an elegant design and balanced projection. Truly deserves its name!</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </t>
+
+          <!-- Perfume Two -->
+          <t t-if="key == 'ten shampoos'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Anthony Leving</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">I recently bought Perfume TWO by Ten and I'm genuinely impressed. The musky and grapefruit notes blend perfectly, creating a scent that's fresh, elegant, and modern. Lasts all day beautifully.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Yasmina</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Bought this a few days ago and from the first spray I knew it was special! Soft yet luxurious, warm and classy. Stays noticeable for hours especially on clothes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Hamad</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Amazing amazing<br/>Super strong projection and longevity<br/>Highly recommend</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
+          <!-- Perfume Three -->
+          <t t-if="key == 'bamboo plant'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Mahdi</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">This perfume has a rich, captivating blend. The oudwood gives it depth and warmth, the jasmine adds an elegant floral touch, and it has an earthy finish. Powerful and loved by everyone around me.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Asmaa</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Tried this perfume and honestly it's luxurious! Long lasting especially on clothes. Not overpowering but definitely gets noticed. Worth every penny.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Ahmad</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Super elegant from the first spray you feel freshness and cleanliness with light fruity notes, then it turns warm and calm. Lasts from morning till night. Worth every penny.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
+          <!-- Wahaj Candle -->
+          <t t-if="key == 'ten two'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Sathya</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">From the moment I lit the Wahaj candle, it drew me in. The fragrance is light and clean, yet grounded which striking a beautiful balance between fresh florals and warm, earthy depth. A gentle hint of rose adds softness, while the subtle musk brings a comforting, cozy richness to the overall experience.<br/>It’s a beautifully layered fragrance, ideal for winding down in the evening. Fills the room in 10–15 minutes. Minimalist jar design fits any décor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
+
+
+          <!-- Wooden Sage -->
+          <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Maryam</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">I just tried the Wooden Sage Shampoo and Body Wash from Ten Spa and wow… I’m obsessed! The scent is so refreshing and calming, it honestly feels like a spa at home. My skin feels super clean and soft, and my hair smells amazing. Totally in love with this product!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
+          <!-- Protein Shampoo -->
+          <t t-if="key == 'swedish'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Hussain</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Personally I like the product, before my hair used to fall too much, currently it's not, my hair is smooth and fresh with more volume and I would really choose the protein shampoo again and again.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
+          <!-- Sukoon Candle -->
+          <t t-if="key == 'Ten'">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Kareem</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">This candle is pure luxury! The scent is amazing and fills the entire room from the first light. Even after blowing it out, the fragrance lingers beautifully. 10/10, will buy again!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Ali</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Honestly the scent is unreal and fills the whole room. Amazing quality, especially the lid — no smoke smell after extinguishing. Highly recommend, 10/10!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm review-card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title text-primary">Zainab</h5>
+                    <p class="card-text small mb-2"><span class="stars">★★★★★</span></p>
+                    <p class="card-text">Tried the Sukoon candle and the scent is warm, calming, and fills the space without being overwhelming. Burns clean with no soot, packaging is luxurious. Worth every penny.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+
         </div>
+
+        <!-- STYLES -->
+        <style>
+          .review-card {
+            transition: all 0.3s ease;
+            border-radius: 16px !important;
+            background: #fff;
+          }
+          .review-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+          }
+          .stars {
+            color: #FFD700;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+          }
+          .section-line {
+            height: 3px;
+            background: linear-gradient(90deg, #FFD700, #FFA500);
+            border-radius: 2px;
+          }
+          .card-title {
+            font-weight: 600;
+            color: #2c3e50;
+          }
+          .card-text {
+            line-height: 1.7;
+            color: #444;
+          }
+        </style>
+
       </t>
     </template>
+
   </data>
 </odoo>

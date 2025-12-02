@@ -18,55 +18,107 @@
                 </div>
             </section>
 
-            <!-- TEN BOTTLE PROMO SECTION - Image Left (Auto Slide) | Text Right -->
-            <section class="py-5 py-lg-8 bg-white">
-                <div class="container">
-                    <div class="row align-items-center g-5 flex-lg-row-reverse">
-                        <!-- Right Side: Text Content -->
-                        <div class="col-lg-6">
-                            <div class="ps-lg-5">
-                                <h2 class="display-5 fw-bold text-dark mb-4">
-                                    Struggling to Stay Hydrated Throughout the Day?
-                                </h2>
-                                <h3 class="fs-1 fw-semibold mb-4" style="color:#d4b08c;">Discover Ten Bottle</h3>
-                                <p class="lead text-muted mb-4">
-                                    Because we believe in the importance of staying hydrated and its profound impact
-                                    on both your physical and mental well-being, we’ve selected this product made from
-                                    the world’s purest stainless steel.
-                                </p>
-                                <p class="fs-5 text-muted mb-5">
-                                    It is specially designed to keep your drink
-                                    <strong>perfectly hot for up to 12 hours</strong> or
-                                    <strong>refreshingly cold for up to 24 hours</strong>.
-                                    We’ve also ensured an ultra-durable outer layer that withstands the toughest conditions,
-                                    guaranteeing you an exceptional drinking experience.
-                                </p>
-                                <div class="d-flex align-items-baseline gap-4 flex-wrap">
-                                    <div>
-                                        <h3 class="fw-bold text-dark mb-1">Price: <span style="color:#d4b08c;">11.9 KWD</span></h3>
-                                        <p class="text-muted mb-0" >Tabby Installments: 13 KWD</p>
-                                    </div>
-                                    <a href="/shop" class="btn btn-lg btn-dark px-5 shadow">Buy Now</a>
+           <section class="py-5 py-lg-8 bg-white">
+            <div class="container">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <!-- Right Side: Text Content -->
+                    <div class="col-lg-6">
+                        <div class="ps-lg-5">
+                            <h2 class="display-5 fw-bold text-dark mb-4">
+                                Struggling to Stay Hydrated Throughout the Day?
+                            </h2>
+                            <h3 class="fs-1 fw-semibold mb-4" style="color:#d4b08c;">Discover Ten Bottle</h3>
+                            <p class="lead text-muted mb-4">
+                                Because we believe in the importance of staying hydrated and its profound impact
+                                on both your physical and mental well-being, we’ve selected this product made from
+                                the world’s purest stainless steel.
+                            </p>
+                            <p class="fs-5 text-muted mb-5">
+                                It is specially designed to keep your drink
+                                <strong>perfectly hot for up to 12 hours</strong> or
+                                <strong>refreshingly cold for up to 24 hours</strong>.
+                                We’ve also ensured an ultra-durable outer layer that withstands the toughest conditions,
+                                guaranteeing you an exceptional drinking experience.
+                            </p>
+                            <div class="d-flex align-items-baseline gap-4 flex-wrap">
+                                <div>
+                                    <h3 class="fw-bold text-dark mb-1">Price: <span style="color:#d4b08c;">11.9 KWD</span></h3>
+                                    <p class="text-muted mb-0">Tabby Installments: 13 KWD</p>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Left Side: Auto-rotating Images -->
-                        <div class="col-lg-6">
-                            <div class="ten-bottle-slider rounded-4 overflow-hidden shadow-lg">
-                                <img src="/insabhi_custom_website/static/src/image/tenbottle3.jpg"
-                                     alt="Ten Bottle - View 1"
-                                     class="slider-img"/>
-                                <img src="/insabhi_custom_website/static/src/image/tenbottle2.jpg"
-                                     alt="Ten Bottle - View 2"
-                                     class="slider-img"/>
+                                <a href="/shop" class="btn btn-lg btn-dark px-5 shadow">Buy Now</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <!-- PRODUCT CARDS SECTION (Exactly as you had before) -->
+                    <!-- Left Side: Auto-rotating Images -->
+                    <div class="col-lg-6">
+                        <div class="ten-bottle-slider rounded-4 overflow-hidden shadow-lg">
+                            <img src="/insabhi_custom_website/static/src/image/tenbottle3.jpg"
+                                 alt="Ten Bottle - View 1"
+                                 class="slider-img w-100"/>
+                            <img src="/insabhi_custom_website/static/src/image/tenbottle2.jpg"
+                                 alt="Ten Bottle - View 2"
+                                 class="slider-img w-100"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEN BOTTLE CUSTOMER REVIEWS – CARD STYLE WITH GOLDEN STARS -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-light display-6">Customer Reviews – Ten Bottle</h2>
+                <div class="section-line mx-auto mb-5" style="width:100px; height:3px; background:linear-gradient(90deg,#FFD700,#FFA500);"></div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Review 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title text-primary mb-0">Roaa</h5>
+                                </div>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    Keeps water ice-cold at the same temperature for over 12 hours! Hot drinks stay warm even longer. Super practical and lightweight – not tiring to carry at all.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <h5 class="card-title text-primary">Abdulaziz</h5>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    The exterior build quality is outstanding. Keeps drinks cold for more than 24 hours. Best part? It doesn’t give any metallic taste to the water. Double-walled design means even ice-cold water feels comfortable to hold – no freezing hands!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm review-card">
+                            <div class="card-body p-4">
+                                <h5 class="card-title text-primary">Omar</h5>
+                                <p class="mb-2"><span class="stars">★★★★★</span></p>
+                                <p class="card-text">
+                                    Tried their bottle and honestly – it’s amazing. Keeps ice water cold for nearly 24 hours and hot coffee/tea stays perfect for 8–10 hours. No leaks, no sweating, tight-sealing lid, wide mouth (fits ice cubes easily), perfect size for car cup holders, and super easy to clean. Only wish? I’d love an even bigger size!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+            <!-- PRODUCT CARDS SECTION -->
             <section id="treatments" class="mb-5 py-5">
                 <div class="container">
                     <div class="row g-4">
@@ -75,96 +127,144 @@
                             <div class="treatment-card" onclick="showFullScreenModal('aromatherapy')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Perfume One 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('ten shampoos')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Perfume Two 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('bamboo plant')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Perfume Three 100ml</div>
+                                    <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('ten two')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat14.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Wahaj Candle</div>
+                                    <div class="text-muted small fw-bold mt-1">15 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('testimonials')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Wooden Sage</div>
+                                    <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('swedish')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Ten Protein Shampoo</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('TenProteinShampoo')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Wooden Sage</div>
+                                    <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Sukoon Candle</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten one')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat9.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten four')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat8.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten five')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat11.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Sansevieria (Snake Plant)</div>
+                                    <div class="text-muted small fw-bold mt-1">18.5 KWD</div>
                                 </div>
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten six')">
                                 <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short">Book Now</button>
+                                    <button class="book-now-short"
+                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
+                                        Book Now
+                                    </button>
                                     <div class="card-title">Bamboo Plant</div>
+                                    <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
                                 </div>
                             </div>
 
@@ -209,32 +309,42 @@
                 50%  { opacity: 0; }
                 100% { opacity: 0; }
             }
+
+            /* GOLDEN STARS CSS - Added exactly here as requested */
+            .stars {
+                color: #FFD700;
+                font-size: 1.6rem;
+                letter-spacing: 5px;
+                text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            }
+            .review-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+            }
         </style>
- <!-- START: WhatsApp Icon -->
+
+        <!-- START: WhatsApp Icon -->
         <a href="https://api.whatsapp.com/send?phone=96522288282"
            class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
            style="width: 60px; height: 60px; z-index: 1000;"
            target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
-
+            <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+        </a>
 
         <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+            /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
+            .whatsapp-fixed-btn {
+                bottom: 1.5rem;
+                right: 1.5rem;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
 
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
-
+            /* Add WhatsApp icon hover effect */
+            .whatsapp-fixed-btn:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+            }
+        </style>
         <!-- END: WhatsApp Icon -->
     </t>
 </templates>
