@@ -58,7 +58,7 @@ class TreatmentHerController(http.Controller):
 
             "swedish-massage": {
                 "name": "Swedish Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat12.webp",
+                "image": "/insabhi_custom_website/static/src/image/treatment12.webp",
                 "ideal_for": "Muscle tension relief and overall relaxation",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -106,7 +106,7 @@ class TreatmentHerController(http.Controller):
 
             "deep-tissue-sports-massage": {
                 "name": "Deep Tissue Massage / Sports Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat11.webp",
+                "image": "/insabhi_custom_website/static/src/image/treatment11.webp",
                 "ideal_for": "Muscle pain relief after intense physical activity",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -130,7 +130,7 @@ class TreatmentHerController(http.Controller):
 
             "thai-massage": {
                 "name": "Thai Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat8.webp",
+                "image": "/insabhi_custom_website/static/src/image/treatment8.webp",
                 "ideal_for": "Flexibility improvement, muscle tension relief, overall health",
                 "oil_type": "No oil",
                 "duration": "60 or 90 minutes",
@@ -153,7 +153,7 @@ class TreatmentHerController(http.Controller):
 
             "back-neck-shoulder-head": {
                 "name": "Back, Neck, Shoulder, and Head Massage (Therapeutic & Recovery)",
-                "image": "/insabhi_custom_website/static/src/image/treat7.jpg",
+                "image": "/insabhi_custom_website/static/src/image/treatment7.jpg",
                 "ideal_for": (
                     "Relieving muscle tightness, reducing headaches and neck pain, releasing stress, "
                     "and promoting overall relaxation"
@@ -227,7 +227,7 @@ class TreatmentHerController(http.Controller):
 
             "marbaya-nights": {
                 "name": "Marbaya Nights (120 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat21.webp",
+                "image": "/insabhi_custom_website/static/src/image/gift3.jpg",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Body detox, skin revitalization, and deep relaxation",
                 "duration": "120 minutes",
@@ -383,7 +383,7 @@ class TreatmentHerController(http.Controller):
             # ==========================================
 
             "mani-pedi-basic": {
-                "name": "Mani & Pedi basic",
+                "name": "Spoil Me Mani & Pedi",
                 "image": "/insabhi_custom_website/static/src/image/treat4.jpg",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
@@ -409,7 +409,7 @@ class TreatmentHerController(http.Controller):
             },
 
             "mani-pedi-usual": {
-                "name": "Mani & Pedi Usual",
+                "name": "Elegant Mani & Pedi",
                 "image": "/insabhi_custom_website/static/src/image/treat5.jpg",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
@@ -435,7 +435,7 @@ class TreatmentHerController(http.Controller):
             },
 
             "mani-pedi-super": {
-                "name": "Mani & Pedi Super",
+                "name": "Basic Mani & Pedi",
                 "image": "/insabhi_custom_website/static/src/image/treat3.jpg",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
