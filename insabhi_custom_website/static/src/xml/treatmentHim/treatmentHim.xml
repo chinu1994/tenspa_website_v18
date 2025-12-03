@@ -124,12 +124,9 @@
           <!-- Rituals intro -->
         <section class="rituals-intro py-5">
           <h2 class="section-title text-center mb-3">Rituals (Luxury Packages)</h2>
+            <h5 style="color: #000;">Immerse yourself in the ultimate spa experience with Ten Wellness Rituals —</h5>
           <p class="lead text-center mb-4 px-3 px-md-5">
-            Immerse yourself in the ultimate spa experience with Ten Wellness Rituals —
-            luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual
-            combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique
-            needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an
-            unparalleled journey of indulgence and pure bliss.
+            luxurious, meticulously curated packages designed to pamper and rejuvenate. Each ritual combines relaxation, rejuvenation, and opulence, offering treatments tailored to your unique needs. From soothing body wraps to revitalizing facials, our 100+ minute sessions promise an unparalleled journey of indulgence and pure bliss.
           </p>
         </section>
 
@@ -199,9 +196,10 @@
           <!-- Skin Conditioning intro -->
             <section class="skin-intro py-5">
               <h2 class="section-title text-center mb-3">Skin Conditioning Treatments</h2>
+                <h5 style="color: #000;">Transform Your Skin with Our Conditioning Treatments</h5>
+
               <p class="lead text-center mb-4 px-3 px-md-5">
-                Reveal your skin's true potential with our expertly crafted skin conditioning treatments. Designed to rejuvenate and restore, these treatments deliver hydration, nourishment, and a healthy glow, tailored to your skin’s unique needs.
-              </p>
+                    Reveal your skin's true potential with our expertly crafted skin conditioning treatments. Designed to rejuvenate and restore, these treatments cater to your skin's unique needs, delivering hydration, nourishment, and a healthy glow. From deep-cleansing facials to targeted masks and serums, every session is thoughtfully tailored to enhance your skin’s natural beauty and address specific concerns.              </p>
             </section>
 
             <!-- Skin Conditioning cards -->
@@ -251,10 +249,9 @@
           <h2 class="section-title text-center mb-3">
             Distinguished Grooming for Gentlemen
           </h2>
+            <h5 style="color: #000;">Discover a new standard of care designed to leave you looking polished and feeling your best.</h5>
           <p class="lead text-center mb-4 px-3 px-md-5">
-            Discover a new standard of care designed to leave you looking polished and feeling your best.
-            From revitalizing facials to precision manicures and pedicures, every detail is tailored to enhance
-            your style, confidence, and overall appearance.
+            Redefine your personal care routine with our Distinguished Grooming for Gentlemen services, thoughtfully crafted for the modern man. From revitalizing facial treatments that refresh and refine your complexion to precision manicures and pedicures that exude confidence, every detail is tailored to enhance your style and sophistication. Complete the experience with our expertly executed body waxing services, ensuring smooth, impeccable grooming
           </p>
         </section>
 
