@@ -8,8 +8,8 @@ class TreatmentHerController(http.Controller):
     def TreatmentHer(self, slug, **kwargs):
         treatments = {
             "aromatherapy-massage": {
-                "name": "Aromatherapy Massage",
-                "image": "/insabhi_custom_website/static/src/image/hertTreat2.jpg",
+                "name": "Aromatherapy Massage ",
+                "image": "/insabhi_custom_website/static/src/image/herTreat2.jpg",
                 "ideal_for": "Deep relaxation, stress relief, post-travel recovery",
                 "oil_type": "Calming essential oils",
                 "duration": "90 or 120 minutes",
@@ -58,7 +58,7 @@ class TreatmentHerController(http.Controller):
 
             "swedish-massage": {
                 "name": "Swedish Massage",
-                "image": "/insabhi_custom_website/static/src/image/treatment12.webp",
+                "image": "/insabhi_custom_website/static/src/image/swedish12.webp",
                 "ideal_for": "Muscle tension relief and overall relaxation",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -106,7 +106,7 @@ class TreatmentHerController(http.Controller):
 
             "deep-tissue-sports-massage": {
                 "name": "Deep Tissue Massage / Sports Massage",
-                "image": "/insabhi_custom_website/static/src/image/treatment11.webp",
+                "image": "/insabhi_custom_website/static/src/image/deep.jpg",
                 "ideal_for": "Muscle pain relief after intense physical activity",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -129,31 +129,32 @@ class TreatmentHerController(http.Controller):
             },
 
             "thai-massage": {
-                "name": "Thai Massage",
-                "image": "/insabhi_custom_website/static/src/image/treatment8.webp",
-                "ideal_for": "Flexibility improvement, muscle tension relief, overall health",
+                "name": " Warrior Thai Massage (Therapeutic & Recovery)",
+                "image": "/insabhi_custom_website/static/src/image/thai.jpg",
+                "ideal_for": " Muscle recovery, improving flexibility, pain relief, stress reduction, and overall body ",
                 "oil_type": "No oil",
-                "duration": "60 or 90 minutes",
-                "pressure": "Strong",
+                "duration": "60 or 90 or 120 minutes",
+                "pressure": "Medium to strong",
                 "addon": "Oxygen Mask / Red Light Therapy",
                 "what_to_expect_title": "What to Expect",
                 "description": (
-                    "Originating from traditional Thai medicine, Thai Massage is a therapeutic practice "
-                    "that focuses on the body’s energy pathways, known as sen. Unlike conventional "
-                    "massages, it incorporates dynamic stretching movements to enhance flexibility, "
-                    "release muscle tension, and promote overall well‑being."
+                    "The Warrior Thai Massage is a therapeutic bodywork technique that blends pressure and compression"
+                    "with deep, assisted stretches. Rooted in traditional Thai practices, this massage focuses on "
+                    "releasing muscle tension, enhancing flexibility, and restoring the body’s natural energy flow."
+                    "It is particularly beneficial for active individuals or anyone seeking recovery and relaxation after physical exertion."
+
                 ),
                 "what_to_expect": (
-                    "Thai Massage involves a full‑body sequence of movements resembling assisted yoga "
-                    "stretches. Your therapist will use their palms and fingers to apply firm pressure, "
-                    "combined with techniques like compression, acupressure, and passive stretching. "
-                    "This unique approach leaves you feeling balanced, flexible, and deeply relaxed."
+                    "During the session, the therapist uses their hands, palms, and body weight to apply"
+                    "firm pressure and perform guided stretching movements. These dynamic techniques improve"
+                    "joint mobility, ease muscle tightness, and promote a sense of balance and renewal. "
+                    "The experience is both therapeutic and deeply revitalizing, leaving you energized yet relaxed"
                 ),
             },
 
             "back-neck-shoulder-head": {
                 "name": "Back, Neck, Shoulder, and Head Massage (Therapeutic & Recovery)",
-                "image": "/insabhi_custom_website/static/src/image/treatment7.jpg",
+                "image": "/insabhi_custom_website/static/src/image/back.jpg",
                 "ideal_for": (
                     "Relieving muscle tightness, reducing headaches and neck pain, releasing stress, "
                     "and promoting overall relaxation"
@@ -203,27 +204,6 @@ class TreatmentHerController(http.Controller):
             },
 
 
-            # "sunset-boulevard-ritual": {
-            #     "name": "Sunset Boulevard Ritual",
-            #     "image": "/insabhi_custom_website/static/src/image/treat13.webp",
-            #     "category": "Rituals (Luxury Packages)",
-            #     "ideal_for": "Deep relaxation, skin renewal, and body revitalization",
-            #     "duration": "120 minutes",
-            #     "highlights": (
-            #         "Steam session, double exfoliation, and a 60-minute deep massage that brings a "
-            #         "sense of comfort and balance."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Indulge in the luxurious Sunset Boulevard Ritual, a 120-minute experience "
-            #         "designed to rejuvenate and relax. Begin with a soothing steam session to "
-            #         "detoxify, followed by a double-scrub process to exfoliate and refresh your "
-            #         "skin. Complete your journey with a deeply relaxing 60-minute massage, leaving "
-            #         "you feeling restored, balanced, and utterly pampered."
-            #     ),
-            #     "what_to_expect": "",
-            # },
 
             "marbaya-nights": {
                 "name": "Marbaya Nights (120 Minutes)",
@@ -246,140 +226,10 @@ class TreatmentHerController(http.Controller):
                 "what_to_expect": "",
             },
 
-            # "hollywood-grooming": {
-            #     "name": "Hollywood Grooming (180 Minutes)",
-            #     "image": "/insabhi_custom_website/static/src/image/treat16.webp",
-            #     "category": "Rituals (Luxury Packages)",
-            #     "ideal_for": "Skin rejuvenation, body detox, nail care and deep relaxation",
-            #     "duration": "180 minutes",
-            #     "highlights": (
-            #         "Steam session, double exfoliation, deep relaxation, and manicure pedicure for "
-            #         "a complete look."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Experience the ultimate in self-care with our Hollywood Grooming ritual, a "
-            #         "180-minute session designed to leave you polished and refreshed. Begin with a "
-            #         "detoxifying steam, followed by a double scrub process and nourishing cream "
-            #         "application. Enjoy a deep relaxation massage, then complete your transformation "
-            #         "with a meticulous manicure and pedicure."
-            #     ),
-            #     "what_to_expect": "",
-            # },
-            #
-            # "walk-in-shaheed-park": {
-            #     "name": "Walk In Shaheed Park (120 Minutes)",
-            #     "image": "/insabhi_custom_website/static/src/image/mass5.png",
-            #     "category": "Rituals (Luxury Packages)",
-            #     "ideal_for": "Energizing and skin renewal",
-            #     "duration": "120 minutes",
-            #     "highlights": (
-            #         "Revitalizing exfoliation, nourishing body wrap, and a calming massage for "
-            #         "restored vitality."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Take a restorative journey with our Walk in Shaheed Park ritual, a 120-minute "
-            #         "deluxe experience inspired by the serene beauty of Kuwait’s iconic park. Begin "
-            #         "with an invigorating scrub to refresh your skin, followed by nourishing mud wraps "
-            #         "that restore and rejuvenate. Complete your ritual with a soothing massage of "
-            #         "your choice."
-            #     ),
-            #     "what_to_expect": "",
-            # },
-            #
-            # "self-love-package": {
-            #     "name": "Self-Love Package",
-            #     "image": "/insabhi_custom_website/static/src/image/treat20.webp",
-            #     "category": "Rituals (Luxury Packages)",
-            #     "ideal_for": (
-            #         "A complete body relaxation experience, skin detoxification, and facial rejuvenation"
-            #     ),
-            #     "duration": "4 hours",
-            #     "highlights": (
-            #         "Manicure & pedicure, traditional bath, full-body massage, and deep facial cleansing."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Indulge in the ultimate self-care with our Self-Love Package. This luxurious "
-            #         "4-hour experience begins with meticulous grooming of the hands and feet, followed "
-            #         "by a revitalizing traditional bath that refreshes the senses and restores vitality. "
-            #         "Enjoy a full-body massage of your choice, then finish with a deep facial cleansing "
-            #         "that leaves your skin radiant and your body fully revitalized."
-            #     ),
-            #     "what_to_expect": "",
-            # },
-            #
-            # # ================================
-            # # SKIN CONDITIONING TREATMENTS
-            # # ================================
-            #
-            # "traditional-hammam": {
-            #     "name": "Traditional (60 Minutes)",
-            #     "image": "/insabhi_custom_website/static/src/image/treat18.webp",
-            #     # apni actual image path se replace karo
-            #     "category": "Skin Conditioning Treatments",
-            #     "ideal_for": "Tired skin",
-            #     "duration": "60 minutes",
-            #     "highlights": (
-            #         "Soothing steam session, nourishing olive oil mask, and exfoliation with a kessa mitt for softness and glow."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Experience the essence of traditional Moroccan luxury. This rejuvenating 60-minute ritual begins with "
-            #         "a soothing steam session, followed by the application of an olive body mask to nourish and detoxify "
-            #         "the skin. Gentle exfoliation reveals a smoother, brighter complexion, while a hydrating lotion seals "
-            #         "in moisture, leaving your skin soft, radiant, and refreshed."
-            #     ),
-            #     "what_to_expect": "",
-            # },
-            #
-            # "mud-wrap": {
-            #     "name": "Mud Wrap (60 Minutes)",
-            #     "image": "/insabhi_custom_website/static/src/image/treat21.webp",  # apni image
-            #     "category": "Skin Conditioning Treatments",
-            #     "ideal_for": "Fatigued and stressed skin",
-            #     "duration": "60 minutes",
-            #     "highlights": (
-            #         "Inspired by the magical sunset of Santorini; includes therapeutic steam, exfoliation, and body wrap with nourishing mud."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Escape to the blissful Mud Wrap. This 60-minute indulgence begins with a Thalasso conditioning steam "
-            #         "to detoxify and invigorate, followed by a rejuvenating body scrub and a nourishing mud wrap to replenish "
-            #         "and restore your skin. The experience concludes with a hydrating body gel application, leaving your skin "
-            #         "deeply moisturized and glowing with vitality."
-            #     ),
-            #     "what_to_expect": "",
-            # },
-            #
-            # "double-scrub": {
-            #     "name": "Double Scrub (60 Minutes)",
-            #     "image": "/insabhi_custom_website/static/src/image/treat20.webp",  # apni image
-            #     "category": "Skin Conditioning Treatments",
-            #     "ideal_for": "Dull, tired skin",
-            #     "duration": "60 minutes",
-            #     "highlights": (
-            #         "Therapeutic steam, dual exfoliation, and deep hydration gel for radiant skin."
-            #     ),
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "Indulge in this sophisticated ritual and unveil your ultimate glow. This luxurious 60-minute experience "
-            #         "begins with a Thalasso steam session to detoxify and refresh, followed by a double-scrub process that "
-            #         "gently exfoliates and smooths your skin. The treatment concludes with the application of a hydrating body "
-            #         "gel, leaving your skin nourished, revitalized, and luminous."
-            #     ),
-            #     "what_to_expect": "",
-            # },
+
 
             # ==========================================
-            # DISTINGUISHED GROOMING FOR GENTLEMEN
+            # DISTINGUISHED GROOMING FOR Women
             # ==========================================
 
             "mani-pedi-basic": {
@@ -459,54 +309,6 @@ class TreatmentHerController(http.Controller):
                 ),
             },
 
-            # "combination-anti-aging-facial": {
-            #     "name": "Combination & Anti-Aging Facial",
-            #     "image": "/insabhi_custom_website/static/src/image/treat7.jpg",  # update path
-            #     "category": "Facial Services",
-            #     "ideal_for": (
-            #         "Men’s skincare, anti-aging, hydration, skin rejuvenation, and enhancing a youthful, "
-            #         "polished appearance"
-            #     ),
-            #     "duration": "60 minutes",
-            #     "highlights": "",
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "The Combination & Anti-Aging Facial is a luxurious session crafted to target visible signs "
-            #         "of aging, restore radiance, and rejuvenate men’s skin. Using advanced techniques and "
-            #         "premium products, this treatment deeply nourishes and revitalizes, leaving the complexion "
-            #         "firm, smooth, and refreshed."
-            #     ),
-            #     "what_to_expect": (
-            #         "During this 60-minute experience, the therapist applies professional-grade products and "
-            #         "techniques focused on cleansing, hydration, and anti-aging care. Expect tailored "
-            #         "treatments to minimize fine lines, combat dryness, and restore youthful vitality."
-            #     ),
-            # },
-
-            # "express-facial": {
-            #     "name": "Express Facial",
-            #     "image": "/insabhi_custom_website/static/src/image/treat2.webp",  # update path
-            #     "category": "Facial Services",
-            #     "ideal_for": (
-            #         "Men’s skincare, hydration, quick rejuvenation, and maintaining a fresh, healthy appearance "
-            #         "on the go"
-            #     ),
-            #     "duration": "30 minutes",
-            #     "highlights": "",
-            #     "addon": "Oxygen Mask / Red Light Therapy",
-            #     "what_to_expect_title": "What to Expect",
-            #     "description": (
-            #         "The Express Facial is a quick yet effective treatment designed for busy gentlemen who want "
-            #         "maximum results in minimal time. It refreshes, hydrates, and revitalizes the skin, making "
-            #         "it ideal for last-minute grooming or maintenance between full treatments."
-            #     ),
-            #     "what_to_expect": (
-            #         "In just 30 minutes, the therapist performs a tailored facial focusing on cleansing, "
-            #         "hydration, and rejuvenation. Advanced products and techniques deliver immediate freshness "
-            #         "and radiance, leaving your skin feeling smooth, energized, and well cared for."
-            #     ),
-            # },
 
         }
 
