@@ -2,6 +2,7 @@
 <odoo>
   <template id="TreatmentHim" name="Treatment Him Detail">
     <t t-call="website.layout">
+      <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
       <main class="treatment-detail-page">
         <t t-if="treatment">
           <section class="container-fluid py-5" style="background-color:#ffffff;; color:#000;">
