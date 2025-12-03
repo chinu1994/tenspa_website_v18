@@ -8,10 +8,13 @@
             <div class="row g-0">
               <!-- Left: Big Image -->
               <div class="col-lg-6 col-12">
-                <img t-att-src="treatment.get('image')"
-                     t-att-alt="treatment.get('name')"
-                     class="img-fluid w-100 h-90"
-                     style="object-fit:cover; min-height:400px;"/>
+                  <img t-att-src="treatment.get('image')"
+                   t-att-alt="treatment.get('name')"
+                   class="img-fluid w-100"
+                   style="object-fit:contain; height:500px; max-height:70vh; margin-top:20%;
+                          border: 4px solid #d0d0d0;
+                          border-radius: 12px;
+                          box-shadow: 0 8px 25px rgba(0,0,0,0.1);"/>
               </div>
 
               <!-- Right: Text Content -->
