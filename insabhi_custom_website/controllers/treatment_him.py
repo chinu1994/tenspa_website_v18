@@ -384,7 +384,7 @@ class TreatmentHimController(http.Controller):
 
             "mani-pedi-usual": {
                 "name": "Mani & Pedi Usual",
-                "image": "/insabhi_custom_website/static/src/image/treat6.jpg",  # update path
+                "image": "",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
                     "Maintaining neat and polished nails, smooth skin, overall hand & foot health, "
@@ -433,9 +433,12 @@ class TreatmentHimController(http.Controller):
                 ),
             },
 
+
+            # facial services
+
             "combination-anti-aging-facial": {
                 "name": "Combination & Anti-Aging Facial",
-                "image": "/insabhi_custom_website/static/src/image/treat7.jpg",  # update path
+                "image": "",  # update path
                 "category": "Facial Services",
                 "ideal_for": (
                     "Men’s skincare, anti-aging, hydration, skin rejuvenation, and enhancing a youthful, "

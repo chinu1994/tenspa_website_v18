@@ -259,6 +259,16 @@
         <section class="mb-5">
           <div class="treatment-cards-row">
             <!-- Mani & Pedi Super -->
+            <a href="/treatmentHim/mani-pedi-usual" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Mani &amp; Pedi Usual</div>
+                </div>
+              </div>
+            </a>
+
             <a href="/treatmentHim/mani-pedi-super" class="treatment-card-link">
               <div class="treatment-card">
                 <img src="/insabhi_custom_website/static/src/image/treat10.webp" class="card-img"/>
@@ -285,6 +295,16 @@
         <section class="mb-5">
           <div class="treatment-cards-row">
             <!-- Express Facial -->
+            <a href="/treatmentHim/combination-anti-aging-facial" class="treatment-card-link">
+              <div class="treatment-card">
+                <img src="" class="card-img"/>
+                <div class="card-footer">
+                  <button class="book-now-short">Book Now</button>
+                  <div class="card-title">Facial Services</div>
+                </div>
+              </div>
+            </a>
+
             <a href="/treatmentHim/express-facial" class="treatment-card-link">
               <div class="treatment-card">
                 <img src="/insabhi_custom_website/static/src/image/treat2.webp" class="card-img"/>
