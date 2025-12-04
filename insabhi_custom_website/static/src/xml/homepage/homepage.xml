@@ -228,7 +228,7 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/pro1.jpg" alt="Skin Care"
+                                    <img src="/insabhi_custom_website/static/src/Images/prop1.jpg" alt="Skin Care"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
@@ -242,7 +242,7 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/pro2.jpg" alt="Hand &amp; Body"
+                                    <img src="/insabhi_custom_website/static/src/Images/prop2.jpg" alt="Hand &amp; Body"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
@@ -256,7 +256,7 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/pro3.jpg" alt="Fragrance"
+                                    <img src="/insabhi_custom_website/static/src/Images/prop3.jpg" alt="Fragrance"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
@@ -270,12 +270,12 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/pro4.jpg" alt="Home"
+                                    <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" alt="Home"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                                 </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Wooden Sage</h3>
+                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Ten Bottle</h3>
                             </div>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow">
                                 <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/pro5.jpg" alt="Hair"
+                                    <img src="/insabhi_custom_website/static/src/Images/prop5.jpg" alt="Hair"
                                          class="img-fluid w-100 rounded-3 transition-all"
                                          style="height:200px; object-fit:contain; background:#fff;"/>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
