@@ -57,7 +57,7 @@
             'insabhi_custom_website/static/src/xml/contactus/contactus.xml',
             'insabhi_custom_website/static/src/xml/tenStore/tenStore.xml',
              # 'insabhi_custom_website/static/src/xml/serviceSelecting/serviceSelecting.xml',
-            # 'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
+            'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
             # 'insabhi_custom_website/static/src/xml/addOns/addOns.xml',
             # 'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
             'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
