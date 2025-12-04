@@ -10,9 +10,7 @@ export class Faq extends Component {
             activeTab: "general",
         });
 
-        // ONE-TIME setup – runs only once when component is created
         whenReady(() => {
-            // Wait until everything (OWL + images + layout) is really ready
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
 
@@ -23,9 +21,8 @@ export class Faq extends Component {
 
                     links.forEach(link => {
                         link.addEventListener('click', () => {
-                            // Only on mobile/tablet
                             if (window.innerWidth < 992) {
-                                // Use the most reliable scroll method + perfect timing
+
                                 requestAnimationFrame(() => {
                                     target.scrollIntoView({
                                         behavior: 'smooth',
@@ -33,10 +30,8 @@ export class Faq extends Component {
                                         inline: 'nearest'
                                     });
 
-                                    // Extra insurance for very slow devices
-                                    // Forces the browser to respect the offset of your fixed header
                                     setTimeout(() => {
-                                        const headerOffset = 100; // change only if your header is taller
+                                        const headerOffset = 100;
                                         const y = window.pageYOffset + target.getBoundingClientRect().top - headerOffset;
                                         window.scrollTo({ top: y, behavior: 'smooth' });
                                     }, 600);
@@ -50,9 +45,19 @@ export class Faq extends Component {
         });
     }
 
+    // ⭐ AUTO SCROLL ADDED HERE ONLY — NOTHING ELSE CHANGED
     switchTab(tabName) {
         this.state.activeTab = tabName;
-        // ← we don’t touch anything here anymore
+
+        setTimeout(() => {
+            const el = document.getElementById("faq_content");
+            if (el) {
+                el.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        }, 100);
     }
 }
 
