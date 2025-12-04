@@ -6,7 +6,7 @@
         <!-- HERO BANNER – EXACTLY LIKE YOUR HOMEPAGE -->
       <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/image/faqbanner.webp"
+                <img src="/insabhi_custom_website/static/src/Images/faqbanner.webp"
                      alt="Ten Wellness Hero"
                      class="w-100 h-100 object-fit-cover d-block"/>
             </div>

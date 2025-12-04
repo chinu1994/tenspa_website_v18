@@ -7,7 +7,7 @@
             <!-- HERO SECTION -->
             <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
                 <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                    <img src="/insabhi_custom_website/static/src/image/tenStoreBanner1.0.jpg"
+                      <img src="/insabhi_custom_website/static/src/Images/about.jpg"
                          alt="Ten Wellness Hero"
                          class="w-100 h-100 object-fit-cover d-block"/>
                 </div>
@@ -53,10 +53,10 @@
                     <!-- Left Side: Auto-rotating Images -->
                     <div class="col-lg-6">
                         <div class="ten-bottle-slider rounded-4 overflow-hidden shadow-lg">
-                            <img src="/insabhi_custom_website/static/src/image/tenbottle3.jpg"
+                              <img src="/insabhi_custom_website/static/src/Images/tenbottle3.jpg"
                                  alt="Ten Bottle - View 1"
                                  class="slider-img w-100"/>
-                            <img src="/insabhi_custom_website/static/src/image/tenbottle2.jpg"
+                              <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg"
                                  alt="Ten Bottle - View 2"
                                  class="slider-img w-100"/>
                         </div>
@@ -125,7 +125,7 @@
                         <div class="treatment-cards-row d-flex flex-wrap justify-content-center justify-content-md-start">
 
                             <div class="treatment-card" onclick="showFullScreenModal('aromatherapy')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/pro7.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -137,7 +137,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('ten shampoos')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat5.jpg" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -149,7 +149,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('bamboo plant')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat6.jpg" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -161,7 +161,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('ten two')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat14.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat14.png" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -173,7 +173,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('testimonials')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat12.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -185,7 +185,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('swedish')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat13.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -197,7 +197,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('TenProteinShampoo')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat12.jpg" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -209,7 +209,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat15.png" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -221,7 +221,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten one')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat9.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat9.webp" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -233,7 +233,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten four')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat8.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat8.png" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -245,7 +245,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten five')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat11.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat11.webp" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
@@ -257,7 +257,7 @@
                             </div>
 
                             <div class="treatment-card" onclick="showFullScreenModal('Ten six')">
-                                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat7.png" class="card-img"/>
+                                  <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat7.webp" class="card-img"/>
                                 <div class="card-footer">
                                     <button class="book-now-short"
                                             onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">

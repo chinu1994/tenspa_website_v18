@@ -7,7 +7,7 @@
         <!-- Classic Spa Treatments Banner -->
            <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/image/treatment.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg"
                      alt="Ten Wellness Hero"
                      class="w-100 h-100 object-fit-cover d-block"/>
             </div>
@@ -43,7 +43,7 @@
             <!-- Aromatherapy -->
             <a href="/treatmentHim/aromatherapy-massage" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat9.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat9.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Aromatherapy Massage</div>
@@ -54,7 +54,7 @@
             <!-- Foot Reflexology -->
             <a href="/treatmentHim/foot-reflexology" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat15.jpeg" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat21.jpeg" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Foot Reflexology</div>
@@ -65,7 +65,7 @@
             <!-- Swedish -->
             <a href="/treatmentHim/swedish-massage" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat12.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/mass4.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Swedish Massage</div>
@@ -76,7 +76,7 @@
             <!-- Indonesian -->
             <a href="/treatmentHim/indonesian-balinese-massage" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat13.jpeg" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat13.jpeg" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Indonesian (Balinese) Massage</div>
@@ -87,7 +87,7 @@
             <!-- Deep tissue -->
             <a href="/treatmentHim/deep-tissue-sports-massage" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat11.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/mass3.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Deep Tissue / Sports Massage</div>
@@ -98,7 +98,7 @@
             <!-- Thai -->
             <a href="/treatmentHim/thai-massage" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat8.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/mass2.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Thai Massage</div>
@@ -109,7 +109,7 @@
             <!-- Aircups -->
             <a href="/treatmentHim/aircups-30min" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/gift4.jpg" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/gift4.jpg" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">30mins Aircups</div>
@@ -137,7 +137,7 @@
             <!-- Sunset Boulevard Ritual -->
             <a href="/treatmentHim/sunset-boulevard-ritual" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat13.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat13.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Sunset Boulevard Ritual</div>
@@ -148,7 +148,7 @@
             <!-- Marbaya Nights -->
             <a href="/treatmentHim/marbaya-nights" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat21.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat21.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Marbaya Nights (120 Minutes)</div>
@@ -159,7 +159,7 @@
             <!-- Hollywood Grooming -->
             <a href="/treatmentHim/hollywood-grooming" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat16.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat16.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Hollywood Grooming (180 Minutes)</div>
@@ -170,7 +170,7 @@
             <!-- Walk In Shaheed Park -->
             <a href="/treatmentHim/walk-in-shaheed-park" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/mass5.png" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat17.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Walk In Shaheed Park (120 Minutes)</div>
@@ -181,7 +181,7 @@
             <!-- Self-Love Package -->
             <a href="/treatmentHim/self-love-package" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat20.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat20.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Self-Love Package</div>
@@ -209,7 +209,7 @@
                 <!-- Traditional (60 Minutes) -->
                 <a href="/treatmentHim/traditional-hammam" class="treatment-card-link">
                   <div class="treatment-card">
-                    <img src="/insabhi_custom_website/static/src/image/treat18.webp" class="card-img"/>
+                    <img src="/insabhi_custom_website/static/src/Images/treat18.webp" class="card-img"/>
                     <div class="card-footer">
                       <button class="book-now-short">Book Now</button>
                       <div class="card-title">Traditional (60 Minutes)</div>
@@ -220,7 +220,7 @@
                 <!-- Mud Wrap (60 Minutes) -->
                 <a href="/treatmentHim/mud-wrap" class="treatment-card-link">
                   <div class="treatment-card">
-                    <img src="/insabhi_custom_website/static/src/image/treat21.webp" class="card-img"/>
+                    <img src="/insabhi_custom_website/static/src/Images/treat21.webp" class="card-img"/>
                     <div class="card-footer">
                       <button class="book-now-short">Book Now</button>
                       <div class="card-title">Mud Wrap (60 Minutes)</div>
@@ -231,7 +231,7 @@
                 <!-- Double Scrub (60 Minutes) -->
                 <a href="/treatmentHim/double-scrub" class="treatment-card-link">
                   <div class="treatment-card">
-                    <img src="/insabhi_custom_website/static/src/image/treat20.webp" class="card-img"/>
+                    <img src="/insabhi_custom_website/static/src/Images/treat20.webp" class="card-img"/>
                     <div class="card-footer">
                       <button class="book-now-short">Book Now</button>
                       <div class="card-title">Double Scrub (60 Minutes)</div>
@@ -261,7 +261,7 @@
             <!-- Mani & Pedi Super -->
             <a href="/treatmentHim/mani-pedi-super" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat10.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat10.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Mani &amp; Pedi Super</div>
@@ -287,7 +287,7 @@
             <!-- Express Facial -->
             <a href="/treatmentHim/express-facial" class="treatment-card-link">
               <div class="treatment-card">
-                <img src="/insabhi_custom_website/static/src/image/treat2.webp" class="card-img"/>
+                <img src="/insabhi_custom_website/static/src/Images/treat2.webp" class="card-img"/>
                 <div class="card-footer">
                   <button class="book-now-short">Book Now</button>
                   <div class="card-title">Express Facial</div>
