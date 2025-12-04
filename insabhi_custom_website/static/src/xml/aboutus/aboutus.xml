@@ -7,7 +7,7 @@
         <!-- HERO – UNCHANGED -->
         <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/image/about1.png"
+                <img src="/insabhi_custom_website/static/src/Images/about1.png"
                      alt="Ten Wellness Hero"
                      class="w-100 h-100 object-fit-cover d-block"/>
             </div>
@@ -26,7 +26,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="position-relative d-inline-block hover-lift">
-                            <img src="/insabhi_custom_website/static/src/image/contactus.png"
+                            <img src="/insabhi_custom_website/static/src/Images/contactus.png"
                                  alt="Ten Wellness Sanctuary"
                                  class="w-100 rounded-4 shadow-lg"
                                  style="height:680px; object-fit:cover;"/>

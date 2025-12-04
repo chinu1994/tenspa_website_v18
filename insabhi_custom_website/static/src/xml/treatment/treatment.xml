@@ -5,7 +5,7 @@
         <div class="treatment">
            <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/image/treatment.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg"
                      alt="Ten Wellness Hero"
                      class="w-100 h-100 object-fit-cover d-block"/>
             </div>
