@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
   <t t-name="insabhi_custom_website.Faq">
-    <main id="ten-faq-page" class="ten-faq-page bg-light">
+    <main class="bg-light min-vh-100">
 
-        <!-- HERO BANNER – EXACTLY LIKE YOUR HOMEPAGE -->
+      <!-- HERO BANNER – unchanged -->
       <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
                 <img src="/insabhi_custom_website/static/src/Images/faqbanner.webp"
@@ -18,595 +18,396 @@
             </div>
         </section>
 
-        <!-- MAIN FAQ CONTENT -->
-        <section class="container py-5 py-lg-7">
-            <div class="row g-5">
+      <!-- CLEAN FAQ DESIGN – EXACTLY LIKE YOUR IMAGE -->
+      <section class="py-5 py-lg-8 bg-light">
+        <div class="container">
+          <div class="row g-5">
 
-                <!-- LEFT: LUXURY CATEGORY NAVIGATION -->
-                <div class="col-lg-4">
-                    <div class="sticky-top" style="top: 120px;">
-                        <h3 class="fw-light mb-5 fs-1" style="font-family:'Playfair Display',serif; color:#d4b08c;">
-                            FAQ Categories
-                        </h3>
-                        <div class="list-group list-group-flush gap-3">
+            <!-- LEFT: Topics -->
+            <div class="col-lg-4">
+              <h3 class="mb-5 fw-semibold fs-4">Topics</h3>
+              <div class="list-group list-group-flush">
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'general')"
-                               t-att-class="state.activeTab === 'general' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">General Information</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'general')"
+                   t-att-class="state.activeTab === 'general' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-info-circle me-3"></i> General Information
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'offers')"
-                               t-att-class="state.activeTab === 'offers' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Offers &amp; Payments</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'offers')"
+                   t-att-class="state.activeTab === 'offers' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-tag me-3"></i> Offers &amp; Payments
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'services')"
-                               t-att-class="state.activeTab === 'services' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Services &amp; Treatments</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'services')"
+                   t-att-class="state.activeTab === 'services' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-heart-pulse me-3"></i> Services &amp; Treatments
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'home')"
-                               t-att-class="state.activeTab === 'home' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Home Services &amp; Accessibility</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'home')"
+                   t-att-class="state.activeTab === 'home' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-house-door me-3"></i> Home Services &amp; Accessibility
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'visit')"
-                               t-att-class="state.activeTab === 'visit' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Before &amp; During Your Visit</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'visit')"
+                   t-att-class="state.activeTab === 'visit' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-calendar-check me-3"></i> Before &amp; During Your Visit
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'safety')"
-                               t-att-class="state.activeTab === 'safety' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Health &amp; Safety</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'safety')"
+                   t-att-class="state.activeTab === 'safety' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-shield-check me-3"></i> Health &amp; Safety
+                </a>
 
-                            <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'guarantee')"
-                               t-att-class="state.activeTab === 'guarantee' ? 'active' : ''"
-                               class="list-group-item list-group-item-action py-4 px-4 rounded-4 shadow-sm border-0 text-dark fw-medium transition-all text-decoration-none d-flex align-items-center bg-white">
-                                <span class="me-3">Satisfaction Guarantee</span>
-                                <i class="bi bi-chevron-right ms-auto text-gold opacity-0 transition-all"></i>
-                            </a>
+                <a href="javascript:void(0)" t-on-click="switchTab.bind(this, 'guarantee')"
+                   t-att-class="state.activeTab === 'guarantee' ? 'active' : ''"
+                   class="list-group-item list-group-item-action py-3 border-0 text-dark">
+                  <i class="bi bi-patch-check me-3"></i> Satisfaction Guarantee
+                </a>
 
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT: ALL QUESTIONS & ANSWERS – 100% COMPLETE -->
-                <div class="col-lg-8">
-                    <div class="bg-white rounded-5 shadow-lg p-5 p-xl-6">
-
-                        <!-- 1. GENERAL INFORMATION -->
-                        <div t-if="state.activeTab === 'general'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">General Information</h2>
-                            <div class="accordion accordion-flush" id="accordionGeneral">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g1">What are your opening hours?</button>
-                                    </h2>
-                                    <div id="g1" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">
-                                            <ul class="list-unstyled mb-3">
-                                                <li>• <strong>Ten Wellness for Men:</strong> Open daily from 8:30 AM to 4:30 AM</li>
-                                                <li>• <strong>Ten for Her:</strong> Open daily from 10:30 AM to 10:30 PM</li>
-                                            </ul>
-                                            We cater to both early risers and night owls for maximum flexibility.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g2">Where are you located, and is parking available?</button>
-                                    </h2>
-                                    <div id="g2" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">We have multiple luxury branches across Kuwait, including Sharq – Sanabil Tower and Sabah Al Salem – The Tower. All locations have convenient access with nearby parking.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g3">How can I make a booking? Do you accept walk-ins?</button>
-                                    </h2>
-                                    <div id="g3" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">You can book via phone call or WhatsApp. While walk-ins are welcome, we highly recommend advance booking to ensure your preferred time and therapist.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g4">What is your cancellation/rescheduling policy?</button>
-                                    </h2>
-                                    <div id="g4" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">We kindly ask for at least 6 hours’ notice to cancel or reschedule, so we can offer the slot to another guest.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g5">Can I bring a companion with me during my visit?</button>
-                                    </h2>
-                                    <div id="g5" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">For the comfort and privacy of all our guests, we kindly request that only those receiving a service enter the treatment area. Companions may wait in the designated lounge areas if available.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g6">Do you offer group bookings or private spa experiences?</button>
-                                    </h2>
-                                    <div id="g6" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">Yes, we love celebrating special moments with our guests. Whether you're planning a birthday celebration, bridal shower, corporate retreat, or a wellness gathering with friends. Let us know in advance, and we’ll add thoughtful touches to make your visit extra memorable.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g7">Do you offer any food or beverage options during treatments?</button>
-                                    </h2>
-                                    <div id="g7" class="accordion-collapse collapse" data-bs-parent="#accordionGeneral">
-                                        <div class="accordion-body text-muted pt-3">While treatments don’t include meals, we offer complimentary herbal teas and detox water. For group bookings or events, we can arrange light refreshments upon request.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 2. OFFERS & PAYMENTS -->
-                        <div t-if="state.activeTab === 'offers'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Offers &amp; Payments</h2>
-                            <div class="accordion accordion-flush" id="accordionOffers">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#o1">Do you offer gift cards or vouchers?</button>
-                                    </h2>
-                                    <div id="o1" class="accordion-collapse collapse" data-bs-parent="#accordionOffers">
-                                        <div class="accordion-body text-muted pt-3">Yes! We offer elegantly packaged gift cards, a thoughtful and luxurious gift, perfect for celebrating special moments or treating a loved one to a truly relaxing experience.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#o2">Do you have loyalty programs or special promotions?</button>
-                                    </h2>
-                                    <div id="o2" class="accordion-collapse collapse" data-bs-parent="#accordionOffers">
-                                        <div class="accordion-body text-muted pt-3">Yes, we regularly launch seasonal promotions and exclusive offers. Follow us on Instagram @tenspakw for the latest updates.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#o3">What payment methods do you accept?</button>
-                                    </h2>
-                                    <div id="o3" class="accordion-collapse collapse" data-bs-parent="#accordionOffers">
-                                        <div class="accordion-body text-muted pt-3">We accept K-Net, Visa, MasterCard, Tabby, cash payments, and MyFatoorah payment links.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#o4">Can I pay in installments or through financing options?</button>
-                                    </h2>
-                                    <div id="o4" class="accordion-collapse collapse" data-bs-parent="#accordionOffers">
-                                        <div class="accordion-body text-muted pt-3">We accept flexible payment methods such as Tabby for buy-now-pay-later convenience.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#o5">Is gratuity (tips) included in the price?</button>
-                                    </h2>
-                                    <div id="o5" class="accordion-collapse collapse" data-bs-parent="#accordionOffers">
-                                        <div class="accordion-body text-muted pt-3">Service charges are included, but tips are always appreciated as a gesture of appreciation to your therapist.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 3. SERVICES & TREATMENTS -->
-                        <div t-if="state.activeTab === 'services'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Services &amp; Treatments</h2>
-                            <div class="accordion accordion-flush" id="accordionServices">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s1">What treatments do you offer?</button>
-                                    </h2>
-                                    <div id="s1" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">
-                                            We offer a wide range of services including:<br/>
-                                            • Massages: Balinese, Thai, Deep Tissue, Hot Stone, Swedish, Sports, Reflexology, and more<br/>
-                                            • Skincare: Facials tailored for different skin needs<br/>
-                                            • Grooming: Manicure, Pedicure, Body Scrubs, and more<br/><br/>
-                                            All services are tailored separately for men and women in dedicated branches.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s2">What’s the difference between the massage types?</button>
-                                    </h2>
-                                    <div id="s2" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">
-                                            <ul class="list-unstyled mb-0">
-                                                <li><strong>Balinese Massage:</strong> A medium-pressure massage that relaxes both the nerves and muscles at the same time. It aids in muscle recovery, helps the body feel relaxed, and stimulates blood circulation.</li>
-                                                <li><strong>Swedish Massage:</strong> A light-pressure massage that relaxes the nerves, calms the body, reduces stress, and promotes blood circulation.</li>
-                                                <li><strong>Aromatherapy Hot Stones:</strong> A light-pressure massage using oils extracted from natural plants. These are various blends, each with specific benefits that help improve mood and stimulate blood circulation.</li>
-                                                <li><strong>Sports Massage:</strong> A strong-pressure massage that helps with recovery and boosts blood circulation. It is usually recommended for athletes or those who prefer firm pressure and stretching during the massage.</li>
-                                                <li><strong>Deep Tissue Massage:</strong> A strong-pressure massage that focuses entirely on the muscles. It uses pressure and stretching techniques to break down muscle knots and activate blood circulation.</li>
-                                                <li><strong>Thai Massage:</strong> Considered one of the strong types of massage, this technique is performed without oils. It mainly involves body stretches and pressure using the hands, elbows, and feet, helping improve flexibility and stimulate circulation.</li>
-                                                <li><strong>Foot Massage (Reflexology):</strong> A massage that focuses on the soles of the feet, targeting pressure points that are connected to the body’s internal organs. It helps relax the body, improve blood flow, and reduce stress.</li>
-                                                <li><strong>Back, Neck, Shoulder, and Head Massage:</strong> This massage targets the areas where we usually feel pain and tension — such as the neck, shoulders, back, and head. It helps release muscle tightness, soothes the nerves, and brings relief.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s3">How do I know which treatment is right for me?</button>
-                                    </h2>
-                                    <div id="s3" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">Our expert advisors will help you choose the best treatment based on your goals—whether it’s stress relief, recovery, or relaxation.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s4">Can I personalize my spa experience?</button>
-                                    </h2>
-                                    <div id="s4" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">Absolutely. From selecting your preferred aromatherapy scents and music to choosing the type of pressure or focus areas during your treatment, we’re happy to tailor the experience to your needs.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s5">How often should I get a facial?</button>
-                                    </h2>
-                                    <div id="s5" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">We recommend facials every 3–5 weeks for optimal skin health. This routine allows us to monitor your skin as the seasons change and help you maintain a radiant, healthy complexion. During times of high stress or hormonal changes, such as menopause, your skin may become more unpredictable and prone to breakouts. In these cases, your esthetician may suggest more frequent treatments until your skin stabilizes.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s6">Are your products organic or natural?</button>
-                                    </h2>
-                                    <div id="s6" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">We use high-quality, skin-safe products, many of which are organic, natural, or plant-based, carefully selected for their effectiveness and safety.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s7">Can I bring my own products for use during a treatment?</button>
-                                    </h2>
-                                    <div id="s7" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">For safety and quality assurance, we recommend using our approved spa products. However, if you have allergies or special skincare needs, please inform us in advance and bring the products you'd prefer and we’ll assess them accordingly.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s8">Do you have a VIP or premium suite experience?</button>
-                                    </h2>
-                                    <div id="s8" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">Yes, some of our branches offer private VIP suites for a more exclusive and indulgent spa experience. These include enhanced amenities, privacy, and extended time slots.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#s9">Can I add enhancements to my treatment?</button>
-                                    </h2>
-                                    <div id="s9" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
-                                        <div class="accordion-body text-muted pt-3">Yes, we offer a range of add-on enhancements such as hot stones, scalp treatments, aromatherapy oils, or extra focus time for specific areas. Our advisors will guide you based on your preferences.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 4. HOME SERVICES & ACCESSIBILITY -->
-                        <div t-if="state.activeTab === 'home'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Home Services &amp; Accessibility</h2>
-                            <div class="accordion accordion-flush" id="accordionHome">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h1">Do you offer home services?</button>
-                                    </h2>
-                                    <div id="h1" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, home service is available for men across Kuwait. Enjoy the Ten Wellness experience in the comfort of your home.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h2">Are your services available for both men and women?</button>
-                                    </h2>
-                                    <div id="h2" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes. We have dedicated branches for men and women to ensure complete privacy and comfort.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h3">What do I need to prepare for a home service session?</button>
-                                    </h2>
-                                    <div id="h3" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">We bring all essentials including massage beds, linens, and products. All you need is a quiet, clean space where the therapist can set up comfortably.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h4">Can I request a specific therapist for home service?</button>
-                                    </h2>
-                                    <div id="h4" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, you may request a preferred therapist. We’ll do our best to accommodate based on availability and your location.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h5">Are home service treatments available for women?</button>
-                                    </h2>
-                                    <div id="h5" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Currently, home service is offered for men only, but we are working on expanding our services in the near future.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h6">Can I book multiple home services in one visit?</button>
-                                    </h2>
-                                    <div id="h6" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, you can combine multiple treatments such as a massage, facial, and grooming services during one home visit. Please inform us in advance so we can schedule the appropriate time and resources.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h7">Do you provide treatments for elderly clients or those with chronic conditions?</button>
-                                    </h2>
-                                    <div id="h7" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, our therapists are trained to work with elderly guests or those with chronic conditions such as arthritis, back pain, or limited mobility. Please let us know your condition so we can adjust the treatment accordingly.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h8">Can I book a home service for a special occasion?</button>
-                                    </h2>
-                                    <div id="h8" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, we offer home spa experiences for special occasions such as birthdays, anniversaries, or private celebrations. We can also provide curated wellness experiences for you and your guests with advance notice.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#h9">Do you provide massage beds and equipment for home visits?</button>
-                                    </h2>
-                                    <div id="h9" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
-                                        <div class="accordion-body text-muted pt-3">Yes, we bring professional-grade massage tables, clean linens, towels, oils, and all necessary equipment to ensure your treatment is just as luxurious as in our spa.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 5. BEFORE & DURING YOUR VISIT -->
-                        <div t-if="state.activeTab === 'visit'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Before &amp; During Your Visit</h2>
-                            <div class="accordion accordion-flush" id="accordionVisit">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v1">How early should I arrive before my appointment?</button>
-                                    </h2>
-                                    <div id="v1" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">We recommend arriving at least 15 minutes before your scheduled appointment to allow time for check-in, consultation, and preparation.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v2">What if I’m running late for my appointment?</button>
-                                    </h2>
-                                    <div id="v2" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">If you arrive late, we’ll do our best to accommodate you. However, your treatment time may be shortened to avoid delays for the next guest.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v3">What should I wear during my visit?</button>
-                                    </h2>
-                                    <div id="v3" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Comfortable attire is recommended. For our services, we provide disposable wear, towels, and robes to ensure your comfort and privacy.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v4">Can I request a specific therapist?</button>
-                                    </h2>
-                                    <div id="v4" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Absolutely. We’ll do our best to accommodate your preferred therapist based on availability.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v5">Are showers and lockers available?</button>
-                                    </h2>
-                                    <div id="v5" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Yes, all branches are equipped with private showers and lockers for your convenience.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v6">Should I eat before a massage?</button>
-                                    </h2>
-                                    <div id="v6" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Avoid heavy meals at least 1 hour before and after your session for maximum comfort.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v7">What should I expect on my first visit?</button>
-                                    </h2>
-                                    <div id="v7" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">From the moment you arrive, our team will ensure you feel relaxed and comfortable. You’ll be welcomed with a calming atmosphere and guided through a short consultation, where your therapist will learn about your preferences and any special concerns. Before your treatment begins, everything will be explained so you know what to expect. Whether you’ve booked a massage, facial, or wellness therapy, your first visit is all about helping you unwind, rejuvenate, and enjoy a personalized spa experience.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v8">Can I shower before or after my treatment?</button>
-                                    </h2>
-                                    <div id="v8" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Yes, all our branches are equipped with private showers available before or after your session. Showering before a massage is encouraged for hygiene and comfort.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#v9">Is there a relaxation area I can use before or after my treatment?</button>
-                                    </h2>
-                                    <div id="v9" class="accordion-collapse collapse" data-bs-parent="#accordionVisit">
-                                        <div class="accordion-body text-muted pt-3">Yes, select branches feature relaxation lounges where you can unwind with herbal tea and calming music before or after your session.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 6. HEALTH & SAFETY -->
-                        <div t-if="state.activeTab === 'safety'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Health &amp; Safety</h2>
-                            <div class="accordion accordion-flush" id="accordionSafety">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf1">What health and hygiene measures do you follow?</button>
-                                    </h2>
-                                    <div id="saf1" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">At Ten Wellness, we adhere to the highest international standards of hygiene and sanitation. Treatment rooms, tools, and equipment are thoroughly sterilized after each guest. Fresh linens, disposable wear, and individually sealed products are used for every session.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf2">Can I get a massage if I have a medical condition?</button>
-                                    </h2>
-                                    <div id="saf2" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">Please inform us in advance. We’ll adapt your treatment accordingly or request a doctor’s approval if needed.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf3">Are your therapists certified?</button>
-                                    </h2>
-                                    <div id="saf3" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">Yes, all our therapists are internationally trained, certified, and highly experienced.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf4">What hygiene protocols do you follow?</button>
-                                    </h2>
-                                    <div id="saf4" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">We maintain the highest hygiene standards, including sanitized rooms after every session, fresh linens, and strict protocols for staff and therapists.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf5">Are there any age restrictions for receiving treatments?</button>
-                                    </h2>
-                                    <div id="saf5" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">As per Kuwait labor law, guests must be at least 15 years old to receive spa services. Parental or guardian approval is required for younger clients where applicable.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf6">Can I visit the spa during pregnancy?</button>
-                                    </h2>
-                                    <div id="saf6" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">Yes, certain treatments are safe during pregnancy. Please inform us when booking so we can tailor your experience accordingly.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#saf7">Is smoking allowed in the spa?</button>
-                                    </h2>
-                                    <div id="saf7" class="accordion-collapse collapse" data-bs-parent="#accordionSafety">
-                                        <div class="accordion-body text-muted pt-3">No. We maintain a smoke-free environment for the comfort and well-being of all guests and staff.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 7. SATISFACTION GUARANTEE -->
-                        <div t-if="state.activeTab === 'guarantee'">
-                            <h2 class="fw-light mb-5 display-5" style="font-family:'Playfair Display',serif; color:#d4b08c;">Satisfaction Guarantee</h2>
-                            <div class="accordion accordion-flush" id="accordionGuarantee">
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g1">What is your satisfaction guarantee policy?</button>
-                                    </h2>
-                                    <div id="g1" class="accordion-collapse collapse" data-bs-parent="#accordionGuarantee">
-                                        <div class="accordion-body text-muted pt-3">At Ten Wellness, your satisfaction is our top priority. If for any reason you are not satisfied with your experience during the session, you are welcome to end the treatment and leave without payment. We stand behind the quality of our services and are confident that you will leave feeling relaxed, refreshed, and valued.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item border-0 border-bottom border-light pb-4 mb-4">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g2">Do you offer a satisfaction guarantee?</button>
-                                    </h2>
-                                    <div id="g2" class="accordion-collapse collapse" data-bs-parent="#accordionGuarantee">
-                                        <div class="accordion-body text-muted pt-3">Yes. If you are not satisfied during your session, you may leave without paying, that’s how confident we are in the quality of our services.</div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed fw-medium fs-5 text-dark shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#g3">Do your products come with a guarantee?</button>
-                                    </h2>
-                                    <div id="g3" class="accordion-collapse collapse" data-bs-parent="#accordionGuarantee">
-                                        <div class="accordion-body text-muted pt-3">Yes. All our products are guaranteed for 1 year. If a product is damaged or unsatisfactory, you may return it.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- LUXURY STYLES – 100% MATCHES YOUR HOMEPAGE -->
-        <style>
-            :root { --gold: #d4b08c; }
-            .text-gold { color: var(--gold) !important; }
-            .bg-gold { background-color: var(--gold) !important; }
+            <!-- RIGHT: FULL CONTENT (ALL QUESTIONS & ANSWERS) -->
+            <div class="col-lg-8" id="faq_content">
 
-            .list-group-item.active {
-                background: linear-gradient(135deg, #d4b08c, #b8972e) !important;
-                color: white !important;
-            }
-            .list-group-item:hover:not(.active) {
-                background-color: #fdfcfb !important;
-                transform: translateX(10px);
-            }
-            .list-group-item:hover i { opacity: 1 !important; color: var(--gold); }
+              <!-- 1. GENERAL INFORMATION -->
+              <div t-if="state.activeTab === 'general'">
+                <h4 class="mb-4 fw-semibold text-dark">General Information</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g1">What are your opening hours?</button>
+                    </h2>
+                    <div id="g1" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">
+                        <ul class="list-unstyled mb-3">
+                          <li>• <strong>Ten Wellness for Men:</strong> Open daily from 8:30 AM to 4:30 AM</li>
+                          <li>• <strong>Ten for Her:</strong> Open daily from 10:30 AM to 10:30 PM</li>
+                        </ul>
+                        We cater to both early risers and night owls for maximum flexibility.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g2">Where are you located, and is parking available?</button>
+                    </h2>
+                    <div id="g2" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">We have multiple luxury branches across Kuwait, including Sharq – Sanabil Tower and Sabah Al Salem – The Tower. All locations have convenient access with nearby parking.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g3">How can I make a booking? Do you accept walk-ins?</button>
+                    </h2>
+                    <div id="g3" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">You can book via phone call or WhatsApp. While walk-ins are welcome, we highly recommend advance booking to ensure your preferred time and therapist.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g4">What is your cancellation/rescheduling policy?</button>
+                    </h2>
+                    <div id="g4" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">We kindly ask for at least 6 hours’ notice to cancel or reschedule, so we can offer the slot to another guest.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g5">Can I bring a companion with me during my visit?</button>
+                    </h2>
+                    <div id="g5" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">For the comfort and privacy of all our guests, we kindly request that only those receiving a service enter the treatment area. Companions may wait in the designated lounge areas if available.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g6">Do you offer group bookings or private spa experiences?</button>
+                    </h2>
+                    <div id="g6" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">Yes, we love celebrating special moments with our guests. Whether you're planning a birthday celebration, bridal shower, corporate retreat, or a wellness gathering with friends. Let us know in advance, and we’ll add thoughtful touches to make your visit extra memorable.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#g7">Do you offer any food or beverage options during treatments?</button>
+                    </h2>
+                    <div id="g7" class="accordion-collapse collapse">
+                      <div class="accordion-body text-muted pt-3">While treatments don’t include meals, we offer complimentary herbal teas and detox water. For group bookings or events, we can arrange light refreshments upon request.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            .accordion-button:not(.collapsed) {
-                background-color: #fdf8e8 !important;
-                color: #333 !important;
-                box-shadow: none;
-            }
-            .accordion-button:focus { box-shadow: none; }
-            .transition-all { transition: all 0.4s ease; }
-        </style>
+              <!-- 2. OFFERS & PAYMENTS -->
+              <div t-if="state.activeTab === 'offers'">
+                <h4 class="mb-4 fw-semibold text-dark">Offers &amp; Payments</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#o1">Do you offer gift cards or vouchers?</button></h2>
+                    <div id="o1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes! We offer elegantly packaged gift cards, a thoughtful and luxurious gift, perfect for celebrating special moments or treating a loved one to a truly relaxing experience.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#o2">Do you have loyalty programs or special promotions?</button></h2>
+                    <div id="o2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, we regularly launch seasonal promotions and exclusive offers. Follow us on Instagram @tenspakw for the latest updates.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#o3">What payment methods do you accept?</button></h2>
+                    <div id="o3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We accept K-Net, Visa, MasterCard, Tabby, cash payments, and MyFatoorah payment links.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#o4">Can I pay in installments or through financing options?</button></h2>
+                    <div id="o4" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We accept flexible payment methods such as Tabby for buy-now-pay-later convenience.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#o5">Is gratuity (tips) included in the price?</button></h2>
+                    <div id="o5" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Service charges are included, but tips are always appreciated as a gesture of appreciation to your therapist.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. SERVICES & TREATMENTS -->
+              <div t-if="state.activeTab === 'services'">
+                <h4 class="mb-4 fw-semibold text-dark">Services &amp; Treatments</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s1">What treatments do you offer?</button></h2>
+                    <div id="s1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We offer a wide range of services including:<br/>• Massages: Balinese, Thai, Deep Tissue, Hot Stone, Swedish, Sports, Reflexology, and more<br/>• Skincare: Facials tailored for different skin needs<br/>• Grooming: Manicure, Pedicure, Body Scrubs, and more<br/><br/>All services are tailored separately for men and women in dedicated branches.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s2">What’s the difference between the massage types?</button></h2>
+                    <div id="s2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">
+                      <ul class="list-unstyled mb-0">
+                        <li><strong>Balinese Massage:</strong> A medium-pressure massage that relaxes both the nerves and muscles at the same time. It aids in muscle recovery, helps the body feel relaxed, and stimulates blood circulation.</li>
+                        <li><strong>Swedish Massage:</strong> A light-pressure massage that relaxes the nerves, calms the body, reduces stress, and promotes blood circulation.</li>
+                        <li><strong>Aromatherapy Hot Stones:</strong> A light-pressure massage using oils extracted from natural plants. These are various blends, each with specific benefits that help improve mood and stimulate blood circulation.</li>
+                        <li><strong>Sports Massage:</strong> A strong-pressure massage that helps with recovery and boosts blood circulation. It is usually recommended for athletes or those who prefer firm pressure and stretching during the massage.</li>
+                        <li><strong>Deep Tissue Massage:</strong> A strong-pressure massage that focuses entirely on the muscles. It uses pressure and stretching techniques to break down muscle knots and activate blood circulation.</li>
+                        <li><strong>Thai Massage:</strong> Considered one of the strong types of massage, this technique is performed without oils. It mainly involves body stretches and pressure using the hands, elbows, and feet, helping improve flexibility and stimulate circulation.</li>
+                        <li><strong>Foot Massage (Reflexology):</strong> A massage that focuses on the soles of the feet, targeting pressure points that are connected to the body’s internal organs. It helps relax the body, improve blood flow, and reduce stress.</li>
+                        <li><strong>Back, Neck, Shoulder, and Head Massage:</strong> This massage targets the areas where we usually feel pain and tension — such as the neck, shoulders, back, and head. It helps release muscle tightness, soothes the nerves, and brings relief.</li>
+                      </ul>
+                    </div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s3">How do I know which treatment is right for me?</button></h2>
+                    <div id="s3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Our expert advisors will help you choose the best treatment based on your goals—whether it’s stress relief, recovery, or relaxation.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s4">Can I personalize my spa experience?</button></h2>
+                    <div id="s4" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Absolutely. From selecting your preferred aromatherapy scents and music to choosing the type of pressure or focus areas during your treatment, we’re happy to tailor the experience to your needs.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s5">How often should I get a facial?</button></h2>
+                    <div id="s5" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We recommend facials every 3–5 weeks for optimal skin health. This routine allows us to monitor your skin as the seasons change and help you maintain a radiant, healthy complexion. During times of high stress or hormonal changes, such as menopause, your skin may become more unpredictable and prone to breakouts. In these cases, your esthetician may suggest more frequent treatments until your skin stabilizes.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s6">Are your products organic or natural?</button></h2>
+                    <div id="s6" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We use high-quality, skin-safe products, many of which are organic, natural, or plant-based, carefully selected for their effectiveness and safety.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s7">Can I bring my own products for use during a treatment?</button></h2>
+                    <div id="s7" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">For safety and quality assurance, we recommend using our approved spa products. However, if you have allergies or special skincare needs, please inform us in advance and bring the products you'd prefer and we’ll assess them accordingly.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s8">Do you have a VIP or premium suite experience?</button></h2>
+                    <div id="s8" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, some of our branches offer private VIP suites for a more exclusive and indulgent spa experience. These include enhanced amenities, privacy, and extended time slots.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#s9">Can I add enhancements to my treatment?</button></h2>
+                    <div id="s9" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, we offer a range of add-on enhancements such as hot stones, scalp treatments, aromatherapy oils, or extra focus time for specific areas. Our advisors will guide you based on your preferences.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. HOME SERVICES & ACCESSIBILITY -->
+              <div t-if="state.activeTab === 'home'">
+                <h4 class="mb-4 fw-semibold text-dark">Home Services &amp; Accessibility</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h1">Do you offer home services?</button></h2>
+                    <div id="h1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, home service is available for men across Kuwait. Enjoy the Ten Wellness experience in the comfort of your home.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h2">Are your services available for both men and women?</button></h2>
+                    <div id="h2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes. We have dedicated branches for men and women to ensure complete privacy and comfort.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h3">What do I need to prepare for a home service session?</button></h2>
+                    <div id="h3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We bring all essentials including massage beds, linens, and products. All you need is a quiet, clean space where the therapist can set up comfortably.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h4">Can I request a specific therapist for home service?</button></h2>
+                    <div id="h4" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, you may request a preferred therapist. We’ll do our best to accommodate based on availability and your location.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h5">Are home service treatments available for women?</button></h2>
+                    <div id="h5" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Currently, home service is offered for men only, but we are working on expanding our services in the near future.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h6">Can I book multiple home services in one visit?</button></h2>
+                    <div id="h6" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, you can combine multiple treatments such as a massage, facial, and grooming services during one home visit. Please inform us in advance so we can schedule the appropriate time and resources.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h7">Do you provide treatments for elderly clients or those with chronic conditions?</button></h2>
+                    <div id="h7" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, our therapists are trained to work with elderly guests or those with chronic conditions such as arthritis, back pain, or limited mobility. Please let us know your condition so we can adjust the treatment accordingly.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h8">Can I book a home service for a special occasion?</button></h2>
+                    <div id="h8" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, we offer home spa experiences for special occasions such as birthdays, anniversaries, or private celebrations. We can also provide curated wellness experiences for you and your guests with advance notice.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#h9">Do you provide massage beds and equipment for home visits?</button></h2>
+                    <div id="h9" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, we bring professional-grade massage tables, clean linens, towels, oils, and all necessary equipment to ensure your treatment is just as luxurious as in our spa.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. BEFORE & DURING YOUR VISIT -->
+              <div t-if="state.activeTab === 'visit'">
+                <h4 class="mb-4 fw-semibold text-dark">Before &amp; During Your Visit</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v1">How early should I arrive before my appointment?</button></h2>
+                    <div id="v1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We recommend arriving at least 15 minutes before your scheduled appointment to allow time for check-in, consultation, and preparation.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v2">What if I’m running late for my appointment?</button></h2>
+                    <div id="v2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">If you arrive late, we’ll do our best to accommodate you. However, your treatment time may be shortened to avoid delays for the next guest.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v3">What should I wear during my visit?</button></h2>
+                    <div id="v3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Comfortable attire is recommended. For our services, we provide disposable wear, towels, and robes to ensure your comfort and privacy.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v4">Can I request a specific therapist?</button></h2>
+                    <div id="v4" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Absolutely. We’ll do our best to accommodate your preferred therapist based on availability.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v5">Are showers and lockers available?</button></h2>
+                    <div id="v5" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, all branches are equipped with private showers and lockers for your convenience.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v6">Should I eat before a massage?</button></h2>
+                    <div id="v6" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Avoid heavy meals at least 1 hour before and after your session for maximum comfort.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v7">What should I expect on my first visit?</button></h2>
+                    <div id="v7" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">From the moment you arrive, our team will ensure you feel relaxed and comfortable. You’ll be welcomed with a calming atmosphere and guided through a short consultation, where your therapist will learn about your preferences and any special concerns. Before your treatment begins, everything will be explained so you know what to expect. Whether you’ve booked a massage, facial, or wellness therapy, your first visit is all about helping you unwind, rejuvenate, and enjoy a personalized spa experience.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v8">Can I shower before or after my treatment?</button></h2>
+                    <div id="v8" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, all our branches are equipped with private showers available before or after your session. Showering before a massage is encouraged for hygiene and comfort.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#v9">Is there a relaxation area I can use before or after my treatment?</button></h2>
+                    <div id="v9" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, select branches feature relaxation lounges where you can unwind with herbal tea and calming music before or after your session.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. HEALTH & SAFETY -->
+              <div t-if="state.activeTab === 'safety'">
+                <h4 class="mb-4 fw-semibold text-dark">Health &amp; Safety</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf1">What health and hygiene measures do you follow?</button></h2>
+                    <div id="saf1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">At Ten Wellness, we adhere to the highest international standards of hygiene and sanitation. Treatment rooms, tools, and equipment are thoroughly sterilized after each guest. Fresh linens, disposable wear, and individually sealed products are used for every session.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf2">Can I get a massage if I have a medical condition?</button></h2>
+                    <div id="saf2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Please inform us in advance. We’ll adapt your treatment accordingly or request a doctor’s approval if needed.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf3">Are your therapists certified?</button></h2>
+                    <div id="saf3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, all our therapists are internationally trained, certified, and highly experienced.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf4">What hygiene protocols do you follow?</button></h2>
+                    <div id="saf4" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">We maintain the highest hygiene standards, including sanitized rooms after every session, fresh linens, and strict protocols for staff and therapists.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf5">Are there any age restrictions for receiving treatments?</button></h2>
+                    <div id="saf5" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">As per Kuwait labor law, guests must be at least 15 years old to receive spa services. Parental or guardian approval is required for younger clients where applicable.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf6">Can I visit the spa during pregnancy?</button></h2>
+                    <div id="saf6" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes, certain treatments are safe during pregnancy. Please inform us when booking so we can tailor your experience accordingly.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#saf7">Is smoking allowed in the spa?</button></h2>
+                    <div id="saf7" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">No. We maintain a smoke-free environment for the comfort and well-being of all guests and staff.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7. SATISFACTION GUARANTEE -->
+              <div t-if="state.activeTab === 'guarantee'">
+                <h4 class="mb-4 fw-semibold text-dark">Satisfaction Guarantee</h4>
+                <div class="accordion accordion-flush">
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#gr1">What is your satisfaction guarantee policy?</button></h2>
+                    <div id="gr1" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">At Ten Wellness, your satisfaction is our top priority. If for any reason you are not satisfied with your experience during the session, you are welcome to end the treatment and leave without payment. We stand behind the quality of our services and are confident that you will leave feeling relaxed, refreshed, and valued.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#gr2">Do you offer a satisfaction guarantee?</button></h2>
+                    <div id="gr2" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes. If you are not satisfied during your session, you may leave without paying, that’s how confident we are in the quality of our services.</div></div>
+                  </div>
+                  <div class="accordion-item border-top py-4">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-medium text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#gr3">Do your products come with a guarantee?</button></h2>
+                    <div id="gr3" class="accordion-collapse collapse"><div class="accordion-body text-muted pt-3">Yes. All our products are guaranteed for 1 year. If a product is damaged or unsatisfactory, you may return it.</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CONTACT US SECTION – EXACTLY LIKE YOUR IMAGE -->
+              <div class="mt-7 pt-6 border-top">
+                <p class="text-muted mb-4 fs-5">
+                  Cannot find what you are looking for? We warmly invite you to contact us.
+                </p>
+                <a href="/contactus" class="btn btn-outline-dark rounded-pill px-5 py-3">
+                  Contact us <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WhatsApp Floating Button -->
+      <a href="https://api.whatsapp.com/send?phone=96522288282"
+         class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center"
+         style="width:60px;height:60px;bottom:1.5rem;right:1.5rem;z-index:1000;"
+         target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp" style="font-size:1.8rem;"></i>
+      </a>
+
+      <!-- MINIMAL CLEAN STYLES – 100% MATCH YOUR IMAGE -->
+      <style>
+        .list-group-item { transition: all 0.3s ease; border-radius: 0 !important; }
+        .list-group-item:hover, .list-group-item.active { background-color: #f9f6f2 !important; font-weight: 600; }
+        .list-group-item.active { border-left: 4px solid #d4b08c; }
+        .list-group-item i { color: #d4b08c; }
+
+        .accordion-button {
+          font-size: 1.1rem; padding: 1.25rem 0; background: transparent !important;
+          border: none; box-shadow: none !important; font-weight: 500;
+        }
+        .accordion-button:not(.collapsed) { color: #222 !important; font-weight: 600; }
+        .accordion-button::after {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        .accordion-item { border: none; border-top: 1px solid #eee !important; }
+        .accordion-body { line-height: 1.7; }
+      </style>
 
     </main>
-       <!-- START: WhatsApp Icon -->
-        <a href="https://api.whatsapp.com/send?phone=96522288282"
-           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; z-index: 1000;"
-           target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
-
-
-        <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
-
-        <!-- END: WhatsApp Icon -->
   </t>
 </templates>

@@ -1,380 +1,50 @@
-.ten-wellness-spa {
-  font-family: 'Lato', sans-serif;
-  color: #5a4a6d;
+/* Unified perfect cards for BOTH Him & Her pages */
+.treatment-card {
+  width: 100%;
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  background: #fff;
 }
 
-$orange    : #ff6a00;
-$black     : #000000;
-$white     : #ffffff;
-// $font-logo : 'Cairoli Classic', serif;
-$font-body : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-.treatmentHer {
-  background-color: #f7f7f7;
-
-  /* Top classic banner card style (white card on light bg) */
-  .spa-banner-classic {
-    min-height: 300px;
-    background: url('/insabhi_custom_website/static/src/image/HerBanner.jpg') center center/cover no-repeat;
-//     background-color: #000;
-    border-radius: 24px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-    padding: 3rem 1.5rem;
-    margin-bottom: 3rem;
-
-    .banner-title {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #fff;
-      margin-top:7rem;
-
-    }
-
-    .banner-description {
-      font-size: 1rem;
-      max-width: 900px;
-      color: #fff;
-      margin-top:2rem;
-    }
-  }
-
-  /* Section headings for sub‑blocks (Rituals, Skin, Grooming, Facial) */
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #473356;
-  }
-
-  .rituals-intro,
-  .skin-intro,
-  .grooming-intro,
-  .facial-intro {
-    text-align: center;
-    color: #5a4a6d;
-
-    .lead {
-      font-size: 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-  }
-
-  /* Give subtle separation between big groups */
-  .rituals-intro,
-  .skin-intro,
-  .grooming-intro,
-  .facial-intro {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Cards grid (shared by all sections) */
-  .treatment-cards-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-    margin-bottom: 60px;
-  }
-
-  .treatment-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-  }
-
-  .treatmentHer {
-
-  .treatment-cards-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-    margin-bottom: 60px;
-  }
-
-  /* === DESKTOP: 4 bada card per row === */
-  .treatment-card {
-    background: #fff;
-    border-radius: 24px;
-    overflow: hidden;
-    cursor: pointer;
-    flex: 0 1 calc(25% - 32px);   /* 4 columns */
-    max-width: 400px;             /* thoda bada card */
-    box-shadow: 0 16px 40px rgba(30,30,30,0.13);
-    display: flex;
-    flex-direction: column;
-    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
-
-    &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 22px 55px rgba(0,0,0,0.18);
-      filter: brightness(1.02);
-    }
-  }
-
-  .card-img {
-    width: 100%;
-    height: 360px;      /* image height bada, tenwellness jaisa */
-    object-fit: cover;
-  }
-
-  /* === Laptop / medium: 3 per row === */
-  @media (max-width: 1200px) {
-    .treatment-card {
-      flex: 0 1 calc(33.333% - 32px);
-      max-width: 380px;
-    }
-  }
-
-  /* === Tablet: 2 per row === */
-  @media (max-width: 992px) {
-    .treatment-card {
-      flex: 0 1 calc(50% - 28px);
-      max-width: 420px;
-    }
-    .card-img {
-      height: 280px;
-    }
-  }
-
-  /* === Mobile: 1 per row === */
-  @media (max-width: 576px) {
-    .treatment-card {
-      flex: 0 1 100%;
-      max-width: 100%;
-    }
-    .card-img {
-      height: 240px;
-    }
-  }
+.treatment-card:hover {
+  transform: translateY(-8px);
 }
 
+.treatment-card img.card-img {
+  width: 100% !important;
+  height: 360px !important;           /* ← fixed exact height */
+  object-fit: cover !important;       /* ← changed to cover so image fills nicely */
+  object-position: center center !important;
+  background-color: #f8f9fa;
+}
 
-  .card-footer {
-    background: #fff;
-    text-align: center;
-    padding: 24px 0 18px;
-  }
+.treatment-card .card-footer {
+  padding: 20px 15px 25px;
+  background: #fff;
+  border: none;
+  text-align: center;
+}
 
-  .book-now-short {
-    background: #fff;
-    border: 1.5px solid #dedede;
-    font-weight: 600;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
-    width: 220px;
-    height: 42px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-    cursor: pointer;
-    transition: background-color .2s ease, color .2s ease, transform .15s ease;
+.treatment-card .book-now-short {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
 
-    &:hover {
-      background-color: #73426c;
-      color: #fff;
-      transform: translateY(-1px);
-    }
-  }
-
-  .card-title {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #222;
-  }
-
-  /* Small spacing tweak between big blocks */
-  section.mb-5 + .rituals-intro,
-  section.mb-5 + .skin-intro,
-  section.mb-5 + .grooming-intro,
-  section.mb-5 + .facial-intro {
-    margin-top: 0.5rem;
-  }
-
-
-
-/* LIST PAGE STYLES (already tumne yahan kaafi likh liya hai) */
-
-/* DETAIL PAGE STYLES */
-.treatment-detail-page {
-  background-color: #000;
+.treatment-card .book-now-short:hover {
+  background: #000;
   color: #fff;
-
-  section.container-fluid {
-    max-width: 1200px;
-    margin-inline: auto;
-  }
-
-  h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-    margin-top:45%;
-  }
-
-  ul.list-unstyled li {
-    margin-bottom: 0.35rem;
-    font-size: 0.98rem;
-
-    strong {
-      font-weight: 600;
-      margin-right: 4px;
-    }
-  }
-
-  p {
-    font-size: 0.98rem;
-    line-height: 1.6;
-  }
-
-  .btn.btn-light {
-    font-weight: 600;
-    padding-inline: 2.5rem;
-
-  }
-
-  @media (max-width: 992px) {
-    section.container-fluid {
-      padding-inline: 1.25rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .col-lg-6:first-child {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 1.7rem;
-    }
-
-    p, ul.list-unstyled li {
-      font-size: 0.92rem;
-    }
-  }
 }
 
-
-  /* ---------- Responsive adjustments ---------- */
-
-  @media (max-width: 992px) {
-    .spa-banner-classic {
-      padding: 2.5rem 1.25rem;
-
-      .banner-title {
-        font-size: 2rem;
-      }
-      .banner-description {
-        font-size: 0.95rem;
-      }
-    }
-
-    .card-img {
-      height: 230px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .spa-banner-classic {
-      margin-bottom: 2.25rem;
-
-      .banner-title {
-        font-size: 1.7rem;
-      }
-      .banner-description {
-        font-size: 0.92rem;
-      }
-    }
-
-    .treatment-cards-row {
-      gap: 24px;
-      margin-bottom: 40px;
-    }
-
-    .treatment-card {
-      width: 100%;
-      max-width: 360px;
-    }
-
-    .section-title {
-      font-size: 1.6rem;
-    }
-
-    .rituals-intro .lead,
-    .skin-intro .lead,
-    .grooming-intro .lead,
-    .facial-intro .lead {
-      font-size: 0.95rem;
-      padding: 0 10px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .spa-banner-classic {
-      padding: 2rem 1rem;
-      border-radius: 18px;
-
-      .banner-title {
-        font-size: 1.4rem;
-      }
-      .banner-description {
-        font-size: 0.9rem;
-      }
-    }
-
-    .card-img {
-      height: 210px;
-    }
-
-    .book-now-short {
-      width: 200px;
-      height: 40px;
-      font-size: 0.98rem;
-    }
-
-    .card-title {
-      font-size: 0.98rem;
-    }
-
-    .section-title {
-      font-size: 1.4rem;
-    }
-  }
+.treatment-card .card-title {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
 }
-
-
-
-/* Set full product detail page background to white */
-body.tenStore_product_detail {
-    background-color: #ffffff !important;
-}
-
-/* Make the left image container background white */
-body.tenStore_product_detail section {
-    background-color: #ffffff !important;
-}
-
-/* Navbar black text fix */
-body.tenStore_product_detail .navbar a,
-body.tenStore_product_detail .navbar .navbar-brand,
-body.tenStore_product_detail .navbar .nav-link {
-  color: black !important;
-}
-
-/* Keep navbar transparent */
-body.tenStore_product_detail .navbar {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-
-/* Product detail page — TEN logo black */
-body.tenStore_product_detail .navbar-brand img {
-    filter: brightness(0) invert(0) !important;   /* make it pure black */
-}
-
-
