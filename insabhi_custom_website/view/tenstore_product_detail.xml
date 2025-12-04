@@ -16,55 +16,69 @@
             <!-- LEFT IMAGE -->
             <div class="col-lg-6 text-center">
               <t t-if="key == 'aromatherapy'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat4.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/prop7.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Perfume one 100ml"/>
               </t>
               <t t-if="key == 'ten shampoos'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat5.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Perfume Two 100ml"/>
               </t>
               <t t-if="key == 'bamboo plant'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat6.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Perfume Three 100ml"/>
               </t>
               <t t-if="key == 'ten two'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat14.png"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat14.png"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Wahaj Candle"/>
               </t>
               <t t-if="key == 'testimonials' or key == 'TenProteinShampoo'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat12.png"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat12.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Wooden Sage"/>
               </t>
               <t t-if="key == 'swedish'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat13.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat13.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Ten Protein Shampoo"/>
               </t>
               <t t-if="key == 'Ten'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat15.png"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat15.png"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Sukoon Candle"/>
               </t>
-              <t t-if="key == 'Ten one' or key == 'Ten four' or key == 'Ten six'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat9.png"
+              <t t-if="key == 'Ten one'">
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat9.webp"
+                     class="product-detail-image img-fluid rounded-3"
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Bamboo Plant"/>
+              </t>
+
+                <t t-if="key == 'Ten six'">
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat7.webp"
+                     class="product-detail-image img-fluid rounded-3"
+                     style="border: 1px solid rgba(0,0,0,0.2);"
+                     alt="Bamboo Plant"/>
+              </t>
+
+                <t t-if="key == 'Ten four'">
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat8.png"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Bamboo Plant"/>
               </t>
               <t t-if="key == 'Ten five'">
-                <img src="/insabhi_custom_website/static/src/image/tenStoreProducat11.png"
+                <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat11.webp"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Sansevieria (Snake Plant)"/>

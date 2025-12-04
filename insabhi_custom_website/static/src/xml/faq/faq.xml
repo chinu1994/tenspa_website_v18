@@ -5,16 +5,18 @@
 
       <!-- HERO BANNER – unchanged -->
       <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-          <img src="/insabhi_custom_website/static/src/image/faqbanner.webp" alt="Ten Wellness Hero" class="w-100 h-100 object-fit-cover d-block"/>
-        </div>
-        <div class="insabhi-hero-overlay-bottom">
-          <div class="insabhi-hero-content-bottom container">
-            <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
-            <h2 class="insabhi-hero-subtitle">Where Luxury Meets Well-being</h2>
-          </div>
-        </div>
-      </section>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/Images/faqbanner.webp"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                       <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
+                    <h2 class="insabhi-hero-subtitle">Where Luxury Meets Well-being</h2>
+                </div>
+            </div>
+        </section>
 
       <!-- CLEAN FAQ DESIGN – EXACTLY LIKE YOUR IMAGE -->
       <section class="py-5 py-lg-8 bg-light">
