@@ -1,3 +1,290 @@
+*{
+  box-sizing: border-box;
+}
+
+.gift-voucher-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gift-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: contain;
+}
+
+.gift-overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gift-statement h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gift-statement p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.gift-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.gift-option-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+   border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gift-now-btn {
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Simple Popup Styles */
+.simple-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  max-height: 400px;
+  position: relative;
+  text-align: center;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.popup-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 1001;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Question Styles */
+.popup-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  padding: 11px 29px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.yes-btn {
+  border: 1px solid transparent;
+   background-color: black;
+  color: white;
+}
+
+.yes-btn:hover {
+   background-color: white;
+  color: black;
+    border: 1px solid black;
+}
+
+.no-btn {
+    border: 1px solid transparent;
+    background-color: black;
+  color: white;
+}
+
+.no-btn:hover {
+    background-color: white;
+  color: black;
+  border: 1px solid black;
+
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 11px 29px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.submit-btn:hover {
+   background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: .5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .gift-statement h1 {
+    font-size: 2rem;
+  }
+
+  .gift-statement p {
+    font-size: 1.2rem;
+  }
+
+  .gift-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gift-option-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .gift-now-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+  }
+
+  .popup-content {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    max-height: 400px;
+    margin: 10% auto;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .option-btn {
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) { /* Sirf desktop/large screens ke liye */
 
 
@@ -9,43 +296,4 @@
   .insabhi-bottom-menu .dropdown:hover > .dropdown-toggle {
     color: var(--some-hover-color); /* Ya koi aur style jo aap chahte hain */
   }
-}
-
-// viedo responvive
-/* --- Default (Small Devices: Phones, under ~768px) --- */
-/* Small devices par height aur width fix karni hai */
-.reel-video-wrapper {
-    /* Optional: Small devices par width fix kar sakte hain */
-    max-width: 300px; /* Example value, aap apne hisaab se set karein */
-    width: 100%;
-    /* Height fix karne ke liye */
-    height: 350px; /* Example value, aap apne hisaab se set karein */
-    margin: 0 auto; /* Center karne ke liye */
-}
-
-.reel-video {
-    /* Fixed height ko maintain karne ke liye */
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Taki video cut na ho aur poora fill kare */
-}
-
-/* --- Large Devices (Laptops, Tablets, >= 992px) --- */
-/* Large devices par full responsive hona chahiye (jaise abhi hai) */
-@media (min-width: 992px) {
-    .reel-video-wrapper {
-        /* Large devices par fixed height hat jayegi ya kam ho jayegi */
-        max-width: none;
-        height: auto; /* Height auto ho jayegi */
-        margin: 0;
-      background-color: transparent;
-    }
-
-    .reel-video {
-        /* Original max-height agar chahiye toh yahan set kar sakte hain */
-        max-height: 500px; /* Ya jo bhi aapki default value thi */
-        width: 100%;
-        height: auto;
-       background-color: transparent;
-    }
 }
