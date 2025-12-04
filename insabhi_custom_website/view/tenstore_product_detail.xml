@@ -210,7 +210,7 @@
               </t>
 
               <div class="d-flex gap-3 mt-4">
-                <button class="btn btn-dark">Add to Cart</button>
+                <button class="btn btn-dark" id="giftNowBtn" type="button">Add to Cart</button>
                 <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
                    class="btn btn-outline-secondary" target="_blank">Book Now</a>
               </div>
@@ -470,6 +470,48 @@
           }
         </style>
 
+          <!-- First Time Purchase Question Popup -->
+            <div id="simplePopup" class="simple-popup" style="display: none;">
+                <div class="popup-content">
+                    <span class="popup-close"><i class="bi bi-x-lg"></i></span>
+                    <h2>Gift Voucher</h2>
+                    <p>Is this your first time purchasing a gift from Ten Spa?</p>
+                    <div class="button-group">
+                        <button id="yesBtn" class="option-btn yes-btn">Yes</button>
+                        <button id="noBtn" class="option-btn no-btn">No</button>
+                    </div>
+
+                    <form id="giftForm" style="display: none;">
+                             <div class="form-group">
+                                <label for="customerFullName">Full Name:</label>
+                                <input type="tel" id="customerFullName" name="customerFullName" required="required"/>
+
+                         </div>
+                        <div class="form-group">
+                                <label for="customerPhone">Phone Number:</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required="required"/>
+                        </div>
+                        <div class="form-group">
+                             <label for="customerAddress">Address:</label>
+                            <textarea id="customerAddress" name="customerAddress" rows="3" required="required"></textarea>
+                         </div>
+                        <div class="form-group">
+                            <label for="customerBirthdate">Birthdate:</label>
+                            <input type="date" id="customerBirthdate" name="customerBirthdate" required="required"/>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                </div>
+            </div>
+
+<!--          <script>-->
+<!--               handleGiftNowClick = (event) => {-->
+<!--        event.preventDefault();-->
+<!--        // Show first time purchase question popup-->
+<!--        this.showFirstTimeQuestionPopup("Gift Voucher");-->
+
+<!--    }-->
+<!--          </script>-->
       </t>
     </template>
 

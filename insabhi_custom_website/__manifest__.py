@@ -50,14 +50,17 @@
     ],
     'assets': {
         'web.assets_frontend': [
+            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css',
+            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css',
+
             'insabhi_custom_website/static/src/xml/homepage/homepage.xml',
             'insabhi_custom_website/static/src/xml/aboutus/aboutus.xml',
             'insabhi_custom_website/static/src/xml/careers/careers.xml',
             'insabhi_custom_website/static/src/xml/contactus/contactus.xml',
             'insabhi_custom_website/static/src/xml/tenStore/tenStore.xml',
              # 'insabhi_custom_website/static/src/xml/serviceSelecting/serviceSelecting.xml',
-            # 'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
+            'insabhi_custom_website/static/src/xml/giftVoucher/giftvoucher.xml',
             # 'insabhi_custom_website/static/src/xml/addOns/addOns.xml',
             # 'insabhi_custom_website/static/src/xml/giftType/giftType.xml',
             'insabhi_custom_website/static/src/xml/treatment/treatment.xml',
