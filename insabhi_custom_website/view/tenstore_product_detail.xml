@@ -16,7 +16,7 @@
             <!-- LEFT IMAGE -->
             <div class="col-lg-6 text-center">
               <t t-if="key == 'aromatherapy'">
-                <img src="/insabhi_custom_website/static/src/Images/pro7.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/prop7.jpg"
                      class="product-detail-image img-fluid rounded-3"
                      style="border: 1px solid rgba(0,0,0,0.2);"
                      alt="Perfume one 100ml"/>
