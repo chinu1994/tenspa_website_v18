@@ -245,10 +245,10 @@
                 <h3 class="fw-bold mb-4" style="color:#d4b08c;">Ten Wellness perfumes</h3>
 
                 <!-- 4 Perfume Cards -->
-                <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
                     <div class="col">
                         <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
-                            <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 2, 100 ML</p>
                             <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
@@ -256,7 +256,7 @@
                     </div>
                     <div class="col">
                         <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
-                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 1, 100 ML</p>
                             <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
@@ -264,7 +264,7 @@
                     </div>
                     <div class="col">
                         <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
-                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 3, 100 ML</p>
                             <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
@@ -272,7 +272,7 @@
                     </div>
                     <div class="col">
                         <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
-                            <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
                             <h5>11 KWD</h5>
                             <p>TEN BOTTLE</p>
                             <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
