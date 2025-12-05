@@ -4,12 +4,10 @@
 <t t-name="insabhi_custom_website.ServiceSelecting" owl="1">
     <div class="serviceSelecting container py-5">
 
-        <!-- HERO - YOUR ORIGINAL -->
+        <!-- HERO -->
         <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg"
-                     alt="Ten Wellness Hero"
-                     class="w-100 h-100 object-fit-cover d-block"/>
+                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg" alt="Ten Wellness Hero" class="w-100 h-100 object-fit-cover d-block"/>
             </div>
             <div class="insabhi-hero-overlay-bottom">
                 <div class="insabhi-hero-content-bottom container">
@@ -19,13 +17,13 @@
             </div>
         </section>
 
-        <!-- TITLE -->
+        <!-- MAIN TITLE -->
         <div class="text-center my-5 pt-5">
             <h1 class="display-5 fw-bold" style="color:#d4b08c;">Select a Category to Gift</h1>
             <p class="lead text-muted">Choose the perfect wellness experience</p>
         </div>
 
-        <!-- 5 CATEGORY CARDS -->
+        <!-- CATEGORY CARDS -->
         <div class="row row-cols-2 row-cols-md-5 g-4 mb-5 justify-content-center">
             <t t-foreach="categories" t-as="cat" t-key="cat.id">
                 <div class="col">
@@ -51,8 +49,8 @@
             </t>
         </div>
 
-        <!-- SERVICES SECTION (only shows when NOT in gift card step) -->
-        <t t-if="state.selectedCategory &amp;&amp; !state.showGiftCards">
+        <!-- SERVICES -->
+        <t t-if="state.selectedCategory and !state.showGiftCards and !state.showMessageForm">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">
                     <t t-esc="categories.find(c => c.id === state.selectedCategory)?.name"/> Services
@@ -62,39 +60,26 @@
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <t t-foreach="getCurrentServices()" t-as="service" t-key="service_index">
-                    <div t-att-class="state.selectedService &amp;&amp; state.selectedService.name !== service.name ? 'd-none' : 'col'">
-
+                    <div t-att-class="state.selectedService and state.selectedService.name !== service.name ? 'd-none' : 'col'">
                         <div class="card h-100 border-0 shadow hover-effect overflow-hidden cursor-pointer"
                              t-on-click="() => selectService(service)">
                             <img t-att-src="service.img" class="card-img-top" style="height: 500px; object-fit: cover;"/>
                             <div class="card-body d-flex flex-column p-4">
-
                                 <h5 class="card-title fw-bold text-center mb-2"><t t-esc="service.name"/></h5>
-
-                                <t t-if="state.selectedService &amp;&amp; state.selectedService.name === service.name">
+                                <t t-if="state.selectedService and state.selectedService.name === service.name">
                                     <div class="duration-inline my-4">
                                         <div class="d-flex gap-3 justify-content-center flex-wrap">
                                             <button t-on-click.stop="() => selectDuration(60, 29.5)"
-                                                    t-att-class="state.selectedDuration === 60 ? 'duration-btn active' : 'duration-btn'">
-                                                1 Hour
-                                            </button>
+                                                    t-att-class="state.selectedDuration === 60 ? 'duration-btn active' : 'duration-btn'">1 Hour</button>
                                             <button t-on-click.stop="() => selectDuration(90, 42.0)"
-                                                    t-att-class="state.selectedDuration === 90 ? 'duration-btn active' : 'duration-btn'">
-                                                1.5 Hours
-                                            </button>
+                                                    t-att-class="state.selectedDuration === 90 ? 'duration-btn active' : 'duration-btn'">1.5 Hours</button>
                                             <button t-on-click.stop="() => selectDuration(120, 52.0)"
-                                                    t-att-class="state.selectedDuration === 120 ? 'duration-btn active' : 'duration-btn'">
-                                                2 Hours
-                                            </button>
+                                                    t-att-class="state.selectedDuration === 120 ? 'duration-btn active' : 'duration-btn'">2 Hours</button>
                                         </div>
                                     </div>
                                 </t>
-
                                 <p class="card-text text-muted small flex-grow-1 text-center"><t t-esc="service.desc || ''"/></p>
-
-                                <button class="couture-btn empress mt-auto w-100 py-3 fw-bold">
-                                    Select &amp; Gift
-                                </button>
+                                <button class="couture-btn empress mt-auto w-100 py-3 fw-bold">Select &amp; Gift</button>
                             </div>
                         </div>
                     </div>
@@ -102,64 +87,55 @@
             </div>
         </t>
 
-        <!-- SUMMARY CARD (only shows before clicking ADD TO CART) -->
-        <t t-if="state.selectedService &amp;&amp; state.selectedDuration &amp;&amp; !state.showGiftCards">
+        <!-- BLACK SUMMARY CARD -->
+        <t t-if="state.selectedService and state.selectedDuration and !state.showGiftCards and !state.showMessageForm">
             <div class="d-flex justify-content-center mt-5">
                 <div class="service-summary-card">
-                    <img t-att-src="state.selectedService.img"/>
-                    <h3 class="fw-bold mt-4 text-white text-center">
-                        <t t-esc="state.selectedService.name"/>
-                    </h3>
-                    <div class="price-display text-center mt-3">
-                        KWD <span t-esc="state.selectedPrice"/>
-                    </div>
+                    <img t-att-src="state.selectedService.img" class="rounded-4"/>
+                    <h3 class="fw-bold mt-4 text-white text-center"><t t-esc="state.selectedService.name"/></h3>
+                    <div class="price-display text-center mt-3">KWD <span t-esc="state.selectedPrice"/></div>
                     <p class="text-light mt-4 opacity-75 text-center">
-                        A light-pressure massage that relaxes the nerves,
-                        calms the body, reduces stress,
-                        and promotes circulation.
+                        A light-pressure massage that relaxes the nerves,<br/>
+                        calms the body, reduces stress, and promotes circulation.
                     </p>
-                    <button class="add-to-cart-btn mt-4" t-on-click="proceedToGiftCards">
-                        ADD TO CART
-                    </button>
+                    <button class="add-to-cart-btn mt-4" t-on-click="proceedToGiftCards">ADD TO CART</button>
                 </div>
             </div>
         </t>
 
-        <!-- NEW: 3 PHYSICAL GIFT CARDS (White background, i icon) -->
-        <t t-if="state.showGiftCards">
+        <!-- GIFT CARDS -->
+        <t t-if="state.showGiftCards and !state.showMessageForm">
             <div class="text-center my-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">Choose Your Gift Type</h2>
                 <p class="lead text-muted">Select the perfect physical gift package</p>
             </div>
-
             <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
-                <!-- Diamond -->
+                <!-- Diamond, Platinum, Gold cards remain unchanged -->
                 <div class="col">
-                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer">
+                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer"
+                         t-on-click="() => selectGiftType('diamond')">
                         <img src="/insabhi_custom_website/static/src/Images/diamond.jpg" class="w-100" style="height:580px; object-fit:cover;"/>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center bg-white">
                             <h4 class="fw-bold" style="color:#d4b08c;">Diamond Gift Voucher:</h4>
                             <p class="fw-bold fs-5">(Bamboo Plant + Luxury Bag + Invitation Card Box)<br/>Price: 26.5 KD including delivery</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Platinum -->
                 <div class="col">
-                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer">
+                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer"
+                         t-on-click="() => selectGiftType('platinum')">
                         <img src="/insabhi_custom_website/static/src/Images/platinum.jpg" class="w-100" style="height:580px; object-fit:cover;"/>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center bg-white">
                             <h4 class="fw-bold" style="color:#d4b08c;">Platinum Gift Voucher:</h4>
                             <p class="fw-bold fs-5">Luxury Gift Box + Invitation Card<br/>Price: 14.5 KD including delivery</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Gold -->
                 <div class="col">
-                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer">
+                    <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer"
+                         t-on-click="() => selectGiftType('gold')">
                         <img src="/insabhi_custom_website/static/src/Images/gold.png" class="w-100" style="height:580px; object-fit:cover;"/>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center bg-white">
                             <h4 class="fw-bold" style="color:#d4b08c;">Golden Gift Voucher</h4>
                             <p class="fw-bold fs-5">Digital invitation<br/>Price: 1.5 KD (sent via WhatsApp)</p>
                         </div>
@@ -168,7 +144,83 @@
             </div>
         </t>
 
-        <!-- EMPTY STATE -->
+        <!-- PERSONALIZATION FORM + AUTOMATED MESSAGE DROPDOWN -->
+        <t t-if="state.showMessageForm">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background:white; border: 4px solid #d4b08c;">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-5">
+                                    <div class="text-center mb-5">
+                                        <img src="/insabhi_custom_website/static/src/Images/logo1.0.png"
+                                             alt="Ten"
+                                             style="height: 50px; display:block; margin-left:auto; margin-right:auto;" />
+                                    </div>
+
+                                </div>
+                                <h2 class="text-center fw-bold mb-5" style="color:#d4b08c;">Personalize Your Gift</h2>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold text-danger">* TO:</label>
+                                    <input type="text" class="form-control rounded-pill py-3 px-4 fs-5" placeholder="Recipient's name" t-model="state.recipientName"/>
+                                </div>
+
+                                <!-- MESSAGE FIELD WITH AUTOMATED DROPDOWN -->
+                                <div class="mb-4 position-relative">
+                                    <label class="form-label fw-bold text-danger">* WRITE A MESSAGE</label>
+
+                                    <div class="position-relative">
+                                        <textarea class="form-control rounded-3 py-4 px-4" rows="6"
+                                                  placeholder="Write your heartfelt message here..."
+                                                  maxlength="180"
+                                                  t-model="state.message"
+                                                  style="resize:none; background:#f8f9fa; font-size:1.1rem; pr-5;"></textarea>
+
+                                        <!-- Automated Message Dropdown Trigger -->
+                                        <div class="position-absolute end-0 bottom-0 mb-3 me-3">
+                                            <small class="text-muted me-2">Automated message</small>
+                                            <select class="form-select form-select-sm d-inline-block" style="width: auto;" t-on-change="applyAutoMessage">
+                                                <option value="">Select...</option>
+                                                <option value="father">For Father</option>
+                                                <option value="mother">For Mother</option>
+                                                <option value="husband">For Husband</option>
+                                                <option value="wife">For Wife</option>
+                                                <option value="friend">For Friend</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-end text-muted small mt-2">
+                                        <span t-esc="180 - (state.message ? state.message.length : 0)"/> characters left
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">FROM:</label>
+                                    <input type="text" class="form-control rounded-pill py-3 px-4 fs-5" placeholder="Your name (optional)" t-model="state.senderName"/>
+                                </div>
+
+                                <t t-if="state.selectedGiftType === 'gold'">
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold">PASTE A LINK TO A SONG (Optional)</label>
+                                        <input type="url" class="form-control rounded-pill py-3 px-4" placeholder="https://youtube.com/..." t-model="state.songLink"/>
+                                    </div>
+                                </t>
+
+                                <div class="d-grid mt-5">
+                                    <button class="btn btn-lg rounded-pill py-4 fw-bold text-white fs-4" style="background:#d4b08c;" t-on-click="completeGift">
+                                        COMPLETE GIFT VOUCHER
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+
+        <!-- EMPTY STATE & WHATSAPP -->
         <t t-if="!state.selectedCategory">
             <div class="text-center py-5 my-5">
                 <i class="fa fa-hand-point-up fa-4x text-muted mb-4"></i>
@@ -176,12 +228,9 @@
             </div>
         </t>
 
-        <!-- WHATSAPP -->
-        <a href="https://api.whatsapp.com/send?phone=96522288282"
-           class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; bottom: 1.5rem; right: 1.5rem; z-index: 1000;"
-           target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+        <a href="https://api.whatsapp.com/send?phone=96522288282" class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
+           style="width:60px;height:60px;bottom:1.5rem;right:1.5rem;z-index:1000;" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp" style="font-size:1.8rem;"></i>
         </a>
     </div>
 
@@ -191,42 +240,18 @@
         .category-card:hover img { transform: scale(1.12); transition: 0.6s; }
         .text-shadow { text-shadow: 2px 2px 10px rgba(0,0,0,0.9); }
 
-        .duration-inline { margin: 0.5rem 0 !important; }
-        .duration-btn {
-            background: transparent; border: 2px solid #999; color: #555;
-            padding: 10px 28px; border-radius: 50px; font-weight: 600;
-            min-width: 110px; transition: all 0.3s ease;
-        }
-        .duration-btn.active, .duration-btn:hover {
-            background: #d4b08c !important; color: white !important; border-color: #d4b08c !important;
-        }
+        .duration-btn { background: transparent; border: 2px solid #999; color: #555; padding: 10px 28px; border-radius: 50px; font-weight: 600; min-width: 110px; transition: all 0.3s ease; }
+        .duration-btn.active, .duration-btn:hover { background: #d4b08c !important; color: white !important; border-color: #d4b08c !important; }
 
-        .service-summary-card {
-            background: #000; border-radius: 20px; padding: 1.8rem; color: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4); width: 100%; max-width: 420px; margin-top: 30px;
-        }
-        .service-summary-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 16px; }
-        .service-summary-card .price-display { font-size: 2.4rem; font-weight: 800; color: #d4b08c; }
-        .service-summary-card .add-to-cart-btn {
-            background: transparent; border: 2px solid #d4b08c; color: white;
-            padding: 16px 40px; border-radius: 50px; font-size: 1.2rem; width: 100%; font-weight: 700; transition: 0.3s;
-        }
-        .service-summary-card .add-to-cart-btn:hover { background: #d4b08c; transform: scale(1.05); }
+        .service-summary-card { background: #000; border-radius: 24px; padding: 2rem; color: white; max-width: 420px; margin: 40px auto; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .service-summary-card img { width: 100%; height: 280px; object-fit: cover; border-radius: 20px; }
+        .price-display { font-size: 2.8rem; font-weight: 800; color: #d4b08c; margin: 1rem 0; }
+        .add-to-cart-btn { background: transparent; border: 2px solid white; color: white; padding: 14px 40px; border-radius: 8px; font-size: 1.1rem; font-weight: 700; transition: 0.3s; width: 220px; margin: 20px auto 0; display: block; }
+        .add-to-cart-btn:hover { background: white; color: black; }
 
-        /* Gift Cards - White Design */
-        .gift-card-white { background: white; transition: all 0.3s; }
-        .gift-card-white:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important; }
-        .info-icon {
-            position: absolute; top: 15px; right: 15px; width: 30px; height: 30px;
-            background: #d4b08c; color: white; border-radius: 50%; font-size: 18px;
-            display: flex; align-items: center; justify-content: center; font-weight: bold;
-        }
-        .info-tooltip {
-            display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
-            background: rgba(0,0,0,0.9); color: white; padding: 12px; border-radius: 12px;
-            font-size: 14px; width: 280px; text-align: center; z-index: 10;
-        }
-        .gift-card-white:hover .info-tooltip { display: block; }
+        .gift-card-white:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .form-control { border: 2px solid #e9ecef; background: #f8f9fa; }
+        .form-control:focus { border-color: #d4b08c; box-shadow: 0 0 0 0.25rem rgba(212,176,140,0.25); }
     </style>
 </t>
 </templates>
