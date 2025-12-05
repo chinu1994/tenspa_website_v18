@@ -50,7 +50,7 @@
         </div>
 
         <!-- SERVICES -->
-        <t t-if="state.selectedCategory and !state.showGiftCards and !state.showMessageForm and !state.showAddons">
+        <t t-if="state.selectedCategory and !state.showGiftCards and !state.showMessageForm and !state.showAddons and !state.showDeliveryForm and !state.showFinalOrder">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">
                     <t t-esc="categories.find(c => c.id === state.selectedCategory)?.name"/> Services
@@ -88,7 +88,7 @@
         </t>
 
         <!-- BLACK SUMMARY CARD -->
-        <t t-if="state.selectedService and state.selectedDuration and !state.showGiftCards and !state.showMessageForm and !state.showAddons">
+        <t t-if="state.selectedService and state.selectedDuration and !state.showGiftCards and !state.showMessageForm and !state.showAddons and !state.showDeliveryForm and !state.showFinalOrder">
             <div class="d-flex justify-content-center mt-5">
                 <div class="service-summary-card">
                     <img t-att-src="state.selectedService.img" class="rounded-4"/>
@@ -104,13 +104,12 @@
         </t>
 
         <!-- GIFT CARDS -->
-        <t t-if="state.showGiftCards and !state.showMessageForm and !state.showAddons">
+        <t t-if="state.showGiftCards and !state.showMessageForm and !state.showAddons and !state.showDeliveryForm and !state.showFinalOrder">
             <div class="text-center my-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">Choose Your Gift Type</h2>
                 <p class="lead text-muted">Select the perfect physical gift package</p>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
-                <!-- Diamond, Platinum, Gold — unchanged -->
                 <div class="col">
                     <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer"
                          t-on-click="() => selectGiftType('diamond')">
@@ -145,7 +144,7 @@
         </t>
 
         <!-- PERSONALIZATION FORM -->
-        <t t-if="state.showMessageForm and !state.showAddons">
+        <t t-if="state.showMessageForm and !state.showAddons and !state.showDeliveryForm and !state.showFinalOrder">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
@@ -206,12 +205,12 @@
             </div>
         </t>
 
-        <!-- ADD-ONS PAGE – ONLY VIDEO + TEXT + 4 PERFUMES -->
-        <t t-if="state.showAddons">
+        <!-- ADD-ONS PAGE -->
+        <t t-if="state.showAddons and !state.showDeliveryForm and !state.showFinalOrder">
             <div class="container py-5 text-center">
 
-                <!-- Prestige Drive Video (Reels Size) -->
-               <div class="row justify-content-center mb-5">
+                <!-- Prestige Drive Video -->
+                <div class="row justify-content-center mb-5">
                     <div class="col-lg-5 col-md-7 col-10 mx-auto">
                         <div >
                             <video
@@ -230,14 +229,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- Prestige Drive Text (Only English) -->
+
+                <!-- Prestige Drive Text + ADD Button -->
                 <div class="mb-5">
                     <h3 class="fw-bold" style="color:#d4b08c;">Prestige drive service:</h3>
                     <p class="lead text-muted">
                         a premium transportation service offering round-trip rides<br/>
                         to and from your home using the latest luxury cars<br/>
-                        <strong>Price: 24 kwd / Price with tabby: 26 kwd</strong>
+                        <strong>Price: 24 kwd</strong>
                     </p>
+                    <button class="btn btn-dark rounded-pill px-5" t-on-click="showDelivery">ADD</button>
                 </div>
 
                 <!-- Perfume Title -->
@@ -250,7 +251,7 @@
                             <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 2, 100 ML</p>
-                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                            <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
                         </div>
                     </div>
                     <div class="col">
@@ -258,7 +259,7 @@
                             <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 1, 100 ML</p>
-                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                            <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
                         </div>
                     </div>
                     <div class="col">
@@ -266,7 +267,7 @@
                             <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
                             <h5>29.7 KWD</h5>
                             <p>PERFUME 3, 100 ML</p>
-                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                            <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
                         </div>
                     </div>
                     <div class="col">
@@ -274,11 +275,223 @@
                             <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
                             <h5>11 KWD</h5>
                             <p>TEN BOTTLE</p>
-                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                            <button class="btn btn-light rounded-pill px-5" t-on-click="showDelivery">ADD</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </t>
 
+        <!-- DELIVERY FORM + DATE/TIME PICKER -->
+        <t t-if="state.showDeliveryForm and !state.showFinalOrder">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+
+                        <!-- SHIPPING METHOD CARD -->
+                        <t t-if="!state.showDateTimePicker">
+                            <div class="bg-black text-white rounded-4 shadow-lg p-5" style="border-radius: 24px;">
+                                <div class="text-center mb-4">
+                                    <h4 class="mb-3">Shipping method</h4>
+                                    <button class="btn btn-outline-light rounded-pill px-5 py-2 me-3">Standard</button>
+                                    <button class="btn btn-success rounded-pill px-4 py-2">FREE</button>
+                                </div>
+
+                                <div class="bg-white text-dark rounded-4 p-4 mb-5">
+                                    <div class="form-check form-switch d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h6 class="mb-1">Ask the recipient for the address</h6>
+                                            <small class="text-muted">We will collect the address from the recipient. Delivery time may be impacted if recipient is unreachable</small>
+                                        </div>
+                                        <input class="form-check-input ms-4" type="checkbox" style="width:60px; height:32px;"/>
+                                    </div>
+                                </div>
+
+                                <div class="text-center text-muted small mb-4">
+                                    IF THIS OPTION IS TURNED ON WILL ASK FOR THE NEXT THING
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold text-uppercase">Recipient Name</label>
+                                    <input type="text" class="form-control bg-dark text-white border-white rounded-pill py-3" placeholder=""/>
+                                </div>
+
+                                <div class="mb-5">
+                                    <label class="form-label fw-bold text-uppercase">Recipient Phone</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-dark text-white border-white">
+                                            <img src="/insabhi_custom_website/static/src/Images/kw-flag.png" width="20" class="me-2"/> +965
+                                        </span>
+                                        <input type="tel" class="form-control bg-dark text-white border-white rounded-end-pill py-3" placeholder=""/>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <h5 class="mb-4">
+                                        <i class="fa fa-truck me-2"></i> DELIVERY TIME
+                                    </h5>
+                                    <div class="d-inline-block">
+                                        <button class="btn btn-outline-light rounded-pill px-5 py-3 me-3">TODAY</button>
+                                        <button class="btn btn-outline-light rounded-pill px-4 py-3 me-2" style="margin-top:7px">12:00 PM - 9:00PM</button>
+                                        <button class="btn btn-outline-light rounded-pill px-5 py-3" style="margin-top:7px" t-on-click="openDateTimePicker">
+                                            <i class="fa fa-calendar me-2"></i> CHOOSE ANOTHER DAY AND TIME SLOT
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+
+                        <!-- DATE & TIME PICKER POPUP -->
+                        <t t-if="state.showDateTimePicker">
+                            <div class="bg-white rounded-4 shadow-lg p-5" style="max-width: 500px; margin: 0 auto;">
+                                <h4 class="text-center mb-4 fw-bold text-dark">PICKING DATE AND DELIVERY TIME</h4>
+                                <div class="text-start text-muted small mb-4">Another time</div>
+
+                                <div class="mb-4">
+                                    <label class="form-label text-danger">Select a delivery date *</label>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-primary w-100 rounded-3 py-3 text-center border-2">
+                                                <div class="fw-bold">Today</div>
+                                                <div class="small">13 August</div>
+                                            </button>
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-secondary w-100 rounded-3 py-3 text-center">
+                                                <div class="fw-bold">Tomorrow</div>
+                                                <div class="small">14 August</div>
+                                            </button>
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-secondary w-100 rounded-3 py-3 text-center d-flex align-items-center justify-content-center gap-2">
+                                                <i class="fa fa-calendar"></i>
+                                                <span>Pick a date</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-5">
+                                    <label class="form-label text-danger">Select a delivery time *</label>
+                                    <div class="row g-3">
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">9:00am - 11:00am</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">11:00am - 1:00pm</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">1:00pm - 3:00pm</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">3:00pm - 5:00pm</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">5:00pm - 7:00pm</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">7:00pm - 9:00pm</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">9:00am - 12:00am</button></div>
+                                        <div class="col-6"><button class="btn btn-outline-secondary w-100 rounded-3 py-3">90 Mins Express</button></div>
+                                        <div class="col-12"><button class="btn btn-outline-danger w-100 rounded-3 py-3 text-danger">Not Available</button></div>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <button class="btn btn-outline-secondary rounded-pill px-4 py-2 me-2" t-on-click="closeDateTimePicker">CANCEL</button>
+                                    <button class="btn btn-info text-white rounded-pill px-4 py-2" t-on-click="confirmDateTime">CONFIRM</button>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </t>
+
+        <!-- FINAL ORDER SUMMARY – EXACTLY LIKE YOUR IMAGE -->
+        <t t-if="state.showFinalOrder">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row g-4">
+                            <!-- Left Side -->
+                            <div class="col-md-6">
+                                <div class="bg-light rounded-4 p-5 text-center mb-4">
+                                    <h4 class="text-uppercase text-muted mb-4">YOUSEF</h4>
+                                    <div class="bg-secondary text-white rounded-4 py-5 px-4 mb-4">
+                                        <h5 class="mb-0">ENJOY YOUR TREATMENT,<br/>YOU DESERVE IT.</h5>
+                                    </div>
+                                    <h4 class="text-uppercase text-muted">AHMED</h4>
+                                </div>
+
+                                <div class="bg-dark text-white rounded-4 p-4">
+                                    <small class="text-muted d-block mb-3">Title on email</small>
+                                    <p class="mb-4">Email me with news and offers</p>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small text-uppercase">Delivery</label>
+                                        <select class="form-select bg-dark text-white border-secondary"><option>Kuwait</option></select>
+                                    </div>
+
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-6"><input type="text" class="form-control bg-dark text-white border-white" placeholder="First name"/></div>
+                                        <div class="col-6"><input type="text" class="form-control bg-dark text-white border-whiter" placeholder="Last name"/></div>
+                                    </div>
+
+                                    <input type="text" class="form-control bg-dark text-white border-white mb-2" placeholder="Address - Area, Block, St, Bldg, Floor, Apartment"/>
+                                    <input type="text" class="form-control bg-dark text-white border-white mb-2" placeholder="Enter an address"/>
+                                    <input type="text" class="form-control bg-dark text-white border-white mb-2" placeholder="Postal code (optional)"/>
+                                    <input type="text" class="form-control bg-dark text-white border-white mb-3" placeholder="City"/>
+
+                                    <select class="form-select bg-dark text-white border-white mb-3"><option>Al Farwaniyah</option></select>
+
+                                    <input type="text" class="form-control bg-dark text-white border-white mb-4" placeholder="Phone"/>
+
+                                    <div class="form-check text-white small mb-3">
+                                        <input class="form-check-input" type="checkbox" id="saveInfo"/>
+                                        <label class="form-check-label" for="saveInfo">Save this information for next time</label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between text-white small">
+                                        <span>Shipping method</span>
+                                        <span>Standard <strong>FREE</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side -->
+                            <div class="col-md-6">
+                                <div class="bg-dark text-white rounded-4 p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-secondary rounded-circle me-3">1</span>
+                                        <div class="flex-grow-1"><strong>Snake Plant</strong></div>
+                                        <strong>KWD 9.000</strong>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <span class="badge bg-secondary rounded-circle me-3">2</span>
+                                        <div class="flex-grow-1"><strong>Ten Bottle Matt Olive</strong></div>
+                                        <strong>KWD 23.800</strong>
+                                    </div>
+
+                                    <div class="border-top border-secondary pt-3">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-secondary text-white border-0" placeholder="Discount code"/>
+                                            <button class="btn btn-outline-light">Apply</button>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Subtotal • 3 items</span>
+                                            <strong>KWD 32.800</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Shipping</span>
+                                            <strong>FREE</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between fs-4 fw-bold">
+                                            <span>Total</span>
+                                            <strong>KWD 32.800</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid mt-4">
+                                        <button class="btn btn-success btn-lg rounded-pill py-4 fw-bold">
+                                            PLACE ORDER
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </t>
 
@@ -297,21 +510,17 @@
         </a>
     </div>
 
-    <!-- STYLES (unchanged) -->
     <style>
         .hover-effect:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.22) !important; }
         .category-card:hover img { transform: scale(1.12); transition: 0.6s; }
         .text-shadow { text-shadow: 2px 2px 10px rgba(0,0,0,0.9); }
-
         .duration-btn { background: transparent; border: 2px solid #999; color: #555; padding: 10px 28px; border-radius: 50px; font-weight: 600; min-width: 110px; transition: all 0.3s ease; }
         .duration-btn.active, .duration-btn:hover { background: #d4b08c !important; color: white !important; border-color: #d4b08c !important; }
-
         .service-summary-card { background: #000; border-radius: 24px; padding: 2rem; color: white; max-width: 420px; margin: 40px auto; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
         .service-summary-card img { width: 100%; height: 280px; object-fit: cover; border-radius: 20px; }
         .price-display { font-size: 2.8rem; font-weight: 800; color: #d4b08c; margin: 1rem 0; }
         .add-to-cart-btn { background: transparent; border: 2px solid white; color: white; padding: 14px 40px; border-radius: 8px; font-size: 1.1rem; font-weight: 700; transition: 0.3s; width: 220px; margin: 20px auto 0; display: block; }
         .add-to-cart-btn:hover { background: white; color: black; }
-
         .gift-card-white:hover { transform: translateY(-15px); box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
         .form-control { border: 2px solid #e9ecef; background: #f8f9fa; }
         .form-control:focus { border-color: #d4b08c; box-shadow: 0 0 0 0.25rem rgba(212,176,140,0.25); }

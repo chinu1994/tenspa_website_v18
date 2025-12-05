@@ -14,7 +14,10 @@ export class ServiceSelecting extends Component {
             selectedPrice: null,
             showGiftCards: false,
             showMessageForm: false,
-            showAddons: false,           // ← NEW: Controls Add-ons page
+            showAddons: false,
+            showDeliveryForm: false,
+            showDateTimePicker: false,
+            showFinalOrder: false,           // ← NEW: Final order summary
             selectedGiftType: null,
             recipientName: '',
             message: '',
@@ -64,7 +67,7 @@ export class ServiceSelecting extends Component {
             ],
         };
 
-        // AUTOMATED MESSAGES (English)
+        // AUTOMATED MESSAGES
         this.autoMessages = {
             father: `Take a well-deserved break and enjoy a day just for you. Relax, recharge, and let yourself be pampered, you’ve earned every moment of peace and comfort.`,
             mother: `A day just for you to relax, recharge, and feel cared for. You deserve every moment of peace and joy, for all the love and kindness you give every day.`,
@@ -83,6 +86,9 @@ export class ServiceSelecting extends Component {
                 showGiftCards: false,
                 showMessageForm: false,
                 showAddons: false,
+                showDeliveryForm: false,
+                showDateTimePicker: false,
+                showFinalOrder: false,
                 selectedGiftType: null,
                 recipientName: '',
                 message: '',
@@ -98,6 +104,9 @@ export class ServiceSelecting extends Component {
             this.state.showGiftCards = false;
             this.state.showMessageForm = false;
             this.state.showAddons = false;
+            this.state.showDeliveryForm = false;
+            this.state.showDateTimePicker = false;
+            this.state.showFinalOrder = false;
         };
 
         this.selectDuration = (minutes, price) => {
@@ -119,37 +128,31 @@ export class ServiceSelecting extends Component {
             const key = ev.target.value;
             if (key && this.autoMessages[key]) {
                 this.state.message = this.autoMessages[key];
-                ev.target.value = ""; // reset dropdown
+                ev.target.value = "";
             }
         };
 
         this.completeGift = () => {
-            if (!this.state.recipientName.trim()) {
-                alert("Please enter the recipient's name.");
-                return;
-            }
-            if (!this.state.message.trim()) {
-                alert("Please write a message or choose an automated one.");
-                return;
-            }
-
-            // Show Add-ons page
+            if (!this.state.recipientName.trim()) return alert("Please enter the recipient's name.");
+            if (!this.state.message.trim()) return alert("Please write a message or choose an automated one.");
             this.state.showAddons = true;
+        };
 
-            // Send order to WhatsApp
-            const text = `NEW GIFT VOUCHER ORDER
+        this.showDelivery = () => {
+            this.state.showDeliveryForm = true;
+        };
 
-            Service: ${this.state.selectedService.name} (${this.state.selectedDuration} min)
-            Price: KWD ${this.state.selectedPrice}
-            Gift Type: ${this.state.selectedGiftType.toUpperCase()}
-            To: ${this.state.recipientName}
-            Message: ${this.state.message}
-            From: ${this.state.senderName || 'Anonymous'}
-            ${this.state.songLink ? 'Song Link: ' + this.state.songLink : ''}
+        this.openDateTimePicker = () => {
+            this.state.showDateTimePicker = true;
+        };
 
-            Thank you!`;
+        this.closeDateTimePicker = () => {
+            this.state.showDateTimePicker = false;
+        };
 
-//            window.open(`https://api.whatsapp.com/send?phone=96522288282&text=${encodeURIComponent(text)}`, '_blank');
+        // FINAL STEP — When user clicks CONFIRM in date/time picker
+        this.confirmDateTime = () => {
+            this.state.showFinalOrder = true;
         };
 
         this.getCurrentServices = () => {
@@ -158,7 +161,6 @@ export class ServiceSelecting extends Component {
     }
 }
 
-// Mount the component
 whenReady(() => {
     const target = document.querySelector('.serviceSelecting');
     if (target) {
