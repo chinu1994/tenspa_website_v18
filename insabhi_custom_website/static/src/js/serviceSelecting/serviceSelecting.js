@@ -12,8 +12,20 @@ export class ServiceSelecting extends Component {
             selectedService: null,
             selectedDuration: null,
             selectedPrice: null,
+            showGiftCards: false,
+            showMessageForm: false,
+            showAddons: false,
+            showDeliveryForm: false,
+            showDateTimePicker: false,
+            showFinalOrder: false,           // ← NEW: Final order summary
+            selectedGiftType: null,
+            recipientName: '',
+            message: '',
+            senderName: '',
+            songLink: '',
         });
 
+        // CATEGORIES
         this.categories = [
             { id: 1, name: "Massage",    image: "/insabhi_custom_website/static/src/Images/mass4.webp" },
             { id: 2, name: "Skin Care",  image: "/insabhi_custom_website/static/src/Images/treat20.webp" },
@@ -22,62 +34,125 @@ export class ServiceSelecting extends Component {
             { id: 5, name: "Nail Care",  image: "/insabhi_custom_website/static/src/Images/treat10.webp" },
         ];
 
+        // SERVICES
         this.services = {
-            1: [ // Massage → 7 Services
-                { name: "Swedish Massage",  img: "/insabhi_custom_website/static/src/Images/treat9.webp" },
-                { name: "Deep Tissue Massage",  img: "/insabhi_custom_website/static/src/Images/treat21.jpeg" },
+            1: [
+                { name: "Swedish Massage", img: "/insabhi_custom_website/static/src/Images/treat9.webp" },
+                { name: "Deep Tissue Massage", img: "/insabhi_custom_website/static/src/Images/treat21.jpeg" },
                 { name: "Hot Stone Massage", img: "/insabhi_custom_website/static/src/Images/mass4.webp" },
                 { name: "Aromatherapy Massage", img: "/insabhi_custom_website/static/src/Images/treat13.jpeg" },
                 { name: "Sports Massage", img: "/insabhi_custom_website/static/src/Images/mass3.webp" },
                 { name: "Thai Table Massage", img: "/insabhi_custom_website/static/src/Images/mass2.webp" },
                 { name: "Balinese Massage", img: "/insabhi_custom_website/static/src/Images/gift4.jpg" },
             ],
-            2: [ // Skin Care → 3 Services
+            2: [
                 { name: "HydraFacial", img: "/insabhi_custom_website/static/src/Images/treat18.webp" },
                 { name: "Anti-Aging Treatment", img: "/insabhi_custom_website/static/src/Images/treat21.webp" },
                 { name: "Brightening Glow", img: "/insabhi_custom_website/static/src/Images/treat20.webp" },
             ],
-            3: [ // Facial → 2 Services
+            3: [
                 { name: "Signature Facial", img: "/insabhi_custom_website/static/src/Images/treat2.webp" },
                 { name: "Gold Radiance Facial", desc: "24K gold for ultimate glow", img: "/insabhi_custom_website/static/src/Images/facial3.jpg" },
             ],
-            4: [ // Rituals → 5 Services
+            4: [
                 { name: "Royal Couple Ritual", img: "/insabhi_custom_website/static/src/Images/treat13.webp" },
                 { name: "Signature Bliss Ritual", img: "/insabhi_custom_website/static/src/Images/treat21.webp" },
                 { name: "Detox & Renew Ritual", img: "/insabhi_custom_website/static/src/Images/treat16.webp" },
-                { name: "Gentleman's Retreat",  img: "/insabhi_custom_website/static/src/Images/treat17.webp" },
+                { name: "Gentleman's Retreat", img: "/insabhi_custom_website/static/src/Images/treat17.webp" },
                 { name: "Head-to-Toe Ritual", img: "/insabhi_custom_website/static/src/Images/treat20.webp" },
             ],
-            5: [ // Nail Care → 2 Services
+            5: [
                 { name: "Gentleman's Manicure", img: "/insabhi_custom_website/static/src/Images/treat10.webp" },
-                { name: "Executive Pedicure", img: "/insabhi_custom_website/static/src/image/nail3.jpg" },
+                { name: "Executive Pedicure", img: "/insabhi_custom_website/static/src/Images/nail3.jpg" },
             ],
         };
 
+        // AUTOMATED MESSAGES
+        this.autoMessages = {
+            father: `Take a well-deserved break and enjoy a day just for you. Relax, recharge, and let yourself be pampered, you’ve earned every moment of peace and comfort.`,
+            mother: `A day just for you to relax, recharge, and feel cared for. You deserve every moment of peace and joy, for all the love and kindness you give every day.`,
+            husband: `This is your day to rest and relax, to recharge and renew your peace. You deserve every moment of care and attention for all the love and effort you give.`,
+            wife: `Take a day just for you, to relax, refresh, and be pampered. You deserve every moment of peace and care for all the love you give every day.`,
+            friend: `Enjoy a day of relaxation and self care. Take time to recharge, unwind, and refresh your energy — you deserve every moment of peace after all your hard work.`,
+        };
+
+        // METHODS
         this.selectCategory = (catId) => {
-            this.state.selectedCategory = this.state.selectedCategory === catId ? null : catId;
-            this.state.selectedService = null;
-            this.state.selectedDuration = null;
-            this.state.selectedPrice = null;
+            Object.assign(this.state, {
+                selectedCategory: this.state.selectedCategory === catId ? null : catId,
+                selectedService: null,
+                selectedDuration: null,
+                selectedPrice: null,
+                showGiftCards: false,
+                showMessageForm: false,
+                showAddons: false,
+                showDeliveryForm: false,
+                showDateTimePicker: false,
+                showFinalOrder: false,
+                selectedGiftType: null,
+                recipientName: '',
+                message: '',
+                senderName: '',
+                songLink: '',
+            });
         };
 
         this.selectService = (service) => {
             this.state.selectedService = service;
             this.state.selectedDuration = null;
             this.state.selectedPrice = null;
+            this.state.showGiftCards = false;
+            this.state.showMessageForm = false;
+            this.state.showAddons = false;
+            this.state.showDeliveryForm = false;
+            this.state.showDateTimePicker = false;
+            this.state.showFinalOrder = false;
         };
 
         this.selectDuration = (minutes, price) => {
             this.state.selectedDuration = minutes;
             this.state.selectedPrice = price.toFixed(1);
-            this.render(); // This forces the sidebar to appear immediately
         };
 
-        this.clearSelection = () => {
-            this.state.selectedService = null;
-            this.state.selectedDuration = null;
-            this.state.selectedPrice = null;
-            this.render();
+        this.proceedToGiftCards = () => {
+            this.state.showGiftCards = true;
+        };
+
+        this.selectGiftType = (type) => {
+            this.state.selectedGiftType = type;
+            this.state.showGiftCards = false;
+            this.state.showMessageForm = true;
+        };
+
+        this.applyAutoMessage = (ev) => {
+            const key = ev.target.value;
+            if (key && this.autoMessages[key]) {
+                this.state.message = this.autoMessages[key];
+                ev.target.value = "";
+            }
+        };
+
+        this.completeGift = () => {
+            if (!this.state.recipientName.trim()) return alert("Please enter the recipient's name.");
+            if (!this.state.message.trim()) return alert("Please write a message or choose an automated one.");
+            this.state.showAddons = true;
+        };
+
+        this.showDelivery = () => {
+            this.state.showDeliveryForm = true;
+        };
+
+        this.openDateTimePicker = () => {
+            this.state.showDateTimePicker = true;
+        };
+
+        this.closeDateTimePicker = () => {
+            this.state.showDateTimePicker = false;
+        };
+
+        // FINAL STEP — When user clicks CONFIRM in date/time picker
+        this.confirmDateTime = () => {
+            this.state.showFinalOrder = true;
         };
 
         this.getCurrentServices = () => {
@@ -87,8 +162,8 @@ export class ServiceSelecting extends Component {
 }
 
 whenReady(() => {
-    const owl_serviceSelecting = document.querySelector('.serviceSelecting');
-    if (owl_serviceSelecting) {
-        mount(ServiceSelecting, owl_serviceSelecting, { getTemplate });
+    const target = document.querySelector('.serviceSelecting');
+    if (target) {
+        mount(ServiceSelecting, target, { getTemplate });
     }
 });
