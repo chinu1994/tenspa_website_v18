@@ -12,6 +12,7 @@ export class ServiceSelecting extends Component {
             selectedService: null,
             selectedDuration: null,
             selectedPrice: null,
+            showGiftCards: false,
         });
 
         this.categories = [
@@ -23,7 +24,7 @@ export class ServiceSelecting extends Component {
         ];
 
         this.services = {
-            1: [ // Massage → 7 Services
+            1: [
                 { name: "Swedish Massage",  img: "/insabhi_custom_website/static/src/Images/treat9.webp" },
                 { name: "Deep Tissue Massage",  img: "/insabhi_custom_website/static/src/Images/treat21.jpeg" },
                 { name: "Hot Stone Massage", img: "/insabhi_custom_website/static/src/Images/mass4.webp" },
@@ -32,23 +33,23 @@ export class ServiceSelecting extends Component {
                 { name: "Thai Table Massage", img: "/insabhi_custom_website/static/src/Images/mass2.webp" },
                 { name: "Balinese Massage", img: "/insabhi_custom_website/static/src/Images/gift4.jpg" },
             ],
-            2: [ // Skin Care → 3 Services
+            2: [
                 { name: "HydraFacial", img: "/insabhi_custom_website/static/src/Images/treat18.webp" },
                 { name: "Anti-Aging Treatment", img: "/insabhi_custom_website/static/src/Images/treat21.webp" },
                 { name: "Brightening Glow", img: "/insabhi_custom_website/static/src/Images/treat20.webp" },
             ],
-            3: [ // Facial → 2 Services
+            3: [
                 { name: "Signature Facial", img: "/insabhi_custom_website/static/src/Images/treat2.webp" },
                 { name: "Gold Radiance Facial", desc: "24K gold for ultimate glow", img: "/insabhi_custom_website/static/src/Images/facial3.jpg" },
             ],
-            4: [ // Rituals → 5 Services
+            4: [
                 { name: "Royal Couple Ritual", img: "/insabhi_custom_website/static/src/Images/treat13.webp" },
                 { name: "Signature Bliss Ritual", img: "/insabhi_custom_website/static/src/Images/treat21.webp" },
                 { name: "Detox & Renew Ritual", img: "/insabhi_custom_website/static/src/Images/treat16.webp" },
                 { name: "Gentleman's Retreat",  img: "/insabhi_custom_website/static/src/Images/treat17.webp" },
                 { name: "Head-to-Toe Ritual", img: "/insabhi_custom_website/static/src/Images/treat20.webp" },
             ],
-            5: [ // Nail Care → 2 Services
+            5: [
                 { name: "Gentleman's Manicure", img: "/insabhi_custom_website/static/src/Images/treat10.webp" },
                 { name: "Executive Pedicure", img: "/insabhi_custom_website/static/src/image/nail3.jpg" },
             ],
@@ -59,25 +60,23 @@ export class ServiceSelecting extends Component {
             this.state.selectedService = null;
             this.state.selectedDuration = null;
             this.state.selectedPrice = null;
+            this.state.showGiftCards = false;
         };
 
         this.selectService = (service) => {
             this.state.selectedService = service;
             this.state.selectedDuration = null;
             this.state.selectedPrice = null;
+            this.state.showGiftCards = false;
         };
 
         this.selectDuration = (minutes, price) => {
             this.state.selectedDuration = minutes;
             this.state.selectedPrice = price.toFixed(1);
-            this.render(); // This forces the sidebar to appear immediately
         };
 
-        this.clearSelection = () => {
-            this.state.selectedService = null;
-            this.state.selectedDuration = null;
-            this.state.selectedPrice = null;
-            this.render();
+        this.proceedToGiftCards = () => {
+            this.state.showGiftCards = true;
         };
 
         this.getCurrentServices = () => {
