@@ -1,330 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
- <t t-name="insabhi_custom_website.ServiceSelecting" owl="1">
- <div class="serviceSelecting container">
-     <!-- ==== HERO (matches uploaded image) ==== -->
-     <section class="insabhi-hero-video position-relative height-fixer-hero">
-                <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="insabhi_custom_website/static/src/image/treat13.webp"
-                         alt="Hero" class="w-100 h-100 object-fit-cover"/>
+<t t-name="insabhi_custom_website.ServiceSelecting" owl="1">
+    <div class="serviceSelecting container py-5">
+
+        <!-- HERO - YOUR ORIGINAL -->
+        <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
+                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg"
+                     alt="Ten Wellness Hero"
+                     class="w-100 h-100 object-fit-cover d-block"/>
+            </div>
+            <div class="insabhi-hero-overlay-bottom">
+                <div class="insabhi-hero-content-bottom container">
+                    <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
+                    <h2 class="insabhi-hero-subtitle">Treatment For Him</h2>
                 </div>
-         <div class="insabhi-hero-overlay-bottom">
-                    <div class="insabhi-hero-content-bottom container">
-                          <h1>Welcome to the service</h1>
-                    </div>
-                </div>
-     </section>
+            </div>
+        </section>
 
-     <!-- ==== TEN STORE CONTENT  AND CARD==== -->
-
-     <div class="row mb-4 text-center">
-<div class="col-12">
- <h1 class="display-5 fw-bold text-primary" style="margin-top:5rem;">Select Massage Service</h1>
-    <p class="lead text-muted">Please select your preferred massage service.</p>
- </div>
- </div>
-
-     <div class="row my-5 align-items-center">
-    <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="h3 fw-bolder text-purple mb-3 px-2">Why Choose Our Services?</h2>
-        <p class="text-secondary lead-small p-5">
-           Experience deep relaxation and rejuvenation with our exclusive massage services. Each treatment is specially designed to soothe your mind, body, and soul. It's the perfect gift for your loved ones, giving them well-deserved pampering.
-        </p>
-        <ul class="list-unstyled mt-4 text-dark small p-5">
-            <li><i class="fa fa-check-circle text-success me-2 fw-bold"></i>
-                <b>Experienced Therapists: </b>
-                Service from trained professionals..</li>
-            <li><i class="fa fa-check-circle text-success me-2 fw-bold"></i>
-                <b>Premium Oils: </b>
-                Use of best quality essential oils..</li>
-            <li><i class="fa fa-check-circle text-success me-2 fw-bold"></i>
-                <b>Serene Environment: </b>
-                An ambience filled with peace and tranquility.</li>
-        </ul>
-    </div>
-         <div class="col-lg-6">
-        <img src="insabhi_custom_website/static/src/image/herTreat2.jpg"
-             alt="Relaxing Spa Environment"
-             class="img-fluid rounded shadow-lg"
-             loading="lazy"
-             style="height: 450px; object-fit:cover; width: 100%;"/>
-    </div>
-</div>
-
-
-     <hr/>
-
-     <div class="row my-5 py-3 text-center bg-light rounded shadow-sm">
-                <h2 class="h3 fw-bold text-info mb-4">🎁 Our Simple Gifting Process</h2>
-
-         <div class="col-md-4">
-                    <div class="p-3">
-                     <i class="fa fa-gift fa-3x text-primary mb-3"></i>
-
-                        <h4 class="fw-bold">Step 1: Select Your Service</h4>
-
-                        <p class="text-secondary">
-                     **Start by choosing the perfect massage service** from our curated list below. Each service offers a unique path to relaxation and wellness. We provide detailed descriptions to help you make the best choice for your loved one.
-                     </p>
-                                 </div>
-                             </div>
-
-         <div class="col-md-4">
-                    <div class="p-3">
-                        <i class="fa fa-credit-card fa-3x text-primary mb-3"></i>
-
-                        <h4 class="fw-bold">Step 2: Complete Payment</h4>
-
-                        <p class="text-secondary">
-                            After selecting the service, **proceed to a secure checkout**. We accept all major credit cards and ensure a smooth, secure transaction. You will receive an instant confirmation of your purchase.
-                        </p>
-                                 </div>
-                             </div>
-
-         <div class="col-md-4">
-                    <div class="p-3">
-                        <i class="fa fa-envelope fa-3x text-primary mb-3"></i>
-
-                        <h4 class="fw-bold">Step 3: Recipient Notification</h4>
-
-                        <p class="text-secondary">
-                            The **gift voucher will be instantly delivered to your recipient via email** with a personalized message (optional). They can easily book their service at their convenience using the unique code provided.
-                        </p>
-                                 </div>
-                             </div>
-                     </div>
-
-     <hr/>
-
-
-     <h2 class="text-center my-4 fw-bold text-info">Explore Our Range of Massages</h2>
-
-
-     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-5">
-               
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass2.png" class="card-img-top"
-                             alt="Swedish Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Swedish - Swedish</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">A classic gentle massage for relaxation and stress relief.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                     </div>
-                             </div>
-                         </div>
-
-
-         <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass3.png" class="card-img-top"
-                             alt="Jet Lag Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Jet Lag - Hot Stones (Example)</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">A therapeutic massage focused on recovery and rebalancing the body.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                         </div>
-                                 </div>
-                             </div>
-
-
-         <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass4.png" class="card-img-top"
-                             alt="Balinese Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Balinese - Indonesian</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">Combines gentle stretches, acupressure and aromatherapy for deep relaxation.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                         </div>
-                                 </div>
-                             </div>
-
-
-         <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass5.png" class="card-img-top"
-                             alt="Sport Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Sport - Sport</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">Aimed at preventing injury, improving flexibility and enhancing athletic performance.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                         </div>
-                                 </div>
-                             </div>
-
-
-         <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass6.png" class="card-img-top"
-                             alt="Deep Tissue Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Deep Tissue - Deep Tissue</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">Focuses on realigning deeper layers of muscles and connective tissue.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                         </div>
-                                 </div>
-                             </div>
-
-
-         <div class="col">
-                    <div class="card h-100 shadow-sm border-0 hover-effect">
-                        <img src="insabhi_custom_website/static/src/image/mass1.jpg" class="card-img-top"
-                             alt="Table Thai Massage" loading="lazy" style="object-fit:cover;"/>
-
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1">Table Thai - Thai</h5>
-
-                            <p class="card-text text-muted small flex-grow-1">A therapeutic blend of acupressure and yoga-like stretching performed on a table.</p>
-
-                            <button class="btn btn-primary mt-3 w-100">Select Service</button>
-                                         </div>
-                                 </div>
-                             </div>
-                        
-                     </div>
-
-
-     <hr/>
-
-     <div class="row my-5">
-                <div class="col-12">
-                    <h2 class="h3 fw-bold text-primary mb-4 text-center">❓ Frequently Asked Questions (FAQs)</h2>
-
-                    <div class="accordion" id="faqAccordion">
-                        
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button fw-bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                    How long is the gift voucher valid for?
-                                </button>
-                                         </h2>
-
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-secondary">
-                                    **Our gift vouchers are valid for 12 months** from the date of purchase. This gives the recipient plenty of time to book and enjoy their chosen treatment at their convenience. We recommend booking in advance, especially for weekend appointments.
-                                </div>
-                                             </div>
-                                     </div>
-
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button fw-bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                    Can the recipient change the selected massage service?
-                                </button>
-                                             </h2>
-
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-secondary">
-                                    Yes, **the recipient can upgrade to a different service** by paying the difference in price at the time of booking. Downgrades are generally not permitted, but they can use the voucher's monetary value towards any service of equal or higher value.
-                                </div>
-                                                 </div>
-                                         </div>
-
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button fw-bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    Is the voucher delivered physically or digitally?
-                                </button>
-                                             </h2>
-
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                 data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-secondary">
-                                    We offer both options. By default, **the voucher is delivered instantly via email (digitally)**. If you require a physical, beautifully printed gift card, please select the 'Physical Voucher' option during checkout (additional charges may apply).
-                                </div>
-                                                 </div>
-                                         </div>
-
-                                 </div>
-                         </div>
+        <!-- TITLE -->
+        <div class="text-center my-5 pt-5">
+            <h1 class="display-5 fw-bold" style="color:#d4b08c;">Select a Category to Gift</h1>
+            <p class="lead text-muted">Choose the perfect wellness experience</p>
         </div>
 
-     <hr/>
+        <!-- 5 CATEGORY CARDS -->
+        <div class="row row-cols-2 row-cols-md-5 g-4 mb-5 justify-content-center">
+            <t t-foreach="categories" t-as="cat" t-key="cat.id">
+                <div class="col">
+                    <div class="category-card position-relative overflow-hidden rounded-4 shadow-lg cursor-pointer"
+                         t-att-class="{ 'ring-4 ring-primary ring-offset-4': state.selectedCategory === cat.id }"
+                         t-on-click="() => selectCategory(cat.id)"
+                         style="height: 280px; border: 4px solid transparent;">
+                        <img t-att-src="cat.image" class="w-100 h-100 object-fit-cover"/>
+                        <div class="position-absolute bottom-0 start-0 w-100 text-center p-4"
+                             style="background: linear-gradient(transparent, rgba(0,0,0,0.85));">
+                            <h5 class="text-white fw-bold fs-4 mb-0 text-shadow"><t t-esc="cat.name"/></h5>
+                            <t t-if="state.selectedCategory === cat.id">
+                                <div class="badge bg-primary mt-2 px-4 py-2">SELECTED</div>
+                            </t>
+                        </div>
+                        <t t-if="state.selectedCategory === cat.id">
+                            <div class="position-absolute inset-0 d-flex align-items-center justify-content-center bg-primary bg-opacity-25">
+                                <i class="fa fa-check-circle fa-4x text-white"></i>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </div>
 
-     <div class="row my-5 p-4 bg-light rounded shadow-sm">
- <div class="col-12 text-center">
- <h2 class="h3 fw-bold text-dark mb-3">What Our Clients Say</h2>
+        <!-- SERVICES SECTION -->
+        <t t-if="state.selectedCategory">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold" style="color:#d4b08c;">
+                    <t t-esc="categories.find(c => c.id === state.selectedCategory)?.name"/> Services
+                </h2>
+                <p class="lead text-muted">Choose the perfect gift for him</p>
+            </div>
 
-     <blockquote class="blockquote">
- <p class="mb-0 fst-italic">"The Balinese massage was pure bliss! Best gift ever. Thank you for the wonderful experience."</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <t t-foreach="getCurrentServices()" t-as="service" t-key="service_index">
+                    <div t-att-class="state.selectedService &amp;&amp; state.selectedService.name !== service.name ? 'd-none' : 'col'">
 
-         <footer class="blockquote-footer mt-2">Priya S., <cite title="Source Title">Satisfied Customer</cite></footer>
-              </blockquote>
+                        <!-- YOUR 100% ORIGINAL CARD -->
+                        <div class="card h-100 border-0 shadow hover-effect overflow-hidden cursor-pointer"
+                             t-on-click="() => selectService(service)">
+                            <img t-att-src="service.img" class="card-img-top" style="height: 500px; object-fit: cover;"/>
+                            <div class="card-body d-flex flex-column p-4">
 
-     <p class="mt-4 lead">
- Ready to book this perfect experience? **Click on your desired service** to proceed with gifting.
-</p>
+                                <!-- SERVICE NAME -->
+                                <h5 class="card-title fw-bold text-center mb-2"><t t-esc="service.name"/></h5>
 
-     <a href="#" class="btn btn-lg btn-success mt-3"><i class="fa fa-gift me-2"></i>
-         View Gift Options</a>
-         </div>
-       </div>
-  </div>
+                                <!-- DURATION BUTTONS - NOW IN THE GAP (NO EXTRA SPACE) -->
+                                <t t-if="state.selectedService &amp;&amp; state.selectedService.name === service.name">
+                                    <div class="duration-inline my-4">
+                                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                            <button t-on-click.stop="() => selectDuration(60, 29.5)"
+                                        t-att-class="state.selectedDuration === 60 ? 'duration-btn active' : 'duration-btn'">
+                                                1 Hour
+                                            </button>
 
-     <style>
- /* Existing Styles */
- .hover-effect:hover {
- transform: translateY(-5px);
- transition: transform 0.3s ease-in-out;
- }
- .card-img-top {
- height: 200px; /* Standard height for all images */
- object-fit: cover;
- }
-</style>
-      <!-- START: WhatsApp Icon -->
+                                            <button t-on-click.stop="() => selectDuration(90, 42.0)"
+                                                    t-att-class="state.selectedDuration === 90 ? 'duration-btn active' : 'duration-btn'">
+                                                1.5 Hours
+                                            </button>
+
+                                            <button t-on-click.stop="() => selectDuration(120, 52.0)"
+                                                    t-att-class="state.selectedDuration === 120 ? 'duration-btn active' : 'duration-btn'">
+                                                2 Hours
+                                            </button>
+                                        </div>
+                                    </div>
+                                </t>
+
+                                <!-- DESCRIPTION -->
+                                <p class="card-text text-muted small flex-grow-1 text-center"><t t-esc="service.desc || ''"/></p>
+
+                                <!-- SELECT & GIFT BUTTON -->
+                                <button class="couture-btn empress mt-auto w-100 py-3 fw-bold">
+                                    Select &amp; Gift
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </t>
+
+        <!-- RIGHT SIDEBAR - 100% WORKING -->
+        <t t-if="state.selectedService &amp;&amp; state.selectedDuration">
+    <div class="d-flex justify-content-center mt-5">
+        <div class="service-summary-card">
+
+            <img t-att-src="state.selectedService.img"/>
+
+            <h3 class="fw-bold mt-4 text-white text-center">
+                <t t-esc="state.selectedService.name"/>
+            </h3>
+
+            <div class="price-display text-center mt-3">
+                KWD <span t-esc="state.selectedPrice"/>
+            </div>
+
+            <p class="text-light mt-4 opacity-75 text-center">
+                A light-pressure massage that relaxes the nerves,
+                calms the body, reduces stress,
+                and promotes circulation.
+            </p>
+
+            <button class="add-to-cart-btn mt-4">
+                ADD TO CART
+            </button>
+
+        </div>
+    </div>
+</t>
+
+
+        <!-- EMPTY STATE -->
+        <t t-if="!state.selectedCategory">
+            <div class="text-center py-5 my-5">
+                <i class="fa fa-hand-point-up fa-4x text-muted mb-4"></i>
+                <p class="lead text-muted fs-3">Please select a category above</p>
+            </div>
+        </t>
+
+        <!-- WHATSAPP -->
         <a href="https://api.whatsapp.com/send?phone=96522288282"
            class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
-           style="width: 60px; height: 60px; z-index: 1000;"
+           style="width: 60px; height: 60px; bottom: 1.5rem; right: 1.5rem; z-index: 1000;"
            target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
-</a>
+            <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+        </a>
+    </div>
 
+    <!-- STYLES -->
+    <style>
+        .hover-effect:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.22) !important; }
+        .category-card:hover img { transform: scale(1.12); transition: 0.6s; }
+        .text-shadow { text-shadow: 2px 2px 10px rgba(0,0,0,0.9); }
 
-        <style>
-    /* Custom CSS classes for reliable fixed positioning (replaces bottom-4 end-4) */
-    .whatsapp-fixed-btn {
-        /* approx 1.5rem or 24px from bottom and right */
-        bottom: 1.5rem;
-        right: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        /* DURATION BUTTONS - PERFECT IN GAP */
+        .duration-inline {
+            margin: 0.5rem 0 !important;
+        }
+        .duration-btn {
+            background: transparent;
+            border: 2px solid #999;
+            color: #555;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            min-width: 110px;
+            transition: all 0.3s ease;
+        }
+        .duration-btn.active,
+        .duration-btn:hover {
+            background: #d4b08c !important;
+            color: white !important;
+            border-color: #d4b08c !important;
+        }
 
-    /* Add WhatsApp icon hover effect */
-    .whatsapp-fixed-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
-    }
-</style>
+<!--        /* RIGHT SIDEBAR */-->
+<!--        .service-summary-sidebar {-->
+<!--            position: fixed;-->
+<!--            top: 0;-->
+<!--            right: 0;-->
+<!--            width: 100%;-->
+<!--            max-width: 420px;-->
+<!--            height: 100vh;-->
+<!--            background: rgba(0,0,0,0.98);-->
+<!--            z-index: 9999;-->
+<!--            padding: 2rem;-->
+<!--            overflow-y: auto;-->
+<!--            transform: translateX(100%);-->
+<!--            transition: transform 0.5s ease;-->
+<!--        }-->
+<!--        .service-summary-sidebar.show {-->
+<!--            transform: translateX(0);-->
+<!--        }-->
 
-        <!-- END: WhatsApp Icon -->
- </t>
+        .service-summary-card {
+            background: #000;
+            border-radius: 20px;
+            padding: 1.8rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            width: 100%;
+            max-width: 420px;
+            margin-top: 30px;
+        }
 
+        .service-summary-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .service-summary-card .price-display {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #d4b08c;
+        }
+
+        .service-summary-card .add-to-cart-btn {
+            background: transparent;
+            border: 2px solid #d4b08c;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .service-summary-card .add-to-cart-btn:hover {
+            background: #d4b08c;
+            transform: scale(1.05);
+        }
+
+        .summary-inner { max-width: 380px; margin: 0 auto; position: relative; }
+        .close-sidebar {
+            position: absolute; top: -15px; right: -15px; background: white; color: black;
+            width: 50px; height: 50px; border-radius: 50%; font-size: 2rem; border: none; cursor: pointer;
+        }
+        .summary-img { width: 100%; height: 320px; object-fit: cover; border-radius: 16px; margin-bottom: 1.5rem; }
+        .price-display { font-size: 2.8rem; font-weight: 800; color: #d4b08c; margin: 1rem 0; }
+        .add-to-cart-btn {
+            background: transparent; border: 2px solid #d4b08c; color: white;
+            padding: 16px 40px; border-radius: 50px; font-size: 1.2rem; font-weight: 700;
+            width: 100%; transition: 0.3s;
+        }
+        .add-to-cart-btn:hover { background: #d4b08c; transform: scale(1.05); }
+
+        @media (max-width: 992px) {
+            .service-summary-sidebar { max-width: 100%; }
+        }
+    </style>
+</t>
 </templates>
