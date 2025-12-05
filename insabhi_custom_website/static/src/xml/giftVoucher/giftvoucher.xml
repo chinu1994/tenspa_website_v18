@@ -4,7 +4,7 @@
         <div class="gift-voucher-container">
             <!-- Video Background -->
             <video autoplay="autoplay" muted="muted" loop="loop" id="giftVideoBackground" class="gift-video-background">
-                <source src="/insabhi_custom_website/static/src/image/GV_Banner.mp4" type="video/mp4"/>
+                <source src="/insabhi_custom_website/static/src/Images/GV_Banner.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 
