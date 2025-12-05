@@ -6,6 +6,7 @@ import {rpc} from "@web/core/network/rpc";
 
 export class GiftVoucher extends Component {
     setup() {
+        this.selectedGender = null; // 'him' or 'her'
         onMounted(() => {
             // Try multiple approaches to ensure DOM is ready
             this.attachEventListeners();
@@ -81,9 +82,9 @@ export class GiftVoucher extends Component {
             }
 
             // Commented out the No button event listener to make it do nothing
-            // if (noBtn) {
-            //     noBtn.addEventListener('click', this.handleFirstTimeNo);
-            // }
+            if (noBtn) {
+                noBtn.addEventListener('click', this.handleFirstTimeNo);
+            }
 
             // Add event listener for form submission
             const form = document.getElementById('giftForm');
@@ -96,11 +97,13 @@ export class GiftVoucher extends Component {
     handleGiftForHimClick = (event) => {
         event.preventDefault();
         // Hide gender selection and show first time question
+        this.selectedGender = 'him';
         this.showFirstTimeQuestion();
     }
 
     handleGiftForHerClick = (event) => {
         event.preventDefault();
+        this.selectedGender = 'her';
         // Hide gender selection and show first time question
         this.showFirstTimeQuestion();
     }
@@ -156,12 +159,12 @@ export class GiftVoucher extends Component {
     }
 
     // Commented out the No button handler to make it do nothing
-    // handleFirstTimeNo = (event) => {
-    //     console.log("Returning user selected No");
-    //     event.preventDefault();
-    //     // Auto-fill with dummy data and go to service page
-    //     this.autoFillAndNavigate();
-    // }
+    handleFirstTimeNo = (event) => {
+        console.log("Returning user selected No");
+        event.preventDefault();
+        // Auto-fill with dummy data and go to service page
+        this.autoFillAndNavigate();
+    }
 
     showFirstTimeQuestion() {
         // Hide gender selection
@@ -213,13 +216,32 @@ export class GiftVoucher extends Component {
         }
     }
 
+    // handleFormSubmit = (event) => {
+    //     event.preventDefault();
+    //     // Collect form data
+    //     const formData = {
+    //         fullname: document.getElementById('customerFullName').value,
+    //         firstname: document.getElementById('customerFirstName').value,
+    //         lastname: document.getElementById('customerLastName').value,
+    //         phone: document.getElementById('customerPhone').value,
+    //         address: document.getElementById('customerAddress').value,
+    //         birthdate: document.getElementById('customerBirthdate').value
+    //     };
+
     handleFormSubmit = (event) => {
         event.preventDefault();
-        // Collect form data
+
+        // 1. First aur Last Name ke elements ko target karo
+        const firstNameEl = document.getElementById('customerFirstName');
+        const lastNameEl = document.getElementById('customerLastName');
+
+
+        // Collect form data (using available fields)
         const formData = {
-            fullname: document.getElementById('customerFullName').value,
-            firstname: document.getElementById('customerFirstName').value,
-            lastname: document.getElementById('customerLastName').value,
+            // 🌟 FIX: customerFullName ko jodkar banaya 🌟
+            fullname: `${firstNameEl.value} ${lastNameEl.value}`,
+            firstname: firstNameEl.value, // Ye ID XML mein hai
+            lastname: lastNameEl.value,   // Ye ID XML mein hai
             phone: document.getElementById('customerPhone').value,
             address: document.getElementById('customerAddress').value,
             birthdate: document.getElementById('customerBirthdate').value
@@ -235,32 +257,41 @@ export class GiftVoucher extends Component {
     }
 
     // Commented out the auto-fill function to make No button do nothing
-    // autoFillAndNavigate = () => {
-    //     console.log("Auto-filling data for returning customer");
-    //     // Auto-fill with dummy data for returning customers
-    //     const dummyData = {
-    //            fullname:'Returning Customer',
-    //         firstname: 'Returning Customer',
-    //         lastname: 'Returning Customer',
-    //         phone: 'N/A',
-    //         address: 'N/A',
-    //         email: 'N/A',
-    //         birthdate: 'N/A'
-    //     };
-    //
-    //     // Save to localStorage
-    //     localStorage.setItem('customerInfo', JSON.stringify(dummyData));
-    //
-    //     // Close popup and navigate to service page
-    //     this.closePopup();
-    //     this.navigateToServicePage();
-    // }
+    autoFillAndNavigate = () => {
+        console.log("Auto-filling data for returning customer");
+        // Auto-fill with dummy data for returning customers
+        const dummyData = {
+               fullname:'Returning Customer',
+            firstname: 'Returning Customer',
+            lastname: 'Returning Customer',
+            phone: 'N/A',
+            address: 'N/A',
+            email: 'N/A',
+            birthdate: 'N/A'
+        };
 
-    navigateToServicePage = () => {
-        // In a real app, you would navigate to the actual service page
-        // For now, we'll just log it
-        alert("Navigating to service page...");
-        // window.location.href = '/service-page'; // Uncomment this in a real app
+        // Save to localStorage
+        localStorage.setItem('customerInfo', JSON.stringify(dummyData));
+
+        // Close popup and navigate to service page
+        this.closePopup();
+        this.navigateToServicePage();
+    }
+
+navigateToServicePage = () => {
+        let serviceUrl = '/serviceSelecting';
+
+        if (this.selectedGender === 'him') {
+            // Him ka page
+            serviceUrl = '/serviceSelecting';
+        } else if (this.selectedGender === 'her') {
+            // Her ka page
+            serviceUrl = '/forHer';
+        }
+
+        // 🌟 CHANGE 3: Final redirection logic 🌟
+
+        window.location.href = serviceUrl; // Isko uncomment karna mat bhoolna
     }
 
     closePopup = () => {
@@ -299,20 +330,3 @@ whenReady(() => {
     }
 });
 // 🚀 UPDATED MOUNTING LOGIC END 🚀
-
-// whenReady(() => {
-//
-//     const owl_giftVoucher = document.querySelector('.giftVoucher');
-//     if (owl_giftVoucher) {
-//
-//         mount(GiftVoucher, owl_giftVoucher, {getTemplate});
-//     } else {
-//
-//         // Try alternative selector
-//         const giftContainer = document.querySelector('.gift-voucher-container');
-//         if (giftContainer) {
-//             mount(GiftVoucher, giftContainer, {getTemplate});
-//         } else {
-//         }
-//     }
-// });

@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="forHer" name="ForHer">
+            <t t-call="website.layout">
+                <section id="admin" class="forHer">
+                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

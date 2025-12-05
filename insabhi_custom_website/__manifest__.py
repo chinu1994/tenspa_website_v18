@@ -46,6 +46,7 @@
         'view/treatment_him_detail.xml',
         'view/treatment_her_detail.xml',
         'view/faq.xml',
+        'view/forHer.xml',
 
     ],
     'assets': {
@@ -66,6 +67,7 @@
             'insabhi_custom_website/static/src/xml/treatmentHer/treatmentHer.xml',
             'insabhi_custom_website/static/src/xml/tenstoreProductDetails/tenstore_product_detail.xml',
             'insabhi_custom_website/static/src/xml/faq/faq.xml',
+            'insabhi_custom_website/static/src/xml/forHer/forHer.xml',
 
 
             'insabhi_custom_website/static/src/scss/homepage/homepage.scss',
@@ -99,7 +101,8 @@
             'insabhi_custom_website/static/src/js/treatmentHim/treatmentHim.js',
             'insabhi_custom_website/static/src/js/treatmentHer/treatmentHer.js',
             'insabhi_custom_website/static/src/js/mobileDropdown/mobileDropdown.js',
-            'insabhi_custom_website/static/src/js/faq/faq.js'
+            'insabhi_custom_website/static/src/js/faq/faq.js',
+            'insabhi_custom_website/static/src/js/forHer/forHer.js'
 
 
         ],

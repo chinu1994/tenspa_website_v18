@@ -52,6 +52,10 @@ class OwlPlayground(http.Controller):
     def serviceSelecting(self):
         return request.render('insabhi_custom_website.serviceSelecting')
 
+    @http.route('/forHer', type='http', auth='public', website=True)
+    def forHer(self):
+        return request.render('insabhi_custom_website.forHer')
+
     @http.route('/addOns', type='http', auth='public', website=True)
     def addOns(self):
         return request.render('insabhi_custom_website.addOns')
