@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-<t t-name="insabhi_custom_website.ServiceSelecting" owl="1">
+<t t-name="insabhi_custom_website.ForHer" owl="1">
     <div class="serviceSelecting container py-5">
 
         <!-- HERO - YOUR ORIGINAL -->
         <section class="insabhi-hero-video position-relative" style="min-height:100vh;">
             <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:0;">
-                <img src="/insabhi_custom_website/static/src/Images/treatment.jpg"
+                <img src="/insabhi_custom_website/static/src/Images/herBanner.jpg"
                      alt="Ten Wellness Hero"
                      class="w-100 h-100 object-fit-cover d-block"/>
             </div>
             <div class="insabhi-hero-overlay-bottom">
                 <div class="insabhi-hero-content-bottom container">
                     <h1 class="insabhi-hero-title">Welcome To Ten Wellness</h1>
-                    <h2 class="insabhi-hero-subtitle">Treatment For Him</h2>
+                    <h2 class="insabhi-hero-subtitle">Treatment For Her</h2>
                 </div>
             </div>
         </section>
@@ -33,7 +33,7 @@
                          t-att-class="{ 'ring-4 ring-primary ring-offset-4': state.selectedCategory === cat.id }"
                          t-on-click="() => selectCategory(cat.id)"
                          style="height: 280px; border: 4px solid transparent;">
-                        <img t-att-src="cat.image" class="w-100 h-100 object-fit-cover"/>
+                        <img t-att-src="cat.image" class="w-100 h-100 object-fit-cover card-postion"/>
                         <div class="position-absolute bottom-0 start-0 w-100 text-center p-4"
                              style="background: linear-gradient(transparent, rgba(0,0,0,0.85));">
                             <h5 class="text-white fw-bold fs-4 mb-0 text-shadow"><t t-esc="cat.name"/></h5>
@@ -111,7 +111,7 @@
 
         <!-- RIGHT SIDEBAR - 100% WORKING -->
         <t t-if="state.selectedService &amp;&amp; state.selectedDuration">
-    <div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center">
         <div class="service-summary-card">
 
             <img t-att-src="state.selectedService.img"/>
@@ -202,7 +202,6 @@
 <!--            transform: translateX(0);-->
 <!--        }-->
 
-
         .service-summary-card {
             background: #000;
             border-radius: 20px;
@@ -211,7 +210,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
             width: 100%;
             max-width: 420px;
-            margin-top: 30px;
+<!--            margin-top: 30px;-->
 
         }
 

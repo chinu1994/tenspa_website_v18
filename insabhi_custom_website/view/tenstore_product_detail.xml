@@ -224,7 +224,7 @@
               </t>
 
               <div class="d-flex gap-3 mt-4">
-                <button class="btn btn-dark">Add to Cart</button>
+                <button class="btn btn-dark" id="addToCartBtn">Add to Cart</button>
                 <a href="https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF"
                    class="btn btn-outline-secondary" target="_blank">Book Now</a>
               </div>
@@ -484,7 +484,100 @@
           }
         </style>
 
+              <div id="simplePopup" class="simple-popup" style="display: none;">
+                <div class="popup-content">
+                    <span class="popup-close"><i class="bi bi-x-lg"></i></span>
+                    <div id="genderSelection" style="display: block; margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                        <button id="giftForHimBtn" class="couture-btn royal me-3" type="button">GIFT FOR HIM</button>
+                        <button id="giftForHerBtn" class="couture-btn empress" type="button">GIFT FOR HER</button>
+                            </div>
+                    </div>
+<!--                    <h2>Gift Voucher</h2>-->
+                    <p>Is this your first time purchasing a gift from Ten Spa?</p>
+                    <div class="button-group">
+                        <button id="yesBtn" class="option-btn yes-btn">Yes</button>
+                        <button id="noBtn" class="option-btn no-btn">No</button>
+                    </div>
+
+                    <form id="giftForm" style="display: none;">
+                        <div class="name-group" style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <div class="form-group" style="flex: 1;">
+                                  <label for="customerFirstName">First Name:</label>
+                                   <input type="text" id="customerFirstName" name="customerFirstName" required="required"/>
+                            </div>
+                             <div class="form-group" style="flex: 1;">
+                                   <label for="customerLastName">Last Name:</label>
+                                  <input type="text" id="customerLastName" name="customerLastName" required="required"/>
+                             </div>
+                         </div>
+                        <div class="form-group">
+                                <label for="customerPhone">Phone Number:</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required="required"/>
+                        </div>
+                        <div class="form-group">
+                             <label for="customerAddress">Address:</label>
+                            <textarea id="customerAddress" name="customerAddress" rows="3" required="required"></textarea>
+                         </div>
+                        <div class="form-group">
+                            <label for="customerBirthdate">Birthdate:</label>
+                            <input type="date" id="customerBirthdate" name="customerBirthdate" required="required"/>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                </div>
+            </div>
+
       </t>
+<script type="text/javascript">
+<![CDATA[
+    document.addEventListener('DOMContentLoaded', function() {
+        const addToCartBtn = document.getElementById('addToCartBtn');
+        const simplePopup = document.getElementById('simplePopup');
+        const closePopupBtn = simplePopup ? simplePopup.querySelector('.popup-close') : null;
+
+        if (addToCartBtn && simplePopup) {
+
+            // 1. Add to Cart click: Show Popup
+            addToCartBtn.addEventListener('click', function(e) {
+                e.preventDefault(); // Default cart action ko rokna zaroori hai
+
+                // Popup ko display: block ya visible karna
+                simplePopup.style.display = 'block';
+
+                // Pop-up state ko default pe reset karo
+                const genderSelection = document.getElementById('genderSelection');
+                const giftForm = document.getElementById('giftForm');
+                const buttonGroup = simplePopup.querySelector('.button-group');
+                const questionParagraph = simplePopup.querySelector('p:not(#genderSelection p)'); // Question paragraph select karna
+
+                if (genderSelection) genderSelection.style.display = 'none';
+                if (giftForm) giftForm.style.display = 'none';
+
+                // Question aur Yes/No buttons ko hide karo
+                if (questionParagraph) questionParagraph.style.display = 'block';
+                if (buttonGroup) buttonGroup.style.display = 'flex';
+            });
+        }
+
+        // 2. Close Popup button handler
+        if (closePopupBtn) {
+            closePopupBtn.addEventListener('click', function() {
+                simplePopup.style.display = 'none';
+            });
+        }
+
+        // 3. Optional: Backdrop click par band karna
+        if (simplePopup) {
+            simplePopup.addEventListener('click', function(e) {
+                if (e.target.id === 'simplePopup') {
+                    simplePopup.style.display = 'none';
+                }
+            });
+        }
+    });
+]]>
+</script>
     </template>
 
   </data>
