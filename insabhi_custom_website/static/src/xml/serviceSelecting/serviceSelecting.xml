@@ -50,7 +50,7 @@
         </div>
 
         <!-- SERVICES -->
-        <t t-if="state.selectedCategory and !state.showGiftCards and !state.showMessageForm">
+        <t t-if="state.selectedCategory and !state.showGiftCards and !state.showMessageForm and !state.showAddons">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">
                     <t t-esc="categories.find(c => c.id === state.selectedCategory)?.name"/> Services
@@ -88,7 +88,7 @@
         </t>
 
         <!-- BLACK SUMMARY CARD -->
-        <t t-if="state.selectedService and state.selectedDuration and !state.showGiftCards and !state.showMessageForm">
+        <t t-if="state.selectedService and state.selectedDuration and !state.showGiftCards and !state.showMessageForm and !state.showAddons">
             <div class="d-flex justify-content-center mt-5">
                 <div class="service-summary-card">
                     <img t-att-src="state.selectedService.img" class="rounded-4"/>
@@ -104,13 +104,13 @@
         </t>
 
         <!-- GIFT CARDS -->
-        <t t-if="state.showGiftCards and !state.showMessageForm">
+        <t t-if="state.showGiftCards and !state.showMessageForm and !state.showAddons">
             <div class="text-center my-5">
                 <h2 class="display-5 fw-bold" style="color:#d4b08c;">Choose Your Gift Type</h2>
                 <p class="lead text-muted">Select the perfect physical gift package</p>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
-                <!-- Diamond, Platinum, Gold cards remain unchanged -->
+                <!-- Diamond, Platinum, Gold — unchanged -->
                 <div class="col">
                     <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer"
                          t-on-click="() => selectGiftType('diamond')">
@@ -144,20 +144,15 @@
             </div>
         </t>
 
-        <!-- PERSONALIZATION FORM + AUTOMATED MESSAGE DROPDOWN -->
-        <t t-if="state.showMessageForm">
+        <!-- PERSONALIZATION FORM -->
+        <t t-if="state.showMessageForm and !state.showAddons">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
                         <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background:white; border: 4px solid #d4b08c;">
                             <div class="card-body p-5">
                                 <div class="text-center mb-5">
-                                    <div class="text-center mb-5">
-                                        <img src="/insabhi_custom_website/static/src/Images/logo1.0.png"
-                                             alt="Ten"
-                                             style="height: 50px; display:block; margin-left:auto; margin-right:auto;" />
-                                    </div>
-
+                                    <img src="/insabhi_custom_website/static/src/Images/logo1.0.png" alt="Ten" style="height: 50px; display:block; margin-left:auto; margin-right:auto;" />
                                 </div>
                                 <h2 class="text-center fw-bold mb-5" style="color:#d4b08c;">Personalize Your Gift</h2>
 
@@ -166,18 +161,10 @@
                                     <input type="text" class="form-control rounded-pill py-3 px-4 fs-5" placeholder="Recipient's name" t-model="state.recipientName"/>
                                 </div>
 
-                                <!-- MESSAGE FIELD WITH AUTOMATED DROPDOWN -->
                                 <div class="mb-4 position-relative">
                                     <label class="form-label fw-bold text-danger">* WRITE A MESSAGE</label>
-
                                     <div class="position-relative">
-                                        <textarea class="form-control rounded-3 py-4 px-4" rows="6"
-                                                  placeholder="Write your heartfelt message here..."
-                                                  maxlength="180"
-                                                  t-model="state.message"
-                                                  style="resize:none; background:#f8f9fa; font-size:1.1rem; pr-5;"></textarea>
-
-                                        <!-- Automated Message Dropdown Trigger -->
+                                        <textarea class="form-control rounded-3 py-4 px-4" rows="6" placeholder="Write your heartfelt message here..." maxlength="180" t-model="state.message" style="resize:none; background:#f8f9fa; font-size:1.1rem;"></textarea>
                                         <div class="position-absolute end-0 bottom-0 mb-3 me-3">
                                             <small class="text-muted me-2">Automated message</small>
                                             <select class="form-select form-select-sm d-inline-block" style="width: auto;" t-on-change="applyAutoMessage">
@@ -190,7 +177,6 @@
                                             </select>
                                         </div>
                                     </div>
-
                                     <div class="text-end text-muted small mt-2">
                                         <span t-esc="180 - (state.message ? state.message.length : 0)"/> characters left
                                     </div>
@@ -220,7 +206,83 @@
             </div>
         </t>
 
-        <!-- EMPTY STATE & WHATSAPP -->
+        <!-- ADD-ONS PAGE – ONLY VIDEO + TEXT + 4 PERFUMES -->
+        <t t-if="state.showAddons">
+            <div class="container py-5 text-center">
+
+                <!-- Prestige Drive Video (Reels Size) -->
+               <div class="row justify-content-center mb-5">
+                    <div class="col-lg-5 col-md-7 col-10 mx-auto">
+                        <div >
+                            <video
+                                class="reel-video w-100"
+                                style="width:300px; height:600px;"
+                                loop="loop"
+                                autoplay="autoplay"
+                                playsinline="playsinline"
+                                muted="muted"
+                                preload="auto"
+                                controls="controls"
+                            >
+                                <source src="/insabhi_custom_website/static/src/Images/prestige.mp4" type="video/mp4"/>
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Prestige Drive Text (Only English) -->
+                <div class="mb-5">
+                    <h3 class="fw-bold" style="color:#d4b08c;">Prestige drive service:</h3>
+                    <p class="lead text-muted">
+                        a premium transportation service offering round-trip rides<br/>
+                        to and from your home using the latest luxury cars<br/>
+                        <strong>Price: 24 kwd / Price with tabby: 26 kwd</strong>
+                    </p>
+                </div>
+
+                <!-- Perfume Title -->
+                <h3 class="fw-bold mb-4" style="color:#d4b08c;">Ten Wellness perfumes</h3>
+
+                <!-- 4 Perfume Cards -->
+                <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
+                            <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <h5>29.7 KWD</h5>
+                            <p>PERFUME 2, 100 ML</p>
+                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
+                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <h5>29.7 KWD</h5>
+                            <p>PERFUME 1, 100 ML</p>
+                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
+                            <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <h5>29.7 KWD</h5>
+                            <p>PERFUME 3, 100 ML</p>
+                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center bg-dark text-white p-4 rounded-4 shadow">
+                            <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover;"/>
+                            <h5>11 KWD</h5>
+                            <p>TEN BOTTLE</p>
+                            <button class="btn btn-light rounded-pill px-5">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </t>
+
+        <!-- EMPTY STATE -->
         <t t-if="!state.selectedCategory">
             <div class="text-center py-5 my-5">
                 <i class="fa fa-hand-point-up fa-4x text-muted mb-4"></i>
@@ -228,13 +290,14 @@
             </div>
         </t>
 
+        <!-- WHATSAPP -->
         <a href="https://api.whatsapp.com/send?phone=96522288282" class="position-fixed bg-success text-white rounded-circle shadow-lg d-flex align-items-center justify-content-center whatsapp-fixed-btn"
            style="width:60px;height:60px;bottom:1.5rem;right:1.5rem;z-index:1000;" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-whatsapp" style="font-size:1.8rem;"></i>
         </a>
     </div>
 
-    <!-- STYLES -->
+    <!-- STYLES (unchanged) -->
     <style>
         .hover-effect:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.22) !important; }
         .category-card:hover img { transform: scale(1.12); transition: 0.6s; }

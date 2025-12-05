@@ -14,6 +14,7 @@ export class ServiceSelecting extends Component {
             selectedPrice: null,
             showGiftCards: false,
             showMessageForm: false,
+            showAddons: false,           // ← NEW: Controls Add-ons page
             selectedGiftType: null,
             recipientName: '',
             message: '',
@@ -63,16 +64,12 @@ export class ServiceSelecting extends Component {
             ],
         };
 
-        // AUTOMATED MESSAGES (English only as requested)
+        // AUTOMATED MESSAGES (English)
         this.autoMessages = {
             father: `Take a well-deserved break and enjoy a day just for you. Relax, recharge, and let yourself be pampered, you’ve earned every moment of peace and comfort.`,
-
             mother: `A day just for you to relax, recharge, and feel cared for. You deserve every moment of peace and joy, for all the love and kindness you give every day.`,
-
             husband: `This is your day to rest and relax, to recharge and renew your peace. You deserve every moment of care and attention for all the love and effort you give.`,
-
             wife: `Take a day just for you, to relax, refresh, and be pampered. You deserve every moment of peace and care for all the love you give every day.`,
-
             friend: `Enjoy a day of relaxation and self care. Take time to recharge, unwind, and refresh your energy — you deserve every moment of peace after all your hard work.`,
         };
 
@@ -85,6 +82,7 @@ export class ServiceSelecting extends Component {
                 selectedPrice: null,
                 showGiftCards: false,
                 showMessageForm: false,
+                showAddons: false,
                 selectedGiftType: null,
                 recipientName: '',
                 message: '',
@@ -99,6 +97,7 @@ export class ServiceSelecting extends Component {
             this.state.selectedPrice = null;
             this.state.showGiftCards = false;
             this.state.showMessageForm = false;
+            this.state.showAddons = false;
         };
 
         this.selectDuration = (minutes, price) => {
@@ -116,13 +115,11 @@ export class ServiceSelecting extends Component {
             this.state.showMessageForm = true;
         };
 
-        // AUTOMATED MESSAGE HANDLER
         this.applyAutoMessage = (ev) => {
             const key = ev.target.value;
             if (key && this.autoMessages[key]) {
                 this.state.message = this.autoMessages[key];
-                // Reset dropdown after applying
-                ev.target.value = "";
+                ev.target.value = ""; // reset dropdown
             }
         };
 
@@ -136,20 +133,23 @@ export class ServiceSelecting extends Component {
                 return;
             }
 
+            // Show Add-ons page
+            this.state.showAddons = true;
+
+            // Send order to WhatsApp
             const text = `NEW GIFT VOUCHER ORDER
 
-Service: ${this.state.selectedService.name} (${this.state.selectedDuration} min)
-Price: KWD ${this.state.selectedPrice}
-Gift Type: ${this.state.selectedGiftType.toUpperCase()}
-To: ${this.state.recipientName}
-Message: ${this.state.message}
-From: ${this.state.senderName || 'Anonymous'}
-${this.state.songLink ? 'Song Link: ' + this.state.songLink : ''}
+            Service: ${this.state.selectedService.name} (${this.state.selectedDuration} min)
+            Price: KWD ${this.state.selectedPrice}
+            Gift Type: ${this.state.selectedGiftType.toUpperCase()}
+            To: ${this.state.recipientName}
+            Message: ${this.state.message}
+            From: ${this.state.senderName || 'Anonymous'}
+            ${this.state.songLink ? 'Song Link: ' + this.state.songLink : ''}
 
-Thank you!`;
+            Thank you!`;
 
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=96522288282&text=${encodeURIComponent(text)}`;
-            window.open(whatsappUrl, '_blank');
+//            window.open(`https://api.whatsapp.com/send?phone=96522288282&text=${encodeURIComponent(text)}`, '_blank');
         };
 
         this.getCurrentServices = () => {
@@ -158,7 +158,7 @@ Thank you!`;
     }
 }
 
-// Mount the component when page is ready
+// Mount the component
 whenReady(() => {
     const target = document.querySelector('.serviceSelecting');
     if (target) {
