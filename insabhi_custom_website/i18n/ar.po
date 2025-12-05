@@ -1,0 +1,251 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: insabhi_custom_website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-03 00:00+0000\n"
+"PO-Revision-Date: 2025-12-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: insabhi_custom_website
+msgid "Welcome To Ten Wellness"
+msgstr "مرحبا بكم في تن ويلنس"
+
+#. module: insabhi_custom_website
+msgid "The Highest Rated Spa On Google Reviews"
+msgstr "السبا الأعلى تقييماً على جوجل"
+
+#. module: insabhi_custom_website
+msgid "In The Arab World"
+msgstr "في العالم العربي"
+
+#. module: insabhi_custom_website
+msgid "Book Now"
+msgstr "احجز الآن"
+
+#. module: insabhi_custom_website
+msgid "New And Exceptional"
+msgstr "جديد واستثنائي"
+
+#. module: insabhi_custom_website
+msgid "Experience the perfect blend of enduring favorites and the latest innovations."
+msgstr "اختبر المزيج المثالي من المفضلات الدائمة وأحدث الابتكارات."
+
+#. module: insabhi_custom_website
+msgid "Limited-release"
+msgstr "إصدار محدود"
+
+#. module: insabhi_custom_website
+msgid "New addition"
+msgstr "إضافة جديدة"
+
+#. module: insabhi_custom_website
+msgid "Beloved formulation"
+msgstr "تركيبة محبوبة"
+
+#. module: insabhi_custom_website
+msgid "Placeholder Product"
+msgstr "منتج تجريبي"
+
+#. module: insabhi_custom_website
+msgid "Perfume Three 100ml"
+msgstr "عطر ثري 100مل"
+
+#. module: insabhi_custom_website
+msgid "Ten Protein Shampoo"
+msgstr "شامبو تين بالبروتين"
+
+#. module: insabhi_custom_website
+msgid "Sukoon Candle"
+msgstr "شمعة سكون"
+
+#. module: insabhi_custom_website
+msgid "Wooden Sage"
+msgstr "مِرْوَح خشبي"   # adjust if you prefer different Arabic
+
+#. module: insabhi_custom_website
+msgid "Wahaj Candle"
+msgstr "شمعة وجّاح"    # adjust if needed
+
+#. module: insabhi_custom_website
+msgid "K.D 29.70"
+msgstr "د.ك 29.70"
+
+#. module: insabhi_custom_website
+msgid "Add to cart"
+msgstr "أضف إلى السلة"
+
+#. module: insabhi_custom_website
+msgid "Browse by Category"
+msgstr "تصفح حسب الفئة"
+
+#. module: insabhi_custom_website
+msgid "Curated rituals for every moment of self-care"
+msgstr "طقوس منتقاة لكل لحظة من العناية الذاتية"
+
+#. module: insabhi_custom_website
+msgid "Ten Wellness Treatments"
+msgstr "علاجات تن ويلنس"
+
+#. module: insabhi_custom_website
+msgid "Discover the pinnacle of relaxation and rejuvenation at Ten Wellness, where every detail is designed to elevate your wellness experience."
+msgstr "اكتشف ذروة الاسترخاء والتجدد في تن ويلنس، حيث تُصمم كل التفاصيل لرفع تجربة رفاهيتك."
+
+#. module: insabhi_custom_website
+msgid "FOR HER"
+msgstr "للنساء"
+
+#. module: insabhi_custom_website
+msgid "FOR HIM"
+msgstr "للرجال"
+
+#. module: insabhi_custom_website
+msgid "Book Her Session"
+msgstr "احجز جلسة للنساء"
+
+#. module: insabhi_custom_website
+msgid "Book His Session"
+msgstr "احجز جلسة للرجال"
+
+#. module: insabhi_custom_website
+msgid "Recommended Fragrance"
+msgstr "العطر الموصى به"
+
+#. module: insabhi_custom_website
+msgid "Discover the Scent"
+msgstr "اكتشف العطر"
+
+#. module: insabhi_custom_website
+msgid "Book a Sample"
+msgstr "احجز عينة"
+
+#. module: insabhi_custom_website
+msgid "Ten Wellness Testimonials"
+msgstr "آراء عملاء تن ويلنس"
+
+#. module: insabhi_custom_website
+msgid "Real words from our cherished guests"
+msgstr "كلمات حقيقية من ضيوفنا الأعزاء"
+
+#. module: insabhi_custom_website
+msgid "Celebrity Experience"
+msgstr "تجربة المشاهير"
+
+#. module: insabhi_custom_website
+msgid "A neighbourly presence"
+msgstr "وجود مجتمعي"
+
+#. module: insabhi_custom_website
+msgid "A SANCTUARY OF CALM"
+msgstr "ملاذ من الهدوء"
+
+#. module: insabhi_custom_website
+msgid "Discover Our Story"
+msgstr "اكتشف قصتنا"
+
+
+
+#. module: insabhi_custom_website
+msgid "Our Story"
+msgstr "قصتنا"
+
+#. module: insabhi_custom_website
+msgid "Ten Wellness was born from a vision to redefine wellness in Kuwait — blending world-class spa techniques"
+msgstr "وُلدت تن ويلنس من رؤية لإعادة تعريف الرفاهية في الكويت — من خلال دمج تقنيات السبا العالمية"
+
+#. module: insabhi_custom_website
+msgid "with profound emotional healing, creating a serene space where mind and body are gently restored."
+msgstr "مع شفاء عاطفي عميق، مكوِّنة مساحة هادئة يُستعاد فيها العقل والجسم بلطف."
+
+#. module: insabhi_custom_website
+msgid "Established 2017 • Kuwait"
+msgstr "تأسست 2017 • الكويت"
+
+#. module: insabhi_custom_website
+msgid "Ten Wellness was founded with a mission to redefine wellness in Kuwait. Inspired by years of exploring world-class spa practices, the founders envisioned a space that not only combined exceptional techniques and therapeutic treatments but also addressed deeper layers of well-being. Every service is designed to ensure guest satisfaction and guarantee holistic treatment, offering a serene and rejuvenating journey to restore mind and body."
+msgstr "تأسست تن ويلنس بمهمة إعادة تعريف مفهوم العافية في الكويت. مستوحاة من سنوات من استكشاف ممارسات السبا العالمية، تصوّر المؤسِّسون مساحة تجمع بين تقنيات استثنائية وعلاجات علاجية وتتناول أيضاً طبقات أعمق من الرفاهية. تم تصميم كل خدمة لضمان رضا الضيوف وتقديم علاج شامل، مقدمين رحلة هادئة ومنعشة لاستعادة العقل والجسم."
+
+#. module: insabhi_custom_website
+msgid "In July 2017, Yousef and Bader Alessa acquired Ten Wellness and transformed it into a sanctuary of relaxation, rejuvenation, and emotional healing. At Ten Wellness, the focus goes beyond physical care; it embraces the profound connection between body and mind, offering treatments designed to release emotional tension and foster a sense of inner peace."
+msgstr "في يوليو 2017، استحوذ يوسف وبدر العيسى على تن ويلنس وحوّلاه إلى ملاذ للاسترخاء والتجدد والشفاء العاطفي. في تن ويلنس، يتجاوز التركيز الرعاية الجسدية؛ إذ يحتضن الاتصال العميق بين الجسد والعقل، مقدماً علاجات مصممة لتفريغ التوتر العاطفي وتعزيز الشعور بالسلام الداخلي."
+
+#. module: insabhi_custom_website
+msgid "Today, Ten Wellness stands as a leading destination for wellness, offering unparalleled services that promote balance, healing, and tranquility — empowering guests to renew both their physical and emotional well-being."
+msgstr "اليوم، تقف تن ويلنس كوجهة رائدة في مجال العافية، مقدمة خدمات لا مثيل لها تعزز التوازن والشفاء والطمأنينة — وتمكّن الضيوف من تجديد رفاهيتهم الجسدية والعاطفية."
+
+#. module: insabhi_custom_website
+msgid "Spa Etiquette"
+msgstr "آداب السبا"
+
+#. module: insabhi_custom_website
+msgid "A few gentle guidelines to preserve the tranquil atmosphere we cherish for all guests."
+msgstr "بعض الإرشادات اللطيفة للحفاظ على أجواء الهدوء التي نعتز بها لجميع الضيوف."
+
+#. module: insabhi_custom_website
+msgid "Arrival Time"
+msgstr "وقت الحضور"
+
+#. module: insabhi_custom_website
+msgid "Please arrive at least 20 minutes prior to your scheduled appointment to ensure a smooth check-in process. Note that treatments will conclude at the scheduled time without extensions unless previously requested."
+msgstr "يرجى الوصول قبل موعد الحجز بـ20 دقيقة على الأقل لضمان عملية تسجيل سلسة. يرجى ملاحظة أن الجلسات ستنتهي في وقتها المحدد دون تمديد ما لم يتم طلب ذلك مسبقًا."
+
+#. module: insabhi_custom_website
+msgid "Late Arrivals"
+msgstr "التأخر عن المواعيد"
+
+#. module: insabhi_custom_website
+msgid "Late arrivals will result in a reduced treatment time to accommodate subsequent bookings."
+msgstr "سيؤدي الوصول المتأخر إلى تقليل وقت الجلسة لاستيعاب الحجوزات التالية."
+
+#. module: insabhi_custom_website
+msgid "Reservations"
+msgstr "الحجوزات"
+
+#. module: insabhi_custom_website
+msgid "We recommend booking your appointments 1–2 days in advance to secure your preferred time and service."
+msgstr "نوصي بحجز مواعيدك قبل 1–2 يومًا لضمان الحصول على الوقت والخدمة المفضلة."
+
+#. module: insabhi_custom_website
+msgid "Cancellations"
+msgstr "الإلغاء"
+
+#. module: insabhi_custom_website
+msgid "Kindly provide at least 4 hours' notice for cancellations by calling us directly."
+msgstr "يرجى تقديم إشعار قبل 4 ساعات على الأقل لإلغاء الحجز عبر الاتصال بنا مباشرة."
+
+#. module: insabhi_custom_website
+msgid "Refunds &amp; Valuables"
+msgstr "المبالغ المستردة والمقتنيات الثمينة"
+
+#. module: insabhi_custom_website
+msgid "Refund requests cannot be accommodated after the first 10 minutes of the treatment. Please avoid bringing valuables."
+msgstr "لا يمكن تلبية طلبات استرداد المبالغ بعد أول 10 دقائق من بدء الجلسة. يرجى تجنّب إحضار المقتنيات الثمينة."
+
+#. module: insabhi_custom_website
+msgid "No Mobiles &amp; No Smoking"
+msgstr "ممنوع استخدام الهواتف والتدخين"
+
+#. module: insabhi_custom_website
+msgid "For the privacy and tranquility of our spa environment, smoking and the use of mobile phones are strictly prohibited, even in silent mode."
+msgstr "لحفظ خصوصية وهدوء أجواء السبا، يُمنع التدخين واستخدام الهواتف المحمولة حتى في الوضع الصامت."
+
+#. module: insabhi_custom_website
+msgid "Health Declarations"
+msgstr "الإفصاح الصحي"
+
+#. module: insabhi_custom_website
+msgid "All guests are required to complete a consultation form with accurate and detailed information."
+msgstr "يتعين على جميع الضيوف تعبئة استمارة استشارية بمعلومات دقيقة ومفصلة."
+
+#. module: insabhi_custom_website
+msgid "Thank you for understanding and adhering to our policies."
+msgstr "شكرًا لتفهمكم والتزامكم بسياساتنا."
+
+#. module: insabhi_custom_website
+msgid "Book Your Experience Now"
+msgstr "احجز تجربتك الآن"
