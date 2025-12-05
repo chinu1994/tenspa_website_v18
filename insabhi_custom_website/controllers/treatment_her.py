@@ -9,7 +9,7 @@ class TreatmentHerController(http.Controller):
         treatments = {
             "aromatherapy-massage": {
                 "name": "Aromatherapy Massage ",
-                "image": "/insabhi_custom_website/static/src/image/herTreat2.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/herTreat2.jpg",
                 "ideal_for": "Deep relaxation, stress relief, post-travel recovery",
                 "oil_type": "Calming essential oils",
                 "duration": "90 or 120 minutes",
@@ -34,7 +34,7 @@ class TreatmentHerController(http.Controller):
 
             "foot-reflexology": {
                 "name": "Foot Reflexology",
-                "image": "/insabhi_custom_website/static/src/image/treat1.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/treat1.jpg",
                 "ideal_for": "Improving circulation, stress relief, digestive support",
                 "oil_type": "No oil or light aromatic oils",
                 "duration": "60 minutes",
@@ -58,7 +58,7 @@ class TreatmentHerController(http.Controller):
 
             "swedish-massage": {
                 "name": "Swedish Massage",
-                "image": "/insabhi_custom_website/static/src/image/swedish12.webp",
+                "image": "/insabhi_custom_website/static/src/Images/swedish12.webp",
                 "ideal_for": "Muscle tension relief and overall relaxation",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -82,7 +82,7 @@ class TreatmentHerController(http.Controller):
 
             "indonesian-balinese-massage": {
                 "name": "Indonesian (Balinese) Massage",
-                "image": "/insabhi_custom_website/static/src/image/herTreat1.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/herTreat1.jpg",
                 "ideal_for": "Stress relief, circulation boost, detoxification",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -106,7 +106,7 @@ class TreatmentHerController(http.Controller):
 
             "deep-tissue-sports-massage": {
                 "name": "Deep Tissue Massage / Sports Massage",
-                "image": "/insabhi_custom_website/static/src/image/deep.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/deep.jpg",
                 "ideal_for": "Muscle pain relief after intense physical activity",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -130,7 +130,7 @@ class TreatmentHerController(http.Controller):
 
             "thai-massage": {
                 "name": " Warrior Thai Massage (Therapeutic & Recovery)",
-                "image": "/insabhi_custom_website/static/src/image/thai.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/thai.jpg",
                 "ideal_for": " Muscle recovery, improving flexibility, pain relief, stress reduction, and overall body ",
                 "oil_type": "No oil",
                 "duration": "60 or 90 or 120 minutes",
@@ -154,7 +154,7 @@ class TreatmentHerController(http.Controller):
 
             "back-neck-shoulder-head": {
                 "name": "Back, Neck, Shoulder, and Head Massage (Therapeutic & Recovery)",
-                "image": "/insabhi_custom_website/static/src/image/back.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/back.jpg",
                 "ideal_for": (
                     "Relieving muscle tightness, reducing headaches and neck pain, releasing stress, "
                     "and promoting overall relaxation"
@@ -179,7 +179,7 @@ class TreatmentHerController(http.Controller):
 
             "aircups-30min": {
                 "name": "30mins Aircups",
-                "image": "/insabhi_custom_website/static/src/image/gift4.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/gift4.jpg",
                 "ideal_for": (
                     "Stimulating blood circulation, relieving muscle tension, reducing inflammation, "
                     "detoxifying the body, and supporting natural healing"
@@ -207,7 +207,7 @@ class TreatmentHerController(http.Controller):
 
             "marbaya-nights": {
                 "name": "Marbaya Nights (120 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/gift3.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/gift3.jpg",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Body detox, skin revitalization, and deep relaxation",
                 "duration": "120 minutes",
@@ -234,7 +234,7 @@ class TreatmentHerController(http.Controller):
 
             "mani-pedi-basic": {
                 "name": "Spoil Me Mani & Pedi",
-                "image": "/insabhi_custom_website/static/src/image/treat4.jpg",  # update path
+                "image": "",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
                     "Maintaining neat and polished nails, smooth skin, overall hand & foot health, "
@@ -260,7 +260,7 @@ class TreatmentHerController(http.Controller):
 
             "mani-pedi-usual": {
                 "name": "Elegant Mani & Pedi",
-                "image": "/insabhi_custom_website/static/src/image/treat5.jpg",  # update path
+                "image": "/insabhi_custom_website/static/src/Images/treat5.jpg",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
                     "Maintaining neat and polished nails, smooth skin, overall hand & foot health, "
@@ -286,7 +286,7 @@ class TreatmentHerController(http.Controller):
 
             "mani-pedi-super": {
                 "name": "Basic Mani & Pedi",
-                "image": "/insabhi_custom_website/static/src/image/treat3.jpg",  # update path
+                "image": "/insabhi_custom_website/static/src/Images/treat3.jpg",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
                     "Maintaining neat and polished nails, smooth skin, overall hand & foot health, "
