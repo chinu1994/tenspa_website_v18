@@ -73,34 +73,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="/giftVoucher"
-                                               aria-expanded="false">
-                                                Gift Vouchers
-                                            </a>
-
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="/serviceSelecting">Service selecting page
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/forHer">Gift For Her
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/giftType">Gift Types</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/addOns">Add ons</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
+                                        <a class="nav-link" href="/giftVoucher">Gift Vouchers</a>
                                         <a class="nav-link" href="/tenStore">Ten Store</a>
                                         <a class="nav-link" href="/careers">Careers</a>
                                         <a class="nav-link" href="/contactus">Contact Us</a>
@@ -133,31 +106,12 @@
                                             </li>
                                         </ul>
                                     </li>
-
-                                    <li class="nav-item dropdown pb-2 mb-2">
-                                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
-                                           data-bs-toggle="dropdown" role="button" data-nav-url="/giftVoucher">Gift Vouchers
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="/serviceSelecting">Service selecting page</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/forHer">Gift For Her</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item">Gift Types</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item">Add ons</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/voucherDelivery">Voucher delivery</a>
-                                            </li>
-                                        </ul>
+                                      <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/giftVoucher">Gift Vouchers</a>
                                     </li>
-
+                                     <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
+                                        <a class="nav-link" href="/tenStore">Ten Store</a>
+                                    </li>
                                     <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
                                         <a class="nav-link" href="/tenStore">Ten Store</a>
                                     </li>
