@@ -9,7 +9,7 @@ class TreatmentHimController(http.Controller):
         treatments = {
             "aromatherapy-massage": {
                 "name": "Aromatherapy Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat9.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat9.webp",
                 "ideal_for": "Deep relaxation, stress relief, post-travel recovery",
                 "oil_type": "Calming essential oils",
                 "duration": "90 or 120 minutes",
@@ -34,7 +34,7 @@ class TreatmentHimController(http.Controller):
 
             "foot-reflexology": {
                 "name": "Foot Reflexology",
-                "image": "/insabhi_custom_website/static/src/image/treat15.jpeg",
+                "image": "/insabhi_custom_website/static/src/Images/treat21.jpeg",
                 "ideal_for": "Improving circulation, stress relief, digestive support",
                 "oil_type": "No oil or light aromatic oils",
                 "duration": "60 minutes",
@@ -58,7 +58,7 @@ class TreatmentHimController(http.Controller):
 
             "swedish-massage": {
                 "name": "Swedish Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat12.webp",
+                "image": "/insabhi_custom_website/static/src/Images/mass4.webp",
                 "ideal_for": "Muscle tension relief and overall relaxation",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -82,7 +82,7 @@ class TreatmentHimController(http.Controller):
 
             "indonesian-balinese-massage": {
                 "name": "Indonesian (Balinese) Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat13.jpeg",
+                "image": "/insabhi_custom_website/static/src/Images/treat13.jpeg",
                 "ideal_for": "Stress relief, circulation boost, detoxification",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -106,7 +106,7 @@ class TreatmentHimController(http.Controller):
 
             "deep-tissue-sports-massage": {
                 "name": "Deep Tissue Massage / Sports Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat11.webp",
+                "image": "/insabhi_custom_website/static/src/Images/mass3.webp",
                 "ideal_for": "Muscle pain relief after intense physical activity",
                 "oil_type": "Light aromatic oils",
                 "duration": "60, 90, or 120 minutes",
@@ -130,7 +130,7 @@ class TreatmentHimController(http.Controller):
 
             "thai-massage": {
                 "name": "Thai Massage",
-                "image": "/insabhi_custom_website/static/src/image/treat8.webp",
+                "image": "/insabhi_custom_website/static/src/Images/mass2.webp",
                 "ideal_for": "Flexibility improvement, muscle tension relief, overall health",
                 "oil_type": "No oil",
                 "duration": "60 or 90 minutes",
@@ -153,7 +153,7 @@ class TreatmentHimController(http.Controller):
 
             "back-neck-shoulder-head": {
                 "name": "Back, Neck, Shoulder, and Head Massage (Therapeutic & Recovery)",
-                "image": "/insabhi_custom_website/static/src/image/treat7.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/treat7.jpg",
                 "ideal_for": (
                     "Relieving muscle tightness, reducing headaches and neck pain, releasing stress, "
                     "and promoting overall relaxation"
@@ -178,7 +178,7 @@ class TreatmentHimController(http.Controller):
 
             "aircups-30min": {
                 "name": "30mins Aircups",
-                "image": "/insabhi_custom_website/static/src/image/gift4.jpg",
+                "image": "/insabhi_custom_website/static/src/Images/gift4.jpg",
                 "ideal_for": (
                     "Stimulating blood circulation, relieving muscle tension, reducing inflammation, "
                     "detoxifying the body, and supporting natural healing"
@@ -205,7 +205,7 @@ class TreatmentHimController(http.Controller):
 
             "sunset-boulevard-ritual": {
                 "name": "Sunset Boulevard Ritual",
-                "image": "/insabhi_custom_website/static/src/image/treat13.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat13.webp",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Deep relaxation, skin renewal, and body revitalization",
                 "duration": "120 minutes",
@@ -227,7 +227,7 @@ class TreatmentHimController(http.Controller):
 
             "marbaya-nights": {
                 "name": "Marbaya Nights (120 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat21.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat21.webp",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Body detox, skin revitalization, and deep relaxation",
                 "duration": "120 minutes",
@@ -248,7 +248,7 @@ class TreatmentHimController(http.Controller):
 
             "hollywood-grooming": {
                 "name": "Hollywood Grooming (180 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat16.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat16.webp",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Skin rejuvenation, body detox, nail care and deep relaxation",
                 "duration": "180 minutes",
@@ -270,7 +270,7 @@ class TreatmentHimController(http.Controller):
 
             "walk-in-shaheed-park": {
                 "name": "Walk In Shaheed Park (120 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/mass5.png",
+                "image": "/insabhi_custom_website/static/src/Images/treat17.webp",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": "Energizing and skin renewal",
                 "duration": "120 minutes",
@@ -292,7 +292,7 @@ class TreatmentHimController(http.Controller):
 
             "self-love-package": {
                 "name": "Self-Love Package",
-                "image": "/insabhi_custom_website/static/src/image/treat20.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat20.webp",
                 "category": "Rituals (Luxury Packages)",
                 "ideal_for": (
                     "A complete body relaxation experience, skin detoxification, and facial rejuvenation"
@@ -319,7 +319,7 @@ class TreatmentHimController(http.Controller):
 
             "traditional-hammam": {
                 "name": "Traditional (60 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat18.webp",
+                "image": "/insabhi_custom_website/static/src/Images/treat18.webp",
                 # apni actual image path se replace karo
                 "category": "Skin Conditioning Treatments",
                 "ideal_for": "Tired skin",
@@ -340,7 +340,7 @@ class TreatmentHimController(http.Controller):
 
             "mud-wrap": {
                 "name": "Mud Wrap (60 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat21.webp",  # apni image
+                "image": "/insabhi_custom_website/static/src/Images/treat21.webp",  # apni image
                 "category": "Skin Conditioning Treatments",
                 "ideal_for": "Fatigued and stressed skin",
                 "duration": "60 minutes",
@@ -360,7 +360,7 @@ class TreatmentHimController(http.Controller):
 
             "double-scrub": {
                 "name": "Double Scrub (60 Minutes)",
-                "image": "/insabhi_custom_website/static/src/image/treat20.webp",  # apni image
+                "image": "/insabhi_custom_website/static/src/Images/treat20.webp",  # apni image
                 "category": "Skin Conditioning Treatments",
                 "ideal_for": "Dull, tired skin",
                 "duration": "60 minutes",
@@ -410,7 +410,7 @@ class TreatmentHimController(http.Controller):
 
             "mani-pedi-super": {
                 "name": "Mani & Pedi Super",
-                "image": "/insabhi_custom_website/static/src/image/treat10.webp",  # update path
+                "image": "/insabhi_custom_website/static/src/Images/treat10.webp",  # update path
                 "category": "Distinguished Grooming for Gentlemen",
                 "ideal_for": (
                     "Maintaining neat and polished nails, smooth skin, overall hand & foot health, "
@@ -463,7 +463,7 @@ class TreatmentHimController(http.Controller):
 
             "express-facial": {
                 "name": "Express Facial",
-                "image": "/insabhi_custom_website/static/src/image/treat2.webp",  # update path
+                "image": "/insabhi_custom_website/static/src/Images/treat2.webp",  # update path
                 "category": "Facial Services",
                 "ideal_for": (
                     "Men’s skincare, hydration, quick rejuvenation, and maintaining a fresh, healthy appearance "
