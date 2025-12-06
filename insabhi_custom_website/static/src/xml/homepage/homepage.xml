@@ -19,10 +19,7 @@
                 </div>
             </div>
         </section>
-
-
          <!-- new changes hare-->
-
         <section class="insabhi-new-notable py-5">
           <div class="container">
               <div class="text-center mb-5 insabhi-text">
@@ -223,21 +220,21 @@
                     <p class="text-muted mt-3 lead">Curated rituals for every moment of self-care</p>
                 </div>
                 <div class="row g-4 g-xl-5 justify-content-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="insabhi-category-card-wrapper">
-                            <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
-                                                transition-all hover-lift hover-shadow" style="border: 1px solid rgba(0,0,0,0.2);">
-                                <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
-                                    <img src="/insabhi_custom_website/static/src/Images/prop1.jpg" alt="Skin Care"
-                                         class="img-fluid w-100 rounded-3 transition-all"
-                                         style="height:200px; object-fit:contain; background:#fff;"/>
-                                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
-                                </div>
-                                <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Ten Perfume</h3>
+                    <div class="col-6 col-md-4 col-lg-2" onclick="window.location='/ten-perfume'" style="cursor:pointer;">
+                    <div class="insabhi-category-card-wrapper">
+                        <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm transition-all hover-lift hover-shadow"
+                             style="border:1px solid rgba(0,0,0,0.2);">
+                            <div class="insabhi-category-image mb-4 position-relative overflow-hidden rounded-3">
+                                <img src="/insabhi_custom_website/static/src/Images/prop1.jpg" alt="Ten Perfume"
+                                     class="img-fluid w-100 rounded-3 transition-all"
+                                     style="height:200px; object-fit:contain; background:#fff;"/>
+                                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-gold opacity-0 transition-all"></div>
                             </div>
+                            <h3 class="insabhi-category-name mt-auto fw-medium text-dark">Ten Perfume</h3>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2" onclick="window.location='/ten-shampoo'" style="cursor:pointer;">
                         <div class="insabhi-category-card-wrapper">
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow" style="border: 1px solid rgba(0,0,0,0.2);">
@@ -251,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-2" onclick="window.location='/ten-candle'" style="cursor:pointer;">
                         <div class="insabhi-category-card-wrapper">
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow" style="border: 1px solid rgba(0,0,0,0.2);">
@@ -265,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-2" onclick="window.location='/ten-bottle'" style="cursor:pointer;">
                         <div class="insabhi-category-card-wrapper">
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow" style="border: 1px solid rgba(0,0,0,0.2);">
@@ -279,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-2" onclick="window.location='/ten-plants'" style="cursor:pointer;">
                         <div class="insabhi-category-card-wrapper">
                             <div class="insabhi-category-card text-center h-100 d-flex flex-column p-4 bg-white rounded-4 shadow-sm
                                                 transition-all hover-lift hover-shadow" style="border: 1px solid rgba(0,0,0,0.2);">
@@ -345,7 +342,7 @@
                                 <p class="text-muted small mb-3">
                                     Immerse yourself in an atmosphere of tranquility as our highly skilled therapists deliver expertly tailored treatments to restore balance to your mind, body, and spirit.
                                 </p>
-                                <a href="#"
+                                <a href="/treatmentHer"
                                    class="mt-auto align-self-start btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase fw-medium"
                                    style="letter-spacing:1.5px;font-size:0.875rem;">
                                     Book Her Session <i class="bi bi-spa ms-2"></i>
@@ -375,7 +372,7 @@
                                 <p class="text-muted small mb-3">
                                     Our signature massages are thoughtfully crafted to alleviate stress and tension, leaving you feeling refreshed and revitalized in meticulously designed 60- or 90-minute sessions.
                                 </p>
-                                <a href="#"
+                                <a href="/treatmentHim"
                                    class="mt-auto align-self-start btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase fw-medium"
                                    style="letter-spacing:1.5px;font-size:0.875rem;">
                                     Book His Session <i class="bi bi-droplet ms-2"></i>

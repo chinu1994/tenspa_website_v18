@@ -47,7 +47,7 @@
         'view/treatment_her_detail.xml',
         'view/faq.xml',
         'view/forHer.xml',
-
+        'view/category.xml',
     ],
     'assets': {
         'web.assets_frontend': [
