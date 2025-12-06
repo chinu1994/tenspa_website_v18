@@ -36,10 +36,10 @@
                                             <div class="line"></div>
                                         </button>
 
-                                        <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">
-                                            <a class="nav-link">Stores</a>
+<!--                                        <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">-->
+<!--                                            <a class="nav-link">Stores</a>-->
 
-                                        </div>
+<!--                                        </div>-->
 
                                         <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
                                             <form class="insabhi-search-form d-flex me-3 position-relative">
@@ -48,8 +48,6 @@
                                                 <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
                                                 <button class="btn btn-search" type="submit">Search</button>
                                             </form>
-                                            <a class="nav-link">Email sign up</a>
-                                            <a class="nav-link">Account</a>
                                             <a class="nav-link">My cart</a>
                                         </div>
                                     </div>
@@ -141,21 +139,10 @@
         <template id="insabhi_custom_footer" inherit_id="website.layout" name="Aesop Custom Footer">
             <xpath expr="//footer" position="replace">
 
-                <footer class="o_footer pt-5 pb-5" style="background:#1a1a1a; color:#ccc;">
-
-                    <div class="container mb-5">
-                        <div class="row justify-content-center g-0">
-                            <div class="col-auto d-flex align-items-center mx-4">
-                                <i class="fa fa-lock me-2"></i>
-                                <span>Secure checkout</span>
-                            </div>
-                            <div class="col-auto d-flex align-items-center mx-4">
-                                <i class="fa fa-gift me-2"></i>
-                                <span>Complimentary gift wrapping</span>
-                            </div>
-                        </div>
+                <footer class="o_footer pt-2 pb-2" style="background:#1a1a1a; color:#ccc;">
+                     <div class="text-center">
+                        <img src="/insabhi_custom_website/static/src/Images/logo.png" alt="Ten" style="height: 70px; display:block; margin-left:auto; margin-right:auto;" />
                     </div>
-
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-11 col-lg-10 col-xl-9">
@@ -165,30 +152,16 @@
                                         <h5 class="mb-3 text-white" style="font-size:15px;">Orders and support</h5>
                                         <ul class="list-unstyled mb-0" style="font-size:15px; line-height:1.8;">
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">Contact us</a>
+                                                <a href="#" class="text-muted text-decoration-none">Track Order</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">FAQs</a>
+                                                <a href="/faq" class="text-muted text-decoration-none">FAQs</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">Shipping</a>
+                                                <a href="/giftVoucher" class="text-muted text-decoration-none">Gift Vouchers</a>
                                             </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Returns</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Track your order</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Check gift card
-                                                    balance
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Terms of use</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Product recalls</a>
+                                             <li>
+                                                <a href="/treatment" class="text-muted text-decoration-none">Treatment</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -197,40 +170,16 @@
                                         <h5 class="mb-3 text-white" style="font-size:15px;">About</h5>
                                         <ul class="list-unstyled mb-0" style="font-size:15px; line-height:1.8;">
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">Our story</a>
+                                                <a href="/aboutus" class="text-muted text-decoration-none">Our story</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">Foundation</a>
+                                                <a href="/careers" class="text-muted text-decoration-none">Careers</a>
+                                            </li>
+                                             <li>
+                                                <a href="/contactus" class="text-muted text-decoration-none">Contact Us</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="text-muted text-decoration-none">Careers</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Online Preferences
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Privacy policy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Accessibility
-                                                    Statement
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Your Privacy
-                                                    Choices
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Notice At
-                                                    Collection
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="text-muted text-decoration-none">Consumer Health Data
-                                                    Notice
-                                                </a>
+                                                <a href="/tenstore" class="text-muted text-decoration-none">Ten Store</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -241,12 +190,9 @@
                                         </h5>
                                         <p class="small mb-0"
                                            style="font-size:15px; line-height:1.6;">Ten Wellness
-                                            was founded to go beyond physical care. We focus on
-                                            emotional healing, offering treatments designed to
-                                            release tension and foster inner peace. Every service is
-                                            a rejuvenating journey to restore mind and body.
+                                            Born in the heart of Kuwait, Ten Wellness is the Arab world’s highest Google-rated spa — a space that not only combines exceptional techniques and therapeutic treatments
                                             <a
-                                                    href="#"
+                                                    href="/aboutus"
                                                     class="text-decoration-underline text-muted">Read
                                                 Our Story
                                             </a>
@@ -254,100 +200,65 @@
                                     </div>
 
                                     <div class="col-6 col-md-3">
-                                        <h5 class="mb-3 text-white" style="font-size:15px;">Subscribe to Ten
-                                            Communications
-                                        </h5>
-                                        <form id="aesop-newsletter-form" class="d-flex flex-column">
-                                            <input type="email" name="email" placeholder="Email address*"
-                                                   class="form-control mb-2 bg-dark text-white border-0"
-                                                   style="height:38px; font-size:15px;" required="required"/>
-                                            <p class="mb-2" style="font-size:11px; line-height:1.4;">
-                                                By submitting this form, you agree to receive communications from Ten
-                                                Store regarding promotions and new arrivals. Please read our
-                                                <a href="#" class="text-decoration-underline text-muted">Privacy Policy
-                                                </a>
-                                                and
-                                                <a href="#" class="text-decoration-underline text-muted">Terms &amp;
-                                                    Conditions</a>.
-                                            </p>
-                                            <button type="submit" class="btn btn-outline-light w-100"
-                                                    style="height:38px; font-size:15px;">Submit
-                                            </button>
-                                        </form>
+                                        <h5 class="mb-4 text-white" style="font-size:15px; margin-left:10px;">Follow us on</h5>
+
+                                        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center gap-3 gap-md-4">
+                                            <!-- TikTok -->
+                                            <a href="https://www.tiktok.com/@tenspa" target="_blank"
+                                               class="text-white text-decoration-none d-flex flex-column align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tiktok.svg"
+                                                     alt="TikTok" width="28" height="28" style="filter: brightness(0) invert(1);"/>
+                                                <span style="font-size:13px; margin-top: 4px;">TikTok</span>
+                                            </a>
+
+                                            <!-- Instagram -->
+                                            <a href="https://www.instagram.com/tenspakw/" target="_blank"
+                                               class="text-white text-decoration-none d-flex flex-column align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg"
+                                                     alt="Instagram" width="28" height="28" style="filter: brightness(0) invert(1);"/>
+                                                <span style="font-size:13px; margin-top: 4px;">Instagram</span>
+                                            </a>
+
+                                            <!-- X -->
+                                            <a href="https://x.com/tenspakw" target="_blank"
+                                               class="text-white text-decoration-none d-flex flex-column align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/x.svg"
+                                                     alt="X" width="28" height="28" style="filter: brightness(0) invert(1);"/>
+                                                <span style="font-size:13px; margin-top: 4px;">X</span>
+                                            </a>
+
+                                            <!-- Facebook -->
+                                            <a href="https://www.facebook.com/tenspakw/" target="_blank"
+                                               class="text-white text-decoration-none d-flex flex-column align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/facebook.svg"
+                                                     alt="Facebook" width="28" height="28" style="filter: brightness(0) invert(1);"/>
+                                                <span style="font-size:13px; margin-top: 4px;">Facebook</span>
+                                            </a>
+
+                                            <!-- YouTube -->
+                                            <a href="https://www.youtube.com/@tenspakw" target="_blank"
+                                               class="text-white text-decoration-none d-flex flex-column align-items-center">
+                                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/youtube.svg"
+                                                     alt="YouTube" width="28" height="28" style="filter: brightness(0) invert(1);"/>
+                                                <span style="font-size:13px; margin-top: 4px;">YouTube</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!--                    bottom baar-->
-
-                    <!-- change for center footer -->
                     <!-- BOTTOM BAR -->
                     <div class="container mt-5 pt-4 border-top border-secondary">
 
                         <div class="row text-center">
                             <div class="col-12">
                                 <span style="font-size:13px; display: block; margin-bottom: 10px;">
-                                    © 2025 Ten Wellness | All Rights Reserved. This site uses cookies and related
-                                    technologies.
-                                    To learn more, please review our
-                                    <a href="#" class="text-decoration-underline text-muted">Privacy Policy</a>
-                                    and
-                                    <a href="#" class="text-decoration-underline text-muted">Cookie Noticey</a>
+                                    © 2025 Ten Wellness | All Rights Reserved.
                                 </span>
-                            </div>
-
-                            <div class="col-12 mb-3 text-end">
-                                <a href="#" class="mx-3 text-white">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="#" class="mx-3 text-white">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="#" class="mx-3 text-white">
-                                    <i class="bi bi-pinterest"></i>
-                                </a>
-                                <a href="#" class="mx-3 text-white">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <a href="#" class="small text-muted mx-2">Terms &amp; Conditions</a>
-                                •
-                                <a href="#" class="small text-muted mx-2">Site Map</a>
-                                •
-                                <a href="#" class="small text-muted mx-2">Privacy Policy</a>
-                                •
-                                <a href="#" class="small text-muted mx-2">User Content Permissions</a>
-                                •
-                                <a href="#" class="small text-muted mx-2">Accessibility Statement</a>
-                                •
-                                <a href="#" class="small text-muted mx-2">Online Preferences</a>
                             </div>
                         </div>
                     </div>
-
-                    <!--work for gift voucher-->
-                    <!--                    <script>-->
-                    <!--                        document.addEventListener("DOMContentLoaded", function() {-->
-                    <!--                        const linksWithDropdown =-->
-                    <!--                        document.querySelectorAll('a[href="/giftVoucher"][data-bs-toggle="dropdown"]');-->
-
-                    <!--                        linksWithDropdown.forEach(linkWithDropdown => {-->
-                    <!--                        linkWithDropdown.addEventListener('click', function(e) {-->
-                    <!--                        const targetUrl = this.getAttribute('href');-->
-
-                    <!--                        if (targetUrl &amp;&amp; e.button === 0) {-->
-                    <!--                        window.open(targetUrl, '_blank');-->
-                    <!--                        }-->
-                    <!--                        });-->
-                    <!--                        });-->
-                    <!--                        });-->
-                    <!--                    </script>-->
-
-                    <!--work for gift voucher-->
-
                     <!-- foooter end -->
                     <script type="text/javascript">
                         document.addEventListener("DOMContentLoaded", function () {
