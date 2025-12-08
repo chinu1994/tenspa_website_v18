@@ -8,25 +8,24 @@ export class ForHer extends Component {
 
     setup() {
         this.state = useState({
+            currentStep: 'category',
             selectedCategory: null,
             selectedService: null,
             selectedDuration: null,
             selectedPrice: null,
-            showGiftCards: false,
-            showMessageForm: false,
-            showAddons: false,
-            showDeliveryForm: false,
-            showDateTimePicker: false,
-            showFinalOrder: false,           // ← NEW: Final order summary
             selectedGiftType: null,
             recipientName: '',
             message: '',
             senderName: '',
             songLink: '',
+            showDateTimePicker: false,
+            selectedDeliveryDate: null,
+            selectedDeliveryTime: null,
+            recipientPhone: '',
         });
 
         // CATEGORIES
-    this.categories = [
+        this.categories = [
             { id: 1, name: "Massage",    image: "/insabhi_custom_website/static/src/Images/treat6.jpg" },
             { id: 2, name: "Skin Care",  image: "/insabhi_custom_website/static/src/Images/treat5.jpg" },
             { id: 3, name: "Facial",     image: "/insabhi_custom_website/static/src/Images/treat7.jpg" },
@@ -78,35 +77,20 @@ export class ForHer extends Component {
 
         // METHODS
         this.selectCategory = (catId) => {
-            Object.assign(this.state, {
-                selectedCategory: this.state.selectedCategory === catId ? null : catId,
-                selectedService: null,
-                selectedDuration: null,
-                selectedPrice: null,
-                showGiftCards: false,
-                showMessageForm: false,
-                showAddons: false,
-                showDeliveryForm: false,
-                showDateTimePicker: false,
-                showFinalOrder: false,
-                selectedGiftType: null,
-                recipientName: '',
-                message: '',
-                senderName: '',
-                songLink: '',
-            });
+            this.state.selectedCategory = catId;
         };
 
-        this.selectService = (service) => {
+        this.moveToService = () => {
+            if (this.state.selectedCategory) {
+                this.state.currentStep = 'service';
+            }
+        };
+
+        this.moveToDuration = (service) => {
             this.state.selectedService = service;
             this.state.selectedDuration = null;
             this.state.selectedPrice = null;
-            this.state.showGiftCards = false;
-            this.state.showMessageForm = false;
-            this.state.showAddons = false;
-            this.state.showDeliveryForm = false;
-            this.state.showDateTimePicker = false;
-            this.state.showFinalOrder = false;
+            this.state.currentStep = 'duration';
         };
 
         this.selectDuration = (minutes, price) => {
@@ -114,14 +98,20 @@ export class ForHer extends Component {
             this.state.selectedPrice = price.toFixed(1);
         };
 
-        this.proceedToGiftCards = () => {
-            this.state.showGiftCards = true;
+        this.moveToGift = () => {
+            if (this.state.selectedDuration) {
+                this.state.currentStep = 'gift';
+            }
         };
 
         this.selectGiftType = (type) => {
             this.state.selectedGiftType = type;
-            this.state.showGiftCards = false;
-            this.state.showMessageForm = true;
+        };
+
+        this.moveToMessage = () => {
+            if (this.state.selectedGiftType) {
+                this.state.currentStep = 'message';
+            }
         };
 
         this.applyAutoMessage = (ev) => {
@@ -132,14 +122,22 @@ export class ForHer extends Component {
             }
         };
 
-        this.completeGift = () => {
-            if (!this.state.recipientName.trim()) return alert("Please enter the recipient's name.");
-            if (!this.state.message.trim()) return alert("Please write a message or choose an automated one.");
-            this.state.showAddons = true;
+        this.moveToAddons = () => {
+            if (this.state.recipientName.trim() && this.state.message.trim()) {
+                this.state.currentStep = 'addons';
+            }
         };
 
-        this.showDelivery = () => {
-            this.state.showDeliveryForm = true;
+        this.moveToDelivery = () => {
+            this.state.currentStep = 'delivery';
+        };
+
+        this.selectDeliveryDate = (date) => {
+            this.state.selectedDeliveryDate = date;
+        };
+
+        this.selectDeliveryTime = (time) => {
+            this.state.selectedDeliveryTime = time;
         };
 
         this.openDateTimePicker = () => {
@@ -150,9 +148,68 @@ export class ForHer extends Component {
             this.state.showDateTimePicker = false;
         };
 
-        // FINAL STEP — When user clicks CONFIRM in date/time picker
         this.confirmDateTime = () => {
-            this.state.showFinalOrder = true;
+            this.state.showDateTimePicker = false;
+            // Assume selections are made in picker, for simplicity
+            this.state.selectedDeliveryDate = 'custom';
+            this.state.selectedDeliveryTime = 'custom';
+            this.moveToPayment();
+        };
+
+        this.moveToPayment = () => {
+            if (this.state.selectedDeliveryDate && this.state.selectedDeliveryTime) {
+                this.state.currentStep = 'payment';
+            }
+        };
+
+        this.completePayment = () => {
+            alert("Payment completed! Thank you for your order.");
+            this.resetAll();
+        };
+
+        this.goBackToCategory = () => {
+            this.state.currentStep = 'category';
+        };
+
+        this.goBackToService = () => {
+            this.state.currentStep = 'service';
+        };
+
+        this.goBackToDuration = () => {
+            this.state.currentStep = 'duration';
+        };
+
+        this.goBackToGift = () => {
+            this.state.currentStep = 'gift';
+        };
+
+        this.goBackToMessage = () => {
+            this.state.currentStep = 'message';
+        };
+
+        this.goBackToAddons = () => {
+            this.state.currentStep = 'addons';
+        };
+
+        this.goBackToDelivery = () => {
+            this.state.currentStep = 'delivery';
+        };
+
+        this.resetAll = () => {
+            this.state.currentStep = 'category';
+            this.state.selectedCategory = null;
+            this.state.selectedService = null;
+            this.state.selectedDuration = null;
+            this.state.selectedPrice = null;
+            this.state.selectedGiftType = null;
+            this.state.recipientName = '';
+            this.state.message = '';
+            this.state.senderName = '';
+            this.state.songLink = '';
+            this.state.showDateTimePicker = false;
+            this.state.selectedDeliveryDate = null;
+            this.state.selectedDeliveryTime = null;
+            this.state.recipientPhone = '';
         };
 
         this.getCurrentServices = () => {
@@ -160,9 +217,12 @@ export class ForHer extends Component {
         };
     }
 }
+
 whenReady(() => {
     const target = document.querySelector('.forHer');
     if (target) {
         mount(ForHer, target, { getTemplate });
     }
 });
+
+

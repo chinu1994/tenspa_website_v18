@@ -2,6 +2,7 @@
     <data>
         <template id="forHer" name="ForHer">
             <t t-call="website.layout">
+                <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
                 <section id="admin" class="forHer">
                 </section>
             </t>
