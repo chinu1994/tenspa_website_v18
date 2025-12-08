@@ -251,34 +251,38 @@
                         <h3 class="content-title">Choose Your Gift Type</h3>
                         <p class="content-subtitle">Select the perfect physical gift package</p>
 
-                        <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
+                        <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center">
                             <div class="col">
-                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer" t-att-class="{ 'selected': state.selectedGiftType === 'diamond' }"
+<!--                                change 1-->
+                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer h-100 d-flex flex-column" t-att-class="{ 'selected': state.selectedGiftType === 'diamond' }"
                                      t-on-click="() => selectGiftType('diamond')">
-                                    <img src="/insabhi_custom_website/static/src/Images/diamond.jpg" class="w-100" style="height:580px; object-fit:cover;"/>
-                                    <div class="p-4 text-center bg-white">
-                                        <h4 class="fw-bold" style="color:#d4b08c;">Diamond Gift Voucher:</h4>
-                                        <p class="fw-bold fs-5">(Bamboo Plant + Luxury Bag + Invitation Card Box)<br/>Price: 26.5 KD including delivery</p>
+                                    <img src="/insabhi_custom_website/static/src/Images/diamond.jpg" class="w-100" style="height:200px; object-fit:cover;"/>
+<!--                                    change 2-->
+                                    <div class="p-4 text-center bg-white flex-grow-1 d-flex flex-column justify-content-center" style="min-height: 160px">
+<!--                                        chnage 3-->
+                                        <h4 class="fw-bold mb-2" style="color:#d4b08c;">Diamond Gift Voucher:</h4>
+<!--                                        change 4-->
+                                        <p class="fw-bold mb-0 small">(Bamboo Plant + Luxury Bag + Invitation Card Box)<br/>Price: 26.5 KD including delivery</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer" t-att-class="{ 'selected': state.selectedGiftType === 'platinum' }"
+                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer h-100 d-flex flex-column" t-att-class="{ 'selected': state.selectedGiftType === 'platinum' }"
                                      t-on-click="() => selectGiftType('platinum')">
-                                    <img src="/insabhi_custom_website/static/src/Images/platinum.jpg" class="w-100" style="height:580px; object-fit:cover;"/>
-                                    <div class="p-4 text-center bg-white">
-                                        <h4 class="fw-bold" style="color:#d4b08c;">Platinum Gift Voucher:</h4>
-                                        <p class="fw-bold fs-5">Luxury Gift Box + Invitation Card<br/>Price: 14.5 KD including delivery</p>
+                                    <img src="/insabhi_custom_website/static/src/Images/platinum.jpg" class="w-100" style="height:200px; object-fit:cover;"/>
+                                    <div class="p-4 text-center bg-white flex-grow-1 d-flex flex-column justify-content-center" style="min-height: 160px">
+                                        <h4 class="fw-bold mb-2" style="color:#d4b08c;">Platinum Gift Voucher:</h4>
+                                        <p class="fw-bold mb-0 small">Luxury Gift Box + Invitation Card<br/>Price: 14.5 KD including delivery</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer" t-att-class="{ 'selected': state.selectedGiftType === 'gold' }"
+                                <div class="gift-card-white position-relative shadow-lg rounded-4 overflow-hidden cursor-pointer h-100 d-flex flex-column" t-att-class="{ 'selected': state.selectedGiftType === 'gold' }"
                                      t-on-click="() => selectGiftType('gold')">
-                                    <img src="/insabhi_custom_website/static/src/Images/gold.png" class="w-100" style="height:580px; object-fit:cover;"/>
-                                    <div class="p-4 text-center bg-white">
-                                        <h4 class="fw-bold" style="color:#d4b08c;">Golden Gift Voucher</h4>
-                                        <p class="fw-bold fs-5">Digital invitation<br/>Price: 1.5 KD (sent via WhatsApp)</p>
+                                    <img src="/insabhi_custom_website/static/src/Images/gold.png" class="w-100" style="height:200px; object-fit:cover;"/>
+                                    <div class="p-4 text-center bg-white flex-grow-1 d-flex flex-column justify-content-center" style="min-height: 160px">
+                                        <h4 class="fw-bold mb-2" style="color:#d4b08c;">Golden Gift Voucher</h4>
+                                        <p class="fw-bold mb-0 small">Digital invitation<br/>Price: 1.5 KD (sent via WhatsApp)</p>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +306,7 @@
                         <p class="content-subtitle">Add a personal touch to your gift</p>
 
                         <div class="row justify-content-center">
-                            <div class="col-lg-6 col-md-8">
+                            <div class="col-lg-12 col-md-8">
                                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background:white; border: 4px solid #d4b08c;">
                                     <div class="card-body p-5">
                                         <div class="text-center mb-5">
@@ -407,7 +411,7 @@
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
                             <div class="col">
                                 <div class="text-center bg-light text-dark p-4 rounded-4 shadow">
-                                    <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
+                                    <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto; padding:3px 2px;"/>
                                     <h5>29.7 KWD</h5>
                                     <p>PERFUME 2, 100 ML</p>
                                     <button class="btn btn-dark rounded-pill px-5" t-on-click="moveToDelivery">ADD</button>
@@ -415,7 +419,7 @@
                             </div>
                             <div class="col">
                                 <div class="text-center bg-light text-dark p-4 rounded-4 shadow">
-                                    <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
+                                    <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto; padding:3px 2px;"/>
                                     <h5>29.7 KWD</h5>
                                     <p>PERFUME 1, 100 ML</p>
                                     <button class="btn btn-dark rounded-pill px-5" t-on-click="moveToDelivery">ADD</button>
@@ -423,7 +427,7 @@
                             </div>
                             <div class="col">
                                 <div class="text-center bg-light text-dark p-4 rounded-4 shadow">
-                                    <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
+                                    <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto; padding:3px 2px;"/>
                                     <h5>29.7 KWD</h5>
                                     <p>PERFUME 3, 100 ML</p>
                                     <button class="btn btn-dark rounded-pill px-5" t-on-click="moveToDelivery">ADD</button>
@@ -431,7 +435,7 @@
                             </div>
                             <div class="col">
                                 <div class="text-center bg-light text-dark p-4 rounded-4 shadow">
-                                    <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto"/>
+                                    <img src="/insabhi_custom_website/static/src/Images/tenbottle2.jpg" class="img-fluid rounded mb-3" style="height:260px; object-fit:cover; margin:3px auto;padding:3px 2px;"/>
                                     <h5>11 KWD</h5>
                                     <p>TEN BOTTLE</p>
                                     <button class="btn btn-dark rounded-pill px-5" t-on-click="moveToDelivery">ADD</button>
@@ -457,7 +461,7 @@
                         <p class="content-subtitle">Provide shipping and delivery information</p>
 
                         <div class="row justify-content-center">
-                            <div class="col-lg-6 col-md-8">
+                            <div class="col-lg-12 col-md-8">
 
                                 <!-- SHIPPING METHOD CARD (LIGHT VERSION) -->
                                 <t t-if="!state.showDateTimePicker">
@@ -587,7 +591,7 @@
                             <div class="col-lg-10">
                                 <div class="row g-4">
                                     <!-- Left Side -->
-                                    <div class="col-md-6">
+                                    <div class="col-md-11">
                                         <div class="bg-light rounded-4 p-5 text-center mb-4">
                                             <h4 class="text-uppercase text-muted mb-4"><t t-esc="state.recipientName.toUpperCase()"/></h4>
                                             <div class="bg-secondary text-white rounded-4 py-5 px-4 mb-4">
@@ -695,6 +699,7 @@
                 min-height: 100vh;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 color: #333;
+               margin-top: 30vh;
             }
 
             /* MAIN CONTAINER - FLEX LAYOUT */
@@ -803,15 +808,15 @@
             /* CONTENT SECTION */
             .content-section {
                 flex: 1;
-                padding: 3rem 4rem;
+                padding: 0 1rem;
                 overflow-y: auto;
                 background: white;
             }
 
-            .content-wrapper {
-                max-width: 900px;
-                margin: 0 auto;
-            }
+<!--            .content-wrapper {-->
+<!--                max-width: 900px;-->
+<!--                margin: 0 auto;-->
+<!--            }-->
 
             .content-title {
                 font-size: 2rem;
@@ -940,15 +945,16 @@
             /* SERVICE FLEX LAYOUT */
             .service-content-flex {
                 display: flex;
-                gap: 3rem;
+                gap: 1rem;
+
             }
 
             .left-service-card {
-                flex: 3;
+                flex: 2;
             }
 
             .right-summary {
-                flex: 1;
+                flex: 2;
                 position: sticky;
                 top: 2rem;
                 height: fit-content;
@@ -1112,6 +1118,13 @@
                 .content-section {
                     padding: 2rem 2.5rem;
                 }
+            }
+
+              @media (min-width: 1200px) {
+
+                   .service-content-flex{
+            gap:1rem;
+                        }
             }
 
             @media (max-width: 768px) {
