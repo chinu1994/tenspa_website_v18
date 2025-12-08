@@ -44,7 +44,7 @@
                                 <div>
                                     <h3 class="fw-bold text-dark mb-1">Price: <span style="color:#d4b08c;">11.9 KWD</span></h3>
                                 </div>
-                                <a href="/shop" class="btn btn-lg btn-dark px-5 shadow">Buy Now</a>
+                                <a href="/shop" class="btn btn-lg btn-dark px-5 shadow">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -126,9 +126,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('aromatherapy')">
                                   <img src="/insabhi_custom_website/static/src/Images/prop7.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Perfume One 100ml</div>
                                     <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
@@ -138,9 +137,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('ten shampoos')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducate5.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Perfume Two 100ml</div>
                                     <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
@@ -150,9 +148,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('bamboo plant')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat6.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Perfume Three 100ml</div>
                                     <div class="text-muted small fw-bold mt-1">29.7 KWD</div>
@@ -162,9 +159,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('ten two')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat14.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Wahaj Candle</div>
                                     <div class="text-muted small fw-bold mt-1">15 KWD</div>
@@ -174,9 +170,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('testimonials')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat12.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Wooden Sage</div>
                                     <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
@@ -186,9 +181,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('swedish')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat13.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Ten Protein Shampoo</div>
                                     <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
@@ -198,9 +192,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('TenProteinShampoo')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat12.jpg" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Wooden Sage</div>
                                     <div class="text-muted small fw-bold mt-1">14.5 KWD</div>
@@ -210,9 +203,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('Ten')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat15.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Sukoon Candle</div>
                                     <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
@@ -222,9 +214,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('Ten one')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat9.webp" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Bamboo Plant</div>
                                     <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
@@ -234,9 +225,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('Ten four')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat8.png" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Bamboo Plant</div>
                                     <div class="text-muted small fw-bold mt-1">19.5 KWD</div>
@@ -246,9 +236,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('Ten five')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat11.webp" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Sansevieria (Snake Plant)</div>
                                     <div class="text-muted small fw-bold mt-1">18.5 KWD</div>
@@ -258,9 +247,8 @@
                             <div class="treatment-card" onclick="showFullScreenModal('Ten six')">
                                   <img src="/insabhi_custom_website/static/src/Images/tenStoreProducat7.webp" class="card-img"/>
                                 <div class="card-footer">
-                                    <button class="book-now-short"
-                                            onclick="window.open('https://api.whatsapp.com/send?phone=96522288282&amp;text=%D9%85%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%D8%8C%20%D8%AD%D8%A8%D9%8A%D8%AA%20%D8%A3%D8%B1%D9%81%20%D8%B4%D9%86%D9%88%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%84%D9%8A%20%D8%AA%D9%82%D8%AF%D9%85%D9%88%D9%86%D9%87%D8%A7%D8%9F%20%F0%9F%8C%BF', '_blank');">
-                                        Book Now
+                                    <button class="book-now-short">
+                                        Add to cart
                                     </button>
                                     <div class="card-title">Bamboo Plant</div>
                                     <div class="text-muted small fw-bold mt-1">19.5 KWD</div>

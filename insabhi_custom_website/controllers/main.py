@@ -95,3 +95,6 @@ class OwlPlayground(http.Controller):
             'products': products
         })
 
+    @http.route('/cart', type='http', auth='public', website=True)
+    def cart_page(self, **kw):
+        return request.render('insabhi_custom_website.full_cart_page')
