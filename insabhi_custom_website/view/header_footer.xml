@@ -2,139 +2,217 @@
 <odoo>
     <data>
 
-        <!-- ================== HEADER ================== -->
-        <template id="insabhi_custom_header" inherit_id="website.layout" name="Insabhi Custom Header">
+<!-- ================== HEADER ================== -->
+    <template id="insabhi_custom_header" inherit_id="website.layout" name="Insabhi Custom Header">
 
-            <!-- Default header ko replace karo, aur login page par hide karo -->
-            <xpath expr="//header" position="replace">
-                <t t-if="not request.httprequest.path.startswith('/web/login')">
-                    <header>
-                        <div class="insabhi-header-wrapper">
+        <xpath expr="//header" position="replace">
+            <t t-if="not request.httprequest.path.startswith('/web/login')">
+                <header>
+                    <div class="insabhi-header-wrapper">
 
-                            <div class="insabhi-top-banner text-center py-2">
-                                Enjoy complimentary shipping with orders over 51KD.
-                            </div>
+                        <div class="insabhi-top-banner text-center py-2">
+                            Enjoy complimentary shipping with orders over 51KD.
+                        </div>
 
-                            <nav class="navbar navbar-expand-lg insabhi-navbar">
-                                <div class="container-fluid d-flex flex-column">
-                                    <div class="d-flex w-100 align-items-center position-relative">
+                        <nav class="navbar navbar-expand-lg insabhi-navbar">
+                            <div class="container-fluid d-flex flex-column">
+                                <div class="d-flex w-100 align-items-center position-relative">
 
-                                        <a class="navbar-brand" href="/">
-                                            <img src="/insabhi_custom_website/static/src/Images/logo.png" alt="Tēnspa"
-                                                 class="logo-default img-fluid"/>
-                                            <img src="/insabhi_custom_website/static/src/Images/logo1.0.png" alt="Tēnspa"
-                                                 class="logo-hover img-fluid"/>
+                                    <a class="navbar-brand" href="/">
+                                        <img src="/insabhi_custom_website/static/src/Images/logo.png" alt="Tēnspa"
+                                             class="logo-default img-fluid"/>
+                                        <img src="/insabhi_custom_website/static/src/Images/logo1.0.png" alt="Tēnspa"
+                                             class="logo-hover img-fluid"/>
+                                    </a>
+
+                                    <button class="navbar-toggler d-lg-none" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#insabhiNavbarCollapse"
+                                            aria-controls="insabhiNavbarCollapse"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </button>
+
+                                    <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
+                                        <form class="insabhi-search-form d-flex me-3 position-relative">
+                                            <input class="form-control me-2 ps-5" type="search" placeholder="Search…"
+                                                   aria-label="Search"/>
+                                            <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
+                                            <button class="btn btn-search" type="submit">Search</button>
+                                        </form>
+                                        <a href="#" id="openCartLink" class="nav-link">
+                                            My cart <span id="cart-count" class="text-primary fw-bold"></span>
                                         </a>
-
-                                        <button class="navbar-toggler d-lg-none" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#insabhiNavbarCollapse"
-                                                aria-controls="insabhiNavbarCollapse"
-                                                aria-expanded="false" aria-label="Toggle navigation">
-                                            <div class="line"></div>
-                                            <div class="line"></div>
-                                            <div class="line"></div>
-                                        </button>
-
-<!--                                        <div class="insabhi-left-links d-none d-lg-flex align-items-center me-auto gap-4">-->
-<!--                                            <a class="nav-link">Stores</a>-->
-
-<!--                                        </div>-->
-
-                                        <div class="insabhi-right-icons d-none d-lg-flex align-items-center gap-3">
-                                            <form class="insabhi-search-form d-flex me-3 position-relative">
-                                                <input class="form-control me-2 ps-5" type="search" placeholder="Search…"
-                                                       aria-label="Search"/>
-                                                <i class="fa fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
-                                                <button class="btn btn-search" type="submit">Search</button>
-                                            </form>
-                                            <a class="nav-link">My cart</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="insabhi-bottom-menu d-none d-lg-flex justify-content-center w-100 py-3 gap-5 mt-2">
-
-                                        <a class="nav-link" href="/">Home</a>
-                                        <a class="nav-link" href="/aboutus">About Us</a>
-
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="/treatment"
-                                               aria-expanded="false">
-                                                Treatment
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a class="nav-link" href="/giftVoucher">Gift Vouchers</a>
-                                        <a class="nav-link" href="/tenStore">Ten Store</a>
-                                        <a class="nav-link" href="/careers">Careers</a>
-                                        <a class="nav-link" href="/contactus">Contact Us</a>
-                                        <a class="nav-link" href="/faq">FAQ</a>
-
                                     </div>
                                 </div>
-                            </nav>
 
-                            <div class="collapse navbar-collapse d-lg-none" id="insabhiNavbarCollapse">
-                                <ul class="navbar-nav mx-auto text-center">
-
-                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/">Home</a>
-                                    </li>
-                                    <li class="nav-item  border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/aboutus">About Us</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown pb-2 mb-2">
-                                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
-                                           data-bs-toggle="dropdown" role="button" data-nav-url="/treatment">Treatment
-                                        </a>
+                                <div class="insabhi-bottom-menu d-none d-lg-flex justify-content-center w-100 py-3 gap-5 mt-2">
+                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="/aboutus">About Us</a>
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="/treatment" aria-expanded="false">Treatment</a>
                                         <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a>
-                                            </li>
+                                            <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
+                                            <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
                                         </ul>
-                                    </li>
-                                      <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/giftVoucher">Gift Vouchers</a>
-                                    </li>
-                                     <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/tenStore">Ten Store</a>
-                                    </li>
-                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/tenStore">Ten Store</a>
-                                    </li>
-                                    <li class="nav-item border-bottom border-light-subtle pb-2 mb-2">
-                                        <a class="nav-link" href="/careers">Careers</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/contactus">Contact Us</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/faq">FAQ</a>
-                                    </li>
-
-                                </ul>
+                                    </div>
+                                    <a class="nav-link" href="/giftVoucher">Gift Vouchers</a>
+                                    <a class="nav-link" href="/tenStore">Ten Store</a>
+                                    <a class="nav-link" href="/careers">Careers</a>
+                                    <a class="nav-link" href="/contactus">Contact Us</a>
+                                    <a class="nav-link" href="/faq">FAQ</a>
+                                </div>
                             </div>
+                        </nav>
 
+                        <div class="collapse navbar-collapse d-lg-none" id="insabhiNavbarCollapse">
+                            <ul class="navbar-nav mx-auto text-center">
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2"><a class="nav-link" href="/">Home</a></li>
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2"><a class="nav-link" href="/aboutus">About Us</a></li>
+                                <li class="nav-item dropdown pb-2 mb-2">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Treatment</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/treatmentHim">Ten Treatments For Him</a></li>
+                                        <li><a class="dropdown-item" href="/treatmentHer">Ten Treatments For Her</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2"><a class="nav-link" href="/giftVoucher">Gift Vouchers</a></li>
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2"><a class="nav-link" href="/tenStore">Ten Store</a></li>
+                                <li class="nav-item border-bottom border-light-subtle pb-2 mb-2"><a class="nav-link" href="/careers">Careers</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contactus">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                            </ul>
                         </div>
-                    </header>
-                </t>
-            </xpath>
+                    </div>
+                </header>
 
-        </template>
+                <!-- CART DRAWER (Right Side) -->
+                <div id="cart-drawer" style="display:none; position:fixed; top:0; right:0; width:420px; height:100%; background:#fff; z-index:1050; box-shadow:-5px 0 20px rgba(0,0,0,0.15); overflow-y:auto; padding:20px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid #eee; padding-bottom:10px;">
+                        <h4 class="mb-0">My Cart (<span id="drawer-item-count">0</span>)</h4>
+                        <button id="close-cart" style="background:none; border:none; font-size:1.8rem; cursor:pointer;">&amp;times;</button>
+                    </div>
+                    <div id="cart-items"></div>
+                    <div id="cart-subtotal" class="mt-4 fw-bold fs-5 text-dark"></div>
+                    <div class="mt-4">
+                        <a href="/cart" class="btn btn-dark w-100 mb-2">Go to Cart</a>
+                        <button id="continue-browsing" class="btn btn-outline-secondary w-100">Continue Browsing</button>
+                    </div>
+                </div>
 
+                <!-- Overlay -->
+                <div id="cart-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1040;"></div>
+            </t>
+        </xpath>
+
+        <!-- FIXED CART JAVASCRIPT -->
+        <xpath expr="." position="inside">
+            <script type="text/javascript">
+            <![CDATA[
+            document.addEventListener('DOMContentLoaded', function () {
+                const openCartLink = document.getElementById('openCartLink');
+                const cartDrawer = document.getElementById('cart-drawer');
+                const cartOverlay = document.getElementById('cart-overlay');
+                const closeCart = document.getElementById('close-cart');
+                const continueBrowsing = document.getElementById('continue-browsing');
+                const cartCount = document.getElementById('cart-count');
+                const drawerItemCount = document.getElementById('drawer-item-count');
+
+                // Open cart
+                openCartLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    cartDrawer.style.display = 'block';
+                    cartOverlay.style.display = 'block';
+                    renderCart();
+                });
+
+                // Close cart
+                function closeCartDrawer() {
+                    cartDrawer.style.display = 'none';
+                    cartOverlay.style.display = 'none';
+                }
+                closeCart.addEventListener('click', closeCartDrawer);
+                continueBrowsing.addEventListener('click', closeCartDrawer);
+                cartOverlay.addEventListener('click', closeCartDrawer);
+
+                // Update cart count
+                function updateCartCount() {
+                    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                    const total = cart.reduce((sum, item) => sum + item.qty, 0);
+                    cartCount.textContent = total > 0 ? `(${total})` : '';
+                    if (drawerItemCount) drawerItemCount.textContent = total;
+                }
+
+                // Render cart items - FIXED VERSION
+                function renderCart() {
+                    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                    const itemsContainer = document.getElementById('cart-items');
+                    let html = '';
+                    let subtotal = 0;
+
+                    if (cart.length === 0) {
+                        html = '<p class="text-center text-muted my-5">Your cart is empty</p>';
+                    } else {
+                        cart.forEach((item, index) => {
+                            subtotal += item.price * item.qty;
+                            html += `
+                                <div style="display:flex; gap:15px; padding:15px 0; border-bottom:1px solid #eee; align-items:start;">
+                                    <img src="${item.image || '/insabhi_custom_website/static/src/img/placeholder.jpg'}"
+                                         alt="${item.name || 'Product'}"
+                                         style="width:80px; height:80px; object-fit:cover; border-radius:8px; background:#f0f0f0;">
+                                    <div style="flex:1;">
+                                        <h6 class="mb-1">${item.name || 'Unknown Product'}</h6>
+                                        <p class="mb-2 text-muted">${item.price ? item.price.toFixed(2) : '0.00'} KWD</p>
+                                        <div style="display:flex; align-items:center; gap:10px;">
+                                            <button onclick="window.updateQty(${index}, -1)"
+                                                    style="width:32px; height:32px; border:1px solid #ddd; background:#fff; border-radius:6px; font-weight:bold;">-</button>
+                                            <span style="min-width:30px; text-align:center; font-weight:600;">${item.qty}</span>
+                                            <button onclick="window.updateQty(${index}, 1)"
+                                                    style="width:32px; height:32px; border:1px solid #ddd; background:#fff; border-radius:6px; font-weight:bold;">+</button>
+                                        </div>
+                                    </div>
+                                    <button onclick="window.removeFromCart(${index})"
+                                            style="background:none; border:none; color:#999; font-size:1.2rem; margin-top:5px;">&times;</button>
+                                </div>`;
+                        });
+                    }
+
+                    itemsContainer.innerHTML = html;
+                    document.getElementById('cart-subtotal').textContent = `Subtotal: ${subtotal.toFixed(2)} KWD`;
+                }
+
+                // Update quantity
+                window.updateQty = function (index, change) {
+                    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                    cart[index].qty += change;
+                    if (cart[index].qty <= 0) cart.splice(index, 1);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+                    renderCart();
+                };
+
+                // Remove item completely
+                window.removeFromCart = function (index) {
+                    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                    cart.splice(index, 1);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+                    renderCart();
+                };
+
+                // Make functions global
+                window.updateCartCount = updateCartCount;
+                window.renderCart = renderCart;
+
+                // Initial load
+                updateCartCount();
+            });
+            ]]>
+            </script>
+        </xpath>
+    </template>
         <!-- ================== FOOTER (unchanged) ================== -->
         <template id="insabhi_custom_footer" inherit_id="website.layout" name="Aesop Custom Footer">
             <xpath expr="//footer" position="replace">

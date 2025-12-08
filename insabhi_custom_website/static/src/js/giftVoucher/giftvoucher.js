@@ -314,11 +314,11 @@ whenReady(() => {
     const giftContainer = document.querySelector('.gift-voucher-container');
 
 
-    if (productDetailContainer) {
-        // Agar tenStore Product Detail page hai, toh yahan mount karo
-        mount(GiftVoucher, productDetailContainer, {getTemplate});
-    }
-    else if (owl_giftVoucher) {
+//    if (productDetailContainer) {
+//        // Agar tenStore Product Detail page hai, toh yahan mount karo
+//        mount(GiftVoucher, productDetailContainer, {getTemplate});
+//    }
+     if (owl_giftVoucher) {
         // Ya agar original gift voucher page hai (.giftVoucher class ke saath)
         mount(GiftVoucher, owl_giftVoucher, {getTemplate});
     }

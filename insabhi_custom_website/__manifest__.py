@@ -48,6 +48,7 @@
         'view/faq.xml',
         'view/forHer.xml',
         'view/category.xml',
+        'view/cart_page.xml',
     ],
     'assets': {
         'web.assets_frontend': [

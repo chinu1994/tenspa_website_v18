@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <!-- FULL CART PAGE - CLEAN AESOP STYLE (NO EXTRA MESSAGES & NO PAYPAL) -->
+    <template id="full_cart_page" name="Full Cart Page">
+      <t t-call="website.layout">
+        <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
+        <t t-set="additional_title" t-value="'Your Cart'"/>
+
+        <!-- Spacer for fixed header -->
+        <div style="height:190px;"></div>
+
+        <div class="container py-5">
+          <div class="row">
+
+            <!-- LEFT: Cart Items -->
+            <div class="col-lg-8">
+              <h2 class="mb-5">Your Cart (<span id="cart-total-items">0</span> items)</h2>
+
+              <div id="cart-items-list">
+                <!-- Items will be injected here by JavaScript -->
+              </div>
+
+              <div class="mt-5">
+                <a href="/tenStore" class="btn btn-outline-dark px-4">Continue Shopping</a>
+              </div>
+            </div>
+
+            <!-- RIGHT: Order Summary (Clean & Minimal) -->
+            <div class="col-lg-4">
+              <div class="bg-light p-4 rounded sticky-top" style="top:120px;">
+                <h5 class="mb-4">Order summary</h5>
+
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Subtotal</span>
+                  <strong id="summary-subtotal">0.00 KWD</strong>
+                </div>
+
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Shipping</span>
+                  <strong>Complimentary</strong>
+                </div>
+
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Estimated Tax</span>
+                  <strong>0.00 KWD</strong>
+                </div>
+
+                <hr class="my-4"/>
+
+                <div class="d-flex justify-content-between mb-4">
+                  <strong class="fs-5">Estimated total</strong>
+                  <strong id="summary-total" class="fs-4 text-dark">0.00 KWD</strong>
+                </div>
+
+                <!-- Only ONE clean checkout button -->
+                <a href="/checkout" class="btn btn-dark w-100 py-3 fs-5">
+                  Proceed to secure checkout
+                </a>
+
+                <!-- Pick up in store option -->
+                <button class="btn btn-outline-dark w-100 mt-3 py-3">
+                  Pick up in store instead
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+        <![CDATA[
+        document.addEventListener('DOMContentLoaded', function() {
+          function renderFullCart() {
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            const container = document.getElementById('cart-items-list');
+            const totalItems = document.getElementById('cart-total-items');
+            const subtotalEl = document.getElementById('summary-subtotal');
+            const totalEl = document.getElementById('summary-total');
+
+            let html = '';
+            let subtotal = 0;
+
+            if (cart.length === 0) {
+              html = `
+                <div class="text-center py-5">
+                  <p class="display-6 text-muted mb-4">Your cart is empty</p>
+                  <a href="/tenStore" class="btn btn-dark px-5 py-3">Continue Shopping</a>
+                </div>`;
+              totalItems.textContent = '0';
+            } else {
+              totalItems.textContent = cart.reduce((s, i) => s + i.qty, 0);
+              cart.forEach((item, index) => {
+                subtotal += item.price * item.qty;
+                html += `
+                  <div class="border rounded p-4 mb-4 bg-white shadow-sm">
+                    <div class="row g-3 align-items-start">
+                      <div class="col-3">
+                        <img src="${item.image}" alt="${item.name}" class="img-fluid rounded" style="height:120px; object-fit:cover;">
+                      </div>
+                      <div class="col-6">
+                        <h5 class="mb-2">${item.name}</h5>
+                        <p class="text-muted small mb-2">Ten Wellness</p>
+                        <p class="fw-bold mb-0">${item.price.toFixed(2)} KWD</p>
+                      </div>
+                      <div class="col-3 text-end">
+                        <div class="d-flex align-items-center justify-content-end gap-2 mb-3">
+                          <button onclick="window.updateQty(${index}, -1)"
+                                  class="btn btn-sm btn-outline-dark rounded-circle" style="width:36px; height:36px;">-</button>
+                          <span class="mx-3 fw-bold">${item.qty}</span>
+                          <button onclick="window.updateQty(${index}, 1)"
+                                  class="btn btn-sm btn-outline-dark rounded-circle" style="width:36px; height:36px;">+</button>
+                        </div>
+                        <button onclick="window.removeFromCart(${index})"
+                                class="btn btn-link text-danger small p-0">Remove</button>
+                      </div>
+                    </div>
+                  </div>`;
+              });
+            }
+
+            container.innerHTML = html;
+            subtotalEl.textContent = subtotal.toFixed(2) + ' KWD';
+            totalEl.textContent = subtotal.toFixed(2) + ' KWD';
+          }
+
+          // Global functions for buttons
+          window.updateQty = function(index, change) {
+            let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            cart[index].qty += change;
+            if (cart[index].qty <= 0) cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.updateCartCount?.();
+            renderFullCart();
+          };
+
+          window.removeFromCart = function(index) {
+            let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.updateCartCount?.();
+            renderFullCart();
+          };
+
+          renderFullCart();
+        });
+        ]]>
+        </script>
+      </t>
+    </template>
+
+  </data>
+</odoo>
