@@ -36,13 +36,14 @@ export class ForHer extends Component {
         // SERVICES
         this.services = {
             1: [
-                { name: "Swedish Massage", img: "/insabhi_custom_website/static/src/Images/treat9.webp" },
-                { name: "Deep Tissue Massage", img: "/insabhi_custom_website/static/src/Images/treat21.jpeg" },
-                { name: "Hot Stone Massage", img: "/insabhi_custom_website/static/src/Images/mass4.webp" },
-                { name: "Aromatherapy Massage", img: "/insabhi_custom_website/static/src/Images/treat13.jpeg" },
-                { name: "Sports Massage", img: "/insabhi_custom_website/static/src/Images/mass3.webp" },
-                { name: "Thai Table Massage", img: "/insabhi_custom_website/static/src/Images/mass2.webp" },
-                { name: "Balinese Massage", img: "/insabhi_custom_website/static/src/Images/gift4.jpg" },
+                { name: "Aromatherapy Massage", img: "/insabhi_custom_website/static/src/Images/herTreat2.jpg" },
+                { name: "Foot Reflexology", img: "/insabhi_custom_website/static/src/Images/herTreat1.jpg" },
+                { name: "Swedish Massage", img: "/insabhi_custom_website/static/src/Images/noimage.jpg" },
+                { name: "Indonesian (Balinese) Massage", img: "/insabhi_custom_website/static/src/Images/herTreat1.jpg" },
+                { name: "Deep Tissue / Sports Massage", img: "/insabhi_custom_website/static/src/Images/noimage.jpg" },
+                { name: "Thai Massage", img: "/insabhi_custom_website/static/src/Images/noimage.jpg" },
+                { name: "Back, Neck, Shoulder, and Head Massage ", img: "/insabhi_custom_website/static/src/Images/noimage.jpg" },
+                { name: "30mins Aircups", img: "/insabhi_custom_website/static/src/Images/gift4.jpg" },
             ],
             2: [
                 { name: "HydraFacial", img: "/insabhi_custom_website/static/src/Images/treat18.webp" },
