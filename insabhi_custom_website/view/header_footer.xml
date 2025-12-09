@@ -191,6 +191,9 @@
                     localStorage.setItem('cart', JSON.stringify(cart));
                     updateCartCount();
                     renderCart();
+
+                //  NEW LINE TO UPDATE FULL CART PAGE
+            window.renderFullCart?.();
                 };
 
                 // Remove item completely

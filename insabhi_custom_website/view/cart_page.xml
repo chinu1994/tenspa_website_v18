@@ -2,32 +2,27 @@
 <odoo>
   <data>
 
-    <!-- FULL CART PAGE - CLEAN AESOP STYLE (NO EXTRA MESSAGES & NO PAYPAL) -->
     <template id="full_cart_page" name="Full Cart Page">
       <t t-call="website.layout">
         <t t-set="body_classname" t-value="'tenStore_product_detail'"/>
         <t t-set="additional_title" t-value="'Your Cart'"/>
 
-        <!-- Spacer for fixed header -->
         <div style="height:190px;"></div>
 
         <div class="container py-5">
           <div class="row">
 
-            <!-- LEFT: Cart Items -->
-            <div class="col-lg-8">
+            <div class="col-lg-8 px-4">
               <h2 class="mb-5">Your Cart (<span id="cart-total-items">0</span> items)</h2>
 
               <div id="cart-items-list">
-                <!-- Items will be injected here by JavaScript -->
-              </div>
+                </div>
 
               <div class="mt-5">
                 <a href="/tenStore" class="btn btn-outline-dark px-4">Continue Shopping</a>
               </div>
             </div>
 
-            <!-- RIGHT: Order Summary (Clean & Minimal) -->
             <div class="col-lg-4">
               <div class="bg-light p-4 rounded sticky-top" style="top:120px;">
                 <h5 class="mb-4">Order summary</h5>
@@ -54,12 +49,10 @@
                   <strong id="summary-total" class="fs-4 text-dark">0.00 KWD</strong>
                 </div>
 
-                <!-- Only ONE clean checkout button -->
                 <a href="/checkout" class="btn btn-dark w-100 py-3 fs-5">
                   Proceed to secure checkout
                 </a>
 
-                <!-- Pick up in store option -->
                 <button class="btn btn-outline-dark w-100 mt-3 py-3">
                   Pick up in store instead
                 </button>
@@ -67,10 +60,9 @@
             </div>
           </div>
         </div>
-
-        <script type="text/javascript">
+          <script type="text/javascript">
         <![CDATA[
-        document.addEventListener('DOMContentLoaded', function() {
+          // **Step 1: Full Page Rendering Function (Global Scope)**
           function renderFullCart() {
             const cart = JSON.parse(localStorage.getItem('cart') || '[]');
             const container = document.getElementById('cart-items-list');
@@ -95,7 +87,7 @@
                 html += `
                   <div class="border rounded p-4 mb-4 bg-white shadow-sm">
                     <div class="row g-3 align-items-start">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="${item.image}" alt="${item.name}" class="img-fluid rounded" style="height:120px; object-fit:cover;">
                       </div>
                       <div class="col-6">
@@ -124,30 +116,39 @@
             totalEl.textContent = subtotal.toFixed(2) + ' KWD';
           }
 
-          // Global functions for buttons
+          // **Step 2: Global Functions ko Override karo (Dono ko update karne ke liye)**
           window.updateQty = function(index, change) {
             let cart = JSON.parse(localStorage.getItem('cart') || '[]');
             cart[index].qty += change;
             if (cart[index].qty <= 0) cart.splice(index, 1);
             localStorage.setItem('cart', JSON.stringify(cart));
-            window.updateCartCount?.();
+
+            // 1. Full Page Update
             renderFullCart();
+            // 2. Drawer/Header Update (Drawer script ke functions call honge)
+            window.updateCartCount?.();
+            window.renderCart?.();
           };
 
           window.removeFromCart = function(index) {
             let cart = JSON.parse(localStorage.getItem('cart') || '[]');
             cart.splice(index, 1);
             localStorage.setItem('cart', JSON.stringify(cart));
-            window.updateCartCount?.();
+
+            // 1. Full Page Update
             renderFullCart();
+            // 2. Drawer/Header Update (Drawer script ke functions call honge)
+            window.updateCartCount?.();
+            window.renderCart?.();
           };
 
-          renderFullCart();
-        });
+          // Step 3: Initial load par render karo
+          document.addEventListener('DOMContentLoaded', function() {
+            renderFullCart();
+          });
         ]]>
         </script>
       </t>
     </template>
-
   </data>
 </odoo>
